@@ -1,7 +1,6 @@
 # Lab: Creating and deploying provisioning package
-# Student lab manual
 
-## Objectives
+## Summary
 
 In this lab you will learn how to create and apply a Provisioning Package. 
 
