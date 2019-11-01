@@ -167,4 +167,4 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
 
 7.  Leave the Azure portal open on LON-CL1 for the next task.
 
-** END OF LAB **
+**END OF LAB**

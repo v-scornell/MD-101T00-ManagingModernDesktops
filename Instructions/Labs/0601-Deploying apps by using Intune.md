@@ -187,4 +187,4 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
     created, assigned, installation time and status and the last time the device
     checked in (synced with Intune).
 
-** END OF LAB **
+**END OF LAB**

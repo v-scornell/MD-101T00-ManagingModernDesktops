@@ -265,4 +265,4 @@ This will disable Windows Hello on the device and will disable the forced creati
     data**. This view shows the devices that are synced by Enterprise State
     Roaming. It also shows when each device was last synced.
 
-** END OF LAB **
+**END OF LAB**

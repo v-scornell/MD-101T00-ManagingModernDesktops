@@ -145,4 +145,4 @@ Start-ADSyncSyncCycle –PolicyType Delta
     you changed in the Azure portal is written back to your local Active
     Directory Domain Services (AD DS).
 
-** END OF LAB **
+** END OF LAB ****END OF LAB**

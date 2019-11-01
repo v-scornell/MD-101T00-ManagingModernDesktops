@@ -137,4 +137,4 @@ In this lab, you will practice creating and configuring Windows Information Prot
     SharePoint Online site in Internet Explorer because it’s not an allowed app.
 
 
-** END OF LAB **
+**END OF LAB**

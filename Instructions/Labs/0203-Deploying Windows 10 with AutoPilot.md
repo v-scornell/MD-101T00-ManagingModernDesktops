@@ -273,4 +273,4 @@ the reset to continue._
 
 14. Note that the device is showing as enabled and you are the owner.
 
-** END OF LAB **
+**END OF LAB**

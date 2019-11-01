@@ -207,4 +207,4 @@ Get-MsolGroupMember -GroupObjectId \$group.ObjectId
 ```
 14.  Verify that you get **Cody Godinez** as a result. Minimize the Windows PowerShell window.
 
-** END OF LAB **
+**END OF LAB**

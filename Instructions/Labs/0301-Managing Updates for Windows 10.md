@@ -116,4 +116,4 @@ deferred 45 days after release. You would like to test the settings first using 
 _Note: These labs are configured to prevent Windows Updates from being applied to
 avoid delays and unintentional impact during the labs._
 
-** END OF LAB **
+**END OF LAB**

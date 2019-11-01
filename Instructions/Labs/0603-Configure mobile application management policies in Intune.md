@@ -88,4 +88,4 @@ All the developers in A. Datum have iPhones running the latest version of iOS. T
     protection policy is now assigned to the **A. Datum Developers** Azure AD
     group.
 
-** END OF LAB **
+**END OF LAB**

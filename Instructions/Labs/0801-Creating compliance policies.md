@@ -265,4 +265,4 @@ When devices are non-compliant, they should not be able to access their e-mail. 
     is being checked for compliance. If that happens, wait for a few minutes and
     then try again.
 
-** END OF LAB **
+**END OF LAB**

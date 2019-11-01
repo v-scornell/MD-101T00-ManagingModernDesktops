@@ -152,4 +152,4 @@ All the developers at A. Datum require Microsoft Office 365 ProPlus.  You've bee
     it was created, assigned, installation time and status and the last time the
     device checked in (synced with Intune).
 
-** END OF LAB **
+**END OF LAB**

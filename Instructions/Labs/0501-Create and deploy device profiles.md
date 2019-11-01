@@ -315,4 +315,4 @@ There was an exception to A. Datum's policies initiated where developers should 
 
 3.  Close the **Settings** app.
 
-** END OF LAB **
+**END OF LAB**

@@ -233,4 +233,4 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
 
 9.  Verify the presence of the **document.txt** file.
 
-** END OF LAB **
+**END OF LAB**
