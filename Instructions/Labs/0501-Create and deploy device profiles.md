@@ -314,3 +314,5 @@ There was an exception to A. Datum's policies initiated where developers should 
     customization options are back.
 
 3.  Close the **Settings** app.
+
+** END OF LAB **

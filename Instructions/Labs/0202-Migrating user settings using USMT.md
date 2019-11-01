@@ -231,6 +231,4 @@ Task 4: Verify migration of user settings
     migrate.
 
 
-
-
-
+** END OF LAB **

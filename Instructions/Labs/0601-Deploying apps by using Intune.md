@@ -186,3 +186,5 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
     you can see the entire lifecycle of the application, that is - when it was
     created, assigned, installation time and status and the last time the device
     checked in (synced with Intune).
+
+** END OF LAB **

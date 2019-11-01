@@ -104,3 +104,4 @@ directly to Intune.
 4.  Finally notice the settings displayed under **NOT SUPPORTED: Security
     Account Policies**. For now, they cannot be migrated to Intune.
 
+** END OF LAB **

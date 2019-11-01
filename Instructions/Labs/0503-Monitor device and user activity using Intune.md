@@ -48,3 +48,5 @@ You have been asked to review Diego Siciliani's sign-in activity.  You have also
     Datum developers – standard** blade, you will see the state of each setting
     you configured in the profile. The **STATE** should say **Succeeded** next
     to all of them.
+
+** END OF LAB **
