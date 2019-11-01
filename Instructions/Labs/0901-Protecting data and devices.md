@@ -161,3 +161,4 @@ It's been determined that all the information on LON-CL1 should be encrypted. Yo
 
 5.  Close all open windows.
 
+**END OF LAB**

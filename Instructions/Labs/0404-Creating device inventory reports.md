@@ -183,3 +183,5 @@ in the previous labs. Not all reports will have data in them. You can
 customize the reports using Power BI Desktop or create your own reports
 using the data from the Intune Data Warehouse.
 
+
+**END OF LAB**

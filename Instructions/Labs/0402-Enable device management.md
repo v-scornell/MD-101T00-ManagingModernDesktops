@@ -106,3 +106,5 @@ location set.
 9.  Take note of the temporary password, which will be needed for the next exercise.
 
 
+
+**END OF LAB**

@@ -193,3 +193,5 @@ Single-Sign-On (SSO) to Azure AD, Intune and Office 365.
     Note: This view lists devices that are joined to Azure AD. Remember that you
     configured integration between Azure AD and Intune, and because of that, any
     device that is joined to Azure AD is automatically enrolled to Intune.
+
+**END OF LAB**

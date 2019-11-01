@@ -93,3 +93,5 @@ Settings should be verified by testing on an enrolled device, LON-CL3 and a non-
 2.  Switch to LON-CL1 and open Windows Defender Security Center. Ensure that you
     see the device performance & health icon. This is because LON-CL1 is not
     enrolled to Intune.
+
+**END OF LAB**

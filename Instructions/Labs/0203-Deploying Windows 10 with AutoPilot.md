@@ -272,3 +272,5 @@ the reset to continue._
 13. In the Azure portal, select **Azure Active Directory** and then **Devices**.
 
 14. Note that the device is showing as enabled and you are the owner.
+
+**END OF LAB**

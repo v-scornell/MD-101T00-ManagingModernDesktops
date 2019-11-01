@@ -144,3 +144,5 @@ Start-ADSyncSyncCycle –PolicyType Delta
     **MDA101!!**. You should be able to sign in. This confirms that the password
     you changed in the Azure portal is written back to your local Active
     Directory Domain Services (AD DS).
+
+** END OF LAB ****END OF LAB**
