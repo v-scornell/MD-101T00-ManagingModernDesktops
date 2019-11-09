@@ -10,11 +10,11 @@ All the developers in A. Datum have iPhones running the latest version of iOS. T
 
 #### Task 1: Create app protection policy in Intune
 
-1.  On **LON-CL3**, in the Azure portal, click **Intune** in the navigation
-    pane, and then on the **Microsoft Intune** blade, click **Client apps**.
+1.  On **LON-CL3**, in the Azure portal, select **Intune** in the navigation
+    pane, and then on the **Microsoft Intune** blade, select **Client apps**.
 
-2.  On the **Client apps** blade, click **App protection policies** under
-    **Manage**. In the details pane, click **+ Create Policy** and then
+2.  On the **Client apps** blade, select **App protection policies** under
+    **Manage**. In the details pane, select **+ Create Policy** and then
     **select iOS/iPadOS**.
 
 3.  On the **Basics** tab, configure the following options:
@@ -23,12 +23,12 @@ All the developers in A. Datum have iPhones running the latest version of iOS. T
 
 -   Description: **MAM policy that prevent cut and paste from Outlook**
 
-4.  Click **+Select public apps**
+4.  Select **+Select public apps**
 
 5.  On the **Apps** tab, in the text box, type **Outlook**. Select
     ***Outlook** and then select **Select**.
 
-7.  Select **Next**. On the **Data protection** tab, configure the following options and click
+7.  Select **Next**. On the **Data protection** tab, configure the following options and select
     **OK**:
 
 -   Backup Org data to ITunes and iCloud backups: **Allow**
@@ -42,7 +42,7 @@ All the developers in A. Datum have iPhones running the latest version of iOS. T
 -   Leave all other settings at default
 
 9.  Select **Next**. On the **Access requirements** tab, configure the following options and
-    click **OK**:
+    select **OK**:
 
 -   PIN for access: **Not required**
 
@@ -51,7 +51,7 @@ All the developers in A. Datum have iPhones running the latest version of iOS. T
      Here you can set the sign-in security requirements for your access
      protection policy. You can select a setting and enter the value that users
      must meet to sign in to your company app. Make note of the various settings
-     but do not change anything. Click **OK**.
+     but do not change anything. Select **OK**.
 
 11.  Select **Next**. On the Assignments tab, select **+Select groups to include**. 
 

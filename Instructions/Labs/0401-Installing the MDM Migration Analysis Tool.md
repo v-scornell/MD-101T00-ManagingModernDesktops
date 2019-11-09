@@ -34,18 +34,18 @@ Your organization is planning a Microsoft Intune implimentation. You have been a
 2.  In Microsoft Edge, type **https://github.com/WindowsDeviceManagement/MMAT**
     in the address bar, and then press Enter.
 
-3.  On the Github page, click the **Clone or download** link and select
+3.  On the Github page, select the **Clone or download** link and select
     **Download ZIP**.
 
-4.  When prompted click **Save** and close Microsoft Edge.
+4.  When prompted select **Save** and close Microsoft Edge.
 
 ### Task 3: Install the MMAT tool on the Windows 10 device
 
-1.  On the Task bar, click the **File Explorer** icon and expand **This PC.**
+1.  On the Task bar, select the **File Explorer** icon and expand **This PC.**
 
-2.  In **File Explorer**, click **Downloads** and right-click the
+2.  In **File Explorer**, select **Downloads** and right-click the
     **MMAT-master.zip** file, and then select **Extract All**. In the **Select a
-    Destination and Extract Files** dialog box, type **C:\\** and then click
+    Destination and Extract Files** dialog box, type **C:\\** and then select
     **Extract**.
 
 3.  Close File Explorer.

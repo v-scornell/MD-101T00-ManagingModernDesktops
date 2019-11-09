@@ -28,13 +28,13 @@ Enrolled devices should also be assigned a VPN configuration with the following 
 
 #### Task 1: Create and apply compliance policy and enrollment restrictions
 
-1.  In **LON-DC1**, in the Azure portal, click **Home** in the breadcrumb navigation, 
+1.  In **LON-DC1**, in the Azure portal, select **Home** in the breadcrumb navigation, 
     then select **Intune**.
 
-2.  On the **Microsoft Intune** blade, click **Device compliance**.
+2.  On the **Microsoft Intune** blade, select **Device compliance**.
 
-3.  On the **Device compliance** blade, click **Policies** and then in the
-    details pane click **+Create Policy**.
+3.  On the **Device compliance** blade, select **Policies** and then in the
+    details pane select **+Create Policy**.
 
 4.  On the **Create Policy** blade, provide the following values:
 
@@ -42,61 +42,61 @@ Enrolled devices should also be assigned a VPN configuration with the following 
 
     -  Platform: **Windows 10 and later**
 
-5.  On the **Windows 10 compliance policy** blade, click **Device Health** and
+5.  On the **Windows 10 compliance policy** blade, select **Device Health** and
     review the available settings.
 
-6.  On the **Windows 10 compliance policy** blade, click **Device Properties**.
+6.  On the **Windows 10 compliance policy** blade, select **Device Properties**.
 
 7.  On the **Device Properties** blade, in the **Minimum OS version** row, type
-    **10.0.16299.15** and then click **OK**.
+    **10.0.16299.15** and then select **OK**.
 
-8.  On the **Windows 10 compliance policy** blade, click **System Security**.
+8.  On the **Windows 10 compliance policy** blade, select **System Security**.
 
-9.  On the System Security blade, in the Defender section, click **Require for
-    Windows Defender Antimalware** and click **OK**.
+9.  On the System Security blade, in the Defender section, select **Require for
+    Windows Defender Antimalware** and select **OK**.
 
 10. On the **Windows 10 compliance policy** blade review the other available
-    options and then click **OK**.
+    options and then select **OK**.
 
-11. On the **Create Policy** blade, click **Actions for noncompliance** and then
-    on the details pane, click **+Add**.
+11. On the **Create Policy** blade, select **Actions for noncompliance** and then
+    on the details pane, select **+Add**.
 
 12. On the **Action parameters,** review the available options and then close
     the blade.
 
-13. In the Actions blade click **Mark device noncompliant**. Review how you can
+13. In the Actions blade select **Mark device noncompliant**. Review how you can
     configure the number of days after which the device is marked as
-    noncompliant, click **OK** twice and then click **Create**.
+    noncompliant, select **OK** twice and then select **Create**.
 
-14. On the **Compliance1** blade, click **Assignments**, click **Select groups
-    to include**, click **Windows Devices**, click **Select,** and then click
+14. On the **Compliance1** blade, select **Assignments**, select **Select groups
+    to include**, select **Windows Devices**, select **Select,** and then select
     **Save**.
 
 15. Scroll the page to the left and then on the **Microsoft Intune** blade, 
-    click **Device enrollment**.
+    select **Device enrollment**.
 
 16. Review the available options on the **Device enrollment** blade.
 
-17. On the **Device enrollment** blade, click **Enrollment restrictions**.
+17. On the **Device enrollment** blade, select **Enrollment restrictions**.
 
-18. On the details pane, in the **Device Type Restrictions** section, click
-    **Default,** click **Properties,** and then click **Edit**.
+18. On the details pane, in the **Device Type Restrictions** section, select
+    **Default,** select **Properties,** and then select **Edit**.
 
-19. On the **Select platforms** blade, in the **iOS** and **macOS** rows click
-    **Block**, then click **Review + save**, then click **Save**.
+19. On the **Select platforms** blade, in the **iOS** and **macOS** rows select
+    **Block**, then select **Review + save**, then select **Save**.
 
 20. Scroll left to the **Device Enrollment - Enrollment restrictions** blade. 
-    In the **Device Limit Restrictions** section, click **Default** and then
-    click **Properties**.
+    In the **Device Limit Restrictions** section, select **Default** and then
+    select **Properties**.
 
 21. Select **Edit**, then change the value to 3.  Select **Review + Save**.
 
 #### Task 2: Create a device configuration profile
 
 1.  In **LON-DC1**, in the Azure portal, scroll the page to the left and then on
-    the **Microsoft Intune** blade click **Device configuration**.
+    the **Microsoft Intune** blade select **Device configuration**.
 
-2.  On the **Device configuration** blade, click **Profiles** and then click
+2.  On the **Device configuration** blade, select **Profiles** and then select
     **+Create profile**.
 
 3.  Enter the name **Adatum VPN** and the description **Corporate VPN for
@@ -150,32 +150,32 @@ When devices are non-compliant, they should not be able to access their e-mail. 
 
 #### Task 1: Create a conditional access policy
 
-1.  On **LON-DC1**, in the Azure portal, on the **Microsoft Intune** blade, click **Conditional
+1.  On **LON-DC1**, in the Azure portal, on the **Microsoft Intune** blade, select **Conditional
     access**.
 
-2.  In the **Details** pane, click **+New policy**.
+2.  In the **Details** pane, select **+New policy**.
 
 3.  On the **New** blade, in the **Name** text box, type **Conditional1** and
-    then click **Users and groups**.
+    then select **Users and groups**.
 
 4.  On the **Users and groups** blade, select the **All users** radio button and
-    then click **Done**.
+    then select **Done**.
 
-5.  On the **New** blade, click **Cloud apps**, select the **Select apps** radio
-    button, click **Select**, click **Office 365 Exchange Online**, click
-    **Select,** and then click **Done**.
+5.  On the **New** blade, select **Cloud apps**, select the **Select apps** radio
+    button, select **Select**, select **Office 365 Exchange Online**, select
+    **Select,** and then select **Done**.
 
-6.  On the **New** blade, click **Conditions**, click **Device platforms**, in
-    the **Configure** section click **Yes**, select the **Select device
-    platforms** radio button, select the **Windows** check box, and then click
+6.  On the **New** blade, select **Conditions**, select **Device platforms**, in
+    the **Configure** section select **Yes**, select the **Select device
+    platforms** radio button, select the **Windows** check box, and then select
     **Done** twice.
 
-7.  On the **New** blade under access controls, click **Grant**, select the
-    **Require device to be marked as compliant** check box, and then click
+7.  On the **New** blade under access controls, select **Grant**, select the
+    **Require device to be marked as compliant** check box, and then select
     **Select**.
 
 8.  On the **New** blade, select **On** for the **Enable policy** option and
-    then click **Create**.
+    then select **Create**.
 
 #### Task 4: Verify that the conditional access policy is working
 
@@ -183,7 +183,7 @@ When devices are non-compliant, they should not be able to access their e-mail. 
     Open a new Microsoft Edge tab, then and open <https://portal.office.com>.
 
 2.  Sign in as **admin\@yourtenant.onmicrosoft.com**. On the Office 365 portal, 
-    click the **Outlook** icon. 
+    select the **Outlook** icon. 
 
 3.  Verify that you receive the message **"You can't get there from here"**.
 

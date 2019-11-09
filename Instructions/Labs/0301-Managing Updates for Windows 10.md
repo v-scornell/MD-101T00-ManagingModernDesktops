@@ -16,13 +16,13 @@ deferred 45 days after release. You would like to test the settings first using 
 
 2.  Sign in as **Adatum\\Administrator** with the password of **Pa55w.rd**.
 
-3.  Click **Start**, and then select the **Settings** icon.
+3.  Select **Start**, and then select the **Settings** icon.
 
 4.  In **Settings**, select **Update & Security**.
 
 5.  On the **Windows Update** tab, select **Advanced options**.
 
-6.  Click **Delivery Optimization**.
+6.  Select **Delivery Optimization**.
 
 7.  On the **Delivery Optimization** page, verify that the **Allow downloads
     from other PCs** option is enabled.
@@ -38,12 +38,12 @@ deferred 45 days after release. You would like to test the settings first using 
 
 1.  On the **Windows Update** page, select **View update history**.
 
-2.  Review the updates listed, if any, and then click **Uninstall updates**. If
+2.  Review the updates listed, if any, and then select **Uninstall updates**. If
     no updates are installed, go to step 4.
 
 3.  Review the updates listed in **Installed Updates**. Close Installed Updates.
 
-4.  On the **View update history** page, click **Back**.
+4.  On the **View update history** page, select **Back**.
 
 ### Task 3: Configure update settings by using GPOs
 
@@ -55,8 +55,8 @@ deferred 45 days after release. You would like to test the settings first using 
 
 4.  In the right pane, double-click **Toggle user control over Insider builds**.
 
-5.  In the **Toggle user control over Insider builds** dialog box, click
-    **Disabled**, and then click **OK**.
+5.  In the **Toggle user control over Insider builds** dialog box, select
+    **Disabled**, and then select **OK**.
 
 6.  In **Local Group Policy Editor**, navigate to **Computer
     Configuration/Administrative Templates/Windows Components/Windows
@@ -66,43 +66,43 @@ deferred 45 days after release. You would like to test the settings first using 
     Updates are received**.
 
 8.  In the **Select when Preview Builds and Feature Updates are received**
-    dialog box, click **Enabled**.
+    dialog box, select **Enabled**.
 
 9.  In the **Select the Windows readiness level for the updates you want to
-    receive** list, click **Semi-Annual Channel**.
+    receive** list, select **Semi-Annual Channel**.
 
 10. In the **After a Preview build or Feature Update is released, defer
-    receiving it for this many days** text box, type **45**, and then click
+    receiving it for this many days** text box, type **45**, and then select
     **OK**.
 
-11. In the navigation pane, click **Windows Update**.
+11. In the navigation pane, select **Windows Update**.
 
 12. In the right pane, double-click **Do not connect to any Windows Update
     Internet locations**.
 
 13. In the **Do not connect to any Windows Update Internet locations** dialog
-    box, click **Enabled**, and then click **OK**.
+    box, select **Enabled**, and then select **OK**.
 
 14. Close the Local Group Policy Editor.
 
 ### Task 4: Verify that the device’s update settings are managed centrally
 
-1.  Right-click **Start**, and then click **Windows PowerShell (Admin)**.
+1.  Right-click **Start**, and then select **Windows PowerShell (Admin)**.
 
 2.  In the command prompt, type **gpupdate /force**, and then press Enter.  Wait for the update to complete.
 
 3.  Switch to **Windows Settings**.
 
-4.  In the navigation pane, click **Windows Insider Program**.
+4.  In the navigation pane, select **Windows Insider Program**.
 
 5.  On the **Windows Insider Program** tab, notice the **Some settings are
     hidden or managed by your organization** banner.
 
 6.  Notice that the **Get started** button is unavailable.
 
-7.  Click **Windows Update**.
+7.  Select **Windows Update**.
 
-8.  Click **Advanced options**. Notice that under the **Choose when updates are
+8.  Select **Advanced options**. Notice that under the **Choose when updates are
     installed** heading, Semi-Annual Channel is selected and not configurable.
     Also notice that the updates are deferred for 45 days.
 

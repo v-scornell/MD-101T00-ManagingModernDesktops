@@ -20,64 +20,64 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 
 1.  Sign in to **LON-CL3** as **Admin** with the password **Pa55w.rd**.
 
-2.  On **LON-CL3**, on the taskbar, click **Start** and then click the
+2.  On **LON-CL3**, on the taskbar, select **Start** and then select the
     **Settings** app.
 
 3.  In the **Settings** app, verify that you can see the **Gaming** tile.
 
-4.  Click **Privacy** and verify that you can see several customization
+4.  Select **Privacy** and verify that you can see several customization
     options.
 
-5.  Click the left arrow in the upper left corner.
+5.  Select the left arrow in the upper left corner.
 
-6.  Click the **Personalization** tile and then click **Start**. Verify that
+6.  Select the **Personalization** tile and then select **Start**. Verify that
     **Show recently used apps** is set to **On**.
 
-7.  Click the left arrow in the upper left corner.
+7.  Select the left arrow in the upper left corner.
 
-8.  In the **Settings** app, click **Update and Security**.
+8.  In the **Settings** app, select **Update and Security**.
 
-9.  On the **Update & Security** page, click **Windows Security** and then
+9.  On the **Update & Security** page, select **Windows Security** and then
     **Open Windows Security**.
 
-10. On the **Windows Security** page, click the menu and then click the **Virus
+10. On the **Windows Security** page, select the menu and then select the **Virus
     & threat protection**.
 
-11. On the **Virus & threat protection** page, click **Manage settings** under
+11. On the **Virus & threat protection** page, select **Manage settings** under
     **Virus & threat protection settings**. Scroll down to **Exclusions** and
-    click **Add or remove exclusions**.
+    select **Add or remove exclusions**.
 
 12. On the **Exclusion** page, verify that no exclusions have been configured.
 
-13. Close the **Exclusions page** and the **Windows Security** page by clicking
+13. Close the **Exclusions page** and the **Windows Security** page by selecting
     the **X** in the right upper corner twice.
 
 ### Task 2: Enroll Windows 10 device to Azure AD and Intune using the Settings app
 
 1.  On **LON-CL3**, with the Settings app still open, navigate to the **Accounts** page. 
 
-2.  Select **Access work or school**. In the **Access work or school** section, click **+Connect**.
+2.  Select **Access work or school**. In the **Access work or school** section, select **+Connect**.
 
 4.  In the **Microsoft account** window, on the **Set up a work or school
-    account** page, click **Join this device to Azure Active Directory**.
+    account** page, select **Join this device to Azure Active Directory**.
 
 5.  On the **Let’s get you signed in** page, in the **Work or school account**
     text box, type **DiegoS\@yourtenant.onmicrosoft.com**
 
-6.  On Enter password page, enter the default tenant password in the text box and then click
+6.  On Enter password page, enter the default tenant password in the text box and then select
     **Sign in**.
 
 7.  Wait a few seconds and then on the **Make sure this is your organization**
-    dialog, click **Join**.
+    dialog, select **Join**.
 
-8.  On the **You’re all set!** page, click **Done**.
+8.  On the **You’re all set!** page, select **Done**.
 
 9.  In the **Settings** app, in the **Access work or school** section, verify
     that the device is connected to Azure AD and then close the **Settings**
     app.
 
 10. Right-click the **Start** button and select **Windows PowerShell (Admin)**,
-    when prompted click **Yes.**
+    when prompted select **Yes.**
 
 11. In the PowerShell console, type the following and then press Enter:
 ```
@@ -96,8 +96,8 @@ _Note: This will disable Windows Hello on the device and will disable the forced
 
 1.  Sign out of **LON-CL3**. 
 
-2.  Click **other user**, and in the **Email address** field type
-    DiegoS**\@yourtenant.onmicrosoft.com**, and then click **Next**. In the
+2.  Select **other user**, and in the **Email address** field type
+    DiegoS**\@yourtenant.onmicrosoft.com**, and then select **Next**. In the
     Password field, type **Pa55w.rd** and then press Enter.
 
 3.  Wait for the profile to be created. It will take around 30-60 seconds.  
@@ -107,7 +107,7 @@ _Note: This will disable Windows Hello on the device and will disable the forced
 
 ### Task 4: Create device profile based on scenario
 
-1.  On **LON-CL3**, on the taskbar, click **Microsoft Edge**.
+1.  On **LON-CL3**, on the taskbar, select **Microsoft Edge**.
 
 2.  In Microsoft Edge, type **https://portal.azure.com** in the address bar, and
     then press Enter.
@@ -118,8 +118,8 @@ _Note: This will disable Windows Hello on the device and will disable the forced
 4.  In the Azure portal, select **Intune** under Azure Services. 
     On the **Microsoft Intune** overview page, select **Device configuration**.
 
-5.  On the **Device configuration** blade, click **Profiles**. In the details
-    pane, click **+ Create profile**.
+5.  On the **Device configuration** blade, select **Profiles**. In the details
+    pane, select **+ Create profile**.
 
 6.  In the **Create profile** blade, enter/select the following information:
 
@@ -132,25 +132,25 @@ _Note: This will disable Windows Hello on the device and will disable the forced
 
 -   Profile type: **Device restrictions**
 
-1.  On the **Device restrictions** blade, click **Control Panel and Settings**.
-    Select **Block** next to **Gaming** and **Privacy**. Then click **OK**.
+1.  On the **Device restrictions** blade, select **Control Panel and Settings**.
+    Select **Block** next to **Gaming** and **Privacy**. Then select **OK**.
 
-2.  Back on the **Device restrictions** blade, click **Start**. Scroll down and
+2.  Back on the **Device restrictions** blade, select **Start**. Scroll down and
     select **Block** next to **Most used apps** and **Recently added apps**.
-    Then click **OK**.
+    Then select **OK**.
 
-3.  Back on the **Device restrictions** blade, scroll down and click **Windows
+3.  Back on the **Device restrictions** blade, scroll down and select **Windows
     Defender Antivirus**. On the **Windows Defender Antivirus,** scroll down and
-    click **Windows Defender Antivirus Exclusions**.
+    select **Windows Defender Antivirus Exclusions**.
 
 4.  On the **Windows Defender Antivirus Exclusions** blade, in the **Files and
-    folders** box, type the following and then click **Add**:
+    folders** box, type the following and then select **Add**:
     **C:\\DevProjects**.
 
-5.  In the **Processes** box, type the following and then click **Add**:
-    **DevBuild.exe**. Then click **OK** twice.
+5.  In the **Processes** box, type the following and then select **Add**:
+    **DevBuild.exe**. Then select **OK** twice.
 
-6.  Back on the **Device restrictions** blade, click **OK** twice and then click
+6.  Back on the **Device restrictions** blade, select **OK** twice and then select
     **Create**.
 
 ### Task 5: Create the Adatum developer device group
@@ -158,7 +158,7 @@ _Note: This will disable Windows Hello on the device and will disable the forced
 1.  In the Azure portal, select the ellipsis in the top left and select **Azure Active Directory**.  In the navigation
     pane, and then **Groups**.
 
-2.  On the **Groups** blade, click **+ New group**.
+2.  On the **Groups** blade, select **+ New group**.
 
 3.  On the **Group** blade, enter/select the following information:
 
@@ -171,12 +171,12 @@ _Note: This will disable Windows Hello on the device and will disable the forced
 
 -   Membership type: **Assigned**
 
-4.  Click **Members** and on the **Select members** blade, in the **Search by
-    name or mail address**, type **lon**. Click **LON-CL3** and then click
+4.  Select **Members** and on the **Select members** blade, in the **Search by
+    name or mail address**, type **lon**. Select **LON-CL3** and then select
     **Select**.
 
-5.  Back on the **Group** blade, click **Create**. Close the **Group** blade by
-    clicking the **X** in the upper right corner.
+5.  Back on the **Group** blade, select **Create**. Close the **Group** blade by
+    selecting the **X** in the upper right corner.
 
 6.  On the **Groups – All groups** blade, verify that the **A. Datum developer
     devices group** is displayed.
@@ -184,9 +184,9 @@ _Note: This will disable Windows Hello on the device and will disable the forced
 ### Task 6: Create a dynamic Azure AD device group
 
 1.  In **LON-CL3**, in the Azure portal, scroll the page to the left and then in
-    the **Azure Active Directory** blade click **Groups**.
+    the **Azure Active Directory** blade select **Groups**.
 
-2.  On the **Group** blade, on the details pane, click **+New group**.
+2.  On the **Group** blade, on the details pane, select **+New group**.
 
 3.  On the **Group** blade, provide the following values:
 
@@ -196,9 +196,9 @@ _Note: This will disable Windows Hello on the device and will disable the forced
 
     3.  Membership type: **Dynamic Device**
 
-4.  On the **Group** blade, click **Dynamic device members**.
+4.  On the **Group** blade, select **Dynamic device members**.
 
-5.  Click **Add dynamic query**. On the **Dynamic membership rules** blade,
+5.  Select **Add dynamic query**. On the **Dynamic membership rules** blade,
     select **Edit**. 
     
 6.  In the Rule syntax text box, add the following Simple membership rule and select **Ok**.
@@ -212,30 +212,30 @@ _Note: This will disable Windows Hello on the device and will disable the forced
 ### Task 7: Deploy device profile to Windows 10 device
 
 1.  In the Azure portal, select **Home** in the breadcrumb navigation menu and then select
-    **Intune**. On the **Microsoft Intune - Overview** blade, click **Device configuration**.
+    **Intune**. On the **Microsoft Intune - Overview** blade, select **Device configuration**.
 
-2.  On the **Device configuration** blade, click **Profiles**. In the details
-    pane, click the **A. Datum developers – standard** profile.
+2.  On the **Device configuration** blade, select **Profiles**. In the details
+    pane, select the **A. Datum developers – standard** profile.
 
-3.  On the **A. Datum developers – standard** blade, click **Assignments**. On
-    the **A. Datum developers – standard – Assignments** blade, click **Select
+3.  On the **A. Datum developers – standard** blade, select **Assignments**. On
+    the **A. Datum developers – standard – Assignments** blade, select **Select
     groups to include**.
 
 4.  On the **Select members** blade, in the **Search by name or mail address**,
-    type **A**. Click **A. Datum developer devices** and then click **Select**.
+    type **A**. Select **A. Datum developer devices** and then select **Select**.
 
-5.  Back on the **A. Datum developers – standard** blade, click **Save**.
+5.  Back on the **A. Datum developers – standard** blade, select **Save**.
 
 ### Task 8: Verify on the device that device profile is applied
 
-1.  On **LON-CL3**, on the taskbar, click **Start** and then click the
+1.  On **LON-CL3**, on the taskbar, select **Start** and then select the
     **Settings** app.
 
-2.  In the **Settings** app, click the **Accounts** tile and then click **Access
+2.  In the **Settings** app, select the **Accounts** tile and then select **Access
     work or school**.
 
-3.  In the **Access work or school** section, click the **Connected to Contoso’s
-    Azure AD** link and then click **Info**.
+3.  In the **Access work or school** section, select the **Connected to Contoso’s
+    Azure AD** link and then select **Info**.
 
 4.  In the **Managed by Contoso** dialog box, select **Info**.  On the Managed by Azure
     AD page, select **Sync**. Wait for the synchronization to complete.  
@@ -247,26 +247,26 @@ _Note: This will disable Windows Hello on the device and will disable the forced
 5.  Close the **Settings** app, and open it again. Verify that the **Gaming**
     and **Privacy** tile has been removed.
 
-6.  Click the **Personalization** tile and then click **Start**. Verify that
+6.  Select the **Personalization** tile and then select **Start**. Verify that
     **Show recently used apps** and **Show most used apps** are set to **Off**.
     Select the **left arrow **in the upper left corner.
 
-7.  In the **Settings** app, click **Update and Security**.
+7.  In the **Settings** app, select **Update and Security**.
 
-8.  On the **Update & Security** page, click **Windows Security** and then
+8.  On the **Update & Security** page, select **Windows Security** and then
     **Open Windows Security**.
 
-9.  On the **Windows Security** page, click the menu and then click the **Virus
+9.  On the **Windows Security** page, select the menu and then select the **Virus
     & threat protection**.
 
-10. On the **Virus & threat protection** page, click **Manage settings** under
+10. On the **Virus & threat protection** page, select **Manage settings** under
     **Virus & threat protection settings**. Scroll down to **Exclusions** and
-    click **Add or remove exclusions**.
+    select **Add or remove exclusions**.
 
 11. On the **Exclusion** page, verify that **C:\\DevProjects** and
     **DevBuild.exe** are displayed.
 
-12. Close the **Exclusions page** and the **Windows Security** page by clicking
+12. Close the **Exclusions page** and the **Windows Security** page by selecting
     the **X** in the right upper corner twice.
 
 
@@ -279,40 +279,40 @@ There was an exception to A. Datum's policies initiated where developers should 
 
 ### Task 1: Change setting in assigned profile
 
-1.  On **LON-CL3**, in the Azure portal, click **Intune** in the navigation
-    pane, and then on the **Microsoft Intune** blade, click **Device
+1.  On **LON-CL3**, in the Azure portal, select **Intune** in the navigation
+    pane, and then on the **Microsoft Intune** blade, select **Device
     configuration**.
 
-2.  On the **Device configuration** blade, click **Profiles**. In the details
-    pane, click **A. Datum developers - standard**.
+2.  On the **Device configuration** blade, select **Profiles**. In the details
+    pane, select **A. Datum developers - standard**.
 
-3.  On the **A. Datum developers - standard** blade, click **Properties**. On
-    the **A. Datum developers - standard** – **Properties** blade, click
+3.  On the **A. Datum developers - standard** blade, select **Properties**. On
+    the **A. Datum developers - standard** – **Properties** blade, select
     **Settings 6 configured**.
 
-4.  On the **Device restrictions** blade, click **Control Panel and Settings**.
-    Select **Not configured** next to **Privacy**. Then click **OK** twice.
+4.  On the **Device restrictions** blade, select **Control Panel and Settings**.
+    Select **Not configured** next to **Privacy**. Then select **OK** twice.
 
-5.  Back on the **A. Datum developers - standard** – **Properties** blade, click
+5.  Back on the **A. Datum developers - standard** – **Properties** blade, select
     **Save**.
 
 ### Task 2: Force synchronization of policy from Intune console
 
 1.  On **LON-CL3**, in the Azure portal, scroll left to the **Microsoft Intune**
-    blade, click **Devices** and then click **All devices**.
+    blade, select **Devices** and then select **All devices**.
 
-2.  In the details pane, click **LON-CL3**. On the **LON-CL3** blade, click
-    **Sync** and when prompted click **Yes**.  
+2.  In the details pane, select **LON-CL3**. On the **LON-CL3** blade, select
+    **Sync** and when prompted select **Yes**.  
 
     Intune will contact the device and tell it to synchronize all policies. This
     may take up to 5 minutes.
 
 ### Task 3: Verify profile change on device
 
-1.  Switch toon **LON-CL3** and on the taskbar, click **Start** and then click
+1.  Switch toon **LON-CL3** and on the taskbar, select **Start** and then select
     the **Settings** app.
 
-2.  In the **Settings** app, click **Privacy** and verify that all of the
+2.  In the **Settings** app, select **Privacy** and verify that all of the
     customization options are back.
 
 3.  Close the **Settings** app.

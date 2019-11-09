@@ -38,7 +38,7 @@ Note: For location use either your local region or United States.
 
     -  User Name: **ereeve\@yourtenant.onmicrosoft.com**
 
-4.  Click **Let me create the password.**
+4.  Select **Let me create the password.**
 
 5.  Enter **Pa55w.rd12345** the select **Create**.
 
@@ -56,54 +56,54 @@ Note: For location use either your local region or United States.
     Select **Edmund Reeve**.
 
 11. In the **Edmund Reeve - Profile** blade, in the right pane under the**Settings** 
-    section, click **Edit**, select your country/region in the **Usage location** drop-down box. 
+    section, select **Edit**, select your country/region in the **Usage location** drop-down box. 
     
     _Note: If your country/region is not listed, select **United States**.
     
 12. Select **Save**. Close the **Edmund Reeve – Profile** page.
 
-13. Close the **Users – All users** window, and then click **Licenses**.
+13. Close the **Users – All users** window, and then select **Licenses**.
 
-12. Click **All products**, and then select **Enterprise Mobility + Security
-    E5** and **Office 365 Enterprise E5**. Click **Assign**.
+12. Select **All products**, and then select **Enterprise Mobility + Security
+    E5** and **Office 365 Enterprise E5**. Select **Assign**.
 
-13. Click **Users and groups**, select **Edmund Reeve** from the list, and
-    then click **Select**.
+13. Select **Users and groups**, select **Edmund Reeve** from the list, and
+    then select **Select**.
 
-14. Click **Assign**.
+14. Select **Assign**.
 
-15. At the upper right of the page, click your account name, and then click
+15. At the upper right of the page, select your account name, and then select
     **Sign in with a different account**.
 
-17. On the **Microsoft Azure** page, click **Use another account if needed**,
+17. On the **Microsoft Azure** page, select **Use another account if needed**,
     type **ereeve\@ yourtenant.onmicrosoft.com** for the user name, type the
-    temporary password that you noted above, and then click **Sign in**.
+    temporary password that you noted above, and then select **Sign in**.
 
 18. On the **Update your password** page, in the **Current password** text box,
     type **Pa55w.rd12345**, in the **New password** and **Confirm
-    password** text boxes, type **MDA101!!**, and then click **Sign in**. If the
-    **Stay signed in** prompt appears, click **No**.
+    password** text boxes, type **MDA101!!**, and then select **Sign in**. If the
+    **Stay signed in** prompt appears, select **No**.
 
-19. Click Edmund’s user account in the upper right of the page, and then select
+19. Select Edmund’s user account in the upper right of the page, and then select
     **Sign in with a different account**
 
 23. On the **Microsoft Azure** page, use the MOD Administrator account to sign
     in.
 
-24. In the Microsoft Azure portal, click the **Azure Active Directory**
-    directory item, and then click **Groups.**
+24. In the Microsoft Azure portal, select the **Azure Active Directory**
+    directory item, and then select **Groups.**
 
-25. On the **Groups – All groups** page, click **All groups**, and then click
+25. On the **Groups – All groups** page, select **All groups**, and then select
     **New Group**.
 
 26. In the **Group** window, select **Security** for Group type, type
     **AdatumGroup1** in the **Group Name** text box, select **Assigned** for
-    **Membership type**, and then click **Members**.
+    **Membership type**, and then select **Members**.
 
-27. In the **Members** window, select **Edmund Reeve**, and then click
+27. In the **Members** window, select **Edmund Reeve**, and then select
     **Select**.
 
-28. Click **Create**. Close the **Group** page.
+28. Select **Create**. Close the **Group** page.
 
 29. Minimize the browser window on **LON-DC1**.
 
@@ -120,7 +120,7 @@ Connect-MsolService
 ```
 3.  In the **Enter Credentials** dialog box, sign in as
     **admin\@yourtenant.onmicrosoft.com** with the tenant password, and then
-    click **OK**.
+    select **OK**.
 
 4.  In the Windows PowerShell window, type the following code to create a new user, and then press
     Enter:
