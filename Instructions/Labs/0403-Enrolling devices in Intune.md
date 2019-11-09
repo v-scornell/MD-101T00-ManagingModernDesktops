@@ -6,7 +6,7 @@ In this lab, you will practice enrolling a client in Azure AD and Intune reviewi
 
 ### Scenario
 
-Joni Sherman will be testing the process of joining a device, LON-CL3, to the domain and enrolling in Intune. After IT verifies the device is not currently joined, Joni should login using her credentials. 
+Joni Sherman will be testing the process of joining a device, LON-CL4, to the domain and enrolling in Intune. After IT verifies the device is not currently joined, Joni should login using her credentials. 
 Joni should then reboot the device to verify organizational settings, such as Windows Hello, are enabled. 
 
 ### Task 1: Verify that a Windows 10 device is not enrolled in Intune or Azure AD
@@ -33,9 +33,11 @@ Joni should then reboot the device to verify organizational settings, such as Wi
 2.  Right-click **Start**, and then click **Windows PowerShell (Admin)**. When
     prompted click **Yes**.
 
-3.  In the PowerShell console, type the following and press Enter: **dsregcmd
-    /status**
+3.  In the PowerShell console, type the following and press Enter:
+```
+ dsregcmd /status
 
+```
 4.  In the output under **Device State**, verify that **AzureAdJoined : NO** is
     displayed.
 
@@ -43,37 +45,44 @@ Joni should then reboot the device to verify organizational settings, such as Wi
 
 ### Task 2: Enroll a Windows 10 device to Azure AD and Intune using Settings app
 
+_Note:  LON-CL4 must first be removed from the domain to continue this lab._ 
+
 1.  On **LON-CL4**, on the taskbar, click **Start** and then click the
     **Settings** app.
 
-2.  In the **Settings** app, click the **Accounts** tile and then click **Access
+    _Note:  This lab is practice enrolling a non-domain joined device. LON-CL4 must first be removed from the domain to continue this lab._ 
+
+2.  In the **Settings** app, click the **Accounts**.
+
+3.  Select Connected to ADATUM AD domain and select **Disconnect**, then **Yes**.  
+        
+4.  In the Disconnect from the organization dialog, select **Disconnect**. Reboot the device when prompted.
+
+5.  Sign in to LON-CL4 as **Admin**, with the password **Pa55w.rd**.
+
+6.  Select **Start** and then select the **Settings** app, then select **Access
     work or school**.
 
-3.  In the **Access work or school** section, click **+Connect**.
+7.  In the **Access work or school** section, click **+Connect**.
 
-4.  In the **Microsoft account** window, on the **Set up a work or school
-    account** page, type **JoniS\@yourtenant.onmicrosoft.com** and then click
+8.  In the **Microsoft account** window, select **Join this device to Azure Active Directory** and select Next.
+
+9.  On the **Let's get you signed in** page, type **JoniS\@yourtenant.onmicrosoft.com** and then click
     **Next**.
 
-5.  On the **Enter password** page, enter the temporary password from the
+10. On the **Enter password** page, enter the temporary password from the
     previous lab. When it requests that you update your password, enter
     **Pa55w.rd12345** in the text box and then click **Sign in**.
 
-6.  Wait a few seconds and then on the **Make sure this is your organization**
-    dialog, click **Join**.
+11. Wait a few seconds and then on the Make sure this is your organization dialog, click Join.
 
-7.  On the **You’re all set!** page, click **Done**.
+12. On the You're all set! page, click Done.
 
-8.  On the right hand side you will see under Related settings that theres a
-    highlighted text stating manage your computer with MDM or intune. Select the
-    text and repeat steps 4 through 8.
-
-9.  You will see two of the same accounts ones associated with Azure AD MDM and
-    the other is related to work or school.
-
-10. In the **Settings** app, in the **Access work or school** section, verify
+13. In the **Settings** app, in the **Access work or school** section, verify
     that the device is connected to Azure AD and then close the **Settings**
     app.
+
+
 
 ### Task 3: Verify that the Windows 10 device is enrolled in Intune and Azure AD
 
@@ -88,7 +97,7 @@ Joni should then reboot the device to verify organizational settings, such as Wi
 
 -   MS-Organization-Access
 
--   MS-Organization-P2P-Access [2018]
+-   MS-Organization-P2P-Access \[2019\]
 
     This will indicate that the device is enrolled in Azure AD and Intune.
 
@@ -111,7 +120,7 @@ Joni should then reboot the device to verify organizational settings, such as Wi
 
 -   mdmToUrl : **https://portal.manage.microsoft.com/TermsofUse.aspx**
 
--   mdmComplianceUrl : **https://portal.manage,microsoft.com/?portalAction**
+-   mdmComplianceUrl : **https://portal.manage.microsoft.com/?portalAction=Compliance**
 
     This indicates that the device is enrolled in Intune.
 
@@ -122,8 +131,7 @@ _Note: this task requires the use of your mobile phone in order to be validated 
 When you’re logged on using your Azure AD credentials you will benefit from
 Single-Sign-On (SSO) to Azure AD, Intune and Office 365.
 
-1.  On LON-CL4, right-click **Start**, click **Shutdown or sign out** and then
-    click **Sign out**.
+1.  On **LON-CL4**, sign out of LON-CL4.
 
 2.  Click **other user**, and in the **Email address** field type
     **JoniS\@yourtenant.onmicrosoft.com**. In the password, type the password
@@ -134,22 +142,26 @@ Single-Sign-On (SSO) to Azure AD, Intune and Office 365.
 4.  On the **Your organization requires Windows Hello** screen, click **Set up
     PIN**.
 
-5.  On the **Help us protect your account** screen, click **Set it up now**.
+5.  On the More information required, select **Next**.
 
-6.  On the **verify your identity** screen, click the **Pick a verification
-    method** drop-down arrow and select **Text message**. In the **Select your
+6.  On the **Help us protect your account** screen, click **Set it up now**.
+
+7.  On the **Additional security verification** screen, under **How should we contact you?**
+    verify that Authentication phone is selected in the drop-down field. In the **Select your
     country or region** box, select your country and in the **Phone Number**
-    field, type your phone number.
-
-7.  Then click **Next**.
+    field, type your phone number. Then click **Next**.
 
 8.  Wait for a text message to arrive on your phone, type the 6-digit security
     code in the **Enter Your security code** field and click **Next**.
 
-9.  In the **Set up a PIN** dialog box, type **132435** in the **New PIN** and
+9.  When the verification is successful, select **Done**.
+
+10.  In the **Set up a PIN** dialog box, type **112233** in the **New PIN** and
     **Confirm PIN field** and click **OK**.
 
-10. On the **All set!** screen, click **OK**.
+11. On the **All set!** screen, click **OK**.
+
+_Note: Continue to Task 5._
 
 ### Task 4B: Logon to a Windows 10 Device using Azure AD user (no phone verification)
 
@@ -177,21 +189,29 @@ Single-Sign-On (SSO) to Azure AD, Intune and Office 365.
 
 ### Task 5: Verifying device enrollment in the Intune console
 
-1.  Switch to **LON-CL3**, on **LON-CL3**, in the Azure portal, click **Intune**
-    in the navigation pane and then click **Devices**.
+1.  Switch to **LON-CL3**. In the Azure portal, type **Intune** in the search resources
+    text box and press **Enter**. In the navigation pane, select **Devices**.
 
-2.  On the **Devices** blade under Intune enrolled devices, verify that 2 is
+2.  On the **Devices** blade under Intune enrolled devices, verify that 1 is
     displayed next to **Windows**. If no devices are listed refresh the webpage
     and repeat steps 1 and 2.
 
-3.  On the **Devices** blade, click **All devices** and verify that **LON-CL4**
+3.  On the **Devices** blade, click **All devices** and verify that **Marketing-###**
     is listed.
 
+    _Note: LON-CL4 is not shown because the device was renamed in the Provisioning
+    Package exercise earlier in the course._
+
 4.  On the **Devices** blade, click **Azure AD devices** and verify that
-    **LON-CL4** is displayed in the details pane. Note that the **MDM** column
+    **Markeing-###** and the device from the Autpilot lab.  Note that the **MDM** column
     displays **Microsoft Intune**.  
-    Note: This view lists devices that are joined to Azure AD. Remember that you
+    
+    _Note: This view lists devices that are joined to Azure AD. Remember that you
     configured integration between Azure AD and Intune, and because of that, any
-    device that is joined to Azure AD is automatically enrolled to Intune.
+    device that is joined to Azure AD is automatically enrolled to Intune. Any devices
+    joined prior to setting up enrollment are only joined to Azure AD, but not enrolled
+    in Intune._
+
+5.  Close all Windows.
 
 **END OF LAB**

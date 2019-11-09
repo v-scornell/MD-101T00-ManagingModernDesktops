@@ -10,7 +10,7 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
 
 #### Task 1: Verifying licenses and creating a sync account
 
-1.  On **LON-CL1**, sign in as **Adatum\\Administrator**, and then open the
+1.  On **LON-DC1**, sign in as **Adatum\\Administrator**, and then open the
     Microsoft Edge browser.
 
 2.  In the **Microsoft Edge** window, go to **https://portal.azure.com**. If
@@ -20,52 +20,42 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
 3.  On the **Microsoft Azure** page, click **Azure Active Directory** in the
     left navigation pane. This will open the adatum Azure Active Directory page.
 
-4.  In the middle navigation pane, click **Licenses**, and then click **All
-    products**.
-
-5.  Ensure that you see licenses for **Enterprise Mobility + Security E5, Office
-    365 Enterprise E5 and Windows 10 Enterprise E3**. This confirms that your
-    tenant has all necessary licenses for Microsoft 365 deployment.
-
 6.  On the Azure portal, click **Users** in the middle pane, click **All
     users**, and then click **New user**.
 
-7.  In the **User** dialog box, enter the following:
+7.  In the **New User** dialog box, select **Create user** and enter the following:
 
-    1.  Name: **Sync User**
+    -  User Name: **sync\@yourtenant.onmicrosoft.com**
 
-    2.  User Name: **sync\@yourtenant.onmicrosoft.com**
+    -  Name: **Sync User**
 
-    3.  Click **Directory role**, select **Global administrator**, and then
-        click **OK**.
+8. Under Groups and roles, on the **Roles** row, select **User**. 
+    Select **Global administrator**, and then select **Select**.
 
 8.  Click **Show Password**, note and write down the value for **Password**, and
     then click **Create**.
 
 9.  At the upper right of the page, click your account name, and then click
-    **Sign out**.
-
-10. Close the Microsoft Edge browser, reopen it, and then browse to
-    **https://portal.azure.com**.
+    **Sign in with a different account**.
 
 11. On the **Microsoft Azure** page, click **Use another account** if needed,
-    type **sync\@ yourtenant.onmicrosoft.com** for the user name, type the
+    type **sync\@yourtenant.onmicrosoft.com** for the user name, type the
     temporary password that you noted above, and then click **Sign in**.
 
 12. On the **Update your password** page, in the **Current password** text box,
     type the temporary password, in the **New password** and **Confirm
-    password** text boxes, type *MDA101!!* and then click **Sign in**.
+    password** text boxes, type **Pa55w.rd12345** and then click **Sign in**.
 
 13. If the **Welcome to Microsoft** Azure window appears, click **Maybe later**.
     Click your **Sync user** account in the upper right of the page, and then
-    select **Sign out**. Leave browser window open.
+    select **Sign in with a different account**. Leave browser window open.
 
 #### Task 2: Configuring directory synchronization with Azure AD Connect
 
 1.  On **LON-SVR1**, if necessary, sign in as **Adatum\\Administrator**, with
     the password **Pa55w.rd**. If the **Network** pane appears, click **Yes**.
 
-2.  Open Internet Explorer, and then go to
+2.  Open **Internet Explorer**, and then go to
     **http://www.microsoft.com/en-us/download/details.aspx?id=47594**.
 
 3.  On the **Microsoft Azure Active Directory Connect** page, click
@@ -86,11 +76,11 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
 
 8.  On the **Connect to Azure AD** page, in the **USERNAME** and **PASSWORD**
     boxes, enter the SYNC account user name (it will be in the following format:
-    sync\@ **yourtenant.onmicrosoft.com**) and **MDA101!!** for a password, and
+    **sync\@yourtenant.onmicrosoft.com**) and **Pa55w.rd12345** for a password, and
     then click **Next**.
 
-9.  On the **Connect your directories** page, ensure that Adatum.com is listed
-    under **FOREST**, and then click **Add Directory**.
+9.  On the **Connect your directories** page, ensure that **Adatum.com** is listed
+    under FOREST, and then click **Add Directory**.
 
 10. In the **AD forest account** window, select the **Use Existing Account**
     option, and in the **ENTERPRISE ADMIN USERNAME** field, type
@@ -132,15 +122,20 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
 
 20. On the **Microsoft Online Services Sign-In Assistant for IT Professionals
     RTW** page, click **Download**. On the Choose the download you want page,
-    select **en\\msoidcli_64.msi** and click **Next**. Click **Run**. Disable
-    pop-up blocker if needed.
+    select **en\\msoidcli_64.msi** and click **Next**. Click **Run**. Allow pop-ups
+    or Disable pop-up blocker if needed.
 
 21. Click **I accept the terms in the License Agreement** and click **Install**.
     When installation is done click **Finish**.
 
 22. On LON-SVR1, run Windows PowerShell as Administrator. In the Windows
-    PowerShell window, type: **Install-Module MSOnline** and press Enter. If
-    prompted for NuGet provider, click **Y** and press Enter. Also accept
+    PowerShell window, type the following and press **Enter**: 
+    
+```
+    Install-Module MSOnline
+
+```    
+    If prompted for NuGet provider, click **Y** and press Enter. Also accept
     installation from untrusted repository, if needed. Wait until Windows
     PowerShell Module for Azure AD is installed.
 
@@ -148,9 +143,9 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
 
 #### Task 3: Verify synchronization in Azure AD
 
-1.  In the Azure portal on LON-CL1, click **Azure Active Directory**.
+1.  Switch to **LON-DC1**. Sign back in to the Azure portal as **admin\@yourtenant.onmicrosoft.com**.
 
-2.  Click **Users,** and then click **All Users**. Click **Refresh**.
+2.  Select  **Azure Active Directory**, then select **Users,** and then click **All Users**. Click **Refresh**.
 
 3.  Verify that you see users from your local AD DS. Ensure that these users
     have the value **Windows Server AD** in the **SOURCE** column. Close Users
@@ -165,6 +160,6 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
     it is sourced from the local Active Directory. Close the Managers window and
     close the Groups window.
 
-7.  Leave the Azure portal open on LON-CL1 for the next task.
+7.  Leave the Azure portal open on LON-DC1 for the next lab.
 
 **END OF LAB**

@@ -16,9 +16,11 @@ Your organization is planning a Microsoft Intune implimentation. You have been a
 2.  Right-click the **Start** button and select **Windows PowerShell (Admin)**.
 
 3.  In the PowerShell console, type the following and then press Enter:
-    **Get-WindowsCapability -Name RSAT\* -Online \| Add-WindowsCapability
-    -Online**
+```
+    Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability
+    -Online
 
+```
 4.  This will install Remote Server Administration Tools (RSAT). Wait for the
     command to complete. It may take up to 5 minutes. **Note**: RSAT is required
     for MMAT to function.
@@ -58,18 +60,28 @@ directly to Intune.
 1.  Right-click the **Start** button and select **Windows PowerShell (Admin)**.
 
 2.  In the PowerShell console, type the following and then press Enter:
-    **set-location -path c:\\mmat-master**
+```
+    set-location -path c:\mmat-master
 
+```
 3.  In the PowerShell console, type the following and then press Enter:
-    **Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process**. When
-    prompted type **Y** and press Enter.
+    When prompted type **Y** and press Enter.
+```
+    Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
 
+```
 4.  In the PowerShell console, type the following and then press Enter:
-    **\$VerbosePreference="Continue"**
+```
+    $VerbosePreference="Continue"
 
+```
 5.  In the PowerShell console, type the following and then press Enter:
-    **.\\Invoke-MdmMigrationAnalysisTool.ps1 -collectGPOReports
-    -runAnalysisTool**. When prompted, type **R** and press Enter.  
+```
+    .\Invoke-MdmMigrationAnalysisTool.ps1 -collectGPOReports
+    -runAnalysisTool
+
+```    
+    When prompted, type **R** and press Enter.  
     When **Invoke-MdmMigrationAnalysisTool.ps1** is completed, it will generate
     the following files in the **MMAT-master** folder:
 
@@ -103,5 +115,7 @@ directly to Intune.
 
 4.  Finally notice the settings displayed under **NOT SUPPORTED: Security
     Account Policies**. For now, they cannot be migrated to Intune.
+
+5.  Close all Windows.
 
 **END OF LAB**

@@ -27,15 +27,12 @@ deferred 45 days after release. You would like to test the settings first using 
 7.  On the **Delivery Optimization** page, verify that the **Allow downloads
     from other PCs** option is enabled.
 
-8.  Select **PCs on my local network, and PCs on the Internet**, and then click
-    **Back**.
+8.  Select **PCs on my local network, and PCs on the Internet**.
 
-9.  Click **Back**.
-
-10. In the navigation pane, select **Windows Insider Program**. Notice that the
+9. In the navigation pane, select **Windows Insider Program**. Notice that the
     **Get Started** option is available.
 
-11. In the navigation pane, select **Windows Update**.
+10. In the navigation pane, select **Windows Update**.
 
 ### Task 2: Review applied settings
 
@@ -50,9 +47,7 @@ deferred 45 days after release. You would like to test the settings first using 
 
 ### Task 3: Configure update settings by using GPOs
 
-1.  Right-click **Start** and then click **Run**.
-
-2.  In Run, type **gpedit.msc**, and then press Enter.
+1.  Right-click **Start** and type **gpedit**, and then select **Edit group policy**.
 
 3.  In **Local Group Policy Editor**, navigate to **Computer
     Configuration/Administrative Templates/Windows Components/Data Collection
@@ -94,7 +89,7 @@ deferred 45 days after release. You would like to test the settings first using 
 
 1.  Right-click **Start**, and then click **Windows PowerShell (Admin)**.
 
-2.  In the command prompt, type **gpupdate /force**, and then press Enter.
+2.  In the command prompt, type **gpupdate /force**, and then press Enter.  Wait for the update to complete.
 
 3.  Switch to **Windows Settings**.
 

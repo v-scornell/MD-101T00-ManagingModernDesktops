@@ -15,14 +15,14 @@ All the developers at A. Datum require Microsoft Office 365 ProPlus.  You've bee
     **Settings** app.
 
 2.  In the **Settings** app, click the **Apps** tile and on the **Apps &
-    features** page, scroll down and click **Programs and Features**.
+    features** page, select **Programs and Features** under Related Settings.
 
 3.  In the **Program and Features** window, verify that **Microsoft Office 365
     ProPlus - en-us** is not listed.
 
 #### Task 2: Create a LOB app type based on the scenario
 
-1.  Switch to **LON-CL3**, and in the Azure portal, click **Intune** in the
+1.  Switch to **LON-DC1**, and in the Azure portal, click **Intune** in the
     navigation pane, and then on the **Microsoft Intune** blade, click **Client
     apps**.
 
@@ -86,11 +86,11 @@ All the developers at A. Datum require Microsoft Office 365 ProPlus.  You've bee
 
 #### Task 3: Force synchronization of policy from Intune console
 
-1.  On **LON-CL3**, in the Azure portal, click **Intune** in the navigation
+1.  On **LON-DC1**, in the Azure portal, click **Intune** in the navigation
     pane, and then on the **Microsoft Intune** blade, click **Devices** and then
     click **All devices**.
 
-2.  In the details pane, click **LON-CL4**. On the **LON-CL4** blade, click
+2.  In the details pane, click **LON-CL3**. On the **LON-CL3** blade, click
     **Sync** and when prompted click **Yes**. Intune will contact the device and
     tell it to synchronize all policies. This may take up to 5 minutes.
 

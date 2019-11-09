@@ -25,7 +25,7 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 
 3.  In the **Settings** app, verify that you can see the **Gaming** tile.
 
-4.  Click **Privacy** and verify that you can see a lot of customization
+4.  Click **Privacy** and verify that you can see several customization
     options.
 
 5.  Click the left arrow in the upper left corner.
@@ -54,13 +54,9 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 
 ### Task 2: Enroll Windows 10 device to Azure AD and Intune using the Settings app
 
-1.  On **LON-CL3**, on the taskbar, click **Start** and then click the
-    **Settings** app.
+1.  On **LON-CL3**, with the Settings app still open, navigate to the **Accounts** page. 
 
-2.  In the **Settings** app, click the **Accounts** tile and then click **Access
-    work or school**.
-
-3.  In the **Access work or school** section, click **+Connect**.
+2.  Select **Access work or school**. In the **Access work or school** section, click **+Connect**.
 
 4.  In the **Microsoft account** window, on the **Set up a work or school
     account** page, click **Join this device to Azure Active Directory**.
@@ -68,7 +64,7 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 5.  On the **Let’s get you signed in** page, in the **Work or school account**
     text box, type **DiegoS\@yourtenant.onmicrosoft.com**
 
-6.  On Enter password page, type **Pa55w.rd** in the text box and then click
+6.  On Enter password page, enter the default tenant password in the text box and then click
     **Sign in**.
 
 7.  Wait a few seconds and then on the **Make sure this is your organization**
@@ -83,19 +79,22 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 10. Right-click the **Start** button and select **Windows PowerShell (Admin)**,
     when prompted click **Yes.**
 
-11. In the PowerShell console, type the following and then press Enter: **REG
-    ADD HKLM\\SOFTWARE\\Policies\\Microsoft\\PassportForWork /v Enabled /t
-    REG_DWORD /d 0 /f**  
-    This will disable Windows Hello on the device and will disable the forced
+11. In the PowerShell console, type the following and then press Enter:
+```
+    REG ADD HKLM\SOFTWARE\Policies\Microsoft\PassportForWork /v Enabled /t
+    REG_DWORD /d 0 /f 
+
+``` 
+    
+_Note: This will disable Windows Hello on the device and will disable the forced
     creation of a PIN when logging on to the device the first time using an
     Azure AD account. This will also disable the need for access to a mobile
     phone as this requires validation of the Azure AD account being used. You
-    can also disable the use of Windows Hallo by creating a policy in Intune.
+    can also disable the use of Windows Hello by creating a policy in Intune._
 
 ### Task 3: Logon to a different Windows 10 device using Azure AD user
 
-1.  On **LON-CL4**, right-click Start, click **Shutdown or sign out** and then
-    click **Sign out**.
+1.  Sign out of **LON-CL3**. 
 
 2.  Click **other user**, and in the **Email address** field type
     DiegoS**\@yourtenant.onmicrosoft.com**, and then click **Next**. In the
@@ -116,8 +115,8 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 3.  Sign in as user **Admin\@yourtenant.onmicrosoft.com**, and use the tenant
     Admin password.
 
-4.  In the Azure portal, click **Intune** in the navigation pane, and then on
-    the **Microsoft Intune** blade, click **Device configuration**.
+4.  In the Azure portal, select **Intune** under Azure Services. 
+    On the **Microsoft Intune** overview page, select **Device configuration**.
 
 5.  On the **Device configuration** blade, click **Profiles**. In the details
     pane, click **+ Create profile**.
@@ -151,12 +150,12 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 5.  In the **Processes** box, type the following and then click **Add**:
     **DevBuild.exe**. Then click **OK** twice.
 
-6.  Back on the **Device restrictions** blade, click **OK** and then click
+6.  Back on the **Device restrictions** blade, click **OK** twice and then click
     **Create**.
 
 ### Task 5: Create the Adatum developer device group
 
-1.  In the Azure portal, click **Azure Active Directory** in the navigation
+1.  In the Azure portal, select the ellipsis in the top left and select **Azure Active Directory**.  In the navigation
     pane, and then **Groups**.
 
 2.  On the **Groups** blade, click **+ New group**.
@@ -184,7 +183,7 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 
 ### Task 6: Create a dynamic Azure AD device group
 
-1.  In **LON-CL1**, in the Azure portal, scroll the page to the left and then in
+1.  In **LON-CL3**, in the Azure portal, scroll the page to the left and then in
     the **Azure Active Directory** blade click **Groups**.
 
 2.  On the **Group** blade, on the details pane, click **+New group**.
@@ -193,26 +192,27 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 
     1.  Group type: **Security**
 
-    2.  Group name: **Enrolled Devices**
+    2.  Group name: **Windows Devices**
 
     3.  Membership type: **Dynamic Device**
 
 4.  On the **Group** blade, click **Dynamic device members**.
 
-5.  Click **Add dynamic query**. On the **Dynamic membership rules** blade
-    provide the following Simple membership rule to add devices where:
+5.  Click **Add dynamic query**. On the **Dynamic membership rules** blade,
+    select **Edit**. 
+    
+6.  In the Rule syntax text box, add the following Simple membership rule and select **Ok**.
 
 ```
-    deviceOSType Contains Windows
+    device.deviceOSType -contains "Windows"
 
 ```
-6.  On the **Dynamic membership rules** blade, click **Add query** and then
-    click **Create**.
+6.  On the **Dynamic membership rules** blade, select **Save** and then **Create**.
 
 ### Task 7: Deploy device profile to Windows 10 device
 
-1.  In the Azure portal, click **Intune** in the navigation pane, and then on
-    the **Microsoft Intune** blade, click **Device configuration**.
+1.  In the Azure portal, select **Home** in the breadcrumb navigation menu and then select
+    **Intune**. On the **Microsoft Intune - Overview** blade, click **Device configuration**.
 
 2.  On the **Device configuration** blade, click **Profiles**. In the details
     pane, click the **A. Datum developers – standard** profile.
@@ -237,17 +237,19 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 3.  In the **Access work or school** section, click the **Connected to Contoso’s
     Azure AD** link and then click **Info**.
 
-4.  In the **Managed by Contoso** dialog box, click **Sync**. Wait for the
-    synchronization to complete.  
-    It may take up to 15 minutes before the profile is applied to Windows 10
-    device.
+4.  In the **Managed by Contoso** dialog box, select **Info**.  On the Managed by Azure
+    AD page, select **Sync**. Wait for the synchronization to complete.  
+    
+    _Note: The sync progress should only take a few seconds, however it may take up
+    to 15 minutes before the profile is applied to Windows 10 device. Signing out or
+    rebooting can accelerate this process._
 
 5.  Close the **Settings** app, and open it again. Verify that the **Gaming**
     and **Privacy** tile has been removed.
 
 6.  Click the **Personalization** tile and then click **Start**. Verify that
     **Show recently used apps** and **Show most used apps** are set to **Off**.
-    Click the left arrow in the upper left corner.
+    Select the **left arrow **in the upper left corner.
 
 7.  In the **Settings** app, click **Update and Security**.
 
@@ -296,18 +298,18 @@ There was an exception to A. Datum's policies initiated where developers should 
 
 ### Task 2: Force synchronization of policy from Intune console
 
-1.  On **LON-CL3**, in the Azure portal, click **Intune** in the navigation
-    pane, and then on the **Microsoft Intune** blade, click **Devices** and then
-    click **All devices**.
+1.  On **LON-CL3**, in the Azure portal, scroll left to the **Microsoft Intune**
+    blade, click **Devices** and then click **All devices**.
 
 2.  In the details pane, click **LON-CL3**. On the **LON-CL3** blade, click
     **Sync** and when prompted click **Yes**.  
+
     Intune will contact the device and tell it to synchronize all policies. This
     may take up to 5 minutes.
 
 ### Task 3: Verify profile change on device
 
-1.  Switch toon **LON-CL34** and on the taskbar, click **Start** and then click
+1.  Switch toon **LON-CL3** and on the taskbar, click **Start** and then click
     the **Settings** app.
 
 2.  In the **Settings** app, click **Privacy** and verify that all of the

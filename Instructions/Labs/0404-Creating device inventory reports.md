@@ -12,28 +12,40 @@ You've been asked to review the inventory for LON-CL4.  Use Intune to review the
 
 ### Task 1: Examining device inventory
 
-1.  On **LON-CL3**, click **All devices** and in the details pane, click the
-    **LON-CL4** entry. On the **Overview** blade, examine the various
+1.  Switch to **LON-CL3** and sign in as **Admin** with the password **Pa55w.rd**.
+
+2.  In Microsoft Edge, type **https://portal.azure.com** in the address bar, and
+    then press **Enter**.
+
+3.  Sign in as user **Admin\@yourtenant.onmicrosoft.com**, and use the tenant
+    Admin password. Under Azure Services, select **Intune**. 
+
+4.  Select **Devices**, then select **All devices** and in the details pane, select the
+    **MARKETING-###** entry. On the **Overview** blade, examine the various
     information displayed about the device.
 
-2.  Click **Properties** and note that you can change the **Management name**,
+    _Note: This device is the LON-CL4 VM._
+
+5.  Click **Properties** and note that you can change the **Management name**,
     **Device category** and **Device ownership**.
 
-3.  Under **Monitor**, click **Hardware** and examine the hardware from
-    **LON-CL4**. You need to scroll down to see it all.
+6.  In the Management name field, replace the existing text with **LON-CL4** and select **Save**.
 
-4.  Under **Monitor**, click **Discovered apps** and examine the app inventory
-    from LON-CL4. You need scroll down to see it all.
+7.  Under **Monitor**, click **Hardware** and examine the hardware from
+    **MARKETING-###**. You need to scroll down to see it all.
+
+8.  Under **Monitor**, click **Discovered apps** and examine the app inventory
+    from MARKETING-###. You need scroll down to see it all.
 
 
 ### Exercise 2 Scenario
 
-Management is requesting a report of all device. They do not have access to the Intune dashboards, and have requested the information be sent in an Excel file.
+Management is requesting a report of all devices. They do not have access to the Intune dashboards, and have requested the information be sent in an Excel file.
 
 ### Task 1: Export Intune Data
 
-1.  On **LON-CL3**, in the Azure portal, in the navigation pane, click
-    **Intune**.
+1.  On **LON-CL3**, in the Azure portal, in the navigation pane, select **Home** in the
+    breadcrumb navigation, then select **Intune**.
 
 2.  On the **Intune** blade, click **Devices** and then click **All devices**.
 
@@ -51,7 +63,7 @@ Management is requesting a report of all device. They do not have access to the 
 
 ### Task 2: Import Intune data into Microsoft Excel
 
-1.  On **LON-CL3**, click **Start** and then click **Excel 2019**.
+1.  On **LON-CL3**, click **Start** and then click **Excel**.
 
 2.  In Excel, click **Browse**. Click the **Downloads** folder and in the **All
     Excel Files** drop-down box, select **All Files**.
@@ -68,7 +80,7 @@ Management is requesting a report of all device. They do not have access to the 
 
 6.  In the **Text Import Wizard – Step 3 of 3** dialog box, click **Finish**.
 
-7.  Close Excel and click **No** when asked about saving the report.
+7.  Review the report content. When finished, close Excel and select **No** when asked about saving the report.
 
 
 ### Exercise 3 Scenario
@@ -98,8 +110,8 @@ Your organization uses Power BI for reporting.  You've been asked to setup Power
     click **Launch Microsoft Power BI Desktop** to remove the check mark. Then
     click **Finish**.
 
-8.  On **LON-CL3**, in the Azure portal, in the navigation pane, click
-    **Intune**.
+8.  On **LON-CL3**, in the Azure portal, in the navigation pane, select
+    **Microsoft Intune** in the breadcrumb navigation.
 
 9.  Scroll to the right and under **Other tasks**, click the **Set up Intune
     Data Warehouse** link. Leave this page open.

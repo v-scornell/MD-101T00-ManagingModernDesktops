@@ -92,7 +92,7 @@ Task 1: Customize Azure AD company branding
     text and then click **OK**.
 
 ```
-    (device.devicePhysicalIDs -any \_ -contains "[ZTDId]")
+    (device.devicePhysicalIDs -any _ -contains "[ZTDId]")
 ```
 1.  Click **Save** to close Dynamic membership rules.
 
@@ -102,7 +102,7 @@ Task 1: Customize Azure AD company branding
 
 ### Task 3: Generate a device-specific comma-separated value (CSV) file
 
-1.  Switch to **LON-HOST1** and sign in as **Admin** with the password of
+1.  Switch to **LON-HOST1** and sign in as **Adatum]Administrator** with the password of
     **Pa55w.rd**.
 
 2.  Select **Hyper-V Manager** in the task bar to launch.
@@ -153,8 +153,8 @@ type C:\Computer.csv
     **Show all**, click **All admin centers**, and then click the **Device
     Management** tile. A new tab opens.
 
-3.  In the **Microsoft 365 Device Management** console, in the navigation pane,
-    click **Device enrollment**.
+3.  In the **Microsoft 365 Device Management** console, in the details pane,
+    click **Device enrollment** on the right.
 
 4.  On the **Choose MDM Authority** blade which appears on the right, select
     **Intune MDM Authority** and click **Choose**.  
@@ -220,10 +220,6 @@ type C:\Computer.csv
 
 ### Task 5: Reset the PC
 
-*Note: Normally this step is not required for physical devices, the device’s
-autopilot info is either provided by the manufacturer or can be obtained from
-the device prior to the OOBE. For the purposes of this lab, we must initiate a
-reset to simulate a new device OOBE.*
 
 1.  On LON-CL5, select **Start** and type **reset** and select **Reset this
     PC**.
@@ -233,6 +229,11 @@ reset to simulate a new device OOBE.*
 3.  Select **Remove everything**, then **Just remove my** files.
 
 4.  Click **Reset**.
+
+_Note: Normally this step is not required for physical devices, the device’s
+autopilot info is either provided by the manufacturer or can be obtained from
+the device prior to the OOBE. For the purposes of this lab, we must initiate a
+reset to simulate a new device OOBE._
 
 _Note: This process can take 30-45 minutes and will reboot several times during
 the process. When LON-CL5 reboots, do not press a key to boot from media, allow

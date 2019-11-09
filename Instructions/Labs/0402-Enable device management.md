@@ -2,7 +2,7 @@
 
 ## Summary
 
-In this lab, you will configure Intune to allow users to enroll thier devices in Intune and join Azure AD.
+In this lab, you will configure Intune to allow users to enroll their devices in Intune and join Azure AD.
 
 ### Scenario
 
@@ -24,22 +24,18 @@ MFA is not required and the maximum number of devices per user is 50.
 
 5.  If prompted by the **Stay Signed in?** windows, click **No**.
 
-6.  If prompted by the **Welcome to Microsoft Azure** message, click **Maybe
-    later**.
+6.  Close any welcome dialogs.
 
 7.  In the Edge browser, in the Azure portal, and in the navigation pane, click
     **Azure Active Directory**.
 
-8.  In the Edge browser, in the Azure portal, and in the navigation pane, click
-    **Azure Active Directory**.
-
-9.  On the **Azure Active Directory** blade, click **Users**, click **Joni
+8.  On the **Azure Active Directory** blade, click **Users**, click **Joni
     Sherman**.
 
-10. Under Settings, in the **Usage location** field, verify that **United
+9. Under Settings, in the **Usage location** field, verify that **United
     States** is selected.
 
-11. Click the **Users-All users** in the navigation breadcrumb at the top.
+10. Click the **Users-All users** in the navigation breadcrumb at the top.
     Scroll the page to the left, on the page, click **Megan Bowen**. Under
     Settings, in the **Usage location** field, verify that **United States** is
     selected.
@@ -52,7 +48,7 @@ MFA is not required and the maximum number of devices per user is 50.
 location set.
 
 1.  Scroll the page to the left, on the **Azure Active Directory** blade click
-    **Licenses** and then in the details pane click **4 products**.
+    **Licenses** and then in the details pane click **All products**.
 
 2.  On the **Products** blade, select **Enterprise Mobility + Security E5** and
     then in details pane click **+ Assign**.
@@ -61,17 +57,16 @@ location set.
     **Users** pane click **Joni Sherman**, **Megan Bowen**, and **MOD
     administrator.** Click **Select**, and then click **Assign**.
 
-    _**Note:** The license assignment for the three users will fail, because the
-    users already have a license assigned due to nature of the lab setup. But it
-    is important to know how to assign licenses to users and therefore has been
-    included in the lab._
+    _**Note:** Note the dialog that indicate the 3 licenses have been assigned._
 
 ### Task 2: Integrate Azure AD with Intune
 
 1.  In **LON-CL3**, in the Azure portal, in the navigation pane, click **Azure
     Active Directory**.
 
-2.  On the **Configure** blade, in the **MDM user scope** row, click **All** and
+2.  On the **Azure AD** blade, select Mobility (MDM and MAM). In the details pane, select Microsoft Intune.
+
+3.  In the **MDM user scope** row, click **All** and
     then click **Save**.
 
     _**Note**: By performing this step, you allowed all users who join their device to Azure AD to automatically enroll it to Intune as well._
@@ -81,7 +76,7 @@ location set.
 1.  In **LON-CL3**, in the Azure portal, scroll the page to the left on the page
     and then in the **Azure Active Directory** blade click **Devices**.
 
-2.  In the details pane, verify that only one device is listed.
+2.  In the details pane, verify that only one device is listed (the desktop you provisioned in the previous Autopilot lab)
 
 3.  On the **Devices** pane, click **Device settings**.
 
@@ -101,9 +96,9 @@ location set.
 7.  Return to the **Azure Active Directory** blade, select **Users** then select
     **Joni Sherman**.
 
-8.  Select **Reset password**.
+8.  Select **Reset password**, then in the dialog, select the **Reset password** button. 
 
-9.  Take note of the temporary password, which will be needed for the next exercise.
+9.  Take note of the temporary password, which will be needed for the next lab.
 
 
 

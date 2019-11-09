@@ -129,8 +129,7 @@ Ada Russel frequently uses both LON-CL1 and LON-CL2 and is struggling with acces
     there is an **Offline Files** tab in the **File Properties** dialog box, and
     then click **OK**.
 
-10. On the taskbar, right-click **Start**, select **Shut down or sign out**, and
-    then click **Sign out**.
+10. **Sign out** of LON-CL1.
 
 11. On **LON-DC1**, in **File Explorer**, verify that the **E:\\Profiles** and
     **E:\\Redirected** folders are no longer empty. The **Profiles** folder
@@ -149,8 +148,7 @@ Ada Russel frequently uses both LON-CL1 and LON-CL2 and is struggling with acces
     points to the network, to **\\\\LON-DC1\\Redirected\\Ada\\Documents**, and
     that it’s not stored inside Ada Russell’s local profile.
 
-15. On the taskbar, right-click **Start**, select **Shut down or sign out**, and
-    then click **Sign out**.
+15. **Sign out** on LON-CL2.
 
 ## Exercise 2: Configuring Enterprise State Roaming
 
@@ -158,45 +156,14 @@ Ada Russel frequently uses both LON-CL1 and LON-CL2 and is struggling with acces
 
 Users are requesting that their Windows settings and application data be the same when using different computers. You have decided to implement Enterprise State Roaming. You will need to enable ESR, and verify that it is working.  Diego Siciliani has offered to test, as he frequently switches between LON-CL3 and LON-CL4.
 
-On **LON-CL3**, on the taskbar,
 
-1.  Right-click the **Start** button and select **Windows PowerShell (Admin)**, when
-prompted click **Yes.**
+### Task 1: Logon to second Windows 10 device using Azure AD user
 
-2.  In the PowerShell console, type the following and then press Enter: 
-    
-   ` REG ADD HKLM\\SOFTWARE\\Policies\\Microsoft\\PassportForWork /v Enabled /t
-    REG_DWORD /d 0 /f `  
+1.  Switch to **LON-CL3** and sign in as **DiegoS\@yourtenant.onmicrosoft.com**
+    if you are not already signed in. 
 
-This will disable Windows Hello on the device and will disable the forced creation of a PIN when logging on to the device the first time using an Azure AD account. This will also disable the need for access to a mobile phone as this requires validation of the Azure AD account being used. You can also disable the use of Windows Hallo by creating a policy in Intune.
-
-### Task 2: Logon to second Windows 10 device using Azure AD user
-
-1.  On **LON-CL3**, right-click **Start**, click **Shutdown or sign out** and
-    then click **Sign out**.
-
-2.  Click **other user**, and in the **Email address** field type
-    DiegoS**\@yourtenant.onmicrosoft.com**, and then click **Next**. In the
-    **Password** field, type **Pa55w.rd** and then press Enter.
-
-    Wait for the profile to be created. It will take around 15 seconds.
-
-3.  On **LON-CL3**, on the taskbar, click **Start** and then click the
-    **Settings** app.
-
-4.  In the **Settings** app, click the **Accounts** tile and then click **Access
-    work or school**.
-
-5.  In the **Access work or school** section, click the **Connected to Contoso’s
-    Azure AD** link and then click **Info**.
-
-6.  In the **Managed by Contoso** dialog box, click **Sync**. Wait for the
-    synchronization to complete.  
-    It may take up to 15 minutes before the profile is applied to Windows 10
-    device.
-
-7.  Click the left arrow in the upper left corner and In the **Settings** app,
-    and then click **Sync your settings**.
+2.  On the taskbar, click **Start** and then click the **Settings** app,
+    then select **Sync your settings**.
 
 8.  On the **Sync your settings** page, verify that **Sync settings** is set to
     **On**. You can control the individual sync settings by toggling them either
@@ -236,19 +203,78 @@ This will disable Windows Hello on the device and will disable the forced creati
     Siciliani**.
 
 
+### Task 2: Logon to second Windows 10 device using Azure AD user
+
+1.  Switch to **LON-CL3** and sign in as **DiegoS\@yourtenant.onmicrosoft.com**
+    if you are not already signed in. 
+
+2.  On the taskbar, click **Start** and then click the **Settings** app,
+    then select **Sync your settings**.
+
+3.  On the **Sync your settings** page, verify that **Sync settings** is set to
+    **On**. 
+
+_**Important**: If Sync settings is set to off and it is greyed out, the device must be
+rejoined.  This is due to an issue with ESR being enabled after devices have been enrolled.
+If this occurs, continue with task 3, otherwise continue with Task 4._
+
+### Task 3: Re-enroll Devices (if needed)
+
+1.  In Accounts, select the **Access work or school**.  Select the Azure AD connection and
+    select **Disconnect**. Select **Yes** to confirm.
+
+2.  Restart the VM and sign in as **Admin**, with the password **Pa55w.rd**.  
+
+3.  Select **Start**, then **Settings**, then **Accounts**.  Select **Access work or school** and select **+Connect**.
+
+4.  In the **Microsoft account** window, select **Join this device to Azure Active Directory** and select **Next**.
+
+5.  On the **Let's get you signed in** page, type **diegos\@yourtenant.onmicrosoft.com** and then click
+    **Next**.
+
+6. On the **Enter password** page, enter the tenant password and select **Sign in**.
+
+7. Wait a few seconds and then on the **Make sure this is your organization **dialog, click **Join**.
+
+8. On the **You're all set!** page, click **Done**.
+
+9. **Sign out** of LON-CL3.
+
+10. Switch to **LON-DC1**.
+
+11. In the Azure Portal, in the navigation pane, select **Azure Active
+    Directory**.
+
+12.  On the **Azure Active Directory** blade, in the navigation pane, select
+    **Groups**.
+
+13. Select **A. Datum developer devices** and then select **Members**. Select **+Add Members**. 
+    In the Add Members panel, select **LON-CL3** and then select **Select**. 
+
 ### Task 4: Verify Enterprise State Roaming
 
 1.  On **LON-CL3**, on the taskbar, click Microsoft Edge and in the address bar,
-    type **www.microsoft.com/learning**, and then press Enter. When the page
+    type **www.microsoft.com/learn**, and then press Enter. When the page
     loads, click the star and the end of the address bar (or press CTRL+D). In
     the Favorites pop-up, click **Add**.
 
-2.  Switch to **LON-CL4**, and on the taskbar, click **Microsoft Edge**.
+2.  Switch to **LON-CL4** and sign in as **DiegoS\@yourtenant.onmicrosoft.com**
+    if you are not already signed in. 
 
-3.  In **Microsoft Edge**, press CTRL+I to view favorites. Verify if **Computer
-    Training** favorites page is already synced from **LON-CL3**.  
-    Usually, Enterprise State Roaming syncs settings fairly quickly. If it is
-    not synced, wait a few minutes and repeat steps 2 and 3.
+2.  On the taskbar, click **Start** and then click the **Settings** app,
+    then select **Sync your settings**.
+
+3.  On the **Sync your settings** page, verify that **Sync settings** is set to
+    **On**. 
+
+_**Important**: If Sync settings is set to off and it is greyed out, the device must be
+rejoined.  Repeat Task 3 on LON-CL4 and then return to this task, continuing with Step 4._
+
+4.  In **Microsoft Edge**, press CTRL+I to view favorites. Verify if the
+    Microsoft Learn favorites page is already synced from **LON-CL3**.  
+
+    _Note: It can take several minutes for settings to sync. If the favorites option
+    doesn't show, try rebooting and signing back in as DiegoS\@yourtenant.onmicrosoft.com._
 
 4.  On **LON-DC1**, in **Internet Explorer**, on the **Devices – Device
     settings** blade, in the navigation pane, select **All devices**.
@@ -261,8 +287,7 @@ This will disable Windows Hello on the device and will disable the forced creati
 7.  In the details pane, verify that **Devices** is selected in the **Show**
     dropdown list. This shows all the devices that Diego Siciliani owns.
 
-8.  In the **Show** drop-down list, select **Devices syncing settings and app
-    data**. This view shows the devices that are synced by Enterprise State
-    Roaming. It also shows when each device was last synced.
+8.  Close all Windows. 
+
 
 **END OF LAB**
