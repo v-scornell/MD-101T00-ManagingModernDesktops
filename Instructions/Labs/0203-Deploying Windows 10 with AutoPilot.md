@@ -19,7 +19,7 @@ Task 1: Customize Azure AD company branding
 1.  Switch to LON-CL3 and sign in as **Admin** with the password of
     **Pa55w.rd**.
 
-2.  On **LON-CL3**, on the taskbar, click **Microsoft Edge**.
+2.  On **LON-CL3**, on the taskbar, select **Microsoft Edge**.
 
 3.  In Microsoft Edge, in the address bar, type <https://portal.azure.com>, and
     then press Enter.
@@ -71,7 +71,7 @@ Task 1: Customize Azure AD company branding
 
 2.  Select **Create**.
 
-3.  In the navigation pane, click **Azure Active Directory**, and then click
+3.  In the navigation pane, select **Azure Active Directory**, and then select
     **Groups**.
 
 4.  In the Groups - All groups blade, select **+ New group**.
@@ -84,25 +84,25 @@ Task 1: Customize Azure AD company branding
 
 8.  In the **Membership type** list, select **Dynamic device**.
 
-9.  Click **Add dynamic query**.
+9.  select **Add dynamic query**.
 
-10. Click **Edit** above the **Rule syntax** box.
+10. select **Edit** above the **Rule syntax** box.
 
 11. In the Rule syntax text box, replace any existing text with the following
-    text and then click **OK**.
+    text and then select **OK**.
 
 ```
-    (device.devicePhysicalIDs -any \_ -contains "[ZTDId]")
+    (device.devicePhysicalIDs -any _ -contains "[ZTDId]")
 ```
-1.  Click **Save** to close Dynamic membership rules.
+1.  select **Save** to close Dynamic membership rules.
 
-2.  Click **Create** to create the group.
+2.  select **Create** to create the group.
 
 3.  Navigate to All groups. Notice the IT Devices group.
 
 ### Task 3: Generate a device-specific comma-separated value (CSV) file
 
-1.  Switch to **LON-HOST1** and sign in as **Admin** with the password of
+1.  Switch to **LON-HOST1** and sign in as **Adatum]Administrator** with the password of
     **Pa55w.rd**.
 
 2.  Select **Hyper-V Manager** in the task bar to launch.
@@ -149,40 +149,40 @@ type C:\Computer.csv
     **https://office.com**. If prompted, sign in with your
     **Admin\@yourtenant.onmicrosoft.com**.
 
-2.  Click **Admin**, and then, in the **Microsoft 365 admin center**, click
-    **Show all**, click **All admin centers**, and then click the **Device
+2.  select **Admin**, and then, in the **Microsoft 365 admin center**, select
+    **Show all**, select **All admin centers**, and then select the **Device
     Management** tile. A new tab opens.
 
-3.  In the **Microsoft 365 Device Management** console, in the navigation pane,
-    click **Device enrollment**.
+3.  In the **Microsoft 365 Device Management** console, in the details pane,
+    select **Device enrollment** on the right.
 
 4.  On the **Choose MDM Authority** blade which appears on the right, select
-    **Intune MDM Authority** and click **Choose**.  
+    **Intune MDM Authority** and select **Choose**.  
       
     *Note: Setting the MDM Authority is not an exclusive step for Autopilot, but
     must be configured for using Intune and Autopilot.*
 
-5.  On the Device enrollment blade, click **Windows enrollment**.
+5.  On the Device enrollment blade, select **Windows enrollment**.
 
 6.  In the details pane, select **Devices**.
 
 7.  On the menu bar, select **Import**, browse to **c:\\**, select
-    **Computer.csv**, click **Open**, and then select **Import**. The import
+    **Computer.csv**, select **Open**, and then select **Import**. The import
     process can take up to 15 minutes, but normally takes around 5 minutes.  
       
     Note: After the process is complete, the device may not show. If this is the
     case, select the **Sync** button, wait a few minutes, and then select
     **Refresh**.
 
-8.  Click **X** to close the Windows Autopilot devices blade, and then, on the
-    Windows enrollment blade, click **Deployment Profiles**.
+8.  select **X** to close the Windows Autopilot devices blade, and then, on the
+    Windows enrollment blade, select **Deployment Profiles**.
 
 9.  On the **Windows AutoPilot deployment profiles** blade, select **Create
     profile**.
 
 10. In the details pane, in the **Name** text box, type **Contoso profile1**.
 
-11. Click **No**, and then click **Next**.
+11. select **No**, and then select **Next**.
 
 12. On the **Out-of-box experience** blade, ensure that the **Deployment mode**
     is **User-Driven**.
@@ -203,27 +203,23 @@ type C:\Computer.csv
 
     -   Apply device name template: **No**.
 
-1.  Click **Next**.
+1.  select **Next**.
 
-2.  On the **Scope tags** blade, click **Next**.
+2.  On the **Scope tags** blade, select **Next**.
 
-3.  On the **Assignments** blade, click **Select groups to include**.
+3.  On the **Assignments** blade, select **Select groups to include**.
 
-4.  Select the **IT Devices** group and click **Select**.
+4.  Select the **IT Devices** group and select **Select**.
 
-5.  Click **Next**.
+5.  select **Next**.
 
-6.  On the **Review + create** blade, review the information then click
+6.  On the **Review + create** blade, review the information then select
     **Create**.
 
-7.  Click the newly created profile.
+7.  select the newly created profile.
 
 ### Task 5: Reset the PC
 
-*Note: Normally this step is not required for physical devices, the device’s
-autopilot info is either provided by the manufacturer or can be obtained from
-the device prior to the OOBE. For the purposes of this lab, we must initiate a
-reset to simulate a new device OOBE.*
 
 1.  On LON-CL5, select **Start** and type **reset** and select **Reset this
     PC**.
@@ -232,7 +228,12 @@ reset to simulate a new device OOBE.*
 
 3.  Select **Remove everything**, then **Just remove my** files.
 
-4.  Click **Reset**.
+4.  select **Reset**.
+
+_Note: Normally this step is not required for physical devices, the device’s
+autopilot info is either provided by the manufacturer or can be obtained from
+the device prior to the OOBE. For the purposes of this lab, we must initiate a
+reset to simulate a new device OOBE._
 
 _Note: This process can take 30-45 minutes and will reboot several times during
 the process. When LON-CL5 reboots, do not press a key to boot from media, allow
@@ -252,18 +253,18 @@ the reset to continue._
 5.  Enter the temporary password you were given and select **Next**.
 
 6.  At the **Update your password** screen, enter your *current password*, then
-    enter a new password twice, and then click **Sign in.**
+    enter a new password twice, and then select **Sign in.**
 
 7.  At the screen to setup a pin, select **Setup a Pin**.
 
-8.  Click the **X** at the top of the **More information required** window.
+8.  select the **X** at the top of the **More information required** window.
 
 9.  At the Something went wrong screen, select **Skip for now**  
       
     _The provisioning process will complete and arrive at the desktop. Note that
     the privacy settings and options to change the account did not display._
 
-10. Click **Start** and type *access work* and select **Access work or school**
+10. select **Start** and type *access work* and select **Access work or school**
 
 11. Verify the device is joined to Azure AD.
 

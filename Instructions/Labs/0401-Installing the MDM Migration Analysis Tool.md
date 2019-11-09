@@ -16,9 +16,11 @@ Your organization is planning a Microsoft Intune implimentation. You have been a
 2.  Right-click the **Start** button and select **Windows PowerShell (Admin)**.
 
 3.  In the PowerShell console, type the following and then press Enter:
-    **Get-WindowsCapability -Name RSAT\* -Online \| Add-WindowsCapability
-    -Online**
+```
+    Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability
+    -Online
 
+```
 4.  This will install Remote Server Administration Tools (RSAT). Wait for the
     command to complete. It may take up to 5 minutes. **Note**: RSAT is required
     for MMAT to function.
@@ -32,18 +34,18 @@ Your organization is planning a Microsoft Intune implimentation. You have been a
 2.  In Microsoft Edge, type **https://github.com/WindowsDeviceManagement/MMAT**
     in the address bar, and then press Enter.
 
-3.  On the Github page, click the **Clone or download** link and select
+3.  On the Github page, select the **Clone or download** link and select
     **Download ZIP**.
 
-4.  When prompted click **Save** and close Microsoft Edge.
+4.  When prompted select **Save** and close Microsoft Edge.
 
 ### Task 3: Install the MMAT tool on the Windows 10 device
 
-1.  On the Task bar, click the **File Explorer** icon and expand **This PC.**
+1.  On the Task bar, select the **File Explorer** icon and expand **This PC.**
 
-2.  In **File Explorer**, click **Downloads** and right-click the
+2.  In **File Explorer**, select **Downloads** and right-click the
     **MMAT-master.zip** file, and then select **Extract All**. In the **Select a
-    Destination and Extract Files** dialog box, type **C:\\** and then click
+    Destination and Extract Files** dialog box, type **C:\\** and then select
     **Extract**.
 
 3.  Close File Explorer.
@@ -58,18 +60,28 @@ directly to Intune.
 1.  Right-click the **Start** button and select **Windows PowerShell (Admin)**.
 
 2.  In the PowerShell console, type the following and then press Enter:
-    **set-location -path c:\\mmat-master**
+```
+    set-location -path c:\mmat-master
 
+```
 3.  In the PowerShell console, type the following and then press Enter:
-    **Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process**. When
-    prompted type **Y** and press Enter.
+    When prompted type **Y** and press Enter.
+```
+    Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
 
+```
 4.  In the PowerShell console, type the following and then press Enter:
-    **\$VerbosePreference="Continue"**
+```
+    $VerbosePreference="Continue"
 
+```
 5.  In the PowerShell console, type the following and then press Enter:
-    **.\\Invoke-MdmMigrationAnalysisTool.ps1 -collectGPOReports
-    -runAnalysisTool**. When prompted, type **R** and press Enter.  
+```
+    .\Invoke-MdmMigrationAnalysisTool.ps1 -collectGPOReports
+    -runAnalysisTool
+
+```    
+    When prompted, type **R** and press Enter.  
     When **Invoke-MdmMigrationAnalysisTool.ps1** is completed, it will generate
     the following files in the **MMAT-master** folder:
 
@@ -103,5 +115,7 @@ directly to Intune.
 
 4.  Finally notice the settings displayed under **NOT SUPPORTED: Security
     Account Policies**. For now, they cannot be migrated to Intune.
+
+5.  Close all Windows.
 
 **END OF LAB**

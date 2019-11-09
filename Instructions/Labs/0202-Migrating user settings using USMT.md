@@ -31,7 +31,7 @@ IT is replacing Vera's current PC, LON-CL2, with a new device, LON-CL1.  LON-CL1
     details pane, right-click anywhere, select **New**, select **Text
     Document**, type: **Vera’s Public Documents**, and then press Enter.
 
-5.  In the navigation pane, select **Public Music**, in the details pane,
+5.  In the navigation pane, navigate to **Public Music**, in the details pane,
     right-click anywhere, select **New**, select **Text Document**, type:
     **Vera’s Public Music** and then press **Enter**.
 
@@ -41,13 +41,13 @@ IT is replacing Vera's current PC, LON-CL2, with a new device, LON-CL1.  LON-CL1
 7.  On the taskbar, right-click **Start**, and then select **Windows PowerShell
     (Admin)**.
 
-8.  In an administrator Command Prompt, type the following three commands,
+8.  At the PowerShell command prompt, type the following three commands,
     pressing **Enter** after each command:
 
 ```
-Net Use F: \\LON-DC1\USMT  
+Net Use F: \\LON-DC1\Labfiles\Install\USMT
 F:  
-F:\scanstate /i:migapp.xml /i:miguser.xml /genconfig:Config.xml
+./scanstate /i:migapp.xml /i:miguser.xml /genconfig:Config.xml
 
 ```
     **Note:** The creation of the **Config.xml** file begins. Wait until the command finishes.
@@ -57,19 +57,20 @@ F:\scanstate /i:migapp.xml /i:miguser.xml /genconfig:Config.xml
 
 2.  To verify that the content of **Shared Documents** will be migrated, under
     the **Documents** node, make sure that the **migrate** attribute for
-    **Shared Documents** is set to **yes**. The line should be similar to the
+    **Shared Documents** is set to **yes**. The line should start similar to the
     following:
 
 ```
-<component displayname="Shared Documents" migrate="yes">
+<component displayname="Shared Documents" migrate="yes"
 
 ```
 1.  To exclude **Shared Music** from the migration, under the **Documents**
     node, modify the **migrate** attribute for **Shared Music** to value
-    **"no"**. The line should look as shown here:
+    **"no"**. The line should start similar to the
+    following:
 
 ```
-<component displayname="Shared Music" migrate="no">
+<component displayname="Shared Music" migrate="no"
 
 ```
 1.  To exclude Windows Defender settings from the migration, select **Edit**,
@@ -111,37 +112,43 @@ F:\scanstate /i:migapp.xml /i:miguser.xml /genconfig:Config.xml
 
 Task 2: Capture the user state
 
-1.  On **LON-CL2**, in File Explorer, right-click **This PC**, and then select
+1. Switch to LON-DC1 and in the taskbar, select **File Explorer** and navigate to **E:\Labfiles**.
+
+2.  In the details pane, right-click an area of free space, and create a new folder called **MigStore**.
+
+3.  Switch back to **LON-CL2**.
+
+4.  On **LON-CL2**, in File Explorer, right-click **This PC**, and then select
     **Manage**.
 
-2.  In Computer Management, in the navigation pane, expand **Local Users and
+5.  In Computer Management, in the navigation pane, expand **Local Users and
     Groups**, and then select **Users**.
 
-3.  In the details pane, verify that user named **LocalAdmin** is listed, and
+6.  In the details pane, verify that user named **LocalAdmin** is listed, and
     then close **Computer Management**.
 
-4.  In the Command Prompt, verify that no content is on the
-    **\\\\LON-DC1\\MigStore** shared folder, by typing the following command and
+7.  In the Command Prompt, verify that no content is on the
+    **\\\\LON-DC1\\Labfiles\\MigStore** shared folder, by typing the following command and
     then pressing Enter:
 
 ```
-Dir \\lon-dc1\MigStore
+Dir \\lon-dc1\Labfiles\MigStore
 
 ```
-1.  Capture the **LON-CL2** user state by typing the following command and then
+8.  Capture the **LON-CL2** user state by typing the following command and then
     pressing Enter:
 
 ```
-F:\Scanstate \\LON-DC1\MigStore /i:migapp.xml /i:miguser.xml
+./Scanstate \\LON-DC1\Labfiles\MigStore /i:migapp.xml /i:miguser.xml
 /i:folders.xml /config:Config.xml /ue:\* /ui:adatum\vera /o
 
 ```
-1.  Wait until ScanState finishes, and then verify that the user state is
+9.  Wait until ScanState finishes, and then verify that the user state is
     captured in the shared folder by typing the following command and then
     pressing Enter:
 
 ```
-Dir \\lon-dc1\MigStore -Recurse /s
+Dir \\lon-dc1\Labfiles\MigStore -Recurse
 
 ```
 
@@ -173,33 +180,33 @@ Task 3: Restore the user state
 9.  In Windows PowerShell, type the following command, and then press Enter:
 
 ```
-Net Use F: \\LON-DC1\USMT
+Net Use F: \\LON-DC1\Labfiles\Install\USMT
 
 ```
-1.  In Windows PowerShell, type: **F:**, and then press Enter.
+10.  In Windows PowerShell, type: **F:**, and then press Enter.
 
-2.  In Windows PowerShell, type the following command, press Enter, and then
+11.  In Windows PowerShell, type the following command, press Enter, and then
     wait for LoadState to finish:
 
 ```
-F:.\Loadstate \\LON-DC1\MigStore /i:migapp.xml /i:miguser.xml /i:folders.xml /c
+./Loadstate \\LON-DC1\Labfiles\MigStore /i:migapp.xml /i:miguser.xml /i:folders.xml /c
 
 ```
-1.  On the taskbar, select **File Explorer**.
+12.  When the LoadState process is complete, on the taskbar, select **File Explorer**.
 
-2.  In File Explorer, in the navigation pane, expand **Local Disc (C:)**, expand
+13.  In File Explorer, in the navigation pane, expand **Local Disc (C:)**, expand
     **Users**, and then verify that the subfolder named **Vera** now exists.
 
-3.  On the taskbar, right-click **Start**, and then select **Computer
+14.  On the taskbar, right-click **Start**, and then select **Computer
     Management**.
 
-4.  In Computer Management, in the navigation pane, expand **Local Users and
+15.  In Computer Management, in the navigation pane, expand **Local Users and
     Groups**, and then select **Users**.
 
-5.  In the details pane, verify that a user named **LocalAdmin** does not exist,
+16.  In the details pane, verify that a user named **LocalAdmin** does not exist,
     because it was excluded from the migration.
 
-6.  On the taskbar, right-click **Start**, select **Shutdown or sign out**, and
+17.  On the taskbar, right-click **Start**, select **Shutdown or sign out**, and
     then select **Sign out**.
 
 Task 4: Verify migration of user settings

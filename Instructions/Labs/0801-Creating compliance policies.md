@@ -10,7 +10,7 @@ In this lab, you will practice creating a compliance policy and assign it to a d
 
 A. Datum would like to ensure that enrolled Windows 10 devices meet a minimum configuration specification.  The following are required:
 
-* Minimum OS version: 10.0.16299.15
+* Minimum OS version: 10.0.17763.615
 * Windows Defender Antimalware required
 * iOS and MacOS platforms blocked
 
@@ -28,13 +28,13 @@ Enrolled devices should also be assigned a VPN configuration with the following 
 
 #### Task 1: Create and apply compliance policy and enrollment restrictions
 
-1.  In **LON-CL1**, in the Azure portal, click **All services**, type
-    **intune,** and then click **Intune**.
+1.  In **LON-DC1**, in the Azure portal, select **Home** in the breadcrumb navigation, 
+    then select **Intune**.
 
-2.  On the **Microsoft Intune** blade, click **Device compliance**.
+2.  On the **Microsoft Intune** blade, select **Device compliance**.
 
-3.  On the **Device compliance** blade, click **Policies** and then in the
-    details pane click **+Create Policy**.
+3.  On the **Device compliance** blade, select **Policies** and then in the
+    details pane select **+Create Policy**.
 
 4.  On the **Create Policy** blade, provide the following values:
 
@@ -42,60 +42,61 @@ Enrolled devices should also be assigned a VPN configuration with the following 
 
     -  Platform: **Windows 10 and later**
 
-5.  On the **Windows 10 compliance policy** blade, click **Device Health** and
+5.  On the **Windows 10 compliance policy** blade, select **Device Health** and
     review the available settings.
 
-6.  On the **Windows 10 compliance policy** blade, click **Device Properties**.
+6.  On the **Windows 10 compliance policy** blade, select **Device Properties**.
 
 7.  On the **Device Properties** blade, in the **Minimum OS version** row, type
-    **10.0.16299.15** and then click **OK**.
+    **10.0.16299.15** and then select **OK**.
 
-8.  On the **Windows 10 compliance policy** blade, click **System Security**.
+8.  On the **Windows 10 compliance policy** blade, select **System Security**.
 
-9.  On the System Security blade, in the Defender section, click **Require for
-    Windows Defender Antimalware** and click **OK**.
+9.  On the System Security blade, in the Defender section, select **Require for
+    Windows Defender Antimalware** and select **OK**.
 
 10. On the **Windows 10 compliance policy** blade review the other available
-    options and then click **OK**.
+    options and then select **OK**.
 
-11. On the **Create Policy** blade, click **Actions for noncompliance** and then
-    on the details pane, click **+Add**.
+11. On the **Create Policy** blade, select **Actions for noncompliance** and then
+    on the details pane, select **+Add**.
 
 12. On the **Action parameters,** review the available options and then close
     the blade.
 
-13. In the Actions blade click **Mark device noncompliant**. Review how you can
+13. In the Actions blade select **Mark device noncompliant**. Review how you can
     configure the number of days after which the device is marked as
-    noncompliant, click **OK** twice and then click **Create**.
+    noncompliant, select **OK** twice and then select **Create**.
 
-14. On the **Compliance1** blade, click **Assignments**, click **Select groups
-    to include**, click **Enrolled Devices**, click **Select,** and then click
+14. On the **Compliance1** blade, select **Assignments**, select **Select groups
+    to include**, select **Windows Devices**, select **Select,** and then select
     **Save**.
 
-15. In **LON-CL1**, in the Azure portal, scroll the page to the left and then on
-    the **Microsoft Intune** blade, click **Device enrollment**.
+15. Scroll the page to the left and then on the **Microsoft Intune** blade, 
+    select **Device enrollment**.
 
 16. Review the available options on the **Device enrollment** blade.
 
-17. On the **Device enrollment** blade, click **Enrollment restrictions**.
+17. On the **Device enrollment** blade, select **Enrollment restrictions**.
 
-18. On the details pane, in the **Device Type Restrictions** section, click
-    **Default,** click **Properties,** and then click **Select platforms**.
+18. On the details pane, in the **Device Type Restrictions** section, select
+    **Default,** select **Properties,** and then select **Edit**.
 
-19. On the **Select platforms** blade, in the **iOS** and **macOS** rows click
-    **Block**, click **OK,** and then click **Save**.
+19. On the **Select platforms** blade, in the **iOS** and **macOS** rows select
+    **Block**, then select **Review + save**, then select **Save**.
 
-20. On the left pane, in the **Device Limit Restrictions** section, click
-    **Default** and then click **Properties**.
+20. Scroll left to the **Device Enrollment - Enrollment restrictions** blade. 
+    In the **Device Limit Restrictions** section, select **Default** and then
+    select **Properties**.
 
-21. In the **Device Limit** dropdown list, select **3** and then click **Save**.
+21. Select **Edit**, then change the value to 3.  Select **Review + Save**.
 
 #### Task 2: Create a device configuration profile
 
-1.  In **LON-CL1**, in the Azure portal, scroll the page to the left and then on
-    the **Microsoft Intune** blade click **Device configuration**.
+1.  In **LON-DC1**, in the Azure portal, scroll the page to the left and then on
+    the **Microsoft Intune** blade select **Device configuration**.
 
-2.  On the **Device configuration** blade, click **Profiles** and then click
+2.  On the **Device configuration** blade, select **Profiles** and then select
     **+Create profile**.
 
 3.  Enter the name **Adatum VPN** and the description **Corporate VPN for
@@ -136,7 +137,7 @@ Enrolled devices should also be assigned a VPN configuration with the following 
 
 4.  Select **Select groups to include**.
 
-5.  Select **Enrolled Devices**, and then select **Select**.
+5.  Select **Windows Devices**, and then select **Select**.
 
 6.  Select **Save**.
 
@@ -147,120 +148,65 @@ Enrolled devices should also be assigned a VPN configuration with the following 
 
 When devices are non-compliant, they should not be able to access their e-mail. You've been asked to configure a conditional access policy that enforces this rule, and verify it functions as expected.
 
-#### Task 1: Enroll a device to Azure AD and Intune
+#### Task 1: Create a conditional access policy
 
-1.  In **LON-CL2**, sign in as Admin with password Pa55w.rd and then on the
-    taskbar, click **Start**, type **connect to work** and then click **Acess
-    work or school**.
-
-2.  In the **Settings** app, in the **Access work or school** section, click
-    **+Connect**.
-
-3.  In the **Microsoft account** window, on the **Set up a work or school
-    account** page, click **Join this device to Azure Active Directory**.
-
-4.  On the **Let’s get you signed in** page, in the **Work or school account**
-    text box, type **Admin\@yourtenant.onmicrosoft.com** and then click
-    **Next**.
-
-5.  On the Enter password page, type **Pa55w.rd** in the text box and then click
-    **Sign in**.
-
-6.  Wait a few seconds and then on the **Make sure this is your organization**
-    dialog, click **Join**.
-
-7.  On the **You’re all set!** page, click **Done**.
-
-8.  In the **Settings** app, in the **Access work or school** section, verify
-    that the device is connected to Azure AD and then close the **Settings**
-    app.
-
-9.  Restart LON-CL2 and then sign in as Admin\@**yourtenant.onmicrosoft.com**.
-    Create a PIN, if required.
-
-#### Task 2: Verify that the device is enrolled to Azure AD and Intune
-
-1.  In **LON-CL1**, in the Azure portal, scroll the page to the left and then on
-    the **Microsoft Intune** blade, click **Devices**.
-
-2.  On the **Devices** blade, click **Azure AD devices** and verify that in the
-    Details pane the same device is listed. **Note:** This view lists devices
-    that are joined to Azure AD. Remember that you configured integration
-    between Azure AD and Intune, and because of that, any device that is joined
-    to Azure AD is automatically enrolled to Intune.
-
-3.  On **LON-CL1**, in the Azure portal, select **Microsoft Intune**.
-
-4.  Select **Devices**, and then select **All devices**.
-
-5.  Select **LON-CL2**, and then select **Sync**.
-
-6.  When prompted, click **Yes**. Wait for 3-4 minutes.
-
-7.  Switch to the LON-CL2 machine.
-
-8.  Right-click **Start**, and then select **Network connections**.
-
-9.  Select **VPN**, and then verify that **Adatum VPN** appears in the **VPN**
-    list. Note: If Adatum VPN does not appear, repeat steps 7 and 8 and then
-    check again. You can also proceed to the next task, and then come back later
-    to check this.
-
-#### Task 3: Create a conditional access policy
-
-1.  In the Azure portal, on the **Microsoft Intune** blade, click **Conditional
+1.  On **LON-DC1**, in the Azure portal, on the **Microsoft Intune** blade, select **Conditional
     access**.
 
-2.  In the **Details** pane, click **+New policy**.
+2.  In the **Details** pane, select **+New policy**.
 
 3.  On the **New** blade, in the **Name** text box, type **Conditional1** and
-    then click **Users and groups**.
+    then select **Users and groups**.
 
 4.  On the **Users and groups** blade, select the **All users** radio button and
-    then click **Done**.
+    then select **Done**.
 
-5.  On the **New** blade, click **Cloud apps**, select the **Select apps** radio
-    button, click **Select**, click **Office 365 Exchange Online**, click
-    **Select,** and then click **Done**.
+5.  On the **New** blade, select **Cloud apps**, select the **Select apps** radio
+    button, select **Select**, select **Office 365 Exchange Online**, select
+    **Select,** and then select **Done**.
 
-6.  On the **New** blade, click **Conditions**, click **Device platforms**, in
-    the **Configure** section click **Yes**, select the **Select device
-    platforms** radio button, select the **Windows** check box, and then click
+6.  On the **New** blade, select **Conditions**, select **Device platforms**, in
+    the **Configure** section select **Yes**, select the **Select device
+    platforms** radio button, select the **Windows** check box, and then select
     **Done** twice.
 
-7.  On the **New** blade under access controls, click **Grant**, select the
-    **Require device to be marked as compliant** check box, and then click
+7.  On the **New** blade under access controls, select **Grant**, select the
+    **Require device to be marked as compliant** check box, and then select
     **Select**.
 
 8.  On the **New** blade, select **On** for the **Enable policy** option and
-    then click **Create**.
+    then select **Create**.
 
 #### Task 4: Verify that the conditional access policy is working
 
-1.  On **LON-CL1**, sign in as **Adatum\\Administrator**, open a new Microsoft
-    Edge tab, then and open <https://portal.office.com>.
+1.  On **LON-CL1**, sign in as **adatum/administrator** with the password **Pa55w.rd**. 
+    Open a new Microsoft Edge tab, then and open <https://portal.office.com>.
 
-2.  Sign in with the following account:
+2.  Sign in as **admin\@yourtenant.onmicrosoft.com**. On the Office 365 portal, 
+    select the **Outlook** icon. 
 
-    -   Username: **AllanD\@yourtenant.onmicrosoft.com**
+3.  Verify that you receive the message **"You can't get there from here"**.
 
-    -   Password: **Pa55w.rd**
-
-1.  On the Office 365 portal, click the **Outlook** icon.
-
-2.  Verify that you receive the message **"You can’t get there from here"**.
-
-3.  Select **More details**. You should see more information about why you are
+4.  Select **More details**. You should see more information about why you are
     blocked. This is because LON-CL1 is not joined to Azure AD and not managed
     by Intune, so not marked as compliant.
 
-4.  **Close** the browser window.
+5.  **Close** the browser window.
 
-5.  Switch to **LON-CL3**.
+6.  Switch to **LON-CL3**,
 
-6.  Repeat steps 1 to 3.
+7.  Sign in as **admin\@yourtenant.onmicrosoft.com**. 
 
-7.  Ensure that you can access your mailbox. This is because LON-CL3 is a
+8.  Open a new Microsoft Edge tab, then and open **https://portal.office.com**.
+    On the Office 365 portal, select the **Outlook** icon. 
+
+9.  Verify that you receive the message **"Oops - You can’t get to this yet"**.
+    Note that this message indicates the device is registered that a policy
+    is being applied to bring the device to a compliant state. 
+
+10. Switch to **LON-CL4**.  Repeat steps 7 & 8.
+
+11. Ensure that you can access your mailbox. This is because LON-CL4 is a
     managed device and marked as compliant. You might get a message that device
     is being checked for compliance. If that happens, wait for a few minutes and
     then try again.

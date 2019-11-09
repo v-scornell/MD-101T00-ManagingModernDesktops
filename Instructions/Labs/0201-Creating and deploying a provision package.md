@@ -24,23 +24,23 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
     **Adatum.com**, expand **Marketing**, and then select **Computers**. In the
     details pane, verify that no computer account is present.
 
-5.  On the taskbar, click **File Explorer**.
+5.  On the taskbar, select **File Explorer**.
 
-6.  In File Explorer, click **Allfiles (E:)**.
+6.  In File Explorer, select **Allfiles (E:)**.
 
 7.  In the details pane, right-click an area of free space, point to **New** and
-    then click **Folder**.
+    then select **Folder**.
 
 8.  Name the Folder “**Provision”** and press Enter.
 
-9.  Right-click **Provision**, point to **Share with** and then click **Specific
+9.  Right-select **Provision**, point to **Share with** and then select **Specific
     people**.
 
-10. In the text box, type **Everyone** and then click **Add**.
+10. In the text box, type **Everyone** and then select **Add**.
 
-11. Next to **Everyone**, click **Read** and then click **Read/Write**.
+11. Next to **Everyone**, select **Read** and then select **Read/Write**.
 
-12. Click **Share** and when prompted, click **Done**.
+12. Select **Share** and when prompted, select **Done**.
 
 13. Switch to **LON-CL4**.
 
@@ -72,15 +72,15 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
     “Provision” Folder isn’t present as a subfolder. (You can ignore the
     subfolders, if any).
 
-23. In the navigation pane, right-click **This PC** and then click **Map network
+23. In the navigation pane, right-click **This PC** and then select **Map network
     drive**.
 
 24. In the **Folder** box, type **\\\\LON-DC1\\Provision** and then select the
     **Connect using different credentials** check box.
 
-25. Click **Finish**, and in the **Windows Security** dialog box, enter the User
+25. Select **Finish**, and in the **Windows Security** dialog box, enter the User
     name of **adatum\\administrator**. In the **Password** box, type
-    **Pa55w.rd**. Click **OK**.
+    **Pa55w.rd**. Select **OK**.
 
 ### Task 2: Create a provisioning package
 
@@ -89,20 +89,20 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
 2.  Sign in to LON-CL1 as **Adatum\\administrator** with the password of
     **Pa55w.rd**.
 
-3.  On **LON-CL1**, on the taskbar, click **File Explorer**.
+3.  On **LON-CL1**, on the taskbar, select **File Explorer**.
 
-4.  In the navigation pane, right-click **This PC** and then click **Map network
+4.  In the navigation pane, right-click **This PC** and then select **Map network
     drive**.
 
-5.  In the **Folder** box, type **\\\\LON-DC1\\Provision** and then click
+5.  In the **Folder** box, type **\\\\LON-DC1\\Provision** and then select
     **Finish**.
 
 6.  Navigate to **C:\\Files**, right-click an area of free space, point to
-    **New**, and then click **Text Document**.
+    **New**, and then select **Text Document**.
 
 7.  Type **document** and press Enter.
 
-8.  Double-click **document.txt**, type **my file**, close notepad, and click
+8.  Double-click **document.txt**, type **my file**, close notepad, and select
     **Save**.
 
 9.  On the taskbar, select **Start**, type **designer**, and then select
@@ -111,7 +111,7 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
 10. After Windows Configuration Designer opens, select the **Provision desktop
     devices** tile.
 
-11. On the **Enter project details** page, in the **Name** text bAdatum.comox,
+11. On the **Enter project details** page, in the **Name** text box,
     type **Marketing Computer**, and then select **Finish**.
 
 12. In the **Device name** section, in the text box, type
@@ -148,7 +148,7 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
 19. In the details pane, in the **UserName** text box, type your name, and then
     select **Add**.
 
-20. In the navigation pane, select **UserName**:Yourname. In the details pane,
+20. In the navigation pane, select **UserName:_Yourname_**. In the details pane,
     select the **Password** text box, and then type **Pa55w.rd**.
 
 21. In the navigation pane, expand **Folders**, and then select
@@ -179,9 +179,9 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
 
 2.  Select both files. Then right-click the files, and choose **Copy**.
 
-3.  In the navigation pane, click **Downloads**.
+3.  In the navigation pane, select **Downloads**.
 
-4.  Right-click an area of free space and then click **Paste**.
+4.  Right-select an area of free space and then select **Paste**.
 
 5.  In **Downloads**, double-click **Marketing Computer.ppkg**.
 
@@ -198,7 +198,7 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
 1.  On **LON-DC1**, on the taskbar, select **Server Manager**.
 
 2.  In **Server Manager**, select **Tools**, and then select **Active Directory
-    Users and Computers**.
+    Users and Computers** if it is not already open.
 
 3.  In Active Directory Users and Computers, in the navigation pane, expand
     **Adatum.com**, expand **Marketing**, and then select **Computers**. In the
@@ -207,30 +207,30 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
 
     **Note:** If the **Computers** organizational unit (OU) is empty, right-click the OU, and then select **Refresh**.
 
-1.  Sign in to **LON-CL4** as **Admin** with the password of **Pa55w.rd**.
+4.  Switch to **LON-CL4** where you should already be signed in as **Admin**.
 
-2.  On **LON-CL4**, on the taskbar, select the **File Explorer** icon.
+5.  On **LON-CL4**, on the taskbar, select the **File Explorer** icon.
 
-3.  In File Explorer, in the navigation pane, right-click **This PC**, and then
+6.  In File Explorer, in the navigation pane, right-click **This PC**, and then
     select **Properties**. In the **Computer name, domain, and workgroup
     settings** section, verify that the computer name is **Marketing-** followed
     by three digits and that the computer is in the **Adatum.com** domain.
 
-4.  Close the **System** window.
+7.  Close the **System** window.
 
-5.  In File Explorer, in the navigation pane, right-click **This PC**, and then
+8.  In File Explorer, in the navigation pane, right-click **This PC**, and then
     select **Manage**.
 
-6.  In **Computer Management**, in the navigation pane, expand **Local Users and
+9.  In **Computer Management**, in the navigation pane, expand **Local Users and
     Groups**, select **Users**, and then in the details pane, verify that
     **LocalAdmin** and the user with your name are both present.
 
-7.  Close **Computer Management**.
+10.  Close **Computer Management**.
 
-8.  In File Explorer, in the navigation pane, expand **This PC**, expand **Local
-    Disk (C:)**, expand **Users**, expand **Public**, and then click **Public
+11.  In File Explorer, in the navigation pane, expand **This PC**, expand **Local
+    Disk (C:)**, expand **Users**, expand **Public**, and then select **Public
     Documents**.
 
-9.  Verify the presence of the **document.txt** file.
+12.  Verify the presence of the **document.txt** file.
 
 **END OF LAB**

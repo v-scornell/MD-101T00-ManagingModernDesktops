@@ -15,7 +15,7 @@ Settings should be verified by testing on an enrolled device, LON-CL3 and a non-
 
 #### Task 1: Perform a quick scan in Windows Defender
 
-1.  On **LON-CL1** selectselect **Start**, and then select **Settings**.
+1.  On **LON-CL1** select **Start**, and then select **Settings**.
 
 2.  In the Settings app, open **Update & Security**, and then open the **Windows
     Defender** tab.
@@ -35,9 +35,9 @@ Settings should be verified by testing on an enrolled device, LON-CL3 and a non-
 1.  On **LON-CL3**, restore the browser windows with the Azure portal. If needed
     navigate to Intune.
 
-2.  In the Intune console, selectselect on **Device configuration**
+2.  In the Intune console, select on **Device configuration**
 
-3.  In the Device configuration – Profiles pane, selectselect **Profiles**.
+3.  In the Device configuration – Profiles pane, select **Profiles**.
 
 4.  Select **Create profile**.
 
@@ -45,10 +45,10 @@ Settings should be verified by testing on an enrolled device, LON-CL3 and a non-
     name. Select **Windows 10 and later** for Platform. In the Profile type
     list, select **Endpoint protection**.
 
-6.  In the Endpoint protection pane, selectselect the **Windows Defender
+6.  In the Endpoint protection pane, select the **Windows Defender
     Security Center** option.
 
-7.  In the Windows Defender Security Center pane, selectselect **Hide** for
+7.  In the Windows Defender Security Center pane, select **Hide** for
     **Family options**, **Hardware protection** and **Device Performance and
     Health**.
 
@@ -58,34 +58,34 @@ Settings should be verified by testing on an enrolled device, LON-CL3 and a non-
 9.  In the **IT organization name** field, type **Adatum IT**.
 
 10. For **IT department phone number or Skype ID**, type **123-456** and then
-    selectselect **OK**.
+    select **OK**.
 
-11. In the Endpoint protection pane selectselect **Windows Defender Firewall**.
+11. In the Endpoint protection pane select **Windows Defender Firewall**.
 
-12. In the Windows Firewall pane, selectselect **Block for File Transfer
+12. In the Windows Firewall pane, select **Block for File Transfer
     Protocol**.
 
-13. Select on **Public (non-discoverable) network** and then selectselect
-    **Block** for **Stealth mode** and selectselect **OK** three times.
+13. Select on **Public (non-discoverable) network** and then select
+    **Block** for **Stealth mode** and select **OK** three times.
 
-14. On Create profile pane, selectselect **Create**.
+14. On Create profile pane, select **Create**.
 
-15. Select **Assignments** and then selectselect **Select groups to include**.
-    Choose the **Enrolled Devices** group and then selectselect **Select**.
+15. Select **Assignments** and then select **Select groups to include**.
+    Choose the **Enrolled Devices** group and then select **Select**.
     Select **Save**.
 
-16. In the Microsoft Intune main pane, selectselect **Devices** and then
-    selectselect the **Enrolled devices** icon.
+16. In the Microsoft Intune main pane, select **Devices** and then
+    select the **Enrolled devices** icon.
 
-17. On the All devices pane, selectselect **LON-CL3** and then on the LON-CL3
-    pane, selectselect **Sync** on the toolbar. Select **Yes**.
+17. On the All devices pane, select **LON-CL3** and then on the LON-CL3
+    pane, select **Sync** on the toolbar. Select **Yes**.
 
 18. Wait for 3-4 minutes.
 
 #### Task 3: Verify the configuration
 
 1.  On LON-CL3, open Windows Defender Security Center, by right-clicking the
-    Defender icon in the taskbar and then selectselecting **View security
+    Defender icon in the taskbar and then selecting **View security
     dashboard**. Ensure that you don’t see the device performance & health icon.
     This is because settings that prevent showing device and performance health
     were applied from Intune.

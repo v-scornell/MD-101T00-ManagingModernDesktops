@@ -26,106 +26,86 @@ Note: For location use either your local region or United States.
 
 #### Task 1: Creating users by using the Azure portal
 
-1.  On the **adatum** page, click **Users** in the middle pane, click **All
-    users**, and then click **New user**.
+1.  On **LON-DC1**, sign in as **Adatum\\Administrator**, and login to the
+    Azure portal as **admin\@yourtenant.onmicrosoft.com** if you are not already there.
+    
+2.  Navigate to Azure Active Directory.  On the **Azure AD - Overview** page, select 
+    **Users** and then select **New user**.
 
-2.  In the **User** dialog box, enter the following:
+3.  In the **New User** dialog box, enter the following:
 
     -  Name: **Edmund Reeve**
 
     -  User Name: **ereeve\@yourtenant.onmicrosoft.com**
 
-3.  Click **Let me create the password.**
+4.  Select **Let me create the password.**
 
-4.  Enter **Pa55w.rd12345** the select create.
+5.  Enter **Pa55w.rd12345** the select **Create**.
 
-5.  On the **Contoso –overview located in the Azure Active directory select –
-    Custom domain names** page, click **the domain under name – then select the
-    highlighted In use text referencing the number of resources that reference
-    the domain.**,
+6.  Scroll left to the **Azure AD** blade. Select **Custom domain names** and select 
+    the **yourtenant.onmicrosoft.com** listing.
 
-6.  In the **User** dialog box, enter the following:
+7.  On the **In-use** row, select the **### resources referencing this domain name**. 
 
-    -  Name: **Alex Wilber**
+8.  On the **Domain name resources** blade, type **Alex** in the search box and 
+    press **Enter**. Select **Alex Wilber**.
 
-    -  User Name: **alexw\@yourtenant.onmicrosoft.com**
+9.  Select **Assigned roles** and select +Add assignment. Select **Global administrator**.
 
-    -  Click **Assigned role**, select **Global administrator**, and then click
-        **Add**.
+10. Scroll left to the **Azure AD - Custom domain names** blade and select **Users**. 
+    Select **Edmund Reeve**.
 
-7.  **in the Profiles section select reset password**, note and write down the
-    value for **Password**, and then click **Create**.
+11. In the **Edmund Reeve - Profile** blade, in the right pane under the**Settings** 
+    section, select **Edit**, select your country/region in the **Usage location** drop-down box. 
+    
+    _Note: If your country/region is not listed, select **United States**.
+    
+12. Select **Save**. Close the **Edmund Reeve – Profile** page.
 
-8.  In the **Users– All users** window, click **Edmund Reeve**.
+13. Close the **Users – All users** window, and then select **Licenses**.
 
-9.  In the **Edmund Reeve** window, click **Profile**, and then in the right
-    pane, in the **Settings** section, click **Edit**, select your
-    country/region in the **Usage location** drop-down box. If your
-    country/region is not listed, select **United States**, and then click
-    **Save**. Close the **Edmund Reeve – Profile** page.
+12. Select **All products**, and then select **Enterprise Mobility + Security
+    E5** and **Office 365 Enterprise E5**. Select **Assign**.
 
-10. Repeat steps 7 and 8 for the user account **Miranda Snider**.
+13. Select **Users and groups**, select **Edmund Reeve** from the list, and
+    then select **Select**.
 
-11. Close the **Users – All users** window, and then click **Licenses** in the
-    middle pane.
+14. Select **Assign**.
 
-12. Click **All products**, and then select **Enterprise Mobility + Security
-    E5** and **Office 365 Enterprise E5**. Click **Assign**.
+15. At the upper right of the page, select your account name, and then select
+    **Sign in with a different account**.
 
-13. Click **Users and groups**, select Edmund and Miranda from the list, and
-    then click **Select**.
-
-14. Click **Assign**.
-
-15. At the upper right of the page, click your account name, and then click
-    **Sign out**.
-
-16. Close the Microsoft Edge browser, reopen it, and then browse to
-    **https://portal.azure.com**.
-
-17. On the **Microsoft Azure** page, click **Use another account if needed**,
+17. On the **Microsoft Azure** page, select **Use another account if needed**,
     type **ereeve\@ yourtenant.onmicrosoft.com** for the user name, type the
-    temporary password that you noted above, and then click **Sign in**.
+    temporary password that you noted above, and then select **Sign in**.
 
 18. On the **Update your password** page, in the **Current password** text box,
-    type the temporary password, in the **New password** and **Confirm
-    password** text boxes, type **MDA101!!**, and then click **Sign in**. If the
-    **Stay signed in** prompt appears, click **No**.
+    type **Pa55w.rd12345**, in the **New password** and **Confirm
+    password** text boxes, type **MDA101!!**, and then select **Sign in**. If the
+    **Stay signed in** prompt appears, select **No**.
 
-19. Click Edmund’s user account in the upper right of the page, and then select
-    **Sign out**. Leave Microsoft Edge open. Click **Use another account**.
-
-20. On the **Microsoft Azure** page, click **Use another account if needed**,
-    type **msnider\@ yourtenant.onmicrosoft.com** for the user name, type the
-    temporary password that you noted above, and then click **Sign in**.
-
-21. On the **Update your password** page, in the **Current password** text box,
-    type the temporary password, in the **New password** and **Confirm
-    password** text boxes, type **MDA101!!** and then click **Sign in**. If the
-    **Stay signed in** prompt appears, click **No**.
-
-22. Click Miranda’s user account in the upper right of the page, and then select
-    **Sign out**. Leave Microsoft Edge open. Click **Use another account**.
+19. Select Edmund’s user account in the upper right of the page, and then select
+    **Sign in with a different account**
 
 23. On the **Microsoft Azure** page, use the MOD Administrator account to sign
     in.
 
-24. In the Microsoft Azure portal, click the **Azure Active Directory**
-    directory item, and then click **Groups.**
+24. In the Microsoft Azure portal, select the **Azure Active Directory**
+    directory item, and then select **Groups.**
 
-25. On the **Groups – All groups** page, click **All groups**, and then click
+25. On the **Groups – All groups** page, select **All groups**, and then select
     **New Group**.
 
 26. In the **Group** window, select **Security** for Group type, type
     **AdatumGroup1** in the **Group Name** text box, select **Assigned** for
-    **Membership type**, and then click **Members**.
+    **Membership type**, and then select **Members**.
 
-27. In the **Members** window, select **Edmund Reeve**, and then click
+27. In the **Members** window, select **Edmund Reeve**, and then select
     **Select**.
 
-28. Click **Create**. Close the **Group** page.
+28. Select **Create**. Close the **Group** page.
 
-29. Minimize the browser window on **LON-CL1**.
+29. Minimize the browser window on **LON-DC1**.
 
 #### Task 2: Creating users by using PowerShell
 
@@ -139,10 +119,10 @@ Connect-MsolService
 
 ```
 3.  In the **Enter Credentials** dialog box, sign in as
-    **admin\@yourtenant.onmicrosoft.com** with the tenant password*,* and then
-    click **OK**.
+    **admin\@yourtenant.onmicrosoft.com** with the tenant password, and then
+    select **OK**.
 
-4.  In the Windows PowerShell window, type the following code, and then press
+4.  In the Windows PowerShell window, type the following code to create a new user, and then press
     Enter:
 
 ```
@@ -160,7 +140,7 @@ Get-MsolUser
 ```
 6.  Verify that you get the list of users in your tenant.
 
-7.  In the Windows PowerShell window, type the following code, and then press
+7.  In the Windows PowerShell window, type the following code to create a new group, and then press
     Enter:
 
 ```
@@ -174,23 +154,23 @@ New-MsolGroup -DisplayName “Azure team” -Description “Adatum Azure team us
 Get-MsolGroup
 
 ```
-9.  Verify that you get the list of groups in your tenant.
+9.  Verify that you get the list of groups in your tenant, including the Azure team group you just created.
 
-10.  In the Windows PowerShell window, type the following code, and then press
+10.  In the Windows PowerShell window, type the following code to define a variable as the Azure team group, and then press
     Enter:
 
 ```
 $group = Get-MsolGroup | Where-Object {$_.DisplayName -eq "Azure team"}
 
 ```
-11.  In the Windows PowerShell window, type the following code, and then press
+11.  In the Windows PowerShell window, type the following code to define another variable as the user, and then press
     Enter:
 
 ```
 $user = Get-MsolUser | Where-Object {$_.DisplayName -eq “Cody Godinez”}
 
 ```
-12.  In the Windows PowerShell window, type the following code, and then press
+12.  In the Windows PowerShell window, type the following code to add Cody to the Azure team using set variables, and then press
     Enter:
 
 ```
@@ -202,7 +182,7 @@ Add-MsolGroupMember -GroupObjectId $group.ObjectId -GroupMemberType "User"
     Enter:
 
 ```
-Get-MsolGroupMember -GroupObjectId \$group.ObjectId
+Get-MsolGroupMember -GroupObjectId $group.ObjectId
 
 ```
 14.  Verify that you get **Cody Godinez** as a result. Minimize the Windows PowerShell window.

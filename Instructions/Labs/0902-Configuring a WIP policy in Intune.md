@@ -6,49 +6,33 @@ In this lab, you will practice creating and configuring Windows Information Prot
 
 #### Task 1: Create a WIP policy in Intune
 
-1.  On **LON-CL3**, open an InPrivate window in Microsoft Edge, and then
-    navigate to <https://portal.azure.com>. Sign in using your MOD administrator
-    credentials. Ensure that the Azure portal opens.
+1.  On **LON-CL3**, sign in as **admin\@yourtenant.onmicrosoft.com** with the default tenant password.
 
-2.  In the navigation pane, select **All services**.
+2.  Open an InPrivate window in Microsoft Edge, and then navigate to <https://portal.azure.com>. 
+    Sign in using your MOD administrator credentials if prompted. Ensure that the Azure portal opens.
 
-3.  In the **Search** box, type **Intune**, and then select **Intune** from the
-    results.
+3.  In the navigation pane, select **Intune** and then select **Client apps**.
 
-4.  Select **Client apps**.
+4.  Select **App protection policies**, and then select **+Create policy** and select **Windows 10**.
 
-5.  Select **App protection policies**, and then select **Create policy**.
+5.  In the Name text box, type **Windows 10 WIP test policy**.
 
-6.  In the Name text box, type **Windows 10 WIP test policy**.
+6.  In the Enrollment state list, select **With enrollment**.
 
-7.  In the **Platform** list, select **Windows 10**.
+9.  Select **Protected apps**, then select **Add apps**.
 
-8.  In the Enrollment state list, select **With enrollment**.
+3.  Select **Microsoft Edge** and **Notepad**. Select **OK** twice.
 
-9.  Leave the console open.
-
-#### Task 2: Add protected apps, WIP-protection mode, and corporate identity
-
-1.  In the **Add a policy** blade, select **Protected apps**.
-
-2.  Select **Add apps**.
-
-3.  Select **Microsoft Edge** and **Notepad**.
-
-4.  Select **OK** twice.
-
-5.  Select **Required settings**.
-
-6.  Select **Allow overrides**.
+5.  Select **Required settings**, and then select **Allow overrides**.
 
 7.  In the **Corporate identity** text box, type **yourtenant.onmicrosoft.com**
     if needed, and then select **OK**.
 
 8.  Leave the console open.
 
-#### Task 3: Define corporate boundaries
+#### Task 2: Define corporate boundaries
 
-1.  Select **Advanced settings**.
+1.  Select **Configure Advanced settings**.
 
 2.  Select **Add network boundary**.
 
@@ -94,7 +78,7 @@ In this lab, you will practice creating and configuring Windows Information Prot
 4.  Switch to Microsoft Edge, and under **Data protection**, select the
     **Browse** icon.
 
-5.  Browse to the **C:\\Users\\AdeleVance\\** folder, select the
+5.  Browse to the **C:\\Users\Mod Administrator\\** folder, select the
     **ADATUMDRA.cer** file, and then select **Open**.
 
 6.  Under **Show the enterprise data protection icon**, select **On**.
@@ -108,9 +92,9 @@ In this lab, you will practice creating and configuring Windows Information Prot
 
 2.  Select **Assignments**, then select **Select groups to include**.
 
-3.  In the **Select** search box enter **Enrolled devices**.
+3.  In the **Select** search box enter **Windows devices**.
 
-4.  Select **Enrolled devices** and select **Select**, and then select **Save**.
+4.  Select **Windows devices** and select **Select**, and then select **Save**.
 
 5.  On the Start menu on LON-CL3, select **Settings**.
 
@@ -123,13 +107,10 @@ In this lab, you will practice creating and configuring Windows Information Prot
 
     **Note**: Wait for the settings to sync.
 
-9.  In Microsoft Edge, navigate to **https://yourtenant.sharepoint.com**.
+9.  Sign out and sign back in as **diegos\@@yourtenant.onmicrosoft.com** 
+    with the default tenant password.
 
-10. If prompted, sign in with the credentials:
-
-    -   Username: **Abbi\@yourtenant.onmicrosoft.com**
-
-    -   Password: **Pa55w.rd**
+10. In Microsoft Edge, navigate to **https://yourtenant.sharepoint.com**.
 
 11. Start Internet Explorer and navigate to **https://yourtenant.sharepoint.com.**
 

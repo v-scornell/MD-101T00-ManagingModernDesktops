@@ -12,7 +12,7 @@ Abbi and Bill share LON-CL1. Abbi is working with files containing sensitive inf
 
 #### Task 1: Create a data folder and configure folder view options
 
-1.  Sign in to **LON-CL1** as **Adatum\\Abbi** with the password **Pa55w.rd**.
+1.  Sign in to **LON-CL1** as **Adatum\\Abbi** with the password **MDA101!!**.
 
 2.  On the taskbar, selectselect the **File Explorer** icon, selectselect **This
     PC**, and then double-select **Local Disk (C:)**.
@@ -21,8 +21,8 @@ Abbi and Bill share LON-CL1. Abbi is working with files containing sensitive inf
     Folder** icon. Name the new folder **SecretAbbi**.
 
 4.  On the ribbon, selectselect the **View** tab and then selectselect
-    **Options**.
-
+    **Options**. Select **Change folder and search options**.
+    
 5.  In the **Folder Options** window, selectselect **View**.
 
 6.  In the **Advanced settings** list, select the **Show encrypted or compressed
@@ -62,7 +62,7 @@ Abbi and Bill share LON-CL1. Abbi is working with files containing sensitive inf
 
 12. On the **Select or create a file encryption certificate** page ensure that
     the certificate for Abbi Skinner is issued by AdatumCA. Select **View
-    certificate** to see the details. Select **Next**.
+    certificate** to see the details and select **Ok**. Select **Next**.
 
 13. On the **Back up your certificate or key** page, select to backup a
     certificate and save it to the **C:\\backup\\** folder (create the backup
@@ -86,7 +86,7 @@ Abbi and Bill share LON-CL1. Abbi is working with files containing sensitive inf
 
 6.  Verify that **Access** is denied, and then select **OK**. Close Notepad.
 
-7.  Sign out from **LON-CL1** and sign back in as **Adatum\\Abbi**.
+7.  Sign out from **LON-CL1** and sign back in as **Adatum\\Abbi** with the password **MDA101!!**.
 
 
 ### Scenario 2 Exercise
