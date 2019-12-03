@@ -82,7 +82,7 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
 9.  On the **Connect your directories** page, ensure that **Adatum.com** is listed
     under FOREST, and then select **Add Directory**.
 
-10. In the **AD forest account** window, select the **Use Existing Account**
+10. In the **AD forest account** window, select the **Create New AD Account**
     option, and in the **ENTERPRISE ADMIN USERNAME** field, type
     **ADATUM\\Administrator**, and then type **Pa55w.rd** in the **PASSWORD**
     field. Select **OK**, and then select **Next**.
