@@ -54,7 +54,7 @@ _Note:  LON-CL4 must first be removed from the domain to continue this lab._
 
 2.  In the **Settings** app, select the **Accounts**.
 
-3.  Select Connected to ADATUM AD domain and select **Disconnect**, then **Yes**.  
+3. In the **Access work or school** select Connected to ADATUM AD domain and select **Disconnect**, then **Yes**.  
         
 4.  In the Disconnect from the organization dialog, select **Disconnect**. Reboot the device when prompted.
 
