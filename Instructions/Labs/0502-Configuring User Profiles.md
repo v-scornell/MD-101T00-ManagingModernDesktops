@@ -162,7 +162,7 @@ Users are requesting that their Windows settings and application data be the sam
 1.  Switch to **LON-CL3** and sign in as **DiegoS\@yourtenant.onmicrosoft.com**
     if you are not already signed in. 
 
-2.  On the taskbar, select **Start** and then select the **Settings** app,
+2.  On the taskbar, select **Start** and then select the **Settings**, and then select the **Accounts**
     then select **Sync your settings**.
 
 8.  On the **Sync your settings** page, verify that **Sync settings** is set to
