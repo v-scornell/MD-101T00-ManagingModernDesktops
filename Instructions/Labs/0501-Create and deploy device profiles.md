@@ -81,8 +81,7 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 
 11. In the PowerShell console, type the following and then press Enter:
 ```
-    REG ADD HKLM\SOFTWARE\Policies\Microsoft\PassportForWork /v Enabled /t
-    REG_DWORD /d 0 /f 
+    REG ADD HKLM\SOFTWARE\Policies\Microsoft\PassportForWork /v Enabled /t REG_DWORD /d 0 /f 
 
 ``` 
     
@@ -132,25 +131,25 @@ _Note: This will disable Windows Hello on the device and will disable the forced
 
 -   Profile type: **Device restrictions**
 
-1.  On the **Device restrictions** blade, select **Control Panel and Settings**.
+7.  On the **Device restrictions** blade, select **Control Panel and Settings**.
     Select **Block** next to **Gaming** and **Privacy**. Then select **OK**.
 
-2.  Back on the **Device restrictions** blade, select **Start**. Scroll down and
+8.  Back on the **Device restrictions** blade, select **Start**. Scroll down and
     select **Block** next to **Most used apps** and **Recently added apps**.
     Then select **OK**.
 
-3.  Back on the **Device restrictions** blade, scroll down and select **Windows
+9.  Back on the **Device restrictions** blade, scroll down and select **Windows
     Defender Antivirus**. On the **Windows Defender Antivirus,** scroll down and
     select **Windows Defender Antivirus Exclusions**.
 
-4.  On the **Windows Defender Antivirus Exclusions** blade, in the **Files and
+10.  On the **Windows Defender Antivirus Exclusions** blade, in the **Files and
     folders** box, type the following and then select **Add**:
     **C:\\DevProjects**.
 
-5.  In the **Processes** box, type the following and then select **Add**:
+11.  In the **Processes** box, type the following and then select **Add**:
     **DevBuild.exe**. Then select **OK** twice.
 
-6.  Back on the **Device restrictions** blade, select **OK** twice and then select
+12.  Back on the **Device restrictions** blade, select **OK** twice and then select
     **Create**.
 
 ### Task 5: Create the Adatum developer device group
@@ -198,16 +197,16 @@ _Note: This will disable Windows Hello on the device and will disable the forced
 
 4.  On the **Group** blade, select **Dynamic device members**.
 
-5.  Select **Add dynamic query**. On the **Dynamic membership rules** blade,
+5.  Select **Add dynamic query**. On the **Dynamic membership rules** blade, in the **Rule syntax** section,
     select **Edit**. 
     
-6.  In the Rule syntax text box, add the following Simple membership rule and select **Ok**.
+6.  In the Edit rule syntax text box, add the following simple membership rule and select **Ok**.
 
 ```
     device.deviceOSType -contains "Windows"
 
 ```
-6.  On the **Dynamic membership rules** blade, select **Save** and then **Create**.
+7.  On the **Dynamic membership rules** blade, select **Save** and then **Create**.
 
 ### Task 7: Deploy device profile to Windows 10 device
 

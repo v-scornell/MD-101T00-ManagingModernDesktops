@@ -71,7 +71,7 @@ Settings should be verified by testing on an enrolled device, LON-CL3 and a non-
 14. On Create profile pane, select **Create**.
 
 15. Select **Assignments** and then select **Select groups to include**.
-    Choose the **Enrolled Devices** group and then select **Select**.
+    Choose the **Enrolled Devices** group and then choose **Select**.
     Select **Save**.
 
 16. In the Microsoft Intune main pane, select **Devices** and then

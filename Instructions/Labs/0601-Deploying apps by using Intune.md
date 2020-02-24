@@ -77,21 +77,21 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
     is being created, you will see log entries created.  When there are 4 entries,
     the app should be available.  This can take up to a couple minutes.
 
-10.  On the **Client apps – Apps** blade, in the details pane, select **Remote
+11.  On the **Client apps – Apps** blade, in the details pane, select **Remote
     Desktop Connection Manager**.
 
-11.  On the **Remote Desktop Connection Manager** blade, select **Assignments**
+12.  On the **Remote Desktop Connection Manager** blade, select **Assignments**
     and on the **Remote Desktop Connection Manager - Assignments** blade, select
     **Add group**.
 
-12.  On the **Add group** blade, select **Select assignment type** under
+13.  On the **Add group** blade, select **Select assignment type** under
     **Assignment type** and select **Available for enrolled devices**.
 
-13.  Select **No groups selected Included Groups** and on the **Assign** blade,
+14.  Select **No groups selected Included Groups** and on the **Assign** blade,
     select **Make this app available to all users with enrolled devices** to **Yes**
     amd select **Ok** twice. 
 
-14. Back on the **Remote Desktop Connection Manager - Assignments** blade, select
+15. Back on the **Remote Desktop Connection Manager - Assignments** blade, select
     **Save**. In the details pane verify that **All users** is listed
     under **Available for enrolled devices**.
 
@@ -139,8 +139,7 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
     **C**, select **Company Portal**. You will be signed in to the Company Portal
     automatically using Single-Sign-On, because the device is Azure AD joined.
 
-2.  In the **Company Portal** under **Apps**, select **Remote Desktop
-    Connection**. On the **Remote Desktop Connection Manager** page, select
+2.  In the **Company Portal** under **Apps**, select **Remote Desktop Connection**. On the **Remote Desktop Connection Manager** page, select
     **Install**.
 
 3.  Wait for the app installation files to download and for the installation to

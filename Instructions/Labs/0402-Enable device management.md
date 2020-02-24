@@ -61,13 +61,11 @@ location set.
 
 ### Task 2: Integrate Azure AD with Intune
 
-1.  In **LON-CL3**, in the Azure portal, in the navigation pane, select **Azure
-    Active Directory**.
+1.  In **LON-CL3**, in the Azure portal, in the navigation pane, select **Azure Active Directory**.
 
-2.  On the **Azure AD** blade, select Mobility (MDM and MAM). In the details pane, select Microsoft Intune.
+2.  On the **Azure AD** blade, select Mobility (MDM and MAM). In the details pane, select **Microsoft Intune**.
 
-3.  In the **MDM user scope** row, select **All** and
-    then select **Save**.
+3.  In the **MDM user scope** row, select **All** and then select **Save**.
 
     _**Note**: By performing this step, you allowed all users who join their device to Azure AD to automatically enroll it to Intune as well._
 

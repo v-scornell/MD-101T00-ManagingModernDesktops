@@ -40,12 +40,12 @@ Task 1: Customize Azure AD company branding
 
 -   Show option to remain signed in: Select **Yes**.
 
-1.  Select **Save**, and then close the **Configure company branding** blade.
+8.  Select **Save**, and then close the **Configure company branding** blade.
 
-2.  On the **Azure Active Directory** blade, in the navigation pane, select
+9.  On the **Azure Active Directory** blade, in the navigation pane, select
     **Properties**.
 
-3.  In the **Name** text box, type **Azure AD**, and then select **Save**.
+10.  In the **Name** text box, type **Azure AD**, and then select **Save**.
 
 ### Task 2: Create a user and group in Azure AD
 
@@ -67,38 +67,38 @@ Task 1: Customize Azure AD company branding
 
     _Note: Leave no spaces in your username._
 
-1.  Select the **Show Password** check box and note the password for later use.
+4.  Select the **Show Password** check box and note the password for later use.
 
-2.  Select **Create**.
+5.  Select **Create**.
 
-3.  In the navigation pane, select **Azure Active Directory**, and then select
+6.  In the navigation pane, select **Azure Active Directory**, and then select
     **Groups**.
 
-4.  In the Groups - All groups blade, select **+ New group**.
+7.  In the Groups - All groups blade, select **+ New group**.
 
-5.  In the Group blade, in the **Group type** list, select **Security**.
+8.  In the Group blade, in the **Group type** list, select **Security**.
 
-6.  In the **Group name** box, type **IT Devices**.
+9.  In the **Group name** box, type **IT Devices**.
 
-7.  In the **Group description** box, type **IT Department Devices**.
+10.  In the **Group description** box, type **IT Department Devices**.
 
-8.  In the **Membership type** list, select **Dynamic device**.
+11.  In the **Membership type** list, select **Dynamic device**.
 
-9.  select **Add dynamic query**.
+12.  select **Add dynamic query**.
 
-10. select **Edit** above the **Rule syntax** box.
+13. select **Edit** above the **Rule syntax** box.
 
-11. In the Rule syntax text box, replace any existing text with the following
+14. In the Rule syntax text box, replace any existing text with the following
     text and then select **OK**.
 
 ```
     (device.devicePhysicalIDs -any _ -contains "[ZTDId]")
 ```
-1.  select **Save** to close Dynamic membership rules.
+15.  select **Save** to close Dynamic membership rules.
 
-2.  select **Create** to create the group.
+16.  select **Create** to create the group.
 
-3.  Navigate to All groups. Notice the IT Devices group.
+17.  Navigate to All groups. Notice the IT Devices group.
 
 ### Task 3: Generate a device-specific comma-separated value (CSV) file
 
@@ -121,23 +121,23 @@ Task 1: Customize Azure AD company branding
 ```
 Install-Script -Name Get-WindowsAutoPilotInfo
 ```
-1.  You will receive two prompts. Each time, type **Y**, and then press Enter.
+6.  You will receive two prompts. Each time, type **Y**, and then press Enter.
 
-2.  At the Windows PowerShell command-line prompt, type the following cmdlet,
+7.  At the Windows PowerShell command-line prompt, type the following cmdlet,
     and then press **Enter**:
 
 ```
 Set-ExecutionPolicy RemoteSigned
 ```
-1.  When prompted, type **Y**, and then press Enter.
+8.  When prompted, type **Y**, and then press Enter.
 
-2.  At the Windows PowerShell command-line prompt, type the following cmdlet,
+9.  At the Windows PowerShell command-line prompt, type the following cmdlet,
     and then press **Enter**:
 
 ```
 Get-WindowsAutoPilotInfo.ps1 -OutputFile C:\Computer.csv
 ```
-1.  At the Windows PowerShell command-line prompt, type the following command,
+10.  At the Windows PowerShell command-line prompt, type the following command,
     press **Enter**, and then review the file content:
 
 ```
@@ -203,20 +203,20 @@ type C:\Computer.csv
 
     -   Apply device name template: **No**.
 
-1.  select **Next**.
+15.  select **Next**.
 
-2.  On the **Scope tags** blade, select **Next**.
+16.  On the **Scope tags** blade, select **Next**.
 
-3.  On the **Assignments** blade, select **Select groups to include**.
+17.  On the **Assignments** blade, select **Select groups to include**.
 
-4.  Select the **IT Devices** group and select **Select**.
+18.  Select the **IT Devices** group and select **Select**.
 
-5.  select **Next**.
+19.  select **Next**.
 
-6.  On the **Review + create** blade, review the information then select
+20.  On the **Review + create** blade, review the information then select
     **Create**.
 
-7.  select the newly created profile.
+21.  select the newly created profile.
 
 ### Task 5: Reset the PC
 

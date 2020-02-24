@@ -35,37 +35,37 @@ The Help Desk has indicated that a large number of support tickets are related t
 10. Switch to **LON-DC1**. In Microsoft Edge, navigate to **Azure Active Directory**
     in the Azure portal, logged in as the MOD administrator account.
 
-13. In the left navigation pane, select **Password reset**.
+11. In the left navigation pane, select **Password reset**.
 
-14. In the Password reset – Properties window, select **All** to enable
+12. In the Password reset – Properties window, select **All** to enable
     self-service password reset to all users. Select **Save**.
 
-15. On the **Password reset – Properties** blade, select **Authentication
+13. On the **Password reset – Properties** blade, select **Authentication
     methods**.
 
-16. For the methods available to users, ensure that **Mobile Phone** and
+14. For the methods available to users, ensure that **Mobile Phone** and
     **Email** are selected, and then select **Security Questions**.
 
-17. For the **number of questions required to register**, select **3**.
+15. For the **number of questions required to register**, select **3**.
 
-18. For the **number of questions required to reset**, select **3**.
+16. For the **number of questions required to reset**, select **3**.
 
-19. In the **Select security questions** section, select **No security questions
+17. In the **Select security questions** section, select **No security questions
     configured**, then select **Predefined**, select three questions of your
     choice, and then select **OK** twice.
 
-20. Select **Save**.
+18. Select **Save**.
 
-21. Select on **Registration.** Select **No** for **Require users to register when
+19. Select on **Registration.** Select **No** for **Require users to register when
     signing in**, and the select **Save**.
 
-22. In the middle pane, select **On-premises integration**.
+20. In the middle pane, select **On-premises integration**.
 
-23. Verify that your on-premises writeback client is running and select **Yes**
+21. Verify that your on-premises writeback client is running and select **Yes**
     for the **Write back passwords to your on-premises directory** option. Select
     **Save**.
 
-24. Close the Internet Explorer browser window, and then reopen it.
+22. Close the Internet Explorer browser window, and then reopen it.
 
 #### Task 2: Configure self-service password reset
 
@@ -74,37 +74,37 @@ The Help Desk has indicated that a large number of support tickets are related t
 
 2.  Open Microsoft Edge and browse to **https://myapps.microsoft.com**. 
 
-4.  On the **Microsoft** page, select on the **Abbi** account in the top right
+3.  On the **Microsoft** page, select on the **Abbi** account in the top right
     corner, and then select **Profile**.
 
-5.  Select **Set up self service password reset**.
+4.  Select **Set up self service password reset**.
 
-6.  On the **don’t lose access to your account** page, select **Set it up now**
+5.  On the **don’t lose access to your account** page, select **Set it up now**
     for the **Authentication Phone** option.
 
-7.  Choose your country or region, type your mobile phone number, and then select
+6.  Choose your country or region, type your mobile phone number, and then select
     **text me**.
 
-8.  Type the number that you receive in a text message in the text box below,
+7.  Type the number that you receive in a text message in the text box below,
     and then select **verify**.
 
-9.  Select **Set it up now** for the **Authentication Email** option. Type your
+8.  Select **Set it up now** for the **Authentication Email** option. Type your
     email address that you easily access. Select **email me**.
 
     _Note: you will need to use an e-mail address other than the tenant domain 
     provided for this lab. If one is not available, you can skip the e-mail 
     verification and continue with step 11._
 
-10. Sign in to your email account, read the code, type it in the verification
+9. Sign in to your email account, read the code, type it in the verification
     field, and then select **Verify**. Note: If you don’t find a message with a
     code in your inbox, check the junk folder.
 
-11. On the line for **Security Questions are not setup**, select **Set it up now**. Choose
+10. On the line for **Security Questions are not setup**, select **Set it up now**. Choose
     the three security questions and enter in any answer. Select **Save**.
 
-12. On the **don’t lose access to your account!** page, select **Finish**.
+11. On the **don’t lose access to your account!** page, select **Finish**.
 
-13. On the **Microsoft Azure** page, select on the **Abbi** account, and then
+12. On the **Microsoft Azure** page, select on the **Abbi** account, and then
     select **Profile**.
 
 13. In the Azure portal, select **Change password**.

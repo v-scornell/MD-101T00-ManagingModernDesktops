@@ -138,45 +138,45 @@ Your organization uses Power BI for reporting.  You've been asked to setup Power
 
 -   Job Title: **IT Professional**
 
-1.  Close the **Sign in to collaborate and share content** page by selecting the
+12.  Close the **Sign in to collaborate and share content** page by selecting the
     X in the upper right corner.
 
-2.  Choose **Home**, then **Get Data**. Select **OData feed** and choose
+13.  Choose **Home**, then **Get Data**. Select **OData feed** and choose
     **Basic**.
 
-3.  Switch to the browser with the Intune Data Warehouse screen. Copy the custom
+14.  Switch to the browser with the Intune Data Warehouse screen. Copy the custom
     feed URL into the clipboard.
 
-4.  Switch back to **PowerBI Desktop** and paste the **OData URL** into the
+15.  Switch back to **PowerBI Desktop** and paste the **OData URL** into the
     **URL** box and select **OK**.
 
-5.  Close the **OData feed** pop-up by selecting **Cancel** or the **X** in the
+16.  Close the **OData feed** pop-up by selecting **Cancel** or the **X** in the
     upper right corner.
 
-6.  On the **Home** tab, select **Refresh**. This will load the actual data from
+17.  On the **Home** tab, select **Refresh**. This will load the actual data from
     Intune.
 
-7.  In the **OData feed** dialog box, select the **Organizational account** tab
+18.  In the **OData feed** dialog box, select the **Organizational account** tab
     and on then select **Sign in**.
 
-8.  On the **Sign in** page, type **admin\@yourtenant.onmicrosoft.com**. Then
+19.  On the **Sign in** page, type **admin\@yourtenant.onmicrosoft.com**. Then
     select **Next**.
 
-9.  On the **Enter password** page, use **Pa55w.rd** as the tenant Admin
+20.  On the **Enter password** page, use **Pa55w.rd** as the tenant Admin
     password, and select **Sign in**.
 
-10. Back on the **OData feed** dialog box, select **Connect**. Wait for the
+21. Back on the **OData feed** dialog box, select **Connect**. Wait for the
     connection and load of data. It will take approximately 1 minute.
 
-11. Select **Apply changes**, next to **There are pending changes in your queries
+22. Select **Apply changes**, next to **There are pending changes in your queries
     that haven´t been applied**. Wait for the task to complete.
 
-12. Select **File** and then select **Export to PDF**. Wait for the PDF to be
+23. Select **File** and then select **Export to PDF**. Wait for the PDF to be
     created.
 
-13. When prompted, select **OK** to open the PDF file in Microsoft Edge.
+24. When prompted, select **OK** to open the PDF file in Microsoft Edge.
 
-14. Examine the report. You will see six different reports in the PDF file:
+25. Examine the report. You will see six different reports in the PDF file:
 
 -   Device Summary
 

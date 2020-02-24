@@ -52,10 +52,10 @@ F:
 ```
     **Note:** The creation of the **Config.xml** file begins. Wait until the command finishes.
 
-1.  In the Command Prompt, type: **notepad Config.xml**, and then press
+9.  In the Command Prompt, type: **notepad Config.xml**, and then press
     **Enter**.
 
-2.  To verify that the content of **Shared Documents** will be migrated, under
+10.  To verify that the content of **Shared Documents** will be migrated, under
     the **Documents** node, make sure that the **migrate** attribute for
     **Shared Documents** is set to **yes**. The line should start similar to the
     following:
@@ -64,7 +64,7 @@ F:
 <component displayname="Shared Documents" migrate="yes"
 
 ```
-1.  To exclude **Shared Music** from the migration, under the **Documents**
+11.  To exclude **Shared Music** from the migration, under the **Documents**
     node, modify the **migrate** attribute for **Shared Music** to value
     **"no"**. The line should start similar to the
     following:
@@ -73,25 +73,25 @@ F:
 <component displayname="Shared Music" migrate="no"
 
 ```
-1.  To exclude Windows Defender settings from the migration, select **Edit**,
+12.  To exclude Windows Defender settings from the migration, select **Edit**,
     select **Find**, type: **defender**, select **Find Next**, and then modify
     the **migrate** attribute for **Windows-Defender-AM-Sigs** to value
     **"no"**.
 
-2.  Repeat the previous step and modify the **migrate** attribute from yes to
+13.  Repeat the previous step and modify the **migrate** attribute from yes to
     **no** for the following two components:
 
     -   Windows-Defender-AM-Engine
 
     -   Security-Malware-Windows-Defender
 
-3.  Close Notepad, and then select **Save**.
+14.  Close Notepad, and then select **Save**.
 
-4.  In the Command Prompt, type: **notepad folders.xml**, and then press Enter.
+15.  In the Command Prompt, type: **notepad folders.xml**, and then press Enter.
     **Folders.xml** is a custom XML file that will be used to migrate a folder
     named **Projects** to the new computer.
 
-5.  Change the **\<Foldername\>** string to **Projects**. Do not forget to
+16.  Change the **\<Foldername\>** string to **Projects**. Do not forget to
     remove the **\<** and **\>** symbols. The entire line should look similar to
     the following:
 
@@ -99,15 +99,15 @@ F:
 <pattern type= "File">C:\Projects\* [*]\</pattern>
 
 ```
-1.  Close Notepad, and then select **Save**.
+17.  Close Notepad, and then select **Save**.
 
-2.  On the taskbar, select **File Explorer**.
+18.  On the taskbar, select **File Explorer**.
 
-3.  In File Explorer, in the navigation pane, expand **This PC**, expand **Local
+19.  In File Explorer, in the navigation pane, expand **This PC**, expand **Local
     Disk (C:)**, and then select **Projects**. In the details pane, verify that
     files named **Project1.txt** and **Project2.txt** are in the folder.
 
-4.  In File Explorer, right-click in the details pane, select **New**, select
+20.  In File Explorer, right-click in the details pane, select **New**, select
     **Text Document**, type: *\<your name\>*, and then press Enter.
 
 Task 2: Capture the user state

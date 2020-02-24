@@ -20,33 +20,33 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
 3.  On the **Microsoft Azure** page, select **Azure Active Directory** in the
     left navigation pane. This will open the adatum Azure Active Directory page.
 
-6.  On the Azure portal, select **Users** in the middle pane, select **All
+4.  On the Azure portal, select **Users** in the middle pane, select **All
     users**, and then select **New user**.
 
-7.  In the **New User** dialog box, select **Create user** and enter the following:
+5.  In the **New User** dialog box, select **Create user** and enter the following:
 
     -  User Name: **sync\@yourtenant.onmicrosoft.com**
 
     -  Name: **Sync User**
 
-8. Under Groups and roles, on the **Roles** row, select **User**. 
+6. Under Groups and roles, on the **Roles** row, select **User**. 
     Select **Global administrator**, and then select **Select**.
 
-8.  Select **Show Password**, note and write down the value for **Password**, and
+7.  Select **Show Password**, note and write down the value for **Password**, and
     then select **Create**.
 
-9.  At the upper right of the page, select your account name, and then select
+8.  At the upper right of the page, select your account name, and then select
     **Sign in with a different account**.
 
-11. On the **Microsoft Azure** page, select **Use another account** if needed,
+9. On the **Microsoft Azure** page, select **Use another account** if needed,
     type **sync\@yourtenant.onmicrosoft.com** for the user name, type the
     temporary password that you noted above, and then select **Sign in**.
 
-12. On the **Update your password** page, in the **Current password** text box,
+10. On the **Update your password** page, in the **Current password** text box,
     type the temporary password, in the **New password** and **Confirm
     password** text boxes, type **Pa55w.rd12345** and then select **Sign in**.
 
-13. If the **Welcome to Microsoft** Azure window appears, select **Maybe later**.
+11. If the **Welcome to Microsoft** Azure window appears, select **Maybe later**.
     Select your **Sync user** account in the upper right of the page, and then
     select **Sign in with a different account**. Leave browser window open.
 

@@ -17,8 +17,7 @@ Your organization is planning a Microsoft Intune implimentation. You have been a
 
 3.  In the PowerShell console, type the following and then press Enter:
 ```
-    Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability
-    -Online
+    Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability -Online
 
 ```
 4.  This will install Remote Server Administration Tools (RSAT). Wait for the
@@ -101,21 +100,21 @@ directly to Intune.
 
 -   UserRsop.TXT
 
-1.  Open File Explorer and browse to the **C:\\MMAT-master** folder.
+6.  Open File Explorer and browse to the **C:\\MMAT-master** folder.
 
-2.  In the **C:\\MMAT-master** folder, double-click the
+7.  In the **C:\\MMAT-master** folder, double-click the
     **MDMMigrationAnalysis.html** file.
 
-3.  Examine the content of the file and verify that **Security Account
+8.  Examine the content of the file and verify that **Security Account
     Policies**, **Windows Firewall Policies with Advanced Security** and **ADMX
     backed policies (System/Power Management)** are all listed as supported.
     This means that the policies can be directly migrated to Intune. Also notice
     that the mobile device management (MDM) cloud solution provider (CSP)
     setting that you should use is displayed next to Group Policy Setting.
 
-4.  Finally notice the settings displayed under **NOT SUPPORTED: Security
+9.  Finally notice the settings displayed under **NOT SUPPORTED: Security
     Account Policies**. For now, they cannot be migrated to Intune.
 
-5.  Close all Windows.
+10.  Close all Windows.
 
 **END OF LAB**
