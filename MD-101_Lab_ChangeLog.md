@@ -12,3 +12,8 @@ An earlier draft version of several labs were committed. These were updated with
 ### 12-02-19
 Lab **Connecting AD DS and Azure AD** - A new version of AD Connect was released in Nov 2019, which no longer supports using Domain Admin credentials. Updated lab to reflect new steps required to complete the lab.  
 
+### 02-24-19
+Lab **Configuring a WIP policy in Intune** was updated to address an issue where WIP was not blocking Internet Explorer. An additional domain boundary was added to account for sharepoint.com is not within the tenant AAD domain. Several steps were updated to reflect recent changes to the UI experience.
+
+Several labs were updated with corrected numerals in lists to address an issue that some lab hosts were having issues rendering the lists properly.
+

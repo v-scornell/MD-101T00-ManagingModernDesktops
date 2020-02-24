@@ -165,11 +165,11 @@ Users are requesting that their Windows settings and application data be the sam
 2.  On the taskbar, select **Start** and then select the **Settings** app,
     then select **Sync your settings**.
 
-8.  On the **Sync your settings** page, verify that **Sync settings** is set to
+3.  On the **Sync your settings** page, verify that **Sync settings** is set to
     **On**. You can control the individual sync settings by toggling them either
     on or off.
 
-9.  You should already be logged on as **Diego Siciliani** on **LON-CL4**.
+4.  You should already be logged on as **Diego Siciliani** on **LON-CL4**.
 
 ### Task 3: Enable Enterprise State Roaming
 
@@ -261,33 +261,33 @@ If this occurs, continue with task 3, otherwise continue with Task 4._
 2.  Switch to **LON-CL4** and sign in as **DiegoS\@yourtenant.onmicrosoft.com**
     if you are not already signed in. 
 
-2.  On the taskbar, select **Start** and then select the **Settings** app,
+3.  On the taskbar, select **Start** and then select the **Settings** app,
     then select **Sync your settings**.
 
-3.  On the **Sync your settings** page, verify that **Sync settings** is set to
+4.  On the **Sync your settings** page, verify that **Sync settings** is set to
     **On**. 
 
 _**Important**: If Sync settings is set to off and it is greyed out, the device must be
 rejoined.  Repeat Task 3 on LON-CL4 and then return to this task, continuing with Step 4._
 
-4.  In **Microsoft Edge**, press CTRL+I to view favorites. Verify if the
+5.  In **Microsoft Edge**, press CTRL+I to view favorites. Verify if the
     Microsoft Learn favorites page is already synced from **LON-CL3**.  
 
     _Note: It can take several minutes for settings to sync. If the favorites option
     doesn't show, try rebooting and signing back in as DiegoS\@yourtenant.onmicrosoft.com._
 
-4.  On **LON-DC1**, in **Internet Explorer**, on the **Devices – Device
+6.  On **LON-DC1**, in **Internet Explorer**, on the **Devices – Device
     settings** blade, in the navigation pane, select **All devices**.
 
-5.  In the details pane, in the **OWNER** column, select **Diego Siciliani**.
+7.  In the details pane, in the **OWNER** column, select **Diego Siciliani**.
 
-6.  In the **Diego Siciliani** blade, in the navigation pane, select
+8.  In the **Diego Siciliani** blade, in the navigation pane, select
     **Devices**.
 
-7.  In the details pane, verify that **Devices** is selected in the **Show**
+9.  In the details pane, verify that **Devices** is selected in the **Show**
     dropdown list. This shows all the devices that Diego Siciliani owns.
 
-8.  Close all Windows. 
+10.  Close all Windows. 
 
 
 **END OF LAB**

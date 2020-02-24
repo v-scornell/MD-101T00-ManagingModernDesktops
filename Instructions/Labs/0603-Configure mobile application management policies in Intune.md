@@ -28,7 +28,7 @@ All the developers in A. Datum have iPhones running the latest version of iOS. T
 5.  On the **Apps** tab, in the text box, type **Outlook**. Select
     ***Outlook** and then select **Select**.
 
-7.  Select **Next**. On the **Data protection** tab, configure the following options and select
+6.  Select **Next**. On the **Data protection** tab, configure the following options and select
     **OK**:
 
 -   Backup Org data to ITunes and iCloud backups: **Allow**
@@ -41,25 +41,25 @@ All the developers in A. Datum have iPhones running the latest version of iOS. T
 
 -   Leave all other settings at default
 
-9.  Select **Next**. On the **Access requirements** tab, configure the following options and
+7.  Select **Next**. On the **Access requirements** tab, configure the following options and
     select **OK**:
 
 -   PIN for access: **Not required**
 
-10. Select **Next**. On the **Conditional launch** tab, review the settings. 
+8. Select **Next**. On the **Conditional launch** tab, review the settings. 
 
      Here you can set the sign-in security requirements for your access
      protection policy. You can select a setting and enter the value that users
      must meet to sign in to your company app. Make note of the various settings
      but do not change anything. Select **OK**.
 
-11.  Select **Next**. On the Assignments tab, select **+Select groups to include**. 
+9.  Select **Next**. On the Assignments tab, select **+Select groups to include**. 
 
-12. Select the **A. Datum developer devices** group, then select **Select**. 
+10. Select the **A. Datum developer devices** group, then select **Select**. 
 
-13. Select Next.  On the **Review + create** tab, review the settings and select **Create**. 
+11. Select Next.  On the **Review + create** tab, review the settings and select **Create**. 
 
-14. On the **Client apps - App protection policies** blade, in the details pane,
+12. On the **Client apps - App protection policies** blade, in the details pane,
     verify that **Outlook - Developers** is listed.
 
 **END OF LAB**

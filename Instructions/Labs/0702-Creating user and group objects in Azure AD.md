@@ -64,48 +64,48 @@ Note: For location use either your local region or United States.
 
 13. Close the **Users – All users** window, and then select **Licenses**.
 
-12. Select **All products**, and then select **Enterprise Mobility + Security
+14. Select **All products**, and then select **Enterprise Mobility + Security
     E5** and **Office 365 Enterprise E5**. Select **Assign**.
 
-13. Select **Users and groups**, select **Edmund Reeve** from the list, and
+15. Select **Users and groups**, select **Edmund Reeve** from the list, and
     then select **Select**.
 
-14. Select **Assign**.
+16. Select **Assign**.
 
-15. At the upper right of the page, select your account name, and then select
+17. At the upper right of the page, select your account name, and then select
     **Sign in with a different account**.
 
-17. On the **Microsoft Azure** page, select **Use another account if needed**,
+18. On the **Microsoft Azure** page, select **Use another account if needed**,
     type **ereeve\@ yourtenant.onmicrosoft.com** for the user name, type the
     temporary password that you noted above, and then select **Sign in**.
 
-18. On the **Update your password** page, in the **Current password** text box,
+19. On the **Update your password** page, in the **Current password** text box,
     type **Pa55w.rd12345**, in the **New password** and **Confirm
     password** text boxes, type **MDA101!!**, and then select **Sign in**. If the
     **Stay signed in** prompt appears, select **No**.
 
-19. Select Edmund’s user account in the upper right of the page, and then select
+20. Select Edmund’s user account in the upper right of the page, and then select
     **Sign in with a different account**
 
-23. On the **Microsoft Azure** page, use the MOD Administrator account to sign
+21. On the **Microsoft Azure** page, use the MOD Administrator account to sign
     in.
 
-24. In the Microsoft Azure portal, select the **Azure Active Directory**
+22. In the Microsoft Azure portal, select the **Azure Active Directory**
     directory item, and then select **Groups.**
 
-25. On the **Groups – All groups** page, select **All groups**, and then select
+23. On the **Groups – All groups** page, select **All groups**, and then select
     **New Group**.
 
-26. In the **Group** window, select **Security** for Group type, type
+24. In the **Group** window, select **Security** for Group type, type
     **AdatumGroup1** in the **Group Name** text box, select **Assigned** for
     **Membership type**, and then select **Members**.
 
-27. In the **Members** window, select **Edmund Reeve**, and then select
+25. In the **Members** window, select **Edmund Reeve**, and then select
     **Select**.
 
-28. Select **Create**. Close the **Group** page.
+26. Select **Create**. Close the **Group** page.
 
-29. Minimize the browser window on **LON-DC1**.
+27. Minimize the browser window on **LON-DC1**.
 
 #### Task 2: Creating users by using PowerShell
 

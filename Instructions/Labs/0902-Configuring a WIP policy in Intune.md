@@ -8,7 +8,7 @@ In this lab, you will practice creating and configuring Windows Information Prot
 
 1.  On **LON-CL3**, sign in as **admin\@yourtenant.onmicrosoft.com** with the default tenant password.
 
-2.  Open an InPrivate window in Microsoft Edge, and then navigate to <https://portal.azure.com>. 
+2.  Open an InPrivate window in Microsoft Edge, and then navigate to **https://portal.azure.com**.
     Sign in using your MOD administrator credentials if prompted. Ensure that the Azure portal opens.
 
 3.  In the navigation pane, select **Intune** and then select **Client apps**.
@@ -17,41 +17,43 @@ In this lab, you will practice creating and configuring Windows Information Prot
 
 5.  In the Name text box, type **Windows 10 WIP test policy**.
 
-6.  In the Enrollment state list, select **With enrollment**.
+6.  In the Enrollment state list, select **With enrollment** and select **Next**.
 
-9.  Select **Protected apps**, then select **Add apps**.
+7.  On the Targeted apps tab, under **Protected apps**, then select **Add**.
 
-3.  Select **Microsoft Edge** and **Notepad**. Select **OK** twice.
+8.  Select **Microsoft Edge** and **Notepad**. Select **OK** and select **Next**.
 
-5.  Select **Required settings**, and then select **Allow overrides**.
+9.  On the Required settings tab, next to the **Windows Information Protection mode** option, select **Allow overrides**.
 
-7.  In the **Corporate identity** text box, type **yourtenant.onmicrosoft.com**
-    if needed, and then select **OK**.
+10.  In the **Corporate identity** text box, type **yourtenant.onmicrosoft.com**
+    if needed, and then select **Next**.
 
-8.  Leave the console open.
+11.  On the Advanced settings tab, in the **Network perimeter** section, select **Add**.
 
-#### Task 2: Define corporate boundaries
+12.  On the Add network boundary dialog, in the **Boundary type** list, select **Network domains**.
 
-1.  Select **Configure Advanced settings**.
+13.  In the **Name** text box, type **Domain name**.
 
-2.  Select **Add network boundary**.
+14.  In the **Value** text box, type **Adatum.com**, and then select **OK**.
 
-3.  In the **Boundary type** list, select **Network domains**.
+15.  In the **Network perimeter** section, again select **Add**.
 
-4.  In the **Name** text box, type **Domain name**.
+16.  On the Add network boundary dialog, in the **Boundary type** list, select **Network domains**.
 
-5.  In the **Value** text box, type **Adatum.com**, and then select **OK**.
+17.  In the **Name** text box, type **Cloud Domain name**.
 
-6.  Select **Add network boundary**.
-
-7.  In the **Boundary type** list, select **Network domains**.
-
-8.  In the **Name** text box, type **Cloud Domain name**.
-
-9.  In the **Value** text box, type **yourtenant.onmicrosoft.com**, and then
+18.  In the **Value** text box, type **yourtenant.onmicrosoft.com**, and then
     select **OK**.
 
-10. Repeat steps 2−5 for the following boundary:
+19. Repeat steps 16−18 for the following boundary:
+
+    -   Boundary type: **Cloud resources**
+
+    -   Name: **Cloud Domain name**
+
+    -   Value: **yourtenant.sharepoint.com**
+
+20. Repeat steps 16−18 for the following boundary:
 
     -   Boundary type: **IPv4 ranges**
 
@@ -59,63 +61,74 @@ In this lab, you will practice creating and configuring Windows Information Prot
 
     -   Value: **172.16.0.1-172.16.0.190**
 
-1.  Leave the Azure portal with the Intune console open.
+21.  On the Assignments tab, in the Included Groups section, select **+ Select groups to include**.
+
+22.  In the **Select** search box enter **Windows devices**.
+
+23.  Select **Windows devices** and select **Select**, and then select **Save**.
+
+24.  Select **Next** and then select **Create**.
+
+25.  Leave the Azure portal with the Intune console open.
 
 #### Task 4: Create and upload a Data Recovery Agent (DRA) certificate
 
-1.  On **LON-CL3**, right-click the **Start** menu, select **Windows
-    PowerShell**.
+1.  On **LON-CL3**, right-click the **Start** menu, select **Windows PowerShell**.
 
-2.  In the **Windows PowerShell** console, type the following command, and then
+2.  Note the current folder location.
+
+3.  In the **Windows PowerShell** console, type the following command, and then
     press Enter:
 
 ```
     Cipher /r:ADATUMDRA
 
 ```
-3.  When prompted, type **Pa55w.rd**, and then confirm the password.
+4.  When prompted, type **Pa55w.rd**, and then confirm the password.
 
-4.  Switch to Microsoft Edge, and under **Data protection**, select the
-    **Browse** icon.
+5.  Switch to Microsoft Edge and select the **Windows 10 WIP test policy** you created.
 
-5.  Browse to the **C:\\Users\Mod Administrator\\** folder, select the
+6.  Select **Properties**. In the Advance settings section, select **Edit**.
+
+7.  Under **Data protection**, select the **Browse** icon.
+
+8.  Browse to the folder location as noted in Step 2 and select the
     **ADATUMDRA.cer** file, and then select **Open**.
 
-6.  Under **Show the enterprise data protection icon**, select **On**.
+9.  Under **Show the enterprise data protection icon**, select **On**.
 
-7.  Select **OK**, and then select **Create.**
+10.  Select **OK**, and then select **Create.**
 
-#### Task 5: Assign and test the WIP policy
+#### Task 5: Sync and test the WIP policy
 
-1.  On **LON-CL3**, in Microsoft Edge, select the policy **Windows 10 WIP test
-    policy**.
+1.  On the Start menu on LON-CL3, select **Settings**.
 
-2.  Select **Assignments**, then select **Select groups to include**.
+2.  Select **Accounts** and then select **Access work or school**.
 
-3.  In the **Select** search box enter **Windows devices**.
-
-4.  Select **Windows devices** and select **Select**, and then select **Save**.
-
-5.  On the Start menu on LON-CL3, select **Settings**.
-
-6.  Select **Accounts** and then select **Access work or school**.
-
-7.  Under work or school account select **Connected to Adatum Azure AD** and
+3.  Under work or school account select **Connected to Adatum Azure AD** and
     select **Info**.
 
-8.  Select **Sync**.
+4.  Select **Sync**.
 
     **Note**: Wait for the settings to sync.
 
-9.  Sign out and sign back in as **diegos\@@yourtenant.onmicrosoft.com** 
+5.  Sign out and sign back in as **diegos\@@yourtenant.onmicrosoft.com** 
     with the default tenant password.
 
-10. In Microsoft Edge, navigate to **https://yourtenant.sharepoint.com**.
+6.  In Microsoft Edge, navigate to **https://yourtenant.sharepoint.com**.
 
-11. Start Internet Explorer and navigate to **https://yourtenant.sharepoint.com.**
+7.  Start Internet Explorer and navigate to **https://yourtenant.sharepoint.com**.
 
     **Note**: You should not be able to successfully navigate to the Microsoft
     SharePoint Online site in Internet Explorer because it’s not an allowed app.
+
+    **Note**: If you are still able to access the site in Internet Explorer, sign out and sign back in, and repeat step 7.
+
+8.  Right-click on the Windows task bar and select **Task Manager**.  Select **More details** if needed.
+
+9.  Select the **Details** tab. **Right-click** on any tab and select **Select columns**. 
+
+10.  Scroll to and check the box next to **Enterprise context** and select **OK**. Note that the Enterprise context for Microsoft Edge shows the domain, while Internet Explorer's context shows as Personal.  
 
 
 **END OF LAB**

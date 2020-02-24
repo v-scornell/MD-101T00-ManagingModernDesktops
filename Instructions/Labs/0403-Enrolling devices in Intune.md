@@ -28,20 +28,20 @@ Joni should then reboot the device to verify organizational settings, such as Wi
 
     _Note: This will indicate that the device is not enrolled in Azure AD or Intune._
 
-1.  Close the **Certificates** console.
+4.  Close the **Certificates** console.
 
-2.  Right-click **Start**, and then select **Windows PowerShell (Admin)**. When
+5.  Right-click **Start**, and then select **Windows PowerShell (Admin)**. When
     prompted select **Yes**.
 
-3.  In the PowerShell console, type the following and press Enter:
+6.  In the PowerShell console, type the following and press Enter:
 ```
  dsregcmd /status
 
 ```
-4.  In the output under **Device State**, verify that **AzureAdJoined : NO** is
+7.  In the output under **Device State**, verify that **AzureAdJoined : NO** is
     displayed.
 
-5.  Close the PowerShell window.
+8.  Close the PowerShell window.
 
 ### Task 2: Enroll a Windows 10 device to Azure AD and Intune using Settings app
 
@@ -101,18 +101,18 @@ _Note:  LON-CL4 must first be removed from the domain to continue this lab._
 
     This will indicate that the device is enrolled in Azure AD and Intune.
 
-1.  Close the Certificates window.
+3.  Close the Certificates window.
 
-2.  Right-click **Start**, and then select **Windows PowerShell (Admin)**. When
+4.  Right-click **Start**, and then select **Windows PowerShell (Admin)**. When
     prompted select **Yes**.
 
-3.  In the PowerShell console, type the following and press Enter: **dsregcmd
+5.  In the PowerShell console, type the following and press Enter: **dsregcmd
     /status**
 
-4.  In the output under **Device State**, verify that **AzureAdJoined : YES** is
+6.  In the output under **Device State**, verify that **AzureAdJoined : YES** is
     displayed. This indicates that the device is Azure AD joined.
 
-5.  In the output under Tenant Details, verify that the following three entries
+7.  In the output under Tenant Details, verify that the following three entries
     exist:
 
 -   mdmUrl :
