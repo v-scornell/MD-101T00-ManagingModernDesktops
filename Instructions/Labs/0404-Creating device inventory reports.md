@@ -117,32 +117,11 @@ Your organization uses Power BI for reporting.  You've been asked to setup Power
     Data Warehouse** link. Leave this page open.
 
 10. Select **Start** and under **Recently added**, select **Power BI Desktop**.
-    Wait for Power BI Desktop to load.
 
-11. In the **Welcome to Power BI Desktop**, fill out the form as follows and
-    then select **Done**:
+11. After PowerBI loads, close the **Sign in to collaborate and share content** page by selecting the
+    **X** in the upper right corner.
 
--   First Name: **Brenda**
-
--   Last Name: **Mueller**
-
--   Email Address: **bredam\@adatum.com**
-
--   Enter your phone number: **12121212**
-
--   Country/region: **United States**
-
--   Company name: **A. Datum Inc.**
-
--   Company size: **50-249**
-
--   Job Title: **IT Professional**
-
-12.  Close the **Sign in to collaborate and share content** page by selecting the
-    X in the upper right corner.
-
-13.  Choose **Home**, then **Get Data**. Select **OData feed** and choose
-    **Basic**.
+13.  With the **Home** tab selected in the ribbon, select **Get Data**. In the dialog, select **Other** on the left side, and then select **OData feed** and then select **Connect**.
 
 14.  Switch to the browser with the Intune Data Warehouse screen. Copy the custom
     feed URL into the clipboard.
@@ -162,7 +141,7 @@ Your organization uses Power BI for reporting.  You've been asked to setup Power
 19.  On the **Sign in** page, type **admin\@yourtenant.onmicrosoft.com**. Then
     select **Next**.
 
-20.  On the **Enter password** page, use **Pa55w.rd** as the tenant Admin
+20.  On the **Enter password** page, enter the tenant Admin
     password, and select **Sign in**.
 
 21. Back on the **OData feed** dialog box, select **Connect**. Wait for the
@@ -190,7 +169,7 @@ Your organization uses Power BI for reporting.  You've been asked to setup Power
 
 -   Device inventory logs
 
-The **Device Summary** report will display the three devices you’ve enrolled
+The **Device Summary** report will display the three devices you've enrolled
 in the previous labs. Not all reports will have data in them. You can
 customize the reports using Power BI Desktop or create your own reports
 using the data from the Intune Data Warehouse.
