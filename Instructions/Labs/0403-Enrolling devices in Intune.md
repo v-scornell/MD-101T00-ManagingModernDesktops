@@ -45,12 +45,10 @@ Joni should then reboot the device to verify organizational settings, such as Wi
 
 ### Task 2: Enroll a Windows 10 device to Azure AD and Intune using Settings app
 
-_Note:  LON-CL4 must first be removed from the domain to continue this lab._ 
+_Note:  This lab is practice enrolling a non-domain joined device. LON-CL4 must first be removed from the domain to continue this lab._  
 
 1.  On **LON-CL4**, on the taskbar, select **Start** and then select the
     **Settings** app.
-
-    _Note:  This lab is practice enrolling a non-domain joined device. LON-CL4 must first be removed from the domain to continue this lab._ 
 
 2.  In the **Settings** app, select the **Accounts**.
 
@@ -128,7 +126,7 @@ _Note:  LON-CL4 must first be removed from the domain to continue this lab._
 
 _Note: this task requires the use of your mobile phone in order to be validated by Microsoft. The task is optional but recommended as it will demonstrate how to setup Windows Hello, the first time you login using your Azure AD credentials. If you prefer or are unable to sign in with phone verification, go to **Task 4B**._
 
-When you’re logged on using your Azure AD credentials you will benefit from
+When you're logged on using your Azure AD credentials you will benefit from
 Single-Sign-On (SSO) to Azure AD, Intune and Office 365.
 
 1.  On **LON-CL4**, sign out of LON-CL4.

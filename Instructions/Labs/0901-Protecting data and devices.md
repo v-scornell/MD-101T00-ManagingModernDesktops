@@ -14,16 +14,16 @@ Abbi and Bill share LON-CL1. Abbi is working with files containing sensitive inf
 
 1.  Sign in to **LON-CL1** as **Adatum\\Abbi** with the password **MDA101!!**.
 
-2.  On the taskbar, selectselect the **File Explorer** icon, selectselect **This
-    PC**, and then double-select **Local Disk (C:)**.
+2.  On the taskbar, select the **File Explorer** icon, select **This
+    PC**, and then double-click **Local Disk (C:)**.
 
-3.  On the ribbon, selectselect the **Home** tab and then selectselect the **New
+3.  On the ribbon, select the **Home** tab and then select 'he **New
     Folder** icon. Name the new folder **SecretAbbi**.
 
-4.  On the ribbon, selectselect the **View** tab and then selectselect
+4.  On the ribbon, select the **View** tab and then select
     **Options**. Select **Change folder and search options**.
     
-5.  In the **Folder Options** window, selectselect **View**.
+5.  In the **Folder Options** window, select **View**.
 
 6.  In the **Advanced settings** list, select the **Show encrypted or compressed
     NTFS files in color** check box.
@@ -32,7 +32,7 @@ Abbi and Bill share LON-CL1. Abbi is working with files containing sensitive inf
 
 #### Task 2: Encrypt the folder by using EFS and backup a certificate
 
-1.  Right-click the **SecretAbbi** folder, and then selectselect **Properties**.
+1.  Right-click the **SecretAbbi** folder, and then select **Properties**.
 
 2.  Select **Advanced**.
 
@@ -44,30 +44,30 @@ Abbi and Bill share LON-CL1. Abbi is working with files containing sensitive inf
 
 5.  Open the **SecretAbbi** folder.
 
-6.  In the blank area, right-click and selectselect **New**, and then
-    selectselect **Text Document**.
+6.  In the blank area, right-click and select **New**, and then
+    select **Text Document**.'
 
-7.  Name the new file **Secrets**, and then double-select the file to open it in
+7.  Name the new file **Secrets**, and then double-click the file to open it in
     Notepad.
 
 8.  Enter the following text: **This is a secret file**.
 
-9.  Close Notepad, and then when prompted, selectselect **Save**.
+9.  Close Notepad, and then when prompted, select **Save**.
 
 10. In the **Type here to search** text box on the taskbar, type
-    **certificates** and then selectselect **Manage file encryption
+    **certificates** and then select **Manage file encryption
     certificates**.
 
-11. In the Encrypting File System wizard, selectselect **Next**.
+11. In the Encrypting File System wizard, select **Next**.
 
 12. On the **Select or create a file encryption certificate** page ensure that
     the certificate for Abbi Skinner is issued by AdatumCA. Select **View
-    certificate** to see the details and select **Ok**. Select **Next**.
+    certificate** to see the details and select **Ok'*. Select **Next**.
 
 13. On the **Back up your certificate or key** page, select to backup a
     certificate and save it to the **C:\\backup\\** folder (create the backup
     folder before saving). Give it the name **certbackup**. Provide **Pa55w.rd**
-    for password and selectselect **Next** two times and then selectselect
+    for password and select **Next** two times and then select
     **Close**.
 
 14. Sign out from **LON-CL1**.
@@ -76,13 +76,13 @@ Abbi and Bill share LON-CL1. Abbi is working with files containing sensitive inf
 
 1.  Sign in to **LON-CL1** as **ADATUM\\Bill** with the password **Pa55w.rd**.
 
-2.  On the taskbar, selectselect the **File Explorer** icon.
+2.  On the taskbar, select the **File Explorer** icon.
 
-3.  Select **This PC**, and then double-selectselect **Local Disk (C:)**.
+3.  Select **This PC**, and then double-clickselect **Local Disk (C:)**.
 
 4.  Open the **SecretAbbi** folder.
 
-5.  Double-select **Secrets**.
+5.  Double-click **Secrets**.
 
 6.  Verify that **Access** is denied, and then select **OK**. Close Notepad.
 
@@ -104,7 +104,7 @@ It's been determined that all the information on LON-CL1 should be encrypted. Yo
     expand **Administrative Templates**, expand **Windows Components**, and then
     expand **BitLocker Drive Encryption**.
 
-3.  Select **Operating System Drives**, and then double-select **Require
+3.  Select **Operating System Drives**, and then double-click **Require
     additional authentication at startup**.
 
 4.  In the **Require additional authentication at startup** dialog box, select

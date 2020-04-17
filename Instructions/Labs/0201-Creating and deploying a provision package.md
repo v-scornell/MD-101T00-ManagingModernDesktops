@@ -12,28 +12,26 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
 
 #### Task 1: Review the current computer settings
 
-1.  Please select LON-DC1 from the **Virtual machine** Dropdown Menu
-
-2.  On **LON-DC1**, sign in as **Adatum\\administrator** with the password of
+1.  On **LON-DC1**, sign in as **Adatum\\administrator** with the password of
     **Pa55w.rd**.
 
-3.  In **Server Manager**, select **Tools**, and then select **Active Directory
+2.  In **Server Manager**, select **Tools**, and then select **Active Directory
     Users and Computers**.
 
-4.  In Active Directory Users and Computers, in the navigation pane, expand
+3.  In Active Directory Users and Computers, in the navigation pane, expand
     **Adatum.com**, expand **Marketing**, and then select **Computers**. In the
     details pane, verify that no computer account is present.
 
-5.  On the taskbar, select **File Explorer**.
+4.  On the taskbar, select **File Explorer**.
 
-6.  In File Explorer, select **Allfiles (E:)**.
+5.  In File Explorer, select **Allfiles (E:)**.
 
 7.  In the details pane, right-click an area of free space, point to **New** and
     then select **Folder**.
 
-8.  Name the Folder “**Provision”** and press Enter.
+8.  Name the Folder "**Provision"** and press Enter.
 
-9.  Right-select **Provision**, point to **Share with** and then select **Specific
+9.  Right-click **Provision**, point to **Share with** and then select **Specific
     people**.
 
 10. In the text box, type **Everyone** and then select **Add**.
@@ -53,7 +51,7 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
 
 17. In the **System** section, in the **Computer name, domain, and workgroup
     settings** section, verify that the computer name is **LON-CL4** and that
-    it’s in a workgroup named **WORKGROUP**.
+    it's in a workgroup named **WORKGROUP**.
 
 18. Close the **System** window.
 
@@ -62,14 +60,14 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
 
 20. In **Computer Management**, in the navigation pane, expand **Local Users and
     Groups**, select **Users**, and then in the details pane, verify that
-    **LocalUser** isn’t present.
+    **LocalUser** isn't present.
 
 21. Close **Computer Management**.
 
 22. In File Explorer, in the navigation pane, expand **This PC**, expand **Local
     Disk (C:)**, expand **Users**, expand **Public**, select **Public
     Documents**, and then in the details pane, verify that the newly created
-    “Provision” Folder isn’t present as a subfolder. (You can ignore the
+    "Provision" Folder isn't present as a subfolder. (You can ignore the
     subfolders, if any).
 
 23. In the navigation pane, right-click **This PC** and then select **Map network
@@ -181,7 +179,7 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
 
 3.  In the navigation pane, select **Downloads**.
 
-4.  Right-select an area of free space and then select **Paste**.
+4.  Right-click an area of free space and then select **Paste**.
 
 5.  In **Downloads**, double-click **Marketing Computer.ppkg**.
 
@@ -189,7 +187,7 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
     the **Is this package from a source you trust** page, and then select **Yes,
     add it**.
 
-7.  Restart **LON-CL4** if the Client PC doesn’t automatically reboot, and then
+7.  Restart **LON-CL4** if the Client PC doesn't automatically reboot, and then
     sign in as **Admin** with the password **Pa55w.rd**. Note that it can take a
     few minutes for **LON-CL4** to restart.
 

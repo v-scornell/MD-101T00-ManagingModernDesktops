@@ -14,14 +14,14 @@ You've been asked to review the inventory for LON-CL4.  Use Intune to review the
 
 1.  Switch to **LON-CL3** and sign in as **Admin** with the password **Pa55w.rd**.
 
-2.  In Microsoft Edge, type **https://portal.azure.com** in the address bar, and
+2.  In Microsoft Edge, type **https://endpoint.microsoft.com** in the address bar, and
     then press **Enter**.
 
 3.  Sign in as user **Admin\@yourtenant.onmicrosoft.com**, and use the tenant
-    Admin password. Under Azure Services, select **Intune**. 
+    Admin password. 
 
 4.  Select **Devices**, then select **All devices** and in the details pane, select the
-    **MARKETING-###** entry. On the **Overview** blade, examine the various
+    **MARKETING-###** entry. Examine the various
     information displayed about the device.
 
     _Note: This device is the LON-CL4 VM._
@@ -29,13 +29,13 @@ You've been asked to review the inventory for LON-CL4.  Use Intune to review the
 5.  Select **Properties** and note that you can change the **Management name**,
     **Device category** and **Device ownership**.
 
-6.  In the Management name field, replace the existing text with **LON-CL4** and select **Save**.
+6.  In the **Management name** field, replace the existing text with **LON-CL4** and select **Save**.
 
 7.  Under **Monitor**, select **Hardware** and examine the hardware from
     **MARKETING-###**. You need to scroll down to see it all.
 
 8.  Under **Monitor**, select **Discovered apps** and examine the app inventory
-    from MARKETING-###. You need scroll down to see it all.
+    from MARKETING-###. You may need to scroll down to see it all.
 
 
 ### Exercise 2 Scenario
@@ -44,10 +44,7 @@ Management is requesting a report of all devices. They do not have access to the
 
 ### Task 1: Export Intune Data
 
-1.  On **LON-CL3**, in the Azure portal, in the navigation pane, select **Home** in the
-    breadcrumb navigation, then select **Intune**.
-
-2.  On the **Intune** blade, select **Devices** and then select **All devices**.
+1.  On **LON-CL3**, in the Endpoint Manager portal, select **Devices** and then select **All devices**.
 
 3.  On the All devices blade, in the details pane, select **Export**.
 
@@ -85,9 +82,9 @@ Management is requesting a report of all devices. They do not have access to the
 
 ### Exercise 3 Scenario
 
-Your organization uses Power BI for reporting.  You've been asked to setup Power BI for Brenda Mueller on LON-CL3 and connect to the Intune Data Warehouse using an OData feed and generate a PDF report.
+Your organization uses Power BI for reporting.  You've been asked to setup Power BI for Brenda Mueller on LON-CL3 and connect to the Intune Data Warehouse.  Brenda needs to see a report that shows the primary user of each device. 
 
-### Task 1: Create an Intune report using Power BI and Intune Data Warehouse
+### Task 1: Install and connect Power BI to the Intune Data Warehouse
 
 1.  On **LON-CL3**, on the Task bar, select the **File Explorer** icon and browse
     to **C:\\Software**.
@@ -110,14 +107,7 @@ Your organization uses Power BI for reporting.  You've been asked to setup Power
     select **Launch Microsoft Power BI Desktop** to remove the check mark. Then
     select **Finish**.
 
-8.  On **LON-CL3**, in the Azure portal, in the navigation pane, select
-    **Microsoft Intune** in the breadcrumb navigation.
-
-9.  Scroll to the right and under **Other tasks**, select the **Set up Intune
-    Data Warehouse** link. Leave this page open.
-
 10. Select **Start** and under **Recently added**, select **Power BI Desktop**.
-    Wait for Power BI Desktop to load.
 
 11. In the **Welcome to Power BI Desktop**, fill out the form as follows and
     then select **Done**:
@@ -138,23 +128,19 @@ Your organization uses Power BI for reporting.  You've been asked to setup Power
 
 -   Job Title: **IT Professional**
 
-12.  Close the **Sign in to collaborate and share content** page by selecting the
-    X in the upper right corner.
+12. After PowerBI loads, close the **Sign in to collaborate and share content** page by selecting the
+    **X** in the upper right corner.
 
-13.  Choose **Home**, then **Get Data**. Select **OData feed** and choose
-    **Basic**.
+13.  With the **Home** tab selected in the ribbon, select **Get Data**. In the dialog, select **Other** on the left side, and then select **OData feed** and then select **Connect**.
 
-14.  Switch to the browser with the Intune Data Warehouse screen. Copy the custom
-    feed URL into the clipboard.
+14.  Switch to the browser and navigate back to the Home page in the Endpoint Manager portal. 
 
-15.  Switch back to **PowerBI Desktop** and paste the **OData URL** into the
+15.  Select **Reports** and then select **Data warehouse**.
+
+16.  In the **OData feed for reporting service** field, copy the Odata URL into the clipboard.
+
+17.  Switch back to **PowerBI Desktop** and paste the **OData URL** into the
     **URL** box and select **OK**.
-
-16.  Close the **OData feed** pop-up by selecting **Cancel** or the **X** in the
-    upper right corner.
-
-17.  On the **Home** tab, select **Refresh**. This will load the actual data from
-    Intune.
 
 18.  In the **OData feed** dialog box, select the **Organizational account** tab
     and on then select **Sign in**.
@@ -162,38 +148,38 @@ Your organization uses Power BI for reporting.  You've been asked to setup Power
 19.  On the **Sign in** page, type **admin\@yourtenant.onmicrosoft.com**. Then
     select **Next**.
 
-20.  On the **Enter password** page, use **Pa55w.rd** as the tenant Admin
+20.  On the **Enter password** page, enter the tenant Admin
     password, and select **Sign in**.
 
 21. Back on the **OData feed** dialog box, select **Connect**. Wait for the
-    connection and load of data. It will take approximately 1 minute.
+    connection and load of data. 
+    
+22. In the Navigator window, select all tables. You can select the first table, and then shift-select the last table to select all tables.  With all tables selected, select **Load**.
 
-22. Select **Apply changes**, next to **There are pending changes in your queries
-    that haven´t been applied**. Wait for the task to complete.
+22. Once the data has finished loading, select **Apply changes** next to **There are pending changes in your queries
+    that haven't been applied**. Wait for the task to complete.
 
-23. Select **File** and then select **Export to PDF**. Wait for the PDF to be
-    created.
+### Task 2: Create a custom report using Power BI and Intune Data Warehouse
 
-24. When prompted, select **OK** to open the PDF file in Microsoft Edge.
+1.  In the **Visualizations** pane, select the **Treemap** option (the icon appears to have several rectangles of various sizes). The Treemap chart will be added to the report canvas.
 
-25. Examine the report. You will see six different reports in the PDF file:
+2.  In the Fields pane, find the **devices** table and expand it. 
 
--   Device Summary
+3.  Select the **deviceName** data field and drag it onto the Treemap chart in the report canvas.
 
--   Enrollment trend
+4.  Drag the **deviceKey** data field from the devices table to the **Visualizations** pane and drop it on under the **Values** section in the box labeled **Add data fields here**.
 
--   App protection policy
+5.  In the Fields pane, scroll down and find the **users** table and expand it. 
 
--   Compliance policy
+6.  Drag the **displayName** data field from the users table to the **Visualizations** pane and drop it on under the **Details** section.
 
--   Device configuration policy
+_Note: You should now see device names in each report object, with a user name listed under each device. This should match the users and devices you have used in previous lab steps up until this point._
 
--   Device inventory logs
+_Note: Depending on how recent the Autopilot lab was performed, LON-CL5 may show in the report as the temporary name first assigned to the VM when the lab was provisioned. This will eventually resolve with the correct device name as the Intune Data Warehouse refreshes._ 
 
-The **Device Summary** report will display the three devices you’ve enrolled
-in the previous labs. Not all reports will have data in them. You can
-customize the reports using Power BI Desktop or create your own reports
-using the data from the Intune Data Warehouse.
+7.  Select the **Treemap** you added to the report canvas. In the **Visualizations** pane, select the **table** report option (the icon appears as a spreadsheet) to switch the report canvas to a table view.
+
+8.  Select **File**, then select **Export**, then select **Export to PDF**.  The browser should launch and display the report in a PDF format. 
 
 
 **END OF LAB**
