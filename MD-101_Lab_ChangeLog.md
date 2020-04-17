@@ -3,6 +3,10 @@
 
 This log will be updated whenever updates are made to the lab steps in MD-101.  Note that this log only contains changes to the labs.  The change log for course content is still located in the Learning Download Center.
 
+### 04-17-20
+Lab 0404 **Creating device inventory reports**, Scenario 3, updated steps to create reports using PowerBI instead of using pre-configured reports (that were causing a previous issue). Also updated to use the new Endpoint Manager URL. 
+Minor adjustments related to formatting.
+
 ### 11-04-19
 Initial Release
 
@@ -16,4 +20,3 @@ Lab **Connecting AD DS and Azure AD** - A new version of AD Connect was released
 Lab **Configuring a WIP policy in Intune** was updated to address an issue where WIP was not blocking Internet Explorer. An additional domain boundary was added to account for sharepoint.com is not within the tenant AAD domain. Several steps were updated to reflect recent changes to the UI experience.
 
 Several labs were updated with corrected numerals in lists to address an issue that some lab hosts were having issues rendering the lists properly.
-

@@ -6,7 +6,7 @@ In this lab, you will practice using the MDM Migration Analysis Tool to review G
 
 ### Scenario
 
-Your organization is planning a Microsoft Intune implimentation. You have been asked to identify current configurations being applied by Group Policy that can be migrated to Intune. You have decided to review the client GPOs on LON-CL1.
+Your organization is planning a Microsoft Intune implementation. You have been asked to identify current configurations being applied by Group Policy that can be migrated to Intune. You have decided to review the client GPOs on LON-CL1.
 
 ### Task 1: Prepare the Windows 10 device for the MMAT tool
 
