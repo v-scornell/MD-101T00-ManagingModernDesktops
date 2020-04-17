@@ -154,30 +154,30 @@ Your organization uses Power BI for reporting.  You've been asked to setup Power
 21. Back on the **OData feed** dialog box, select **Connect**. Wait for the
     connection and load of data. 
     
-22. In the Navigator windows, select all tables. You can select the first table, and then Shift-select the last table to select all tables.  With all table selected, select **Load**.
+22. In the Navigator window, select all tables. You can select the first table, and then shift-select the last table to select all tables.  With all tables selected, select **Load**.
 
-22. Once the data has finished loading, select **Apply changes**, next to **There are pending changes in your queries
-    that haven´t been applied**. Wait for the task to complete.
+22. Once the data has finished loading, select **Apply changes** next to **There are pending changes in your queries
+    that haven't been applied**. Wait for the task to complete.
 
 ### Task 2: Create a custom report using Power BI and Intune Data Warehouse
 
-1.  In the **Visualizations** pane, select the **Treemap** option (the icon a appears to have several rectangles of various sizes). The Treemap chart will be added to the report canvas.
+1.  In the **Visualizations** pane, select the **Treemap** option (the icon appears to have several rectangles of various sizes). The Treemap chart will be added to the report canvas.
 
 2.  In the Fields pane, find the **devices** table and expand it. 
 
 3.  Select the **deviceName** data field and drag it onto the Treemap chart in the report canvas.
 
-4.  Drag the **deviceKey** data field from the devices table to the Visualizations pane and drop it on under the **Values** section in the box labeled **Add data fields here**.
+4.  Drag the **deviceKey** data field from the devices table to the **Visualizations** pane and drop it on under the **Values** section in the box labeled **Add data fields here**.
 
 5.  In the Fields pane, scroll down and find the **users** table and expand it. 
 
-6.  Drag the **displayName** data field from the users table to the Visualizations pane and drop it on under the **Details** section.
+6.  Drag the **displayName** data field from the users table to the **Visualizations** pane and drop it on under the **Details** section.
 
-_Note: You should now see a device names in each report object, with a user name listed under each device. This should match the users and devices you have used in previous lab steps up until this point._
+_Note: You should now see device names in each report object, with a user name listed under each device. This should match the users and devices you have used in previous lab steps up until this point._
 
 _Note: Depending on how recent the Autopilot lab was performed, LON-CL5 may show in the report as the temporary name first assigned to the VM when the lab was provisioned. This will eventually resolve with the correct device name as the Intune Data Warehouse refreshes._ 
 
-7.  Select the **Treemap** you added to the report canvas. In the **Visualizations** pane, select the **table** report option (the icon appears as spreadsheet), to switch the report canvas to a table view.
+7.  Select the **Treemap** you added to the report canvas. In the **Visualizations** pane, select the **table** report option (the icon appears as a spreadsheet) to switch the report canvas to a table view.
 
 8.  Select **File**, then select **Export**, then select **Export to PDF**.  The browser should launch and display the report in a PDF format. 
 
