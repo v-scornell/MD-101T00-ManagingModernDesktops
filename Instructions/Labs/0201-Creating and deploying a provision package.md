@@ -60,7 +60,7 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
 
 20. In **Computer Management**, in the navigation pane, expand **Local Users and
     Groups**, select **Users**, and then in the details pane, verify that
-    **LocalUser** isn't present.
+    **LocalAdmin** isn't present.
 
 21. Close **Computer Management**.
 
@@ -203,7 +203,7 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
     details pane, verify that a computer account is present. The name of the
     computer starts with **MARKETING-** followed by three digits.
 
-    **Note:** If the **Computers** organizational unit (OU) is empty, right-click the OU, and then select **Refresh**.
+    **Important:** If the **Computers** organizational unit (OU) is empty, right-click the OU, and then select **Refresh**.
 
 4.  Switch to **LON-CL4** where you should already be signed in as **Admin**.
 

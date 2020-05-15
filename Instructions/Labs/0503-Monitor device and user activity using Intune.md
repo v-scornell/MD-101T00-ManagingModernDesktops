@@ -10,12 +10,11 @@ You have been asked to review Diego Siciliani's sign-in activity.  You have also
 
 #### Task 1: Monitor user activity
 
-1.  On **LON-DC1**, select **Home** in the breadcrumb menu and then select **Intune**.
+1.  On **LON-DC1**, open the browser and navigate to https://portal.azure.com if it is not already there and navigate to the **Intune** console.
     On the **Microsoft Intune** blade, select **Users**.
 
 2.  Select **Sign-ins**, in the details pane, you can see sign-ins for your
-    users. Select on the first entry where the **User** column says **Diego
-    Siciliani**.
+    users. Select on the first entry where the **User** column says **Diego Siciliani**.
 
 3.  In the details pane, you can see information about Diego Siciliani´s
     sign-in. Scroll to examine the information. Some of them will not contain

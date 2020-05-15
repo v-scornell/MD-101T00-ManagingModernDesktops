@@ -70,7 +70,7 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 8.  In the **Open** dialog box, browse to **C:\\Software** and select
     **rdcman-icon.jpg**. Then select **Open** and **OK**.
 
-9.  Select **OK** and then select **Add** to create the app in Intune. Notice the
+9.  Select **Next** and then select **Add** to create the app in Intune. Notice the
     app is not yet available. 
 
 10. On the **Client apps – Apps** blade, select **Audit logs**.  As the RDC app
@@ -95,14 +95,14 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
     **Save**. In the details pane verify that **All users** is listed
     under **Available for enrolled devices**.
 
-#### Task 3: Install the Company Portal on a Windows 10 device
+#### Task 4: Install the Company Portal on a Windows 10 device
 
 1.  On **LON-CL3**, On the taskbar, select **Microsoft Edge**, and navigate to
     <https://businessstore.microsoft.com>.
 
 2.  Sign in to the store as **Admin\@yourtenant.onmicroft.com** with your tenant password.
 
-3.  In the **Search field** on the right, type “**Company Portal**” and press
+3.  In the **Search field** on the right, type **Company Portal** and press
     **Enter**. Accept the consent dialog if prompted.
 
 4.  Select **Company Portal** in the results list and select **Get the App**.
@@ -133,7 +133,7 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 
 14. **Close** the Microsoft Store Window.
 
-#### Task 4: Install an app through the Company Portal
+#### Task 5: Install an app through the Company Portal
 
 1.  On **LON-CL4**, on the taskbar, select **Start** and in the apps list under
     **C**, select **Company Portal**. You will be signed in to the Company Portal
@@ -146,7 +146,7 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
     complete. When it says **Installed**, the Remote Desktop Connection Manager
     is installed.
 
-#### Task 5: Verify on device that app is installed
+#### Task 6: Verify on device that app is installed
 
 1.  On **LON-CL4**, on the taskbar, select **Start** and then select the
     **Settings** app.
@@ -162,7 +162,7 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 
 5.  Close all open windows.
 
-#### Task 6: Verify app installation in Intune
+#### Task 7: Verify app installation in Intune
 
 1.  Switch to **LON-CL3**.
 

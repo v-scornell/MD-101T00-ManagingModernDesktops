@@ -45,7 +45,7 @@ Task 1: Customize Azure AD company branding
 9.  On the **Azure Active Directory** blade, in the navigation pane, select
     **Properties**.
 
-10.  In the **Name** text box, type **Azure AD**, and then select **Save**.
+10.  In the **Name** text box, type **ADATUM**, and then select **Save**.
 
 ### Task 2: Create a user and group in Azure AD
 
@@ -102,12 +102,12 @@ Task 1: Customize Azure AD company branding
 
 ### Task 3: Generate a device-specific comma-separated value (CSV) file
 
-1.  Switch to **LON-HOST1** and sign in as **Adatum]Administrator** with the password of
+1.  Switch to **LON-HOST1** and sign in as **Adatum\Administrator** with the password of
     **Pa55w.rd**.
 
 2.  Select **Hyper-V Manager** in the task bar to launch.
 
-3.  Under Virtual Machines, right-click LON-CL5 and select Connect.
+3.  Under Virtual Machines, right-click **LON-CL5** and select **Connect**.
 
     _Note: When connecting to LON-CL5, you should see the Windows 10 desktop.  If there is a process still running, allow it to finish before continuing._
 
@@ -146,23 +146,22 @@ type C:\Computer.csv
 ### Task 4: Work with a Windows AutoPilot deployment profile
 
 1.  On **LON-CL5**, in **Microsoft Edge**, open a new tab and navigate to
-    **https://office.com**. If prompted, sign in with your
+    **https://endpoint.microsoft.com**. If prompted, sign in with your
     **Admin\@yourtenant.onmicrosoft.com**.
 
-2.  select **Admin**, and then, in the **Microsoft 365 admin center**, select
-    **Show all**, select **All admin centers**, and then select the **Device
-    Management** tile. A new tab opens.
+2.  In the **Microsoft Endpoint Manager admin center**, select the orange banner to open the **Mobile Device Management Authority** setting. 
 
-3.  In the **Microsoft 365 Device Management** console, in the details pane,
-    select **Device enrollment** on the right.
+    _Note: The orange banner is only displayed if you haven't yet set the MDM authority. If you do not see the banner, your MDM authority is already set and you may **proceed to step 4**._
 
-4.  On the **Choose MDM Authority** blade which appears on the right, select
+3.  On the **Choose MDM Authority** blade which appears on the right, select
     **Intune MDM Authority** and select **Choose**.  
       
-    *Note: Setting the MDM Authority is not an exclusive step for Autopilot, but
-    must be configured for using Intune and Autopilot.*
+    _Note: Setting the MDM Authority is not an exclusive step for Autopilot, but
+    must be configured for using Intune and Autopilot._
 
-5.  On the Device enrollment blade, select **Windows enrollment**.
+4.  In the **Microsoft Endpoint Manager admin center**, select **Devices** on the left rail.
+
+5.  In the **Device enrollment** section, select **Enroll devices**. 
 
 6.  In the details pane, select **Devices**.
 
@@ -170,24 +169,23 @@ type C:\Computer.csv
     **Computer.csv**, select **Open**, and then select **Import**. The import
     process can take up to 15 minutes, but normally takes around 5 minutes.  
       
-    Note: After the process is complete, the device may not show. If this is the
+    **Important**: After the process is complete, the device may not show. If this is the
     case, select the **Sync** button, wait a few minutes, and then select
     **Refresh**.
 
-8.  select **X** to close the Windows Autopilot devices blade, and then, on the
-    Windows enrollment blade, select **Deployment Profiles**.
+8.  Select **X** to close the Windows Autopilot devices blade. On the
+    Windows enrollment blade, in the details pane, select **Deployment Profiles**.
 
-9.  On the **Windows AutoPilot deployment profiles** blade, select **Create
-    profile**.
+9.  On the **Windows AutoPilot deployment profiles** blade, select **Create profile**.
 
 10. In the details pane, in the **Name** text box, type **Contoso profile1**.
 
 11. select **No**, and then select **Next**.
 
 12. On the **Out-of-box experience** blade, ensure that the **Deployment mode**
-    is **User-Driven**.
+    is set to **User-Driven**.
 
-13. Ensure that **Join to Azure AD as** is **Azure AD Joined**.
+13. Ensure that **Join to Azure AD as** is set to **Azure AD Joined**.
 
 14. Ensure that the following options are set:
 
@@ -203,20 +201,16 @@ type C:\Computer.csv
 
     -   Apply device name template: **No**.
 
-15.  select **Next**.
+15.  Select **Next**.
 
-16.  On the **Scope tags** blade, select **Next**.
+16.  On the **Assignments** blade, select **Select groups to include**.
 
-17.  On the **Assignments** blade, select **Select groups to include**.
+17.  Select the **IT Devices** group and select **Select**.
 
-18.  Select the **IT Devices** group and select **Select**.
+18.  Select **Next**.
 
-19.  select **Next**.
-
-20.  On the **Review + create** blade, review the information then select
+19.  On the **Review + create** blade, review the information then select
     **Create**.
-
-21.  select the newly created profile.
 
 ### Task 5: Reset the PC
 
@@ -230,7 +224,7 @@ type C:\Computer.csv
 
 4.  select **Reset**.
 
-_Note: Normally this step is not required for physical devices, the device’s
+_Note: Normally this task is not required for new deployment of physical devices. The device’s
 autopilot info is either provided by the manufacturer or can be obtained from
 the device prior to the OOBE. For the purposes of this lab, we must initiate a
 reset to simulate a new device OOBE._
@@ -247,7 +241,7 @@ the reset to continue._
 
 3.  At the **Want to add a second keyboard layout?** screen, select **Skip**
 
-4.  At the **Welcome to Azure AD** screen, enter
+4.  At the **Welcome to ADATUM** screen, enter
     *yourname\@yourtenant.onmicrosoft.com (from Task 2)* and select **Next**.
 
 5.  Enter the temporary password you were given and select **Next**.

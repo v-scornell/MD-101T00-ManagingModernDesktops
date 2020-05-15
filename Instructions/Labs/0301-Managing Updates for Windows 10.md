@@ -29,10 +29,15 @@ deferred 45 days after release. You would like to test the settings first using 
 
 8.  Select **PCs on my local network, and PCs on the Internet**.
 
-9. In the navigation pane, select **Windows Insider Program**. Notice that the
-    **Get Started** option is available.
+9. In the navigation pane, select **Windows Insider Program**. Notice that you must change the level of diagnostic data before you can get Insider Preview builds. 
 
-10. In the navigation pane, select **Windows Update**.
+10. Under **Get Insider Preview builds**, select the **Diagnostics & Feedback** link. 
+
+11. On the Diagnostics and feedback screen, set **Diagnostic data** setting to **Full**. 
+
+12. In the Settings navigation on the left, select **Home**. Select **Update & Security** and then select **Windows Insider Program**. Note that the **Get Started** option is now available.
+
+13. In the navigation pane, select **Windows Update**.
 
 ### Task 2: Review applied settings
 
@@ -49,41 +54,37 @@ deferred 45 days after release. You would like to test the settings first using 
 
 1.  Right-click **Start** and type **gpedit**, and then select **Edit group policy**.
 
-3.  In **Local Group Policy Editor**, navigate to **Computer
-    Configuration/Administrative Templates/Windows Components/Data Collection
-    and Preview Builds**.
-
-4.  In the right pane, double-click **Toggle user control over Insider builds**.
-
-5.  In the **Toggle user control over Insider builds** dialog box, select
-    **Disabled**, and then select **OK**.
-
-6.  In **Local Group Policy Editor**, navigate to **Computer
+2.  In **Local Group Policy Editor**, navigate to **Computer
     Configuration/Administrative Templates/Windows Components/Windows
     Update/Windows Update for Business**.
 
-7.  In the right pane, double-click **Select when Preview Builds and Feature
+3.  In the right pane, double-click **Manage preview builds**.
+
+4.  In the **Manage preview builds** dialog box, select
+    **Enabled**, and then select **OK**.
+
+5.  In the right pane, double-click **Select when Preview Builds and Feature
     Updates are received**.
 
-8.  In the **Select when Preview Builds and Feature Updates are received**
+6.  In the **Select when Preview Builds and Feature Updates are received**
     dialog box, select **Enabled**.
 
-9.  In the **Select the Windows readiness level for the updates you want to
+7.  In the **Select the Windows readiness level for the updates you want to
     receive** list, select **Semi-Annual Channel**.
 
-10. In the **After a Preview build or Feature Update is released, defer
+8. In the **After a Preview build or Feature Update is released, defer
     receiving it for this many days** text box, type **45**, and then select
     **OK**.
 
-11. In the navigation pane, select **Windows Update**.
+9. In the navigation pane, select **Windows Update**.
 
-12. In the right pane, double-click **Do not connect to any Windows Update
+10. In the right pane, double-click **Do not connect to any Windows Update
     Internet locations**.
 
-13. In the **Do not connect to any Windows Update Internet locations** dialog
+11. In the **Do not connect to any Windows Update Internet locations** dialog
     box, select **Enabled**, and then select **OK**.
 
-14. Close the Local Group Policy Editor.
+12. Close the Local Group Policy Editor.
 
 ### Task 4: Verify that the device’s update settings are managed centrally
 

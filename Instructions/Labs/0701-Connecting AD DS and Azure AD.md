@@ -11,7 +11,7 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
 #### Task 1: Verifying licenses and creating a sync account
 
 1.  On **LON-DC1**, sign in as **Adatum\\Administrator**, and then open the
-    Microsoft Edge browser.
+    **Microsoft Edge** browser.
 
 2.  In the **Microsoft Edge** window, go to **https://portal.azure.com**. If
     prompted, sign in with your MOD admin credentials available in hosted lab
@@ -59,7 +59,9 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
     **http://www.microsoft.com/en-us/download/details.aspx?id=47594**.
 
 3.  On the **Microsoft Azure Active Directory Connect** page, select
-    **Download**, and then select **Run**. Note: If you experience any problems
+    **Download**, and then select **Run**. 
+    
+    **Important**: If you experience any problems
     with launching the download, add the https://download.microsoft.com website
     to your Trusted sites.
 
@@ -118,7 +120,7 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
     3-4 minutes for this process to complete.
 
 19. In the Internet Explorer window on LON-SVR1, browse to
-    <http://www.microsoft.com/en-us/download/details.aspx?id=41950>.
+    **http://www.microsoft.com/en-us/download/details.aspx?id=41950**.
 
 20. On the **Microsoft Online Services Sign-In Assistant for IT Professionals
     RTW** page, select **Download**. On the Choose the download you want page,
@@ -128,24 +130,11 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
 21. Select **I accept the terms in the License Agreement** and select **Install**.
     When installation is done select **Finish**.
 
-22. On LON-SVR1, run Windows PowerShell as Administrator. In the Windows
-    PowerShell window, type the following and press **Enter**: 
-    
-```
-    Install-Module MSOnline
-
-```    
-    If prompted for NuGet provider, select **Y** and press Enter. Also accept
-    installation from untrusted repository, if needed. Wait until Windows
-    PowerShell Module for Azure AD is installed.
-
-23. Leave the Windows PowerShell window open.
-
 #### Task 3: Verify synchronization in Azure AD
 
 1.  Switch to **LON-DC1**. Sign back in to the Azure portal as **admin\@yourtenant.onmicrosoft.com**.
 
-2.  Select  **Azure Active Directory**, then select **Users,** and then select **All Users**. Select **Refresh**.
+2.  Select  **Azure Active Directory**, then select **Users**. Select **Refresh**.
 
 3.  Verify that you see users from your local AD DS. Ensure that these users
     have the value **Windows Server AD** in the **SOURCE** column. Close Users

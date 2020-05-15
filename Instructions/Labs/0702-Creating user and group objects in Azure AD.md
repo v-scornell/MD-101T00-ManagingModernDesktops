@@ -50,7 +50,7 @@ Note: For location use either your local region or United States.
 8.  On the **Domain name resources** blade, type **Alex** in the search box and 
     press **Enter**. Select **Alex Wilber**.
 
-9.  Select **Assigned roles** and select +Add assignment. Select **Global administrator**.
+9.  Select **Assigned roles** and select **+Add assignment**. Select **Global administrator**.
 
 10. Scroll left to the **Azure AD - Custom domain names** blade and select **Users**. 
     Select **Edmund Reeve**.
@@ -58,7 +58,7 @@ Note: For location use either your local region or United States.
 11. In the **Edmund Reeve - Profile** blade, in the right pane under the**Settings** 
     section, select **Edit**, select your country/region in the **Usage location** drop-down box. 
     
-    _Note: If your country/region is not listed, select **United States**.
+    _Note: If your country/region is not listed, select **United States**._
     
 12. Select **Save**. Close the **Edmund Reeve – Profile** page.
 
@@ -90,7 +90,7 @@ Note: For location use either your local region or United States.
 21. On the **Microsoft Azure** page, use the MOD Administrator account to sign
     in.
 
-22. In the Microsoft Azure portal, select the **Azure Active Directory**
+22. In the **Microsoft Azure** portal, select the **Azure Active Directory**
     directory item, and then select **Groups.**
 
 23. On the **Groups – All groups** page, select **All groups**, and then select
@@ -111,8 +111,8 @@ Note: For location use either your local region or United States.
 
 1.  On the **LON-SVR1**, restore the Windows PowerShell window.
 
-2.  In the Windows PowerShell window, type the following command, and then press
-    Enter:
+2.  In the **Windows PowerShell** window, type the following command, and then press
+    **Enter**:
 
 ```
 Connect-MsolService
@@ -122,8 +122,8 @@ Connect-MsolService
     **admin\@yourtenant.onmicrosoft.com** with the tenant password, and then
     select **OK**.
 
-4.  In the Windows PowerShell window, type the following code to create a new user, and then press
-    Enter:
+4.  In the **Windows PowerShell** window, type the following code to create a new user, and then press
+    **Enter**:
 
 ```
 New-MsolUser –UserPrincipalName cgodinez@yourtenant.onmicrosoft.com
@@ -131,8 +131,8 @@ New-MsolUser –UserPrincipalName cgodinez@yourtenant.onmicrosoft.com
 ‘Pa55w.rd12345’ -ForceChangePassword $false -UsageLocation “US”
 
 ```
-5.  In the Windows PowerShell window, type the following command, and then press
-    Enter:
+5.  In the **Windows PowerShell** window, type the following command, and then press
+    **Enter**:
 
 ```
 Get-MsolUser
@@ -140,15 +140,15 @@ Get-MsolUser
 ```
 6.  Verify that you get the list of users in your tenant.
 
-7.  In the Windows PowerShell window, type the following code to create a new group, and then press
-    Enter:
+7.  In the **Windows PowerShell** window, type the following code to create a new group, and then press
+    **Enter**:
 
 ```
 New-MsolGroup -DisplayName “Azure team” -Description “Adatum Azure team users”
 
 ```
-8.  In the Windows PowerShell window, type the following command, and then press
-    Enter:
+8.  In the **Windows PowerShell** window, type the following command, and then press
+    **Enter**:
 
 ```
 Get-MsolGroup
@@ -156,35 +156,35 @@ Get-MsolGroup
 ```
 9.  Verify that you get the list of groups in your tenant, including the Azure team group you just created.
 
-10.  In the Windows PowerShell window, type the following code to define a variable as the Azure team group, and then press
-    Enter:
+10.  In the **Windows PowerShell** window, type the following code to define a variable as the Azure team group, and then press
+    **Enter**:
 
 ```
 $group = Get-MsolGroup | Where-Object {$_.DisplayName -eq "Azure team"}
 
 ```
-11.  In the Windows PowerShell window, type the following code to define another variable as the user, and then press
-    Enter:
+11.  In the **Windows PowerShell** window, type the following code to define another variable as the user, and then press
+    **Enter**:
 
 ```
 $user = Get-MsolUser | Where-Object {$_.DisplayName -eq “Cody Godinez”}
 
 ```
-12.  In the Windows PowerShell window, type the following code to add Cody to the Azure team using set variables, and then press
-    Enter:
+12.  In the **Windows PowerShell** window, type the following code to add Cody to the Azure team using set variables, and then press
+    **Enter**:
 
 ```
 Add-MsolGroupMember -GroupObjectId $group.ObjectId -GroupMemberType "User"
 -GroupMemberObjectId $user.ObjectId
 
 ```
-13.  In the Windows PowerShell window, type the following code, and then press
-    Enter:
+13.  In the **Windows PowerShell** window, type the following code, and then press
+    **Enter**:
 
 ```
 Get-MsolGroupMember -GroupObjectId $group.ObjectId
 
 ```
-14.  Verify that you get **Cody Godinez** as a result. Minimize the Windows PowerShell window.
+14.  Verify that you get **Cody Godinez** as a result. Minimize the **Windows PowerShell** window.
 
 **END OF LAB**

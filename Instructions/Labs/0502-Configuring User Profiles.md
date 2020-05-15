@@ -100,7 +100,7 @@ Ada Russel frequently uses both LON-CL1 and LON-CL2 and is struggling with acces
 
 1.  On **LON-DC1**, on the taskbar, select **File Explorer**.
 
-2.  In **File Explorer**, in the navigation pane, select **Local Disk (E:)**, and
+2.  In **File Explorer**, in the navigation pane, select **Allfiles (E:)**, and
     then verify that the **Profiles** and **Redirected** folders are empty.
 
 3.  Sign in to **LON-CL1** as **Adatum\\Ada** with the password **Pa55w.rd**.
@@ -157,24 +157,9 @@ Ada Russel frequently uses both LON-CL1 and LON-CL2 and is struggling with acces
 Users are requesting that their Windows settings and application data be the same when using different computers. You have decided to implement Enterprise State Roaming. You will need to enable ESR, and verify that it is working.  Diego Siciliani has offered to test, as he frequently switches between LON-CL3 and LON-CL4.
 
 
-### Task 1: Logon to second Windows 10 device using Azure AD user
+### Task 1: Enable Enterprise State Roaming
 
-1.  Switch to **LON-CL3** and sign in as **DiegoS\@yourtenant.onmicrosoft.com**
-    if you are not already signed in. 
-
-2.  On the taskbar, select **Start** and then select the **Settings**, and then select the **Accounts**
-    then select **Sync your settings**.
-
-3.  On the **Sync your settings** page, verify that **Sync settings** is set to
-    **On**. You can control the individual sync settings by toggling them either
-    on or off.
-
-4.  You should already be logged on as **Diego Siciliani** on **LON-CL4**.
-
-### Task 3: Enable Enterprise State Roaming
-
-1.  **On LON-DC1**, on the taskbar, right-click **Internet Explorer**, and then
-    select **Start InPrivate Browsing**.
+1.  **On LON-DC1**, on the taskbar, right-click **Internet Explorer**, and then select **Start InPrivate Browsing**.
 
 2.  In **Internet Explorer**, in the address bar, type
     **https://portal.azure.com** and press Enter.
@@ -203,19 +188,15 @@ Users are requesting that their Windows settings and application data be the sam
     Siciliani**.
 
 
-### Task 2: Logon to second Windows 10 device using Azure AD user
+### Task 2: Verify sync is enabled on LON-CL3
 
-1.  Switch to **LON-CL3** and sign in as **DiegoS\@yourtenant.onmicrosoft.com**
-    if you are not already signed in. 
+1.  Switch to **LON-CL3** and sign in as **DiegoS\@yourtenant.onmicrosoft.com** if you are not already signed in. 
 
-2.  On the taskbar, select **Start** and then select the **Settings** app,
-    then select **Sync your settings**.
+2.  On the taskbar, select **Start** and then select the **Settings** icon. Select **Accounts** then select **Sync your settings**.
 
-3.  On the **Sync your settings** page, verify that **Sync settings** is set to
-    **On**. 
+3.  On the **Sync your settings** page, verify that **Sync settings** is set to **On**. 
 
-_**Important**: If Sync settings is set to off and it is greyed out, the device must be
-rejoined.  This is due to an issue with ESR being enabled after devices have been enrolled.
+    _**Important**: If Sync settings is set to off and it is greyed out, the device must be rejoined.  This is due to an issue with ESR being enabled after devices have been enrolled.
 If this occurs, continue with task 3, otherwise continue with Task 4._
 
 ### Task 3: Re-enroll Devices (if needed)
@@ -251,41 +232,35 @@ If this occurs, continue with task 3, otherwise continue with Task 4._
 13. Select **A. Datum developer devices** and then select **Members**. Select **+Add Members**. 
     In the Add Members panel, select **LON-CL3** and then select **Select**. 
 
-### Task 4: Verify Enterprise State Roaming
+### Task 5: Test Enterprise State Roaming
 
 1.  On **LON-CL3**, on the taskbar, select Microsoft Edge and in the address bar,
     type **www.microsoft.com/learn**, and then press Enter. When the page
     loads, select the star and the end of the address bar (or press CTRL+D). In
     the Favorites pop-up, select **Add**.
 
-2.  Switch to **LON-CL4** and sign in as **DiegoS\@yourtenant.onmicrosoft.com**
-    if you are not already signed in. 
+2.  Switch to **LON-CL4** and sign in as **DiegoS\@yourtenant.onmicrosoft.com** if you are not already signed in. 
 
-3.  On the taskbar, select **Start** and then select the **Settings** app,
-    then select **Sync your settings**.
+3.  On the taskbar, select **Start** and then select the **Settings** app, then select **Sync your settings**.
 
-4.  On the **Sync your settings** page, verify that **Sync settings** is set to
-    **On**. 
+4.  On the **Sync your settings** page, verify that **Sync settings** is set to **On**. 
 
-_**Important**: If Sync settings is set to off and it is greyed out, the device must be
-rejoined.  Repeat Task 3 on LON-CL4 and then return to this task, continuing with Step 4._
+    _**Important**: If Sync settings is set to off and it is greyed out, the device must be
+rejoined.  Repeat Task 3 on LON-CL4 and then return to this task, beginning with **Step 2**._
 
-5.  In **Microsoft Edge**, press CTRL+I to view favorites. Verify if the
-    Microsoft Learn favorites page is already synced from **LON-CL3**.  
+5.  In **Microsoft Edge**, press CTRL+I to view favorites. Verify if the Microsoft Learn favorites page is already synced from **LON-CL3**.  
 
     _Note: It can take several minutes for settings to sync. If the favorites option
     doesn't show, try rebooting and signing back in as DiegoS\@yourtenant.onmicrosoft.com._
 
-6.  On **LON-DC1**, in **Internet Explorer**, on the **Devices – Device
-    settings** blade, in the navigation pane, select **All devices**.
+6.  On **LON-DC1**, in **Internet Explorer**, on the **Devices – Device settings** blade, in the navigation pane, select **All devices**.
 
 7.  In the details pane, in the **OWNER** column, select **Diego Siciliani**.
 
 8.  In the **Diego Siciliani** blade, in the navigation pane, select
     **Devices**.
 
-9.  In the details pane, verify that **Devices** is selected in the **Show**
-    dropdown list. This shows all the devices that Diego Siciliani owns.
+9.  In the details pane, verify that **Devices** is selected in the **Show** dropdown list. This shows all the devices that Diego Siciliani owns.
 
 10.  Close all Windows. 
 

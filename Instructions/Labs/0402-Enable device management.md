@@ -40,24 +40,24 @@ MFA is not required and the maximum number of devices per user is 50.
     Settings, in the **Usage location** field, verify that **United States** is
     selected.
 
-12. Scroll the page to the left, on the page, select **MOD Administrator**. Under
+11. Scroll the page to the left, on the page, select **MOD Administrator**. Under
     Settings, in the **Usage location** field, verify that **United States** is
     selected.
 
-**Note:** Before you can assign a license to a user, the user must have a usage
-location set.
+    _Note: Before you can assign a license to a user, the user must have a usage
+location set._
 
-1.  Scroll the page to the left, on the **Azure Active Directory** blade select
+12.  Scroll the page to the left, on the **Azure Active Directory** blade select
     **Licenses** and then in the details pane select **All products**.
 
-2.  On the **Products** blade, select **Enterprise Mobility + Security E5** and
+13.  On the **Products** blade, select **Enterprise Mobility + Security E5** and
     then in details pane select **+ Assign**.
 
-3.  On the **Assign license** blade, select **Users and groups**. In the
+14.  On the **Assign license** blade, select **Users and groups**. In the
     **Users** pane select **Joni Sherman**, **Megan Bowen**, and **MOD
     administrator.** Select **Select**, and then select **Assign**.
 
-    _**Note:** Note the dialog that indicate the 3 licenses have been assigned._
+    _Note: Note the dialog that indicate the 3 licenses have been assigned._
 
 ### Task 2: Integrate Azure AD with Intune
 

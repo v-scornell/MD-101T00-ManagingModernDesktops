@@ -2,11 +2,11 @@
 
 ## Summary
 
-In this lab, you will practice creating a policy to configure Windows Defender for enrolled devices.
+In this lab, you will practice creating a policy to configure Windows Defender for a group of devices.
 
 ### Scenario
 
-You've been asked to ensure that enrolled devices have Windows Defender correctly configured. It's been requested that:
+You've been asked to ensure that the A. Datum Developers Group have Windows Defender correctly configured. It's been requested that:
 * Family options, Hardware protection and Device Performance and Health are hidden.
 * IT contact name and department phone number must be added. 
 
@@ -17,18 +17,15 @@ Settings should be verified by testing on an enrolled device, LON-CL3 and a non-
 
 1.  On **LON-CL1** select **Start**, and then select **Settings**.
 
-2.  In the Settings app, open **Update & Security**, and then open the **Windows
-    Defender** tab.
+2.  In the **Settings** app, open **Update & Security**, and then open the **Windows Security** tab.
 
-3.  Select **Open Windows Defender Security Center**.
+3.  In the **Windows Security** pane, select **Open Windows Security**.
 
-4.  In Windows Defender Security Center, select **Virus & threat protection**.
+4.  In **Windows Security** window, in the **Security at a glance** pane, select **Virus & threat protection**.
 
-5.  On the Virus & threat protection page, select **Quick scan**.
+5.  On the **Virus & threat protection** page, select **Quick scan**.
 
-6.  Review the results.
-
-7.  Close Windows Defender Security Center.
+6.  Review the results and **close** the **Windows Security** window.
 
 #### Task 2: Configure Windows Defender in Intune
 
@@ -37,61 +34,47 @@ Settings should be verified by testing on an enrolled device, LON-CL3 and a non-
 
 2.  In the Intune console, select on **Device configuration**
 
-3.  In the Device configuration – Profiles pane, select **Profiles**.
+3.  In the **Device configuration – Profiles** pane, select **Profiles**, then select **Create profile**.
 
-4.  Select **Create profile**.
+4.  In the **Create a profile** pane, select **Windows 10 and later** for Platform. In the Profile type list, select **Endpoint protection**.
 
-5.  In the Create a profile pane, type **Windows Defender** for the profile
-    name. Select **Windows 10 and later** for Platform. In the Profile type
-    list, select **Endpoint protection**.
+5.  Select **Create**. On the Basics tab, in the **Name** field, enter **Windows Defender**. Select **Next**.
 
-6.  In the Endpoint protection pane, select the **Windows Defender
-    Security Center** option.
+6.  On the **Configuration settings** tab, expand **Windows Defender Security Center** option. 
 
-7.  In the Windows Defender Security Center pane, select **Hide** for
-    **Family options**, **Hardware protection** and **Device Performance and
-    Health**.
+7.  Set the **Family options**, **Hardware protection** and **Device Performance and Health** options to **Hide**.
 
-8.  For the **IT contact information** option select **Display in app and in
-    notifications**.
+8.  For the **IT contact information** option select **Display in app and in notifications**.
 
-9.  In the **IT organization name** field, type **Adatum IT**.
+9.  In the **IT organization name** field, enter **Adatum IT**.
 
-10. For **IT department phone number or Skype ID**, type **123-456** and then
-    select **OK**.
+10. For **IT department phone number or Skype ID**, enter **123-456**.
 
-11. In the Endpoint protection pane select **Windows Defender Firewall**.
+11. On the **Configuration settings** tab, expand **Windows Defender Firewall**.
 
-12. In the Windows Firewall pane, select **Block for File Transfer
-    Protocol**.
+12. Set the **File Transfer Protocol** option to **Block**.
 
-13. Select on **Public (non-discoverable) network** and then select
-    **Block** for **Stealth mode** and select **OK** three times.
+13. Expand **Public (non-discoverable) network** and set the
+**Stealth mode** option to **Block**.
 
-14. On Create profile pane, select **Create**.
+14. Select **Next** twice.  On the **Assignments** tab, select **+ Select groups to include**. Choose the **A. Datum Developers Devices** group and then choose **Select**.
 
-15. Select **Assignments** and then select **Select groups to include**.
-    Choose the **Enrolled Devices** group and then choose **Select**.
-    Select **Save**.
+15. Select **Next** twice. On the **Review + Create** tab, review the information and select **Create**.
 
-16. In the Microsoft Intune main pane, select **Devices** and then
-    select the **Enrolled devices** icon.
+16. In the breadcrumb menu, select **Microsoft Intune**. Select **Devices** and then **All Devices**.   
 
-17. On the All devices pane, select **LON-CL3** and then on the LON-CL3
-    pane, select **Sync** on the toolbar. Select **Yes**.
+17. On the **All devices** pane, select **LON-CL3** and then on the LON-CL3 blade, select **Sync** on the toolbar, and then select **Yes**.
 
 18. Wait for 3-4 minutes.
 
 #### Task 3: Verify the configuration
 
-1.  On LON-CL3, open Windows Defender Security Center, by right-clicking the
-    Defender icon in the taskbar and then selecting **View security
-    dashboard**. Ensure that you don’t see the device performance & health icon.
-    This is because settings that prevent showing device and performance health
-    were applied from Intune.
+1. On **LON-CL3**, right-click the **Windows Security icon** in the taskbar to open Windows Security. Ensure that you don’t see the Device performance & health icon.
 
-2.  Switch to LON-CL1 and open Windows Defender Security Center. Ensure that you
-    see the device performance & health icon. This is because LON-CL1 is not
-    enrolled to Intune.
+    This is because settings that prevent showing device and performance health were applied from Intune.
+
+2. Switch to **LON-CL1** and open **Windows Security**. Ensure that you see the device performance & health icon. 
+
+    This is because LON-CL1 is not enrolled to Intune.
 
 **END OF LAB**

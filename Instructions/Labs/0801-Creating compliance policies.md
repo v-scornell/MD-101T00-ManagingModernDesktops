@@ -36,60 +36,50 @@ Enrolled devices should also be assigned a VPN configuration with the following 
 3.  On the **Device compliance** blade, select **Policies** and then in the
     details pane select **+Create Policy**.
 
-4.  On the **Create Policy** blade, provide the following values:
-
-    -  Name: **Compliance1**
+4.  On the **Create a policy** blade, provide the following values:
 
     -  Platform: **Windows 10 and later**
 
-5.  On the **Windows 10 compliance policy** blade, select **Device Health** and
+5.  Select **Create**. On the Basics tab, provide the following values:
+
+    -  Name: **Compliance1**
+
+6. Select **Next**. On the **Compliance settings** tab, select **Device Health** and
     review the available settings.
 
-6.  On the **Windows 10 compliance policy** blade, select **Device Properties**.
+7.  On the **Compliance settings** tab, expand **Device Properties**. In the **Minimum OS version** field, type
+    **10.0.16299.15**.
 
-7.  On the **Device Properties** blade, in the **Minimum OS version** row, type
-    **10.0.16299.15** and then select **OK**.
+8.  On the **Compliance settings** tab, expand **System Security**. Set the **Windows Defender Antimalware** setting to **Require**. 
 
-8.  On the **Windows 10 compliance policy** blade, select **System Security**.
+9.  Select **Next**. On the **Actions for noncompliance** tab, note the action to Mark device noncompliant default setting is immediately. Review how you can
+    configure the number of days after which the device is marked as noncompliant, and configuration additional actions. 
+    
+    select **OK** twice and then select **Create**.
 
-9.  On the System Security blade, in the Defender section, select **Require for
-    Windows Defender Antimalware** and select **OK**.
+10. Select **Next** twice. On the **Assignments** tab, choose **+ Select groups to include**.  Select **Windows Devices**, choose **Select**, and then select **Next**.
 
-10. On the **Windows 10 compliance policy** blade review the other available
-    options and then select **OK**.
+11. Select **Create**.
 
-11. On the **Create Policy** blade, select **Actions for noncompliance** and then
-    on the details pane, select **+Add**.
 
-12. On the **Action parameters,** review the available options and then close
-    the blade.
-
-13. In the Actions blade select **Mark device noncompliant**. Review how you can
-    configure the number of days after which the device is marked as
-    noncompliant, select **OK** twice and then select **Create**.
-
-14. On the **Compliance1** blade, select **Assignments**, select **Select groups
-    to include**, select **Windows Devices**, select **Select,** and then select
-    **Save**.
-
-15. Scroll the page to the left and then on the **Microsoft Intune** blade, 
+12. Scroll the page to the left and then on the **Microsoft Intune** blade, 
     select **Device enrollment**.
 
-16. Review the available options on the **Device enrollment** blade.
+13. On the **Device enrollment** blade, select **Enrollment restrictions**.
 
-17. On the **Device enrollment** blade, select **Enrollment restrictions**.
+14. On the details pane, in the **Device Type Restrictions** section, on the **Default** line, select
+    **All Users**.
+    
+15. On the **All Users** blade, select **Properties**. In the **Platform settings** section, select **Edit**.
 
-18. On the details pane, in the **Device Type Restrictions** section, select
-    **Default,** select **Properties,** and then select **Edit**.
+16. On the **Select platforms** blade, in the **Platform** column, on the rows with **iOS** and **macOS**, select **Block**. Select **Review + save** and then select **Save**.
 
-19. On the **Select platforms** blade, in the **iOS** and **macOS** rows select
-    **Block**, then select **Review + save**, then select **Save**.
+17. Scroll left to the **Device Enrollment - Enrollment restrictions** blade. 
+    In the **Device Limit Restrictions** section, select **All Users** and then select **Properties**.
 
-20. Scroll left to the **Device Enrollment - Enrollment restrictions** blade. 
-    In the **Device Limit Restrictions** section, select **Default** and then
-    select **Properties**.
+18. In the Device limit section, select **Edit**, then change the value to **3**.  
 
-21. Select **Edit**, then change the value to 3.  Select **Review + Save**.
+19. Select **Review + Save**, and then select **Save**.
 
 #### Task 2: Create a device configuration profile
 
@@ -99,18 +89,25 @@ Enrolled devices should also be assigned a VPN configuration with the following 
 2.  On the **Device configuration** blade, select **Profiles** and then select
     **+Create profile**.
 
-3.  Enter the name **Adatum VPN** and the description **Corporate VPN for
-    Adatum**.
+3.  Under **Platform**, select **Windows 10 and later**.
 
-4.  Under **Platform**, select **Windows 10 and later**.
+4.  Under **Profile type**, select **VPN**.
 
-5.  Under **Profile type**, select **VPN**.
+5.  On the Basic tab, configure the following values: 
 
-6.  On the **VPN** blade, select **Base VPN**.
+    -  Name: **Adatum VPN**
 
-7.  For the Connection name, enter **Adatum VPN**.
+    -  Description **Corporate VPN for Adatum**.
 
-8.  Under **Servers**, enter the following information, and then select **Add**:
+6.  Select **Next**. On the **VPN** blade, expand **Base VPN** and configure the following values:
+
+    - Connection name: **Adatum VPN**
+
+    - Connection type: **F5 Access**
+
+    - Authentication model: **Username and password**
+
+7.  Under **Servers**, enter the following information:
 
     -  Description: **Adatum VPN Server**
 
@@ -118,28 +115,17 @@ Enrolled devices should also be assigned a VPN configuration with the following 
 
     -  Default server: **True**
 
-9.  Next to **Connection type**, select **F5 Access**.
-
-10. For the authentication model, select **Username and password**.
-
-11. In the **Custom XML** box, enter the following code:
+8. In the **Custom XML** box, enter the following code:
 
 ```
 <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
 
 ```
-1.  Select **OK** twice, and then select **Create**.
+9.  Select **Next** twice. On the **Assignments** tab, choose **+ Select groups to include**.
 
-2.  On the **Adatum VPN device configuration profile** blade, select
-    **Assignments**.
+10.  Select **Windows Devices**, and then choose **Select**.
 
-3.  Verify that **Include** is selected.
-
-4.  Select **Select groups to include**.
-
-5.  Select **Windows Devices**, and then select **Select**.
-
-6.  Select **Save**.
+11.  Select **Next** twice and then select **Create**.
 
 
 ## Exercise 2: Creating a conditional access policy
@@ -179,7 +165,7 @@ When devices are non-compliant, they should not be able to access their e-mail. 
 
 #### Task 4: Verify that the conditional access policy is working
 
-1.  On **LON-CL1**, sign in as **adatum/administrator** with the password **Pa55w.rd**. 
+1.  On **LON-CL1**, sign in as **adatum\\administrator** with the password **Pa55w.rd**. 
     Open a new Microsoft Edge tab, then and open <https://portal.office.com>.
 
 2.  Sign in as **admin\@yourtenant.onmicrosoft.com**. On the Office 365 portal, 
@@ -193,20 +179,20 @@ When devices are non-compliant, they should not be able to access their e-mail. 
 
 5.  **Close** the browser window.
 
-6.  Switch to **LON-CL3**,
+6.  Switch to **LON-CL3**, and sign in as **admin\@yourtenant.onmicrosoft.com**. 
 
-7.  Sign in as **admin\@yourtenant.onmicrosoft.com**. 
-
-8.  Open a new Microsoft Edge tab, then and open **https://portal.office.com**.
+7.  Open a new Microsoft Edge tab, then and open **https://portal.office.com**.
     On the Office 365 portal, select the **Outlook** icon. 
 
-9.  Verify that you receive the message **"Oops - You can’t get to this yet"**.
+8.  Verify that you receive the message **"Oops - You can’t get to this yet"**.
     Note that this message indicates the device is registered that a policy
     is being applied to bring the device to a compliant state. 
 
-10. Switch to **LON-CL4**.  Repeat steps 7 & 8.
+9. Switch to **LON-CL4**.  Repeat steps 7 & 8.
 
-11. Ensure that you can access your mailbox. This is because LON-CL4 is a
+10. Ensure that you can access your mailbox. 
+
+    This is because LON-CL4 is a
     managed device and marked as compliant. You might get a message that device
     is being checked for compliance. If that happens, wait for a few minutes and
     then try again.
