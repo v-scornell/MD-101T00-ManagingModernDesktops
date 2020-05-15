@@ -17,8 +17,7 @@ Abbi and Bill share LON-CL1. Abbi is working with files containing sensitive inf
 2.  On the taskbar, select the **File Explorer** icon, select **This
     PC**, and then double-click **Local Disk (C:)**.
 
-3.  On the ribbon, select the **Home** tab and then select 'he **New
-    Folder** icon. Name the new folder **SecretAbbi**.
+3.  On the ribbon, select the **Home** tab and then select the **New folder** icon. Name the new folder **SecretAbbi**.
 
 4.  On the ribbon, select the **View** tab and then select
     **Options**. Select **Change folder and search options**.
@@ -45,7 +44,7 @@ Abbi and Bill share LON-CL1. Abbi is working with files containing sensitive inf
 5.  Open the **SecretAbbi** folder.
 
 6.  In the blank area, right-click and select **New**, and then
-    select **Text Document**.'
+    select **Text Document**.
 
 7.  Name the new file **Secrets**, and then double-click the file to open it in
     Notepad.
@@ -62,13 +61,12 @@ Abbi and Bill share LON-CL1. Abbi is working with files containing sensitive inf
 
 12. On the **Select or create a file encryption certificate** page ensure that
     the certificate for Abbi Skinner is issued by AdatumCA. Select **View
-    certificate** to see the details and select **Ok'*. Select **Next**.
+    certificate** to see the details and select **Ok**. Select **Next**.
 
 13. On the **Back up your certificate or key** page, select to backup a
     certificate and save it to the **C:\\backup\\** folder (create the backup
     folder before saving). Give it the name **certbackup**. Provide **Pa55w.rd**
-    for password and select **Next** two times and then select
-    **Close**.
+    for password and select **Next** twice. Select **Close**.
 
 14. Sign out from **LON-CL1**.
 
@@ -110,7 +108,7 @@ It's been determined that all the information on LON-CL1 should be encrypted. Yo
 4.  In the **Require additional authentication at startup** dialog box, select
     **Enabled**, and then select **OK**.
 
-5.  Close all open windows.
+5.  **Close** all open windows.
 
 #### Task 2: Enable BitLocker
 
@@ -142,7 +140,7 @@ It's been determined that all the information on LON-CL1 should be encrypted. Yo
 
 9.  Select **Restart now** and restart **LON-CL1**.
 
-10. When LON-CL1 restarts, type **Pa55w.rd** and press Enter to unlock the
+10. When LON-CL1 restarts, type **Pa55w.rd** and press **Enter** to unlock the
     drive.
 
 #### Task 3: Verify BitLocker protection
@@ -150,15 +148,15 @@ It's been determined that all the information on LON-CL1 should be encrypted. Yo
 1.  Sign in to **LON-CL1** as **Adatum\\Administrator** with the password
     **Pa55w.rd**.
 
-2.  On the taskbar, select **File Explorer and then select This PC**.
+2.  On the taskbar, select **File Explorer** and then select **This PC**.
 
-3.  In the navigation pane, right-click **Local Disk (C:) and then select Manage
+3.  In the navigation pane, right-click **Local Disk (C:)** and then select **Manage
     BitLocker**.
 
-4.  In the BitLocker Drive Encryption window, ensure that you see **C: BitLocker
+4.  In the **BitLocker Drive Encryption** window, ensure that you see **C: BitLocker
     Encrypting** status. This means that drive is being encrypted. This takes
     some time, so you can proceed to the next task.
 
-5.  Close all open windows.
+5.  **Close** all open windows.
 
 **END OF LAB**

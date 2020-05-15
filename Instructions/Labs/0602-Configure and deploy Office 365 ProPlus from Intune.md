@@ -26,14 +26,18 @@ All the developers at A. Datum require Microsoft Office 365 ProPlus.  You've bee
     navigation pane, and then on the **Microsoft Intune** blade, select **Client
     apps**.
 
-2.  In the **Client apps** blade, select **Apps**. In the details pane, select **+
-    Add**.
+2.  In the **Client apps** blade, select **Apps**. In the details pane, select **+ Add**.
 
-3.  In the **Add app** blade, select the **Select an app type** under **App
-    type** and select **Windows 10** under **Office 365 Suite**.
+3.  In the **Select app type** blade, select **Windows 10** under **Office 365 Suite**.
 
-4.  Select **Configure App Suite**, and on the **Configure App Suite** blade,
-    select the following Office 365 apps and select **OK**:
+4.  On the **App Suite information** tab, configure
+    the following options and select **Next**:
+
+-   Name: **Office 365 ProPlus (A. Datum developers)**
+
+-   Description: **Office 365 ProPlus App for developers in A. Datum**
+
+5.  On the **Configure App Suite** tab, expand the **Select Office apps** dropdown, select the following Office 365 apps and select **Next**:
 
 -   Excel
 
@@ -43,46 +47,22 @@ All the developers at A. Datum require Microsoft Office 365 ProPlus.  You've bee
 
 -   Word
 
-5.  Back on the **Add app** blade, select **App Suite information**. Configure
-    the following options and select **OK**:
+6.  On the **Configure app suite** tab, configure the
+    following options and select **Next**:
 
--   Name: **Office 365 ProPlus (A. Datum developers)**
-
--   Description: **Office 365 ProPlus App for developers in A. Datum**
-
-6.  Back on the **Add app** blade, select **App Suite Settings**. Configure the
-    following options and select **OK**:
-
--   Office version: **64-bit**
+-   Architecture: **64-bit**
 
 -   Update channel: **Semi-Annual**
 
--   **Automatically accept the app end user license agreement**
+-   Accept the Microsoft Software License Terms on behalf of users: **Yes**
 
-7.  Back on the **Add app** blade, select **Add**. Wait a few seconds for the app
-    to be created.
+7.  On the **Assignments** tab, in the **Required** section, select **+ Add group.** 
 
-8.  On the **Office 365 ProPlus (A. Datum developers)** blade, select
-    **Assignments**.
+8.  On the **Select groups** blade, select **A. Datum Developer devices**, and then choose **Select**.
 
-9.  On the **Office 365 ProPlus (A. Datum developers) – Assignments** blade,
-    select **Add group**.
+9. Select **Next**.  On the **Review + Create** tab, select **Create**.
 
-10.  On the **Add group** blade, select **Select assignment type** under
-    **Assignment type** and select **Required**.
-
-11.  Select **No groups selected Included Groups** and on the **Assign** blade,
-    select **Select groups to include**.
-
-12.  On the **Assign** blade, select **Select groups to include**, and on the
-    **Select groups** blade, select **A. Datum Developer devices**, and then
-    select **Select**, then **OK** twice. If you have many groups, you can search
-    for groups by typing part of the name in the **Search by name or email
-    address** field.
-
-13.  Back on the **Office 365 ProPlus (A. Datum developers) - Assignments**
-    blade, select **Save**. In the details pane verify that **A. Datum developer
-    devices** in listed under **REQUIRED**.
+10.  On the **Office 365 ProPlus (A. Datum Developers)** page, select **Properties**. In the details pane verify that **A. Datum developer devices** in listed next to **Required** in the Assignments section.
 
 #### Task 3: Force synchronization of policy from Intune console
 

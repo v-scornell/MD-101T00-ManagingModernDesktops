@@ -104,8 +104,10 @@ _Note:  This lab is practice enrolling a non-domain joined device. LON-CL4 must 
 4.  Right-click **Start**, and then select **Windows PowerShell (Admin)**. When
     prompted select **Yes**.
 
-5.  In the PowerShell console, type the following and press Enter: **dsregcmd
-    /status**
+5.  In the PowerShell console, type the following and press **Enter**: 
+```
+dsregcmd /status
+```
 
 6.  In the output under **Device State**, verify that **AzureAdJoined : YES** is
     displayed. This indicates that the device is Azure AD joined.
@@ -131,31 +133,25 @@ Single-Sign-On (SSO) to Azure AD, Intune and Office 365.
 
 1.  On **LON-CL4**, sign out of LON-CL4.
 
-2.  Select **other user**, and in the **Email address** field type
-    **JoniS\@yourtenant.onmicrosoft.com**. In the password, type the password
-    for the user and then press Enter.
+2.  Select **other user**, and sign in with **JoniS\@yourtenant.onmicrosoft.com** with the password **Pa55w.rd12345**.
 
-3.  Wait for the profile to be created. It will take about 15 seconds.
+3.  Wait for the profile to be created.
 
-4.  On the **Your organization requires Windows Hello** screen, select **Set up
-    PIN**.
+4.  On the **Your organization requires Windows Hello** screen, select **Set up PIN**.
 
 5.  On the More information required, select **Next**.
 
 6.  On the **Help us protect your account** screen, select **Set it up now**.
 
 7.  On the **Additional security verification** screen, under **How should we contact you?**
-    verify that Authentication phone is selected in the drop-down field. In the **Select your
-    country or region** box, select your country and in the **Phone Number**
-    field, type your phone number. Then select **Next**.
+    verify that Authentication phone is selected in the drop-down field. In the **Select your country or region** box, select your country and in the **Phone Number** field, type your phone number. Then select **Next**.
 
 8.  Wait for a text message to arrive on your phone, type the 6-digit security
     code in the **Enter Your security code** field and select **Next**.
 
 9.  When the verification is successful, select **Done**.
 
-10.  In the **Set up a PIN** dialog box, type **112233** in the **New PIN** and
-    **Confirm PIN field** and select **OK**.
+10.  In the **Set up a PIN** dialog box, type **112233** in the **New PIN** and **Confirm PIN field** and select **OK**.
 
 11. On the **All set!** screen, select **OK**.
 
@@ -163,14 +159,11 @@ _Note: Continue to Task 5._
 
 ### Task 4B: Logon to a Windows 10 Device using Azure AD user (no phone verification)
 
-1.  On LON-CL4, right-click **Start**, select **Shutdown or sign out** and then
-    select **Sign out**.
+1.  On LON-CL4, right-click **Start**, select **Shutdown or sign out** and then select **Sign out**.
 
-2.  Select **Other user**, and in the **Email address** field type
-    **JoniS**\@yourtenant.onmicrosoft.com**, and** in the **Password** field,
-    type **Pa55w.rd** as the password for the user and then press Enter.
+2.  Select **Other user**, and sign in as **JoniS\@yourtenant.onmicrosoft.com** with the password **Pa55w.rd12345**.
 
-3.  Wait for the profile to be created. It may take up to 60 seconds.
+3.  Wait for the profile to be created.
 
 4.  On the **Your organization requires Windows Hello** screen, select **Set up
     PIN**.

@@ -44,13 +44,14 @@ IT is replacing Vera's current PC, LON-CL2, with a new device, LON-CL1.  LON-CL1
 8.  At the PowerShell command prompt, type the following three commands,
     pressing **Enter** after each command:
 
-```
-Net Use F: \\LON-DC1\Labfiles\Install\USMT
-F:  
-./scanstate /i:migapp.xml /i:miguser.xml /genconfig:Config.xml
-
-```
-    **Note:** The creation of the **Config.xml** file begins. Wait until the command finishes.
+    ```
+    Net Use F: \\LON-DC1\Labfiles\Install\USMT
+    F:  
+    ./scanstate /i:migapp.xml /i:miguser.xml /genconfig:Config.xml
+    
+    ```
+    
+    _Note: The creation of the **Config.xml** file begins. Wait until the command finishes._
 
 9.  In the Command Prompt, type: **notepad Config.xml**, and then press
     **Enter**.

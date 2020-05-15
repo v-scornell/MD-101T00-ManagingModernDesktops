@@ -50,13 +50,12 @@ Management is requesting a report of all devices. They do not have access to the
 
 4.  When prompted, select **Yes**, and wait for the export to be prepared.
 
-5.  When prompted by **What do you want to do with…**, select up-arrow next to
-    **Save** and select **Save as**.
+5.  When prompted by **What do you want to do with…**, select **Save**.
 
-6.  In the **Save As** dialog box, select **Save** and note that the CSV file is
-    saved in the **Downloads** folder.
+6.  In the **finished downloading** notification, select **Open folder**. Note the file downloaded is a zip file. 
 
-7.  Close the **finished downloading** notification.
+7. In the Downloads folder, right-click the downloaded zip file and select **Extract all**. Browse to the **Downloads folder** and select **Extract**.
+
 
 ### Task 2: Import Intune data into Microsoft Excel
 

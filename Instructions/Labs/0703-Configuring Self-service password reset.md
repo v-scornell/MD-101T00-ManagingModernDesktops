@@ -37,7 +37,7 @@ The Help Desk has indicated that a large number of support tickets are related t
 
 11. In the left navigation pane, select **Password reset**.
 
-12. In the Password reset – Properties window, select **All** to enable
+12. In the **Password reset – Properties** window, select **All** to enable
     self-service password reset to all users. Select **Save**.
 
 13. On the **Password reset – Properties** blade, select **Authentication
@@ -51,7 +51,7 @@ The Help Desk has indicated that a large number of support tickets are related t
 16. For the **number of questions required to reset**, select **3**.
 
 17. In the **Select security questions** section, select **No security questions
-    configured**, then select **Predefined**, select three questions of your
+    configured**, then select **Predefined**. Select three questions of your
     choice, and then select **OK** twice.
 
 18. Select **Save**.
@@ -65,7 +65,7 @@ The Help Desk has indicated that a large number of support tickets are related t
     for the **Write back passwords to your on-premises directory** option. Select
     **Save**.
 
-22. Close the Internet Explorer browser window, and then reopen it.
+22. **Close** the Internet Explorer browser window, and then **re-open** it.
 
 #### Task 2: Configure self-service password reset
 
@@ -82,7 +82,7 @@ The Help Desk has indicated that a large number of support tickets are related t
 5.  On the **don’t lose access to your account** page, select **Set it up now**
     for the **Authentication Phone** option.
 
-6.  Choose your country or region, type your mobile phone number, and then select
+6.  Choose your **country or region**, type your **mobile phone number**, and then select
     **text me**.
 
 7.  Type the number that you receive in a text message in the text box below,
@@ -96,8 +96,9 @@ The Help Desk has indicated that a large number of support tickets are related t
     verification and continue with step 11._
 
 9. Sign in to your email account, read the code, type it in the verification
-    field, and then select **Verify**. Note: If you don’t find a message with a
-    code in your inbox, check the junk folder.
+    field, and then select **Verify**. 
+    
+    _Note: If you don’t find a message with a code in your inbox, check the junk folder._
 
 10. On the line for **Security Questions are not setup**, select **Set it up now**. Choose
     the three security questions and enter in any answer. Select **Save**.
@@ -118,12 +119,12 @@ The Help Desk has indicated that a large number of support tickets are related t
 
 #### Task 3: Verify password writeback
 
-1.  Ensure that you are signed in to LON-SVR1.
+1.  Switch to **LON-SVR1**.
 
-2.  Restore the Windows PowerShell window from the desktop.
+2.  Restore the **Windows PowerShell** window from the desktop.
 
-3.  At the Windows PowerShell command prompt, type the following commands, and
-    then press Enter after each command:
+3.  At the **Windows PowerShell **command prompt, type the following commands, and
+    then press **Enter** after each command:
 
 ```
 Import-Module ADSync
@@ -133,9 +134,9 @@ Start-ADSyncSyncCycle –PolicyType Delta
 ```
 4.  Wait for approximately 3-4 minutes.
 
-5.  Minimize Windows PowerShell, and then switch to **LON-CL1** and **Sign out**.
+5.  Minimize **Windows PowerShell**, and then switch to **LON-CL1** and **Sign out**.
 
-6.  Try to sign in to LON-CL1 as **Adatum\\Abbi** with the password
+6.  Switch to **LON-CL1** and try to sign in as **Adatum\\Abbi** with the password
     **Pa55w.rd**.
 
 7.  Ensure that you get the message that the user name or password is incorrect.

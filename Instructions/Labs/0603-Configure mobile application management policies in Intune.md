@@ -17,16 +17,16 @@ All the developers in A. Datum have iPhones running the latest version of iOS. T
     **Manage**. In the details pane, select **+ Create Policy** and then
     **select iOS/iPadOS**.
 
-3.  On the **Basics** tab, configure the following options:
+3.  On the **Basics** tab, configure the following options and select **Next**:
 
 -   Name: **Outlook – Developers**
 
 -   Description: **MAM policy that prevent cut and paste from Outlook**
 
-4.  Select **+Select public apps**
+4.  On the Apps tab, select **+Select public apps**
 
 5.  On the **Apps** tab, in the text box, type **Outlook**. Select
-    ***Outlook** and then select **Select**.
+    **Microsoft Outlook** and then select **Select**.
 
 6.  Select **Next**. On the **Data protection** tab, configure the following options and select
     **OK**:
@@ -55,9 +55,9 @@ All the developers in A. Datum have iPhones running the latest version of iOS. T
 
 9.  Select **Next**. On the Assignments tab, select **+Select groups to include**. 
 
-10. Select the **A. Datum developer devices** group, then select **Select**. 
+10. Select the **A. Datum developer devices** group, then choose **Select**. 
 
-11. Select Next.  On the **Review + create** tab, review the settings and select **Create**. 
+11. Select **Next**.  On the **Review + create** tab, review the settings and select **Create**. 
 
 12. On the **Client apps - App protection policies** blade, in the details pane,
     verify that **Outlook - Developers** is listed.
