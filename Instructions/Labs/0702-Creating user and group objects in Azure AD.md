@@ -101,7 +101,7 @@ _Note: For location use either your local region or United States._
     **AdatumGroup1** in the **Group Name** text box, select **Assigned** for
     **Membership type**, and then select **No members selected**.
 
-25. In the **Add medmundembers** window, select **Edmund Reeve**, and then select
+25. In the **Add members** window, select **Edmund Reeve**, and then select
     **Select**.
 
 26. Select **Create**. Close the **Group** page.
