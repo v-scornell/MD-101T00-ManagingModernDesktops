@@ -14,7 +14,7 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
     **Internet Explorer** browser.
 
 2.  In the **Internet Explorer** window, go to **https://portal.azure.com** and select **Continue to Azure Portal website**. If
-    prompted, sign in with your admin credentials available in hosted lab
+    prompted, sign in with your Mod administrator credentials available in hosted lab
     environment. If the **Stay signed in?** prompt appears, select **No**. If the **Welcome to Microsoft** Azure window appears, select     **Maybe later**.
 
 3.  On the **Microsoft Azure** page, select **Azure Active Directory** in the
