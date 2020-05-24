@@ -10,17 +10,17 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
 
 #### Task 1: Verifying licenses and creating a sync account
 
-1.  On **LON-DC1**, sign in as **Adatum\\Administrator**, and then open the
-    **Microsoft Edge** browser.
+1.  On **LON-DC1**, sign in as **Adatum\\Administrator** with the password of **Pa55w.rd**, and then open the
+    **Internet Explorer** browser.
 
-2.  In the **Microsoft Edge** window, go to **https://portal.azure.com**. If
-    prompted, sign in with your MOD admin credentials available in hosted lab
-    environment. If the **Stay signed in?** prompt appears, select **No**.
+2.  In the **Internet Explorer** window, go to **https://portal.azure.com** and select **Continue to Azure Portal website**. If
+    prompted, sign in with your admin credentials available in hosted lab
+    environment. If the **Stay signed in?** prompt appears, select **No**. If the **Welcome to Microsoft** Azure window appears, select     **Maybe later**.
 
 3.  On the **Microsoft Azure** page, select **Azure Active Directory** in the
     left navigation pane. This will open the adatum Azure Active Directory page.
 
-4.  On the Azure portal, select **Users** in the middle pane, select **All
+4.  On the Azure portal, select **Users** in the navigation pane, select **All
     users**, and then select **New user**.
 
 5.  In the **New User** dialog box, select **Create user** and enter the following:
@@ -29,10 +29,10 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
 
     -  Name: **Sync User**
 
-6. Under Groups and roles, on the **Roles** row, select **User**. 
-    Select **Global administrator**, and then select **Select**.
+6.  Select **Show Password**, note and write down the value for **Initial Password**.
 
-7.  Select **Show Password**, note and write down the value for **Password**, and
+7. Under Groups and roles, on the **Roles** row, select **User**. 
+    Select **Global administrator**, and then select **Select** , and
     then select **Create**.
 
 8.  At the upper right of the page, select your account name, and then select
@@ -52,8 +52,8 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
 
 #### Task 2: Configuring directory synchronization with Azure AD Connect
 
-1.  On **LON-SVR1**, if necessary, sign in as **Adatum\\Administrator**, with
-    the password **Pa55w.rd**. If the **Network** pane appears, select **Yes**.
+1.  On **LON-SVR1**, sign in as **Adatum\\Administrator**, with
+    the password **Pa55w.rd**.
 
 2.  Open **Internet Explorer**, and then go to
     **http://www.microsoft.com/en-us/download/details.aspx?id=47594**.
@@ -149,6 +149,6 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
     it is sourced from the local Active Directory. Close the Managers window and
     close the Groups window.
 
-7.  Leave the Azure portal open on LON-DC1 for the next lab.
+7.  Leave the Azure Active Directory portal open on LON-DC1 for the next lab.
 
 **END OF LAB**
