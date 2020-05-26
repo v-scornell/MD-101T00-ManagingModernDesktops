@@ -129,6 +129,8 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
 
 21. Select **I accept the terms in the License Agreement** and select **Install**.
     When installation is done select **Finish**.
+    
+22. Close the **Internet Explorer** window.
 
 #### Task 3: Verify synchronization in Azure AD
 
