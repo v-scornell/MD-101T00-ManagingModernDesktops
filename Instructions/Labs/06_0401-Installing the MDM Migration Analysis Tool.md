@@ -15,14 +15,14 @@ Your organization is planning a Microsoft Intune implementation. You have been a
 
 2.  Right-click the **Start** button and select **Windows PowerShell (Admin)**.
 
-3.  In the PowerShell console, type the following and then press Enter:
+3.  In the PowerShell console, type the following and then press **Enter**:
 ```
     Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability -Online
 
 ```
 4.  This will install Remote Server Administration Tools (RSAT). Wait for the
-    command to complete. It may take up to 5 minutes. **Note**: RSAT is required
-    for MMAT to function.
+    command to complete. It may take up to 5 minutes. 
+    _**Note**: RSAT is required for MMAT to function._
 
 5.  Close the PowerShell window.
 
@@ -36,14 +36,14 @@ Your organization is planning a Microsoft Intune implementation. You have been a
 3.  On the Github page, select the **Clone or download** link and select
     **Download ZIP**.
 
-4.  When prompted select **Save** and close Microsoft Edge.
+4.  When prompted select **Save** and close Microsoft Edge after the download is finished.
 
 ### Task 3: Install the MMAT tool on the Windows 10 device
 
 1.  On the Task bar, select the **File Explorer** icon and expand **This PC.**
 
 2.  In **File Explorer**, select **Downloads** and right-click the
-    **MMAT-master.zip** file, and then select **Extract All**. In the **Select a
+    **MMAT-master.zip** file, and then select **Extract All...**. In the **Select a
     Destination and Extract Files** dialog box, type **C:\\** and then select
     **Extract**.
 
@@ -60,7 +60,7 @@ directly to Intune.
 
 2.  In the PowerShell console, type the following and then press Enter:
 ```
-    set-location -path c:\mmat-master
+    Set-Location -path c:\mmat-master
 
 ```
 3.  In the PowerShell console, type the following and then press Enter:
@@ -113,7 +113,7 @@ directly to Intune.
     setting that you should use is displayed next to Group Policy Setting.
 
 9.  Finally notice the settings displayed under **NOT SUPPORTED: Security
-    Account Policies**. For now, they cannot be migrated to Intune.
+    Account Policies**. For now, they cannot be migrated to Microsoft Intune.
 
 10.  Close all Windows.
 

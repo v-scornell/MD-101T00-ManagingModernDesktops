@@ -59,7 +59,7 @@ _Note: For location use either your local region or United States._
 11. In the **Edmund Reeve - Profile** blade, in the right pane under the**Settings** 
     section, select **Edit**, select your country/region in the **Usage location** drop-down box. 
     
-    _Note: If your country/region is not listed, select **United States**._
+    _Note: If your country/region is not listed, select **United States**. Before you can assign a license to a user, the user must have a usage location set_
     
 12. Select **Save**. Close the **Edmund Reeve – Profile** page.
 

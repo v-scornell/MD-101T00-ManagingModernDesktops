@@ -8,7 +8,7 @@ In this lab, you will practice creating and applying a device profile.
 
 ### Scenario
 
-A. Datum Corporation’s has decided to manage all developers in the company using Azure Active Directory (Azure AD) and Intune. You have been asked to evaluate the solutions that would enable the developers to work effectively and securely on Windows 10 devices managed by Intune and Azure AD. The head of the developer department, Brenda Mueller, has volunteered to help you test and evaluate the solution and provide feedback. She has also given you some initial requirements that must be included in the configuration of Intune:
+A. Datum Corporation’s has decided to manage all members of the HR department in the company using Azure Active Directory (Azure AD) and Intune. You have been asked to evaluate the solutions that would enable the users to work effectively and securely on Windows 10 devices managed by Intune and Azure AD. Diego Siciliani from the HR department, has volunteered to help you test and evaluate the solution and provide feedback. He has also given you some initial requirements that must be included in the configuration of Intune:
 
 •	It should not be possible to access Gaming or Privacy in the Settings app.
 •	The C:\DevProjects folder should be excluded from Windows Defender.
@@ -50,19 +50,19 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 12. On the **Exclusion** page, verify that no exclusions have been configured.
 
 13. Close the **Exclusions page** and the **Windows Security** page by selecting
-    the **X** in the right upper corner twice.
+    the **X** in the right upper corner.
 
 ### Task 2: Enroll Windows 10 device to Azure AD and Intune using the Settings app
 
 1.  On **LON-CL3**, with the Settings app still open, navigate to the **Accounts** page. 
 
-2.  Select **Access work or school**. In the **Access work or school** section, select **+Connect**.
+2.  Select **Access work or school**. In the **Access work or school** section, select **Connect**.
 
 4.  In the **Microsoft account** window, on the **Set up a work or school
     account** page, select **Join this device to Azure Active Directory**.
 
 5.  On the **Let’s get you signed in** page, in the **Work or school account**
-    text box, type **DiegoS\@yourtenant.onmicrosoft.com**
+    text box, type **DiegoS\@yourtenant.onmicrosoft.com** and select **Next**.
 
 6.  On Enter password page, enter the default tenant password in the text box and then select
     **Sign in**.
@@ -96,8 +96,8 @@ _Note: This will disable Windows Hello on the device and will disable the forced
 1.  Sign out of **LON-CL3**. 
 
 2.  Select **other user**, and in the **Email address** field type
-    DiegoS**\@yourtenant.onmicrosoft.com**, and then select **Next**. In the
-    Password field, type **Pa55w.rd** and then press Enter.
+    **DiegoS\@yourtenant.onmicrosoft.com**, and then select **Next**. In the
+    Password field, enter the default tenant password and then press **Enter**.
 
 3.  Wait for the profile to be created. It will take around 30-60 seconds.  
     
@@ -110,59 +110,63 @@ _Note: This will disable Windows Hello on the device and will disable the forced
 1.  On **LON-CL3**, on the taskbar, select **Microsoft Edge**.
 
 2.  In Microsoft Edge, type **https://portal.azure.com** in the address bar, and
-    then press Enter.
+    then press Enter. Note that you are automatically signed in as **DiegoS\@yourtenant.onmicrosoft.com**.
 
-3.  Sign in as user **Admin\@yourtenant.onmicrosoft.com**, and use the tenant
-    Admin password.
+3.  At the upper right of the page, select your account name, and then select
+    **Sign in with a different account**.
 
-4.  In the Azure portal, select **Intune** under Azure Services. 
+4.  On the **Microsoft Azure** page, select **Use another account** if needed,
+    type **admin\@yourtenant.onmicrosoft.com** for the user name, type the
+    tenant Admin, and then select **Sign in**. On the **Pick an account** page select **admin\@yourtenant.onmicrosoft.com**.
+
+5.  In the Azure portal, select **Intune** under Azure Services. 
     On the **Microsoft Intune** overview page, select **Device configuration**.
 
-5.  On the **Device configuration** blade, select **Profiles**. In the details
-    pane, select **+ Create profile**.
+6.  On the **Device configuration** blade, select **Profiles**. In the details
+    pane, select **Create profile**.
 
-6.  In the **Create a profile** blade, select the following options, and then select **Create**:
+7.  In the **Create a profile** blade, select the following options, and then select **Create**:
 
 -   Platform: **Windows 10 and later**
 
 -   Profile: **Device restrictions**
 
-7.  In the **Basics** blade, enter the following information, and then select **Next**:
+8.  In the **Basics** blade, enter the following information, and then select **Next**:
 
-    -   Name: **A. Datum developers - standard**
+    -   Name: **A. Datum HR - standard**
 
-    -   Description: **Basic restrictions and configuration for developers in A. Datum.**
+    -   Description: **Basic restrictions and configuration for HR in A. Datum.**
 
-8.  On the **Configurations settings** blade, expand **Control Panel and Settings**.
+9.  On the **Configurations settings** blade, expand **Control Panel and Settings**.
     Select **Block** next to **Gaming** and **Privacy**. 
 
-9.  On the **Device restrictions** blade, expand **Start**. Scroll down and
+10. On the **Device restrictions** blade, expand **Start**. Scroll down and
     select **Block** next to **Most used apps** and **Recently added apps**.
 
-10.  On the **Device restrictions** blade, scroll down and expand **Windows Defender Antivirus**. Under **Windows Defender Antivirus,** scroll down and
-    expand **Windows Defender Antivirus Exclusions**.
+11.  On the **Device restrictions** blade, scroll down and expand **Microsoft Defender Antivirus**. Under **Microsoft Defender Antivirus,** scroll down and
+    expand **Microsoft Defender Antivirus Exclusions**.
 
-11.  Under **Windows Defender Antivirus Exclusions** in the **Files and folders** box, type the following:
+12.  Under **Microsoft Defender Antivirus Exclusions** in the **Files and folders** box, type the following:
     **C:\\DevProjects**.
 
-12.  In the **Processes** box, type the following:
+13.  In the **Processes** box, type the following:
     **DevBuild.exe**. 
     
-13.  Then select **Next** four times until you reach the Review + create blade. Select **Create**.
+14.  Then select **Next** three times until you reach the **Review + create** blade. Select **Create**.
 
-### Task 5: Create the Adatum developer device group
+### Task 5: Create the Adatum HR device group
 
-1.  In the Azure portal, select the ellipsis in the top left and select **Azure Active Directory**.  In the navigation pane, and then **Groups**.
+1.  In the Azure portal, select the **Show portal menu** button in the top left and select **Azure Active Directory**.  In the navigation pane, and then **Groups**.
 
-2.  On the **Groups** blade, select **+ New group**.
+2.  On the **Groups | All groups** blade, select **New group**.
 
-3.  On the **Group** blade, enter the following information:
+3.  On the **New Group** blade, enter the following information:
 
 -   Group type: **Security**
 
--   Group name: **A. Datum developer devices**
+-   Group name: **A. Datum HR devices**
 
--   Group description: **All Windows 10 devices in A. Datum developer department**
+-   Group description: **All Windows 10 devices in A. Datum HR department**
 
 -   Membership type: **Assigned**
 
@@ -175,7 +179,7 @@ _Note: This will disable Windows Hello on the device and will disable the forced
 
 ### Task 6: Create a dynamic Azure AD device group
 
-1.  On the **Groups | All Groups** blade, on the details pane, select **+New group**.
+1.  On the **Groups | All Groups** blade, on the details pane, select **New group**.
 
 3.  On the **Group** blade, provide the following values:
 
@@ -207,9 +211,9 @@ _Note: This will disable Windows Hello on the device and will disable the forced
 
 3.  On the **A. Datum developers – standard** blade, select **Properties**.  Scroll down to the **Assignments** section, and select **Edit**.
 
-4.  On the **A. Datum developers – standard – Assignments** blade, select **+ Select groups to include**.
+4.  On the **Assignments** blade, select **Select groups to include**.
 
-4.  On the **Select groups to include** blade, in the **Search** box, type **A**. Select **A. Datum developer devices** and then select **Select**.
+4.  On the **Select groups to include** blade, in the **Search** box, type **A**. Select **A. Datum HR devices** and then select **Select**.
 
 5.  Back on the **Device restrictions** blade, select **Review + Save**, then select **Save**.
 
@@ -253,7 +257,7 @@ _Note: This will disable Windows Hello on the device and will disable the forced
     **DevBuild.exe** are displayed.
 
 12. Close the **Exclusions page** and the **Windows Security** page by selecting
-    the **X** in the right upper corner twice.
+    the **X** in the right upper corner. Close the **Settings** app.
 
 
 
@@ -261,18 +265,18 @@ _Note: This will disable Windows Hello on the device and will disable the forced
 
 ### Scenario
 
-There was an exception to A. Datum's policies initiated where developers should not have the Privacy option blocked in Settings on thier devices. This change should be implemented and tested.
+There was an exception to A. Datum's policies initiated where HR users should not have the Privacy option blocked in Settings on thier devices. This change should be implemented and tested.
 
 ### Task 1: Change setting in assigned profile
 
-1.  On **LON-CL3**, in the Azure portal, select **Intune** in the navigation
-    pane, and then on the **Microsoft Intune** blade, select **Device configuration**.
+1.  On **LON-CL3**, in the Azure portal, select **Microsoft Intune** in the breadcrumb
+    navigation pane, and then on the **Microsoft Intune** blade, select **Device configuration**.
 
 2.  On the **Device configuration** blade, select **Profiles**. In the details
-    pane, select **A. Datum developers - standard**.
+    pane, select **A. Datum HR - standard**.
 
-3.  On the **A. Datum developers - standard** blade, select **Properties**. On
-    the **A. Datum developers - standard** – **Properties** blade, on the Configuration settings line, select **Edit**.
+3.  On the **A. Datum HR - standard** blade, select **Properties**. On
+    the **A. Datum HR - standard Properties** blade, on the Configuration settings line, select **Edit**.
 
 4.  On the **Configuration settings** blade, expand **Control Panel and Settings**.
     Select **Not configured** next to **Privacy**. 
@@ -292,7 +296,7 @@ There was an exception to A. Datum's policies initiated where developers should 
 
 ### Task 3: Verify profile change on device
 
-1.  Switch toon **LON-CL3** and on the taskbar, select **Start** and then select
+1.  On **LON-CL3** and on the taskbar, select **Start** and then select
     the **Settings** app.
 
 2.  In the **Settings** app, select **Privacy** and verify that all of the
