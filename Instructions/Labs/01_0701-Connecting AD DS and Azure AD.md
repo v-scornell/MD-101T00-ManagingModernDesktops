@@ -10,10 +10,10 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
 
 #### Task 1: Verifying licenses and creating a sync account
 
-1.  On **LON-DC1**, sign in as **Adatum\\Administrator** with the password of **Pa55w.rd**, and then open the
-    **Internet Explorer** browser.
+1.  On **LON-CL1**, sign in as **Adatum\\Administrator** with the password of **Pa55w.rd**, and then open the
+    **Microsoft Edge** browser.
 
-2.  In the **Internet Explorer** window, go to **https://portal.azure.com** and select **Continue to Azure Portal website**. If
+2.  In the **Microsoft Edge** window, go to **https://portal.azure.com** and select **Continue to Azure Portal website**. If
     prompted, sign in with your Mod administrator credentials available in hosted lab
     environment. If the **Stay signed in?** prompt appears, select **No**. If the **Welcome to Microsoft** Azure window appears, select     **Maybe later**.
 
@@ -48,9 +48,34 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
 
 11. If the **Welcome to Microsoft** Azure window appears, select **Maybe later**.
     Select your **Sync user** account in the upper right of the page, and then
-    select **Sign in with a different account**. Leave browser window open.
+    select **Sign in with a different account**.
 
-#### Task 2: Configuring directory synchronization with Azure AD Connect
+#### Task 2: Customize Azure AD company branding
+
+1.  Sign back in to the Azure portal as **admin\@yourtenant.onmicrosoft.com**. 
+
+2.  In the Microsoft Azure portal, in the navigation pane, select **Azure Active
+    Directory**.
+
+3.  On the **Azure Active Directory** blade, select **Company branding**, and
+    then select **Configure**.
+
+4.  On the **Configure company branding** blade, configure the following
+    settings:
+
+-   Sign-in page text: **Adatum.com sign-in page**
+
+-   Show option to remain signed in: Select **Yes**.
+
+5.  Select **Save**, and then close the **Company branding** blade.
+
+6.  On the **Azure Active Directory** blade, in the navigation pane, select
+    **Properties**.
+
+7.  In the **Name** text box, type **ADATUM**, and then select **Save**. Leave the browser
+    window open.
+
+#### Task 3: Configuring directory synchronization with Azure AD Connect
 
 1.  On **LON-SVR1**, sign in as **Adatum\\Administrator**, with
     the password **Pa55w.rd**.
@@ -132,11 +157,11 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
     
 22. Close the **Internet Explorer** window.
 
-#### Task 3: Verify synchronization in Azure AD
+#### Task 4: Verify synchronization in Azure AD
 
-1.  Switch to **LON-DC1**. Sign back in to the Azure portal as **admin\@yourtenant.onmicrosoft.com**.
+1.  Switch to **LON-CL1**.
 
-2.  Select  **Azure Active Directory**, then select **Users**. Select **Refresh**.
+2.  In the **Azure Active Directory** portal from the navigation pane select **Users**. Select **Refresh**.
 
 3.  Verify that you see users from your local AD DS. Ensure that these users
     have the value **Windows Server AD** in the **SOURCE** column. Close Users

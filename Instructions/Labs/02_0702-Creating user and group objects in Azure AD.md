@@ -26,7 +26,7 @@ _Note: For location use either your local region or United States._
 
 #### Task 1: Creating users by using the Azure portal
 
-1.  On **LON-DC1**, sign in as **Adatum\\Administrator**, and login to the
+1.  On **LON-CL1**, sign in as **Adatum\\Administrator**, and login to the
     Azure portal as **admin\@yourtenant.onmicrosoft.com** if you are not already there.
     
 2.  Navigate to Azure Active Directory.  On the **Azure AD - Overview** page, select 
