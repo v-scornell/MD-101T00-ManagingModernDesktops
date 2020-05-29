@@ -76,21 +76,6 @@ A. Datum Corporation’s has decided to manage all members of the HR department 
     that the device is connected to Azure AD and then close the **Settings**
     app.
 
-10. Right-click the **Start** button and select **Windows PowerShell (Admin)**,
-    when prompted select **Yes.**
-
-11. In the PowerShell console, type the following and then press Enter:
-```
-    REG ADD HKLM\SOFTWARE\Policies\Microsoft\PassportForWork /v Enabled /t REG_DWORD /d 0 /f 
-
-``` 
-    
-_Note: This will disable Windows Hello on the device and will disable the forced
-    creation of a PIN when logging on to the device the first time using an
-    Azure AD account. This will also disable the need for access to a mobile
-    phone as this requires validation of the Azure AD account being used. You
-    can also disable the use of Windows Hello by creating a policy in Intune._
-
 ### Task 3: Logon to a different Windows 10 device using Azure AD user
 
 1.  Sign out of **LON-CL3**. 
@@ -104,12 +89,11 @@ _Note: This will disable Windows Hello on the device and will disable the forced
     _Note: When you are logged on using your Azure AD credentials you will
     benefit from Single-Sign-On (SSO) to Azure AD, Intune and Office 365._
 
-
 ### Task 4: Create device profile based on scenario
 
 1.  On **LON-CL3**, on the taskbar, select **Microsoft Edge**.
 
-2.  In Microsoft Edge, type **https://portal.azure.com** in the address bar, and
+2.  In Microsoft Edge, type **https://endpoint.microsoft.com** in the address bar, and
     then press Enter. Note that you are automatically signed in as **DiegoS\@yourtenant.onmicrosoft.com**.
 
 3.  At the upper right of the page, select your account name, and then select
@@ -117,12 +101,13 @@ _Note: This will disable Windows Hello on the device and will disable the forced
 
 4.  On the **Microsoft Azure** page, select **Use another account** if needed,
     type **admin\@yourtenant.onmicrosoft.com** for the user name, type the
-    tenant Admin, and then select **Sign in**. On the **Pick an account** page select **admin\@yourtenant.onmicrosoft.com**.
+    tenant Admin, and then select **Sign in**.
 
-5.  In the Azure portal, select **Intune** under Azure Services. 
-    On the **Microsoft Intune** overview page, select **Device configuration**.
+5.  In the Microsoft Endpoint Manager admin center, select **Devices** from the 
+    navigation bar. 
+    On the **Devices | Overview** page, select **Configuration Profiles**.
 
-6.  On the **Device configuration** blade, select **Profiles**. In the details
+6.  On the **Devices | Configuration profiles** blade, in the details
     pane, select **Create profile**.
 
 7.  In the **Create a profile** blade, select the following options, and then select **Create**:
@@ -156,7 +141,7 @@ _Note: This will disable Windows Hello on the device and will disable the forced
 
 ### Task 5: Create the Adatum HR device group
 
-1.  In the Azure portal, select the **Show portal menu** button in the top left and select **Azure Active Directory**.  In the navigation pane, and then **Groups**.
+1.  In the Microsoft Endpoint Manager admin center, select **Groups** in the navigation pane.
 
 2.  On the **Groups | All groups** blade, select **New group**.
 
@@ -203,13 +188,13 @@ _Note: This will disable Windows Hello on the device and will disable the forced
 
 ### Task 7: Deploy device profile to Windows 10 device
 
-1.  In the Azure portal, select **Home** in the breadcrumb navigation menu and then select
-    **Intune**. On the **Microsoft Intune - Overview** blade, select **Device configuration**.
+1.  In the Microsoft Endpoint Manager admin center, select **Home** in the 
+    breadcrumb navigation menu and then select **Devices**. On the **Devices | Overview** blade, select **Configuration profiles**.
 
-2.  On the **Device configuration** blade, select **Profiles**. In the details
-    pane, select the **A. Datum developers – standard** profile.
+2.  On the **Devices | Configuration profiles** blade, in the details
+    pane, select the **A. Datum HR – standard** profile.
 
-3.  On the **A. Datum developers – standard** blade, select **Properties**.  Scroll down to the **Assignments** section, and select **Edit**.
+3.  On the **A. Datum HR – standard** blade, select **Properties**.  Scroll down to the **Assignments** section, and select **Edit**.
 
 4.  On the **Assignments** blade, select **Select groups to include**.
 
@@ -261,7 +246,7 @@ _Note: This will disable Windows Hello on the device and will disable the forced
 
 
 
-### Exercise 2: Change deployed device policy  
+### Exercise 2: Change a deployed device policy  
 
 ### Scenario
 
@@ -269,11 +254,11 @@ There was an exception to A. Datum's policies initiated where HR users should no
 
 ### Task 1: Change setting in assigned profile
 
-1.  On **LON-CL3**, in the Azure portal, select **Microsoft Intune** in the breadcrumb
-    navigation pane, and then on the **Microsoft Intune** blade, select **Device configuration**.
+1.  On **LON-CL3**, in the Microsoft Endpoint Manager admin center, select 
+    **Devices | Configuration profiles** in the breadcrumb navigation pane 
 
-2.  On the **Device configuration** blade, select **Profiles**. In the details
-    pane, select **A. Datum HR - standard**.
+2.  On the **Devices | Configuration profiles** blade, in the details
+    pane select **A. Datum HR - standard**.
 
 3.  On the **A. Datum HR - standard** blade, select **Properties**. On
     the **A. Datum HR - standard Properties** blade, on the Configuration settings line, select **Edit**.
@@ -285,8 +270,8 @@ There was an exception to A. Datum's policies initiated where HR users should no
 
 ### Task 2: Force synchronization of policy from Intune console
 
-1.  On **LON-CL3**, in the Azure portal, scroll left to the **Microsoft Intune**
-    blade, select **Devices** and then select **All devices**.
+1.  On **LON-CL3**, in the Microsoft Endpoint Manager admin center, select **Devices** 
+    in the navigation pane and then select **All devices**.
 
 2.  In the details pane, select **LON-CL3**. On the **LON-CL3** blade, select
     **Sync** and when prompted select **Yes**.  

@@ -113,9 +113,7 @@ dsregcmd /status
 
     This indicates that the device is enrolled in Intune.
 
-### Task 4A: Logon to a Windows 10 Device using Azure AD user (Phone verification)
-
-_Note: this task requires the use of your mobile phone in order to be validated by Microsoft. The task is optional but recommended as it will demonstrate how to setup Windows Hello, the first time you login using your Azure AD credentials. If you prefer or are unable to sign in with phone verification, go to **Task 4B**._
+### Task 4: Logon to a Windows 10 Device using Azure AD user
 
 When you're logged on using your Azure AD credentials you will benefit from
 Single-Sign-On (SSO) to Azure AD, Intune and Office 365.
@@ -126,61 +124,21 @@ Single-Sign-On (SSO) to Azure AD, Intune and Office 365.
 
 3.  Wait for the profile to be created.
 
-4.  On the **Your organization requires Windows Hello** screen, select **Set up PIN**.
-
-5.  On the More information required, select **Next**.
-
-6.  On the **Help us protect your account** screen, select **Set it up now**.
-
-7.  On the **Additional security verification** screen, under **How should we contact you?**
-    verify that Authentication phone is selected in the drop-down field. In the **Select your country or region** box, select your country and in the **Phone Number** field, type your phone number. Then select **Next**.
-
-8.  Wait for a text message to arrive on your phone, type the 6-digit security
-    code in the **Enter Your security code** field and select **Next**.
-
-9.  When the verification is successful, select **Done**.
-
-10.  In the **Set up a PIN** dialog box, type **112233** in the **New PIN** and **Confirm PIN field** and select **OK**.
-
-11. On the **All set!** screen, select **OK**.
-
-_Note: Continue to Task 5._
-
-### Task 4B: Logon to a Windows 10 Device using Azure AD user (no phone verification)
-
-1.  On LON-CL4, right-click **Start**, select **Shutdown or sign out** and then select **Sign out**.
-
-2.  Select **Other user**, and sign in as **JoniS\@yourtenant.onmicrosoft.com** with the password **Pa55w.rd12345**.
-
-3.  Wait for the profile to be created.
-
-4.  On the **Your organization requires Windows Hello** screen, select **Set up
-    PIN**.
-
-5.  On the **Help us protect your account** screen, select **Set it up now**.
-
-6.  On the **verify your identity** screen, close the window by selecting the
-    **X**.
-
-7.  On the **Something went wrong** screen, select **Skip for now** and then
-    select **Next**.
-
-8.  You will be shown the desktop.
+4.  You will be shown the desktop.
 
 ### Task 5: Verifying device enrollment in the Intune console
 
-1.  Switch to **LON-CL3**. In the Azure portal, type **Intune** in the search resources
-    text box and press **Enter**. In the navigation pane, select **Devices**.
+1.  Switch to **LON-CL3**. In Microsoft Edge, type **https://endpoint.microsoft.com** in the 
+    address bar, and then press **Enter**. In the navigation pane, select **Devices**.
 
-2.  On the **Devices** blade under Intune enrolled devices, verify that 1 is
+2.  On the **Devices | Overview** blade under **Intune enrolled devices**, verify that 1 is
     displayed next to **Windows**. If no devices are listed refresh the webpage
     and repeat steps 1 and 2.
 
-3.  On the **Devices** blade, select **All devices** and verify that **LON-CL4**
+3.  On the **Devices | Overview** blade, select **All devices** and verify that **LON-CL4**
     is listed.
 
-4.  On the **Devices** blade, select **Azure AD devices** and verify that
-    **LON-CL4** and the device from the hybrid join lab are listed.  Note that the **MDM** column displays **Microsoft Intune** for **LON-CL4**.  
+4.  Note that the **Managed by** column displays **Intune** for **LON-CL4**.  
     
     _Note: This view lists devices that are joined to Azure AD. Remember that you
     configured integration between Azure AD and Intune, and because of that, any

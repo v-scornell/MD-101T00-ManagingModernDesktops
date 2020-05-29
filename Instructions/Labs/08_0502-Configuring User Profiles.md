@@ -2,7 +2,7 @@
 
 ## Summary
 
-In this lab, you will practice configuring user profiles in AD DS and setting up folder direction. 
+In this lab, you will practice configuring enterprise state roaming in Azure AD and setting up known folder move. 
 
 ## Exercise 1: Configuring roaming user profiles and Folder Redirection
 
