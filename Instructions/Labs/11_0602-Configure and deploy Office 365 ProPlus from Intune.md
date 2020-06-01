@@ -7,37 +7,38 @@ In this lab, you will practice configuring Office 365 ProPlus for deployment in 
 
 ### Scenario
 
-All the developers at A. Datum require Microsoft Office 365 ProPlus.  You've been asked to deploy  64-bit versions of Microsoft Excel, Outlook, PowerPoint and Word to their Windows 10 devices. You also need to ensure they are configured for the Semi-Annual channel for updates. This should be tested on LON-CL4.
+All the developers at A. Datum require Microsoft Office 365 ProPlus. You've been asked to deploy  64-bit versions of Microsoft Excel, Outlook, PowerPoint and Word to their Windows 10 devices. You also need to ensure they are configured for the Semi-Annual channel for updates. This should be tested on LON-CL4.
 
 #### Task 1: Verify installed apps on device before deployment
 
-1.  On **LON-CL4**, on the taskbar, select **Start** and then select the
-    **Settings** app.
+1.  On **LON-CL4** sign in as **DiegoS\@yourtenant.onmicrosoft.com** with the default tenant
+    password. On the taskbar, select **Start** and then select the **Settings** app.
 
 2.  In the **Settings** app, select the **Apps** tile and on the **Apps &
-    features** page, select **Programs and Features** under Related Settings.
+    features** page, select **Programs and Features** under **Related Settings**.
 
 3.  In the **Program and Features** window, verify that **Microsoft Office 365
     ProPlus - en-us** is not listed.
 
 #### Task 2: Create a LOB app type based on the scenario
 
-1.  Switch to **LON-DC1**, and in the Azure portal, select **Intune** in the
-    navigation pane, and then on the **Microsoft Intune** blade, select **Client
-    apps**.
+1.  Switch to **LON-CL3** and sign in as **admin\@yourtenant.onmicrosoft.com** with the 
+    default tenant password.
 
-2.  In the **Client apps** blade, select **Apps**. In the details pane, select **+ Add**.
+2.  Open **Microsoft Edge**, navigate to **https://endpoint.microsoft.com** and select **Apps**.
 
-3.  In the **Select app type** blade, select **Windows 10** under **Office 365 Suite**.
+3.  In the **Apps | Overview** blade, select **All Apps**. In the details pane, select **Add**.
 
-4.  On the **App Suite information** tab, configure
+4.  In the **Select app type** blade, select **Windows 10** under **Microsoft 365 Apps**, and then select **Select**.
+
+5.  On the **App Microsoft 365 Apps** blade, configure
     the following options and select **Next**:
 
--   Name: **Office 365 ProPlus (A. Datum developers)**
+-   Suite Name: **Office 365 ProPlus (A. Datum developers)**
 
--   Description: **Office 365 ProPlus App for developers in A. Datum**
+-   Suite Description: **Office 365 ProPlus App for developers in A. Datum**
 
-5.  On the **Configure App Suite** tab, expand the **Select Office apps** dropdown, select the following Office 365 apps and select **Next**:
+6.  On the **Configure app suite** blade, expand the **Select Office apps** dropdown, select the following Office 365 apps and select **Next**:
 
 -   Excel
 
@@ -47,7 +48,7 @@ All the developers at A. Datum require Microsoft Office 365 ProPlus.  You've bee
 
 -   Word
 
-6.  On the **Configure app suite** tab, configure the
+7.  On the **Configure app suite** tab, configure the
     following options and select **Next**:
 
 -   Architecture: **64-bit**
@@ -56,13 +57,13 @@ All the developers at A. Datum require Microsoft Office 365 ProPlus.  You've bee
 
 -   Accept the Microsoft Software License Terms on behalf of users: **Yes**
 
-7.  On the **Assignments** tab, in the **Required** section, select **+ Add group.** 
+8.  On the **Assignments** tab, in the **Required** section, select **Add group.** 
 
-8.  On the **Select groups** blade, select **A. Datum Developer devices**, and then choose **Select**.
+9.  On the **Select groups** blade, select **A. Datum Developer devices**, and then choose **Select**.
 
-9. Select **Next**.  On the **Review + Create** tab, select **Create**.
+10. Select **Next**.  On the **Review + Create** tab, select **Create**.
 
-10.  On the **Office 365 ProPlus (A. Datum Developers)** page, select **Properties**. In the details pane verify that **A. Datum developer devices** in listed next to **Required** in the Assignments section.
+11.  On the **Office 365 ProPlus (A. Datum Developers)** page, select **Properties**. In the details pane verify that **A. Datum developer devices** in listed next to **Required** in the Assignments section.
 
 #### Task 3: Force synchronization of policy from Intune console
 

@@ -10,8 +10,9 @@ You have been asked to review Diego Siciliani's sign-in activity.  You have also
 
 #### Task 1: Monitor user activity
 
-1.  On **LON-CL1**, open the browser and navigate to **https://endpoint.microsoft.com**
-    if it is not already there. On the **Microsoft Endpoint Manager admin center** page, select **Users**.
+1.  On **LON-CL1**, sign in as **Adatum\\Administrator** with the password **Pa55w.rd**.
+    Then open the browser and navigate to **https://endpoint.microsoft.com**. 
+	On the **Microsoft Endpoint Manager admin center** page, select **Users**.
 
 2.  Select **Sign-ins**, in the details pane, you can see sign-ins for your
     users. Select on the first entry where the **User** column says **Diego Siciliani**.
