@@ -16,7 +16,7 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 2.  Select **Start** and then select the **Settings** app.
 
 3.  In the **Settings** app, select the **Apps** tile and on the **Apps &
-    features** page, select **Programs and Features** on the right under Related Settings.
+    features** page, scroll down and select **Programs and Features** on the right under **Related Settings**.
 
 4.  In the **Program and Features** window, verify that **Remote Desktop
     Connection Manager 2.7** is not listed.
@@ -27,34 +27,38 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 
 1. Sign in to **LON-CL3** as **admin\@yourtenant.onmicrosoft.com** with the default tenant password.
 
-2.  In Microsoft Edge, navigate to https://portal.azure.com and select
+2.  In Microsoft Edge, navigate to **https://portal.azure.com** and select
     **Azure Active Directory**.
 
 3.  On the **Azure Active Directory** blade, in the navigation pane, select
+    **Devices**.
+
+4.  In the details pane select **LON-CL4** where the owner is **Joni Sherman** and select
+    **Delete**, confirm with **Yes**, and then close the **Devices | All Devices** blade.
+
+5.  On the **Azure Active Directory** blade, in the navigation pane, select
     **Groups**.
 
-4. Select **A. Datum developer devices** and then select **Members**. Select **+Add Members**. 
-    In the Add Members panel, select **MARKETING-###** and then select **Select**. 
+6. Select **A. Datum developer devices** and then select **Members**. Select 
+   **Add Members**. In the Add Members panel, select **LON-CL4** and then select **Select**. 
 
 #### Task 3: Create a line-of-business (LOB) app type based on the scenario 
 
-1.  In the Azure portal, select **Intune** in the navigation pane, and then on
-    the **Microsoft Intune** blade, select **Client apps**.
+1.  In Microsoft Edge, navigate to **https://endpoint.microsoft.com**, and then select 
+    **Apps** in the navigation pane. On the **Apps | Overview** blade, select **All apps**.
 
-2.  In the **Client apps** blade, select **Apps**. In the details pane, select **+
-    Add**.
+2.  In the **Apps | All apps** blade, in the details pane, select **Add**.
 
-3.  In the **Add app** blade, select the **Select an app type** under **App
-    type** and select **Line-of-business app**.
+3.  In the **Select app type** blade, under **App type** select from the dropdown 
+    **Line-of-business app** and then select **Select**
 
-4.  Select **App package file Select file**, and in **App package file** blade,
-    select the folder icon next to **Select a file**.
+4.  In the **Add App** blade under **App information** select **Select app package file**.
 
-5.  In the Open dialog box, browse to **C:\\Software** and select **rdcman.msi**.
+5.  In **App package file** blade select the folder icon next to the **Select a file** box.
+    In the **Open** dialog box, browse to **C:\\Software** and select **rdcman.msi**.
     Then select **Open** and **OK**.
 
-6.  Back on the Add app blade, select **App information Configure**. Configure
-    the following options:
+6.  Back on the **Add app** blade configure the following options:
 
 -   Name: **Remote Desktop Connection Manager**
 
@@ -64,41 +68,35 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 
 -   Category: **Computer Management**
 
-7.  Scroll down to the bottom and select **Logo Select image** and in Logo blade,
+7.  Scroll down to the bottom and select **Select image** and in the **Logo** blade,
     select the folder icon next to **Select a file**.
 
 8.  In the **Open** dialog box, browse to **C:\\Software** and select
     **rdcman-icon.jpg**. Then select **Open** and **OK**.
 
-9.  Select **Next** and then select **Add** to create the app in Intune. Notice the
+9.  Select **Next** twice and then select **Create** to create the app in Intune. Notice the
     app is not yet available. 
 
-10. On the **Client apps – Apps** blade, select **Audit logs**.  As the RDC app
-    is being created, you will see log entries created.  When there are 4 entries,
+10. On navigation pane select **Tenant administration**, then select **Audit logs**.  As the
+    RDC app is being created, you will see log entries created.  When there are 4 entries,
     the app should be available.  This can take up to a couple minutes.
 
-11.  On the **Client apps – Apps** blade, in the details pane, select **Remote
+11. Select **Apps** in the navigation pane. On the **Apps | Overview** blade, select
+    **All apps**. On the **Apps | All Apps** blade, in the details pane, select **Remote
     Desktop Connection Manager**.
 
-12.  On the **Remote Desktop Connection Manager** blade, select **Assignments**
-    and on the **Remote Desktop Connection Manager - Assignments** blade, select
-    **Add group**.
+12.  On the **Remote Desktop Connection Manager** blade, select **Properties**, then scroll 
+    down  and select **Edit** next to **Assignments**. On the **Edit Application** blade,below of **Available for enrolled devices** select **Add all users**.
 
-13.  On the **Add group** blade, select **Select assignment type** under
-    **Assignment type** and select **Available for enrolled devices**.
+13. Select **Review + save** and then select **Save**.
 
-14.  Select **No groups selected Included Groups** and on the **Assign** blade,
-    select **Make this app available to all users with enrolled devices** to **Yes**
-    amd select **Ok** twice. 
-
-15. Back on the **Remote Desktop Connection Manager - Assignments** blade, select
-    **Save**. In the details pane verify that **All users** is listed
-    under **Available for enrolled devices**.
+14. Back on the **Remote Desktop Connection Manager | Properties** blade in the details pane
+    verify that **All users** is listed under **Available for enrolled devices**.
 
 #### Task 4: Install the Company Portal on a Windows 10 device
 
 1.  On **LON-CL3**, On the taskbar, select **Microsoft Edge**, and navigate to
-    <https://businessstore.microsoft.com>.
+    **https://businessstore.microsoft.com**.
 
 2.  Sign in to the store as **Admin\@yourtenant.onmicroft.com** with your tenant password.
 
@@ -119,7 +117,7 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 8.  Switch to **LON-CL4** and sign in as **DiegoS\@yourtenant.onmicroft.com.**
 
 9.  On the taskbar, select **Microsoft Edge** and navigate to
-    <https://businessstore.microsoft.com>.
+    **https://businessstore.microsoft.com**.
 
 10. Select **Sign In**. Login as **DiegoS\@yourtenant.onmicroft.com** if it does
     not by default.
@@ -139,8 +137,8 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
     **C**, select **Company Portal**. You will be signed in to the Company Portal
     automatically using Single-Sign-On, because the device is Azure AD joined.
 
-2.  In the **Company Portal** under **Apps**, select **Remote Desktop Connection**. On the **Remote Desktop Connection Manager** page, select
-    **Install**.
+2.  In the **Company Portal** under **Apps**, select **Remote Desktop Connection Manager**.
+    On the **Remote Desktop Connection Manager** page, select **Install**.
 
 3.  Wait for the app installation files to download and for the installation to
     complete. When it says **Installed**, the Remote Desktop Connection Manager
@@ -166,12 +164,10 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 
 1.  Switch to **LON-CL3**.
 
-2.  In the Azure portal, select **Intune** in the navigation pane, and then on
-    the **Microsoft Intune** blade, select **Client apps**.
+2.   In Microsoft Edge, navigate to **https://endpoint.microsoft.com**, in the navigation
+     pane select **Apps**.
 
-3.  On the **Client apps** blade, select **App install status** under
-    **Monitor**. In the details pane, select **Remote Desktop Connection
-    Manager**.
+3.  On the **Apps | Overview** blade, select **Monitor**, and then select **App install status**. In the details pane, select **Remote Desktop Connection Manager**.
 
     _Note: If you see no data, select the **Load more** link._
 
@@ -180,25 +176,23 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
     on one device and for one user.
 
     _Note: The graph may take time before it's updated.  If it still displays
-    **0**, continue on. 
+    **0**, continue on._ 
 
 5.  Select **Device install status** to the left of the blue circle. In the
     details pane, you can see the devices that the app is installed on, and also
-    the name of the user. The **DEVICE NAME** column should list **MARKETING-###** and
-    the **USER NAME** column should list DiegoS in the **STATUS** column should
-    say **Installed**. This mean that the app is installed on LON-CL4 VM by the
-    user DiegoS.
+    the name of the user. The **Device name** column should list **LON-CL4** and
+    the **User Name** column should list DiegoS in the **Status** column should
+    say **Installed**. 
+    _Note: This means that the app is installed on LON-CL4 VM by the user DiegoS._
 
-6.  In the Azure portal, select **Microsoft Intune** in the breadcrumb navigation, and then on
-    the **Microsoft Intune** blade, select **Devices**.
+6.  Select **Devices** from the navigation bar.
 
-7.  On the **Devices** blade, select **All devices** and then in the details
-    pane, select **MARKETING-###**.
+7.  On the **Devices | Overview** blade, select **All devices** and then in the details
+    pane, select **LON-CL4**.
 
-8.  On the **MARKETING-###** blade, select **Managed Apps** under
-    **Monitor**.
+8.  On the **LON-CL4** blade, select **Managed Apps** under **Monitor**.
 
-9.  On the **MARKETING-### - Managed Apps** blade, in the details pane,
+9.  On the **LON-CL4 | Managed Apps** blade, in the details pane,
     select **Remote Desktop Connection Manager**.
 
 10. On the **Remote Desktop Connection Manager - Installation details** blade,

@@ -7,7 +7,7 @@ In this lab, you will practice enrolling a client in Azure AD and Microsoft Intu
 ### Scenario
 
 Joni Sherman will be testing the process of joining a device, LON-CL4, to the Azure Active Directory and enrolling in Microsoft Intune. After IT verifies the device is not currently joined, Joni should login using her credentials. 
-Joni should then reboot the device to verify organizational settings, such as Windows Hello, are enabled. 
+Joni should then reboot the device to verify organizational settings are enabled. 
 
 ### Task 1: Verify that a Windows 10 device is not enrolled in Microsoft Intune or Azure AD
 

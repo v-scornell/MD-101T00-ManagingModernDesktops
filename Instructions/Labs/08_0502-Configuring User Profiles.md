@@ -2,7 +2,7 @@
 
 ## Summary
 
-In this lab, you will practice configuring enterprise state roaming in Azure AD and setting up known folder move. 
+In this lab, you will practice configuring user profiles in AD DS and setting up folder direction. 
 
 ## Exercise 1: Configuring roaming user profiles and Folder Redirection
 
@@ -154,18 +154,18 @@ Ada Russel frequently uses both LON-CL1 and LON-CL2 and is struggling with acces
 
 ### Scenario
 
-Users are requesting that their Windows settings and application data be the same when using different computers. You have decided to implement Enterprise State Roaming. You will need to enable ESR, and verify that it is working.  Diego Siciliani has offered to test, as he frequently switches between LON-CL3 and LON-CL4.
+Users are requesting that their Windows settings and application data be the same when using different computers. They also require to have their documents available.You have decided to implement Enterprise State Roaming and OneDrive Known Folder Move. You will need to enable ESR and Known Folder Move, and verify that it is working.  Diego Siciliani has offered to test, as he frequently switches between LON-CL3 and LON-CL4.
 
 
 ### Task 1: Enable Enterprise State Roaming
 
-1.  **On LON-DC1**, on the taskbar, right-click **Internet Explorer**, and then select **Start InPrivate Browsing**.
+1.  Sign in to **LON-CL1** as **Adatum\\Administrator** with the password **Pa55w.rd**.
 
-2.  In **Internet Explorer**, in the address bar, type
-    **https://portal.azure.com** and press Enter.
+2.  In Microsoft Edge, type **https://portal.azure.com** in the address bar, and
+    then press **Enter**.
 
-3.  On the **Microsoft Azure** page, Sign in as user
-    **Admin\@yourtenant.onmicrosoft.com**, and use the tenant Admin password.
+3.  Sign in as user **Admin\@yourtenant.onmicrosoft.com**, and use the tenant
+    Admin password.
 
 4.  In the Azure Portal, in the navigation pane, select **Azure Active
     Directory**.
@@ -180,89 +180,151 @@ Users are requesting that their Windows settings and application data be the sam
     the **Users may sync settings and app data across devices** section, select
     **Selected**.
 
-8.  Select **Selected No member selected**, select **+ Add members** and type **Diego
+8.  Select **Selected No member selected**, select **Add** and type **Diego
     Sicilian** in the text box.
+
 9.  Select **Diego Siciliani** and then select **Select**.
-10. Select **OK**, and then select **Save**.  
-    By performing this task, you enabled Enterprise State Roaming for **Diego
-    Siciliani**.
+
+10. Select **OK**, and then select **Save**. Close the **Devices | Enterprise State Roaming** blade.
+    _Note: By performing this task, you enabled Enterprise State Roaming for **Diego
+    Siciliani**._
+
+11. In the **ADATUM | Overview** portal, select **Groups.**
+
+12. On the **Groups – All groups** page, select **All groups**, and then select
+    **New Group**.
+
+13. In the **Group** window, select **Security** for **Group type**, type
+    **AdatumGroup2** in the **Group Name** text box, select **Assigned** for
+    **Membership type**, and then select **No members selected**.
+
+14. In the **Add members** window, select **Diego Siciliani**, and then select
+    **Select**.
+
+15. Select **Create**. Close the **Group** page.
+
+16. In the **Azure Active Directory admin center** page, select from the breadcrumb
+    navigation **ADATUM**, scroll down and then select **Properties**. Note down the value for **Directory ID**.
+    _Note: The value is needed for the configuration of the Knwon Folder Move._
+
+### Task 2: Enable OneDrive Known Folder Move
+
+1.  On **LON-CL1** in Microsoft Edge, type **https://endpoint.microsoft.com** in the 
+    address bar and then press **Enter**.
+
+2.  In the Microsoft Endpoint Manager admin center, select **Devices** from the 
+    navigation bar. On the **Devices | Overview** page, select **Configuration Profiles**.
+
+6.  On the **Devices | Configuration profiles** blade, in the details
+    pane, select **Create profile**.
+
+7.  In the **Create a profile** blade, select the following options, and then select **Create**:
+
+-   Platform: **Windows 10 and later**
+
+-   Profile: **Administrative Templates**
+
+8.  In the **Basics** blade, enter the following information, and then select **Next**:
+
+    -   Name: **A. Datum Known Folder Move**
+
+    -   Description: **Configuration of OneDrive Known Folder Move**
+
+9.  On the **Configurations settings** blade, select **All Settings**. In the
+    **Search to filter items..** text box type **OneDrive**.
+
+10. Under **Setting Name** select **Silenty move Windows known folders to OneDrive**.
+    In the **Silenty move Windows known folders to OneDrive** dialog box select **Enabled**, then enter the value you noted down earlier for **Tenannt ID**. Select **OK**.
+
+11. Select **Silently sign in users to the OneDrive sync app with their Windows
+    credentials**, and then select **Edit**. In the **Silently sign in users to the OneDrive sync app with their Windows credentials** dialog box select **Enabled**, then select **OK**.
+
+12. Select **Continue syncing on metered networks**, and then select **Edit**. In the
+    **Continue syncing on metered networks** dialog box select **Enabled**.
+
+13. Then select **Next** two times until you reach the **Assignments** blade. 
+    On the **Assignments** blade, select **Select groups to include**. Then on 
+    the **Select groups to include** blade, in the **Search** box, type **A**. Select **ADatumGroup2** and then select **Select**.
+
+14. Select **Next** and then select **Create**.
 
 
-### Task 2: Verify sync is enabled on LON-CL3
+### Task 3: Verify sync is enabled on LON-CL3
 
-1.  Switch to **LON-CL3** and sign in as **DiegoS\@yourtenant.onmicrosoft.com** if you are not already signed in. 
+1.  Switch to **LON-CL3** and sign in as **DiegoS\@yourtenant.onmicrosoft.com** with the 
+    default tenant password if you are not already signed in. 
 
 2.  On the taskbar, select **Start** and then select the **Settings** icon. Select **Accounts** then select **Sync your settings**.
 
 3.  On the **Sync your settings** page, verify that **Sync settings** is set to **On**. 
 
-    _**Important**: If Sync settings is set to off and it is greyed out, the device must be rejoined.  This is due to an issue with ESR being enabled after devices have been enrolled.
-If this occurs, continue with task 3, otherwise continue with Task 4._
+    _**Important**: If Sync settings is set to off and it is greyed out, the device must be rejoined.  This is due to an issue with ESR being enabled after devices have been enrolled._ 
+    _If this occurs, continue with task 4, otherwise continue with Task 5._
 
-### Task 3: Re-enroll Devices (if needed)
+### Task 4: Re-enroll Devices (if needed)
 
 1.  In Accounts, select the **Access work or school**.  Select the Azure AD connection and
-    select **Disconnect**. Select **Yes** to confirm.
+    select **Disconnect**. Select **Yes** and then select **Disconnect** to confirm. In the **Windows Security** dialog enter **Admin** as **Email Address** and **Pa55w.rd** as **Password**.
 
-2.  Restart the VM and sign in as **Admin**, with the password **Pa55w.rd**.  
+2.  Restart the VM and sign in as **Admin**, with the password **Pa55w.rd**.
 
-3.  Select **Start**, then **Settings**, then **Accounts**.  Select **Access work or school** and select **+Connect**.
+3.  Select **Start** and type **View advanced system settings** and press **Enter**.
+    In the **System Properties** window under **User Profiles** select **Settings**.
 
-4.  In the **Microsoft account** window, select **Join this device to Azure Active Directory** and select **Next**.
+4.  In the **User Profiles** window select **Account Unknown** and then select **Delete**.
+    Confirm with **Yes**.
 
-5.  On the **Let's get you signed in** page, type **diegos\@yourtenant.onmicrosoft.com** and then select
-    **Next**.
+5.  Select **Start**, then **Settings**, then **Accounts**.  Select **Access work or school** and select **Connect**.
 
-6. On the **Enter password** page, enter the tenant password and select **Sign in**.
+6.  In the **Microsoft account** window, select **Join this device to Azure Active Directory**.
 
-7. Wait a few seconds and then on the **Make sure this is your organization **dialog, select **Join**.
+7.  On the **Let's get you signed in** page, type **diegos\@yourtenant.onmicrosoft.com** 
+    and then select **Next**.
 
-8. On the **You're all set!** page, select **Done**.
+8. On the **Enter password** page, enter the tenant password and select **Sign in**.
 
-9. **Sign out** of LON-CL3.
+9. Wait a few seconds and then on the **Make sure this is your organization** dialog, select **Join**.
 
-10. Switch to **LON-DC1**.
+10. On the **You're all set!** page, select **Done**.
 
-11. In the Azure Portal, in the navigation pane, select **Azure Active
-    Directory**.
+11. **Sign out** of LON-CL3.
 
-12.  On the **Azure Active Directory** blade, in the navigation pane, select
-    **Groups**.
+### Task 5: Test Enterprise State Roaming and Known Folder Move
 
-13. Select **A. Datum developer devices** and then select **Members**. Select **+Add Members**. 
-    In the Add Members panel, select **LON-CL3** and then select **Select**. 
+1.  Sign in to **LON-CL3** as **DiegoS\@yourtenant.onmicrosoft.com** with the 
+    default tenant password.
+    _Note: It could take 5-10 minutes until the Intune configuration is finished._
+    _**Important**: If the OneDrive auto configuration is not working sign out and sign in again. This is due to Windows issues._
 
-### Task 5: Test Enterprise State Roaming
-
-1.  On **LON-CL3**, on the taskbar, select Microsoft Edge and in the address bar,
-    type **www.microsoft.com/learn**, and then press Enter. When the page
+2.  On **LON-CL3**, on the taskbar, select **Microsoft Edge** and in the address bar,
+    type **www.microsoft.com/learn**, and then press **Enter**. When the page
     loads, select the star and the end of the address bar (or press CTRL+D). In
     the Favorites pop-up, select **Add**.
 
-2.  Switch to **LON-CL4** and sign in as **DiegoS\@yourtenant.onmicrosoft.com** if you are not already signed in. 
+3.  On the taskbar, select **Start**, type **notepad**, and then press Enter.
 
-3.  On the taskbar, select **Start** and then select the **Settings** app, then select **Sync your settings**.
+4.  In **Notepad**, type your name. On the **File** menu, select **Save As**,
+    select the **Documents** folder in the navigation pane, enter your name in
+    the **File Name** text box, select **Save**, and then close **Notepad**.    
 
-4.  On the **Sync your settings** page, verify that **Sync settings** is set to **On**. 
+5.  Switch to **LON-CL4** and sign in as **Admin**, with the password **Pa55w.rd**.
+    _**Important:** The device must be enrolled new with the credentials of **DiegoS\@yourtenant.onmicrosoft.com**. Follow the procedures outlined in Task 4._
 
-    _**Important**: If Sync settings is set to off and it is greyed out, the device must be
-rejoined.  Repeat Task 3 on LON-CL4 and then return to this task, beginning with **Step 2**._
+6.  On **LON-CL4** sign in as **DiegoS\@yourtenant.onmicrosoft.com**. 
 
-5.  In **Microsoft Edge**, press CTRL+I to view favorites. Verify if the Microsoft Learn favorites page is already synced from **LON-CL3**.  
+7.  On the taskbar, select **Start** and then select the **Settings** app, then 
+    select **Sync your settings**.
+
+8.  On the **Sync your settings** page, verify that **Sync settings** is set to **On**. 
+
+9.  On the taskbar, select **Microsoft Edge**. In **Microsoft Edge**, press CTRL+I to view
+    favorites. Verify if the Microsoft Learn favorites page is already synced from **LON-CL3**.  
 
     _Note: It can take several minutes for settings to sync. If the favorites option
     doesn't show, try rebooting and signing back in as DiegoS\@yourtenant.onmicrosoft.com._
 
-6.  On **LON-DC1**, in **Internet Explorer**, on the **Devices – Device settings** blade, in the navigation pane, select **All devices**.
-
-7.  In the details pane, in the **OWNER** column, select **Diego Siciliani**.
-
-8.  In the **Diego Siciliani** blade, in the navigation pane, select
-    **Devices**.
-
-9.  In the details pane, verify that **Devices** is selected in the **Show** dropdown list. This shows all the devices that Diego Siciliani owns.
-
-10.  Close all Windows. 
+10. On the taskbar, select **File Explorer**, and then in the navigation pane,
+    select **Documents**. Verify that the document you created on **LON-CL3** is available.
 
 
 **END OF LAB**

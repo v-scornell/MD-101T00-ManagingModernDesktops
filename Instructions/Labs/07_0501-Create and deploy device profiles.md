@@ -8,7 +8,7 @@ In this lab, you will practice creating and applying a device profile.
 
 ### Scenario
 
-A. Datum Corporation’s has decided to manage all members of the HR department in the company using Azure Active Directory (Azure AD) and Intune. You have been asked to evaluate the solutions that would enable the users to work effectively and securely on Windows 10 devices managed by Intune and Azure AD. Diego Siciliani from the HR department, has volunteered to help you test and evaluate the solution and provide feedback. He has also given you some initial requirements that must be included in the configuration of Intune:
+A. Datum Corporation’s has decided to manage all members of the development department in the company using Azure Active Directory (Azure AD) and Intune. You have been asked to evaluate the solutions that would enable the users to work effectively and securely on Windows 10 devices managed by Intune and Azure AD. Diego Siciliani has volunteered to help you test and evaluate the solution and provide feedback. He has also given you some initial requirements that must be included in the configuration of Intune:
 
 •	It should not be possible to access Gaming or Privacy in the Settings app.
 •	The C:\DevProjects folder should be excluded from Windows Defender.
@@ -118,9 +118,9 @@ A. Datum Corporation’s has decided to manage all members of the HR department 
 
 8.  In the **Basics** blade, enter the following information, and then select **Next**:
 
-    -   Name: **A. Datum HR - standard**
+    -   Name: **A. Datum Developer - standard**
 
-    -   Description: **Basic restrictions and configuration for HR in A. Datum.**
+    -   Description: **Basic restrictions and configuration for Developer in A. Datum.**
 
 9.  On the **Configurations settings** blade, expand **Control Panel and Settings**.
     Select **Block** next to **Gaming** and **Privacy**. 
@@ -139,7 +139,7 @@ A. Datum Corporation’s has decided to manage all members of the HR department 
     
 14.  Then select **Next** three times until you reach the **Review + create** blade. Select **Create**.
 
-### Task 5: Create the Adatum HR device group
+### Task 5: Create the Adatum Developer device group
 
 1.  In the Microsoft Endpoint Manager admin center, select **Groups** in the navigation pane.
 
@@ -149,14 +149,14 @@ A. Datum Corporation’s has decided to manage all members of the HR department 
 
 -   Group type: **Security**
 
--   Group name: **A. Datum HR devices**
+-   Group name: **A. Datum Developer devices**
 
--   Group description: **All Windows 10 devices in A. Datum HR department**
+-   Group description: **All Windows 10 devices in A. Datum Developer department**
 
 -   Membership type: **Assigned**
 
 4.  Under **Members**, select **No members selected**. On the **Add members** blade, in the **Search** box type **lon**. Select **LON-CL3** and then choose
-    **Select**.
+    **Select**. Repeat the steps to add **LON-CL4** also as group member.
 
 5.  Back on the **New Group** blade, select **Create**. 
 
@@ -192,13 +192,13 @@ A. Datum Corporation’s has decided to manage all members of the HR department 
     breadcrumb navigation menu and then select **Devices**. On the **Devices | Overview** blade, select **Configuration profiles**.
 
 2.  On the **Devices | Configuration profiles** blade, in the details
-    pane, select the **A. Datum HR – standard** profile.
+    pane, select the **A. Datum Developer – standard** profile.
 
-3.  On the **A. Datum HR – standard** blade, select **Properties**.  Scroll down to the **Assignments** section, and select **Edit**.
+3.  On the **A. Datum Developer – standard** blade, select **Properties**.  Scroll down to the **Assignments** section, and select **Edit**.
 
 4.  On the **Assignments** blade, select **Select groups to include**.
 
-4.  On the **Select groups to include** blade, in the **Search** box, type **A**. Select **A. Datum HR devices** and then select **Select**.
+4.  On the **Select groups to include** blade, in the **Search** box, type **A**. Select **A. Datum Developer devices** and then select **Select**.
 
 5.  Back on the **Device restrictions** blade, select **Review + Save**, then select **Save**.
 
@@ -250,7 +250,7 @@ A. Datum Corporation’s has decided to manage all members of the HR department 
 
 ### Scenario
 
-There was an exception to A. Datum's policies initiated where HR users should not have the Privacy option blocked in Settings on thier devices. This change should be implemented and tested.
+There was an exception to A. Datum's policies initiated where Developer users should not have the Privacy option blocked in Settings on thier devices. This change should be implemented and tested.
 
 ### Task 1: Change setting in assigned profile
 
@@ -258,10 +258,10 @@ There was an exception to A. Datum's policies initiated where HR users should no
     **Devices | Configuration profiles** in the breadcrumb navigation pane 
 
 2.  On the **Devices | Configuration profiles** blade, in the details
-    pane select **A. Datum HR - standard**.
+    pane select **A. Datum Developer - standard**.
 
-3.  On the **A. Datum HR - standard** blade, select **Properties**. On
-    the **A. Datum HR - standard Properties** blade, on the Configuration settings line, select **Edit**.
+3.  On the **A. Datum Developer - standard** blade, select **Properties**. On
+    the **A. Datum Developer - standard Properties** blade, on the Configuration settings line, select **Edit**.
 
 4.  On the **Configuration settings** blade, expand **Control Panel and Settings**.
     Select **Not configured** next to **Privacy**. 
@@ -287,6 +287,6 @@ There was an exception to A. Datum's policies initiated where HR users should no
 2.  In the **Settings** app, select **Privacy** and verify that all of the
     customization options are back.
 
-3.  Close the **Settings** app.
+3.  Close all windows.
 
 **END OF LAB**
