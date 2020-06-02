@@ -44,39 +44,44 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
 
 14. On **LON-CL4**, sign in as **Admin** with the password of **Pa55w.rd**.
 
-15. On the taskbar, select the **File Explorer** icon.
+15. On the taskbar, select **Start** and then select the **Settings** icon. Select
+    **Accounts** then select **Access work or school**.  
 
-16. In File Explorer, in the navigation pane, right-click **This PC**, and then
+16. Select the Azure AD connection and select **Disconnect**. Select **Yes** and then select **Disconnect** to confirm. In the **Windows Security** dialog enter **Admin** as **Email Address** and **Pa55w.rd** as **Password**.
+
+17. Restart the VM and sign in as **Admin**, with the password **Pa55w.rd**. On the taskbar, select the **File Explorer** icon.
+
+18. In **File Explorer**, in the navigation pane, right-click **This PC**, and then
     select **Properties**.
 
-17. In the **System** section, in the **Computer name, domain, and workgroup
+19. In the **System** section, in the **Computer name, domain, and workgroup
     settings** section, verify that the computer name is **LON-CL4** and that
     it's in a workgroup named **WORKGROUP**.
 
-18. Close the **System** window.
+20. Close the **System** window.
 
-19. In File Explorer, in the navigation pane, right-click **This PC**, and then
+21. In File Explorer, in the navigation pane, right-click **This PC**, and then
     select **Manage**.
 
-20. In **Computer Management**, in the navigation pane, expand **Local Users and
+22. In **Computer Management**, in the navigation pane, expand **Local Users and
     Groups**, select **Users**, and then in the details pane, verify that
     **LocalAdmin** isn't present.
 
-21. Close **Computer Management**.
+23. Close **Computer Management**.
 
-22. In File Explorer, in the navigation pane, expand **This PC**, expand **Local
+24. In File Explorer, in the navigation pane, expand **This PC**, expand **Local
     Disk (C:)**, expand **Users**, expand **Public**, select **Public
     Documents**, and then in the details pane, verify that the newly created
     "Provision" Folder isn't present as a subfolder. (You can ignore the
     subfolders, if any).
 
-23. In the navigation pane, right-click **This PC** and then select **Map network
+25. In the navigation pane, right-click **This PC** and then select **Map network
     drive**.
 
-24. In the **Folder** box, type **\\\\LON-DC1\\Provision** and then select the
+26. In the **Folder** box, type **\\\\LON-DC1\\Provision** and then select the
     **Connect using different credentials** check box.
 
-25. Select **Finish**, and in the **Windows Security** dialog box, enter the User
+27. Select **Finish**, and in the **Windows Security** dialog box, enter the User
     name of **adatum\\administrator**. In the **Password** box, type
     **Pa55w.rd**. Select **OK**.
 
@@ -106,7 +111,7 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
 9.  On the taskbar, select **Start**, type **designer**, and then select
     **Windows Imaging and Configuration Designer**.
 
-10. After Windows Configuration Designer opens, select the **Provision desktop
+10. After **Windows Configuration Designer** opens, select the **Provision desktop
     devices** tile.
 
 11. On the **Enter project details** page, in the **Name** text box,
@@ -138,7 +143,7 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
 16. In the navigation pane, expand **Runtime settings**, expand **Accounts**,
     expand **ComputerAccount**, and then select **AccountOU**.
 
-17. In the details pane, in the **Anytext** text box, type
+17. In the details pane, in the **Any text** text box, type
     **OU=Computers,OU=Marketing,DC=Adatum,DC=com**.
 
 18. In the navigation pane, select **Users**.
@@ -201,9 +206,9 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
 3.  In Active Directory Users and Computers, in the navigation pane, expand
     **Adatum.com**, expand **Marketing**, and then select **Computers**. In the
     details pane, verify that a computer account is present. The name of the
-    computer starts with **MARKETING-** followed by three digits.
+    computer starts with **Marketing-** followed by three digits.
 
-    **Important:** If the **Computers** organizational unit (OU) is empty, right-click the OU, and then select **Refresh**.
+    _**Important:** If the **Computers** organizational unit (OU) is empty, right-click the OU, and then select **Refresh**._
 
 4.  Switch to **LON-CL4** where you should already be signed in as **Admin**.
 

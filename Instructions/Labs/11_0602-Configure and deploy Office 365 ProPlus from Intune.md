@@ -63,15 +63,14 @@ All the developers at A. Datum require Microsoft Office 365 ProPlus. You've been
 
 10. Select **Next**.  On the **Review + Create** tab, select **Create**.
 
-11.  On the **Office 365 ProPlus (A. Datum Developers)** page, select **Properties**. In the details pane verify that **A. Datum developer devices** in listed next to **Required** in the Assignments section.
+11.  On the **Office 365 ProPlus (A. Datum Developers)** page, select **Properties**. In the details pane verify that **A. Datum developer devices** is listed next to **Required** in the Assignments section.
 
 #### Task 3: Force synchronization of policy from Intune console
 
-1.  On **LON-DC1**, in the Azure portal, select **Intune** in the navigation
-    pane, and then on the **Microsoft Intune** blade, select **Devices** and then
-    select **All devices**.
+1.  On **LON-CL1**, in the **Microsoft Endpoint Manager admin center**, select **Devices** 
+    and then select **All devices**.
 
-2.  In the details pane, select **LON-CL3**. On the **LON-CL3** blade, select
+2.  In the details pane, select **LON-CL4**. On the **LON-CL4** blade, select
     **Sync** and when prompted select **Yes**. Intune will contact the device and
     tell it to synchronize all policies. This may take up to 5 minutes.
 
@@ -98,34 +97,30 @@ All the developers at A. Datum require Microsoft Office 365 ProPlus. You've been
 
 1.  Switch to **LON-CL3**.
 
-2.  In the Azure portal, select **Intune** in the navigation pane, and then on
-    the **Microsoft Intune** blade, select **Client apps**.
+2.  In the **Microsoft Endpoint Manager admin center**, select **Apps**.
 
-3.  On the **Client apps** blade, select **App install status** under
-    **Monitor**. In the details pane, select **Office 365 ProPlus (A. Datum
+3.  On the **Apps | Overview** blade, select **Monitor** and then select **App install status**. In the details pane, select **Office 365 ProPlus (A. Datum
     developers)**.
 
-4.  In the details pane, under **Device status** and under **User status**,
-    **1** is displayed under Installed. This indicated that the app is installed
-    on one device and for one user.
+4.  In the details pane, under **Device status** and under **User status**, verify that
+    **1** is displayed under Installed. 
+    _Note: This indicates that the app is installed on one device and for one user._
 
 5.  Select **Device install status** to the left of the blue circle. In the
     details pane, you can see the devices that the app is installed on, and also
-    the name of the user. The **DEVICE NAME** column should list **LON-CL4** and
-    the **USER NAME** column should list **DiegoS** and the **STATUS** column
-    should say **Installed**. This mean that the app is installed on LON-CL4 by
-    the user DiegoS.
+    the name of the user. The **Device Name** column should list **LON-CL4** and
+    the **User Name** column should list **No user** and the **Status** column
+    should say **Installed**. This mean that the app is installed on LON-CL4.
 
-6.  In the Azure portal, select **Intune** in the navigation pane, and then on
-    the **Microsoft Intune** blade, select **Devices**.
+6.  In the **Microsoft Endpoint Manager admin center**, select **Devices**.
 
-7.  On the **Devices** blade, select **All devices** and then in the details
+7.  On the **Devices | Overview** blade, select **All devices** and then in the details
     pane, select **LON-CL4**.
 
-8.  On the **LON-CL4** blade, select **Managed Apps - Preview** under
+8.  On the **LON-CL4** blade, select **Managed Apps** under
     **Monitor**.
 
-9.  On the **LON-CL4 - Managed Apps - Preview** blade, in the details pane,
+9.  On the **LON-CL4 | Managed Apps** blade, in the details pane,
     select **Office 365 ProPlus (A. Datum developers)**.
 
 10. On the **Office 365 ProPlus (A. Datum developers) - Installation details**
