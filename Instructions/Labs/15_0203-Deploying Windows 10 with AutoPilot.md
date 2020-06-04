@@ -14,46 +14,23 @@ when the MD-101 lab environment is first launched, which prepares the client
 for this lab. This process takes approximately 30 mins, and should be ready
 by the time the student is ready to perform this exercise._
 
-Task 1: Customize Azure AD company branding
+#### Task 1: Create a user and group in Azure AD
 
-1.  Switch to LON-CL3 and sign in as **Admin** with the password of
-    **Pa55w.rd**.
+1.  Switch to **LON-CL3** and sign in as **admin\@yourtenant.onmicrosoft.com** with the default tenant password.
 
 2.  On **LON-CL3**, on the taskbar, select **Microsoft Edge**.
 
-3.  In Microsoft Edge, in the address bar, type <https://portal.azure.com>, and
-    then press Enter.
+3.  In Microsoft Edge, in the address bar, type **https://portal.azure.com**, and
+    then press **Enter**.
 
-4.  Sign in as user **Admin\@yourtenant.onmicrosoft.com**, and use the tenant
-    Admin password.
-
-5.  In the Microsoft Azure portal, in the navigation pane, select **Azure Active
+4.  In the Microsoft Azure portal, in the navigation pane, select **Azure Active
     Directory**.
 
-6.  On the **Azure Active Directory** blade, select **Company branding**, and
-    then select **Configure**.
+5.  On the **Azure Active Directory** page, select **Users**.
 
-7.  On the **Configure company branding** blade, configure the following
-    settings:
+6.  In the **Users | All users** blade, select **New user**.
 
--   Sign-in page text: **Adatum.com sign-in page**
-
--   Show option to remain signed in: Select **Yes**.
-
-8.  Select **Save**, and then close the **Configure company branding** blade.
-
-9.  On the **Azure Active Directory** blade, in the navigation pane, select
-    **Properties**.
-
-10.  In the **Name** text box, type **ADATUM**, and then select **Save**.
-
-### Task 2: Create a user and group in Azure AD
-
-1.  On the Azure Active Directory blade, select **Users**.
-
-2.  In the Users - All users blade, select **+ New user**.
-
-3.  In the User blade, enter the following information:
+7.  In the **New User** blade, enter the following information:
 
     * Name: _Your name_
 
@@ -67,45 +44,48 @@ Task 1: Customize Azure AD company branding
 
     _Note: Leave no spaces in your username._
 
-4.  Select the **Show Password** check box and note the password for later use.
+8.  Select the **Show Password** check box and note the password for later use.
 
-5.  Select **Create**.
+9.  Select **Create**.
 
-6.  In the navigation pane, select **Azure Active Directory**, and then select
-    **Groups**.
+10.  Select the user you have just created
 
-7.  In the Groups - All groups blade, select **+ New group**.
+11. Under the**Settings** section, select **Edit**, select your country/region in the 
+    **Usage location** drop-down box. Select **Save**.
 
-8.  In the Group blade, in the **Group type** list, select **Security**.
+11. Select **Licenses** and select **Assignments**. On the **Update license assignments** blade 
+    select **Enterprise Mobility + Security E5** and **Office 365 E5**, then select **save**
 
-9.  In the **Group name** box, type **IT Devices**.
+12. Close the **Users | All users** blade, and then select
+    **Groups** from the navigation pane.
 
-10.  In the **Group description** box, type **IT Department Devices**.
+13. In the **Groups | All groups** blade, select **New group**.
 
-11.  In the **Membership type** list, select **Dynamic device**.
+14. In the **New Group** blade, in the **Group type** list, select **Security**.
 
-12.  select **Add dynamic query**.
+15. In the **Group name** box, type **IT Devices**.
 
-13. select **Edit** above the **Rule syntax** box.
+16. In the **Group description** box, type **IT Department Devices**.
 
-14. In the Rule syntax text box, replace any existing text with the following
-    text and then select **OK**.
+17. In the **Membership type** list, select **Dynamic device**.
+
+18. Select **Add dynamic query**.
+
+19. On the **Dynamic membership rules** blade select **Edit** above the **Rule syntax** box.
+
+20. In the Edit rule syntax text box, add the following simple membership rule and select **Ok**.
 
 ```
     (device.devicePhysicalIDs -any _ -contains "[ZTDId]")
 ```
-15.  select **Save** to close Dynamic membership rules.
+21.  select **Save** to close Dynamic membership rules, and then select **Create** to create the group.
 
-16.  select **Create** to create the group.
-
-17.  Navigate to All groups. Notice the IT Devices group.
-
-### Task 3: Generate a device-specific comma-separated value (CSV) file
+#### Task 2: Generate a device-specific comma-separated value (CSV) file
 
 1.  Switch to **LON-HOST1** and sign in as **Adatum\Administrator** with the password of
     **Pa55w.rd**.
 
-2.  Select **Hyper-V Manager** in the task bar to launch.
+2.  Select **Hyper-V Manager** in the task bar.
 
 3.  Under Virtual Machines, right-click **LON-CL5** and select **Connect**.
 
@@ -121,7 +101,7 @@ Task 1: Customize Azure AD company branding
 ```
 Install-Script -Name Get-WindowsAutoPilotInfo
 ```
-6.  You will receive two prompts. Each time, type **Y**, and then press Enter.
+6.  You will receive two prompts. Each time, type **Y**, and then press **Enter**.
 
 7.  At the Windows PowerShell command-line prompt, type the following cmdlet,
     and then press **Enter**:
@@ -143,51 +123,41 @@ Get-WindowsAutoPilotInfo.ps1 -OutputFile C:\Computer.csv
 ```
 type C:\Computer.csv
 ```
-### Task 4: Work with a Windows AutoPilot deployment profile
+#### Task 3: Work with a Windows AutoPilot deployment profile
 
-1.  On **LON-CL5**, in **Microsoft Edge**, open a new tab and navigate to
-    **https://endpoint.microsoft.com**. If prompted, sign in with your
-    **Admin\@yourtenant.onmicrosoft.com**.
+1.  On **LON-CL5**, in **Microsoft Edge**, navigate to **https://endpoint.microsoft.com**. 
+    If prompted, sign in with your **Admin\@yourtenant.onmicrosoft.com**.
 
-2.  In the **Microsoft Endpoint Manager admin center**, select the orange banner to open the **Mobile Device Management Authority** setting. 
+2.  In the **Microsoft Endpoint Manager admin center**, select **Devices**.
 
-    _Note: The orange banner is only displayed if you haven't yet set the MDM authority. If you do not see the banner, your MDM authority is already set and you may **proceed to step 4**._
+3.  In the **Device enrollment** section, select **Enroll devices**. 
 
-3.  On the **Choose MDM Authority** blade which appears on the right, select
-    **Intune MDM Authority** and select **Choose**.  
-      
-    _Note: Setting the MDM Authority is not an exclusive step for Autopilot, but
-    must be configured for using Intune and Autopilot._
+4.  In the details pane scroll down to **Windows Autopilot Deployment Program**, and then
+    select **Devices**.
 
-4.  In the **Microsoft Endpoint Manager admin center**, select **Devices** on the left rail.
-
-5.  In the **Device enrollment** section, select **Enroll devices**. 
-
-6.  In the details pane, select **Devices**.
-
-7.  On the menu bar, select **Import**, browse to **c:\\**, select
-    **Computer.csv**, select **Open**, and then select **Import**. The import
-    process can take up to 15 minutes, but normally takes around 5 minutes.  
+5.  In the **Windows Autopilot devices** blade on the menu bar, select **Import**, 
+    select the **folder icon** and then browse to **c:\\**, select **Computer.csv**, select **Open**, and then select **Import**. 
+    _Note: The import process can take up to 15 minutes, but normally takes around 5 minutes._  
       
     **Important**: After the process is complete, the device may not show. If this is the
     case, select the **Sync** button, wait a few minutes, and then select
     **Refresh**.
 
-8.  Select **X** to close the Windows Autopilot devices blade. On the
+6.  Select **X** to close the Windows Autopilot devices blade. On the
     Windows enrollment blade, in the details pane, select **Deployment Profiles**.
 
-9.  On the **Windows AutoPilot deployment profiles** blade, select **Create profile**.
+7.  On the **Windows AutoPilot deployment profiles** blade, select **Create profile**.
 
-10. In the details pane, in the **Name** text box, type **Contoso profile1**.
+8.  In the **Basics** tab, in the **Name** text box, type **Adatum profile1**.
 
-11. select **No**, and then select **Next**.
+9.  For **Convert all targeted devices to Autopilot** select **No**, and then select **Next**.
 
-12. On the **Out-of-box experience** blade, ensure that the **Deployment mode**
+10. On the **Out-of-box experience (OOBE)** tab, ensure that the **Deployment mode**
     is set to **User-Driven**.
 
-13. Ensure that **Join to Azure AD as** is set to **Azure AD Joined**.
+11. Ensure that **Join to Azure AD as** is set to **Azure AD Joined**.
 
-14. Ensure that the following options are set:
+12. Ensure that the following options are set:
 
     -   Microsoft Software License Terms: **Hide**
 
@@ -201,28 +171,25 @@ type C:\Computer.csv
 
     -   Apply device name template: **No**.
 
-15.  Select **Next**.
+13.  Select **Next**.
 
-16.  On the **Assignments** blade, select **Select groups to include**.
+14.  On the **Assignments** tab, select **Select groups to include**.
 
-17.  Select the **IT Devices** group and select **Select**.
+15.  Select the **IT Devices** group and select **Select**. Then sitelect **Next**.
 
-18.  Select **Next**.
-
-19.  On the **Review + create** blade, review the information then select
+16.  On the **Review + create** blade, review the information and then select
     **Create**.
 
-### Task 5: Reset the PC
+#### Task 4: Reset the PC
 
-
-1.  On LON-CL5, select **Start** and type **reset** and select **Reset this
+1.  On **LON-CL5**, select **Start** and type **reset** and select **Reset this
     PC**.
 
 2.  Under **Reset this PC**, select **Get Started**.
 
-3.  Select **Remove everything**, then **Just remove my** files.
+3.  Select **Remove everything**, then select **Just remove my** files.
 
-4.  select **Reset**.
+4.  Select **Reset**.
 
 _Note: Normally this task is not required for new deployment of physical devices. The device’s
 autopilot info is either provided by the manufacturer or can be obtained from
@@ -233,7 +200,7 @@ _Note: This process can take 30-45 minutes and will reboot several times during
 the process. When LON-CL5 reboots, do not press a key to boot from media, allow
 the reset to continue._
 
-### Task 6: Verify Autopilot deployment
+#### Task 5: Verify Autopilot deployment
 
 1.  At the **Let’s start with region. Is this right?** Screen, select **Yes**.
 
@@ -258,7 +225,7 @@ the reset to continue._
     _The provisioning process will complete and arrive at the desktop. Note that
     the privacy settings and options to change the account did not display._
 
-10. select **Start** and type *access work* and select **Access work or school**
+10. select **Start** and select **Settings**. In the settings app select **Accounts**, then select **Access work or school**
 
 11. Verify the device is joined to Azure AD.
 

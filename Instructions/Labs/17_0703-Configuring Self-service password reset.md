@@ -10,85 +10,93 @@ The Help Desk has indicated that a large number of support tickets are related t
 
 #### Task 1: Configure password writeback
 
-1.  On **LON-SVR1**, on the desktop, double-click **Azure AD Connect**.
+1.  Sign in to **LON-SVR1** as **ADATUM\\Administrator** with the password **Pa55w.rd**. 
 
-2.  On the **Welcome to Azure AD Connect** page, select **Configure**.
+2.  On the desktop, double-click **Azure AD Connect**.
 
-3.  On the **Additional tasks** page, select **Customize synchronization
+3.  On the **Welcome to Azure AD Connect** page, select **Configure**.
+
+4.  On the **Additional tasks** page, select **Customize synchronization
     options**, and then select **Next**.
 
-4.  On the **Connect to Azure AD** page, if needed type
+5.  On the **Connect to Azure AD** page, if needed type
     **SYNC\@yourtenant.onmicrosoft.com** in the **USERNAME** text box, type
     **Pa55w.rd12345** in the **PASSWORD** text box, and then select **Next**.
 
-5.  On the **Connect to your directories** page, select **Next**.
+6.  On the **Connect to your directories** page, select **Next**.
 
-6.  On the **Domain and OU filtering** page, select **Next**.
+7.  On the **Domain and OU filtering** page, select **Next**.
 
-7.  On the **Optional features** page, select **Password writeback**, and then
+8.  On the **Optional features** page, select **Password writeback**, and then
     select **Next**.
 
-8.  On the **Ready to configure** page, select **Configure**.
+9.  On the **Ready to configure** page, select **Configure**.
 
-9.  On the **Configuration complete** page, select **Exit**.
+10. On the **Configuration complete** page, select **Exit**.
 
-10. Switch to **LON-DC1**. In Microsoft Edge, navigate to **Azure Active Directory**
+#### Task 2: self-service password reset
+
+1.  Switch to **LON-CL1** and sign in as **ADATUM\\Administrator** with the password **Pa55w.rd**.
+
+2.  On the task bar select **Microsoft Edge**, navigate to **Azure Active Directory**
     in the Azure portal, logged in as the MOD administrator account.
 
-11. In the left navigation pane, select **Password reset**.
+3.  In the navigation pane select **Users**, then select **Password reset**.
 
-12. In the **Password reset – Properties** window, select **All** to enable
+4.  In the **Password reset | Properties** window, select **All** to enable
     self-service password reset to all users. Select **Save**.
 
-13. On the **Password reset – Properties** blade, select **Authentication
+5.  On the **Password reset | Properties** blade, select **Authentication
     methods**.
 
-14. For the methods available to users, ensure that **Mobile Phone** and
+6.  For the methods available to users, ensure that **Mobile Phone** and
     **Email** are selected, and then select **Security Questions**.
 
-15. For the **number of questions required to register**, select **3**.
+7.  For the **Number of questions required to register**, select **3**.
 
-16. For the **number of questions required to reset**, select **3**.
+8.  For the **Number of questions required to reset**, select **3**.
 
-17. In the **Select security questions** section, select **No security questions
+9.  In the **Select security questions** section, select **No security questions
     configured**, then select **Predefined**. Select three questions of your
     choice, and then select **OK** twice.
 
-18. Select **Save**.
+10. Select **Save**.
 
-19. Select on **Registration.** Select **No** for **Require users to register when
+11. Select **Registration** Select **No** for **Require users to register when
     signing in**, and the select **Save**.
 
-20. In the middle pane, select **On-premises integration**.
+12. In the navigation pane, select **On-premises integration**.
 
-21. Verify that your on-premises writeback client is running and select **Yes**
+13. Verify that your on-premises writeback client is running and select **Yes**
     for the **Write back passwords to your on-premises directory** option. Select
     **Save**.
 
-22. **Close** the Internet Explorer browser window, and then **re-open** it.
+#### Task 3: Test self-service password reset
 
-#### Task 2: Configure self-service password reset
+1.   In Microsoft Edge at the upper right of the page, select your account name, and then select
+    **Sign in with a different account**. 
 
-1.  Switch to **LON-CL3** and sign in as **Abbi\@yourtenant.onmicrosoft.com** 
-    with the password **Pa55w.rd**.
+2.  Sign in as **Abbi\@yourtenant.onmicrosoft.com** with the password **Pa55w.rd**.   
 
-2.  Open Microsoft Edge and browse to **https://myapps.microsoft.com**. 
+3.  Browse to **https://myapps.microsoft.com**. 
 
-3.  On the **Microsoft** page, select on the **Abbi** account in the top right
+4.  On the **Microsoft** page, select on the **Abbi** account in the top right
     corner, and then select **Profile**.
 
-4.  Select **Set up self service password reset**.
+5.  Select **Set up self service password reset**.
 
-5.  On the **don’t lose access to your account** page, select **Set it up now**
+6.  On the **confirm your current password** page select **re-enter my password**, enter **Pa55w.rd** and select **Sign in**.
+
+7.  On the **don’t lose access to your account** page, select **Set it up now**
     for the **Authentication Phone** option.
 
-6.  Choose your **country or region**, type your **mobile phone number**, and then select
+8.  Choose your **country or region**, type your **mobile phone number**, and then select
     **text me**.
 
-7.  Type the number that you receive in a text message in the text box below,
+9.  Type the number that you receive in a text message in the text box below,
     and then select **verify**.
 
-8.  Select **Set it up now** for the **Authentication Email** option. Type your
+10. Select **Set it up now** for the **Authentication Email** option. Type your
     email address that you easily access. Select **email me**.
 
     _Note: you will need to use an e-mail address other than the tenant domain 
@@ -105,7 +113,7 @@ The Help Desk has indicated that a large number of support tickets are related t
 
 11. On the **don’t lose access to your account!** page, select **Finish**.
 
-12. On the **Microsoft Azure** page, select on the **Abbi** account, and then
+12. On the **Microsoft** page, select on the **Abbi** account, and then
     select **Profile**.
 
 13. In the Azure portal, select **Change password**.
@@ -115,9 +123,9 @@ The Help Desk has indicated that a large number of support tickets are related t
     password** text boxes, type **MDA101!!** and then select **Submit**.
 
 15. Wait until the Microsoft Azure profile portal appears, and then close the
-    Internet Explorer browser window.
+    Microsoft Edge browser window.
 
-#### Task 3: Verify password writeback
+#### Task 4: Verify password writeback
 
 1.  Switch to **LON-SVR1**.
 
