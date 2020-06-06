@@ -94,7 +94,7 @@ A. Datum Corporation’s has decided to manage all members of the development de
 1.  On **LON-CL3**, on the taskbar, select **Microsoft Edge**.
 
 2.  In Microsoft Edge, type **https://endpoint.microsoft.com** in the address bar, and
-    then press Enter. Note that you are automatically signed in as **DiegoS\@yourtenant.onmicrosoft.com**.
+    then press **Enter**. Note that you are automatically signed in as **DiegoS\@yourtenant.onmicrosoft.com**.
 
 3.  At the upper right of the page, select your account name, and then select
     **Sign in with a different account**.

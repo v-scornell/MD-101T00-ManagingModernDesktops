@@ -57,7 +57,7 @@ Abbi and Bill share LON-CL1. Abbi is working with files containing sensitive inf
     **certificates** and then select **Manage file encryption
     certificates**.
 
-11. In the Encrypting File System wizard, select **Next**.
+11. In the **Encrypting File System** wizard, select **Next**.
 
 12. On the **Select or create a file encryption certificate** page ensure that
     the certificate for Abbi Skinner is issued by AdatumCA. Select **View
@@ -76,7 +76,7 @@ Abbi and Bill share LON-CL1. Abbi is working with files containing sensitive inf
 
 2.  On the taskbar, select the **File Explorer** icon.
 
-3.  Select **This PC**, and then double-clickselect **Local Disk (C:)**.
+3.  Select **This PC**, and then double-click **Local Disk (C:)**.
 
 4.  Open the **SecretAbbi** folder.
 
@@ -84,63 +84,91 @@ Abbi and Bill share LON-CL1. Abbi is working with files containing sensitive inf
 
 6.  Verify that **Access** is denied, and then select **OK**. Close Notepad.
 
-7.  Sign out from **LON-CL1** and sign back in as **Adatum\\Abbi** with the password **MDA101!!**.
+7.  Sign out from **LON-CL1**.
 
 
 ### Scenario 2 Exercise
 
-It's been determined that all the information on LON-CL1 should be encrypted. You've been asked to configure full disk encryption on LON-CL1 and require additional authentication at startup be enabled.
+It's been determined that all the information on LON-CL3 should be encrypted. You've been asked to configure full disk encryption on LON-CL3 and require additional authentication at startup be enabled.
 
-#### Task 1: Configure Group Policy Object (GPO) settings
+#### Task 1: Configure device configuration policy in Intune
 
-1.  In the **Type here to search** textbox on the taskbar, type **gpedit.msc**,
-    and then right-click the **gpedit.msc** item and select **Run as
-    administrator**. Provide administrative credentials for
-    **Adatum\\Administrator**.
+1.  Sign in to **LON-CL3** as **admin\@yourtenant.onmicrosoft.com** with the default tenant password.
 
-2.  In the Local Group Policy Editor, under the **Computer Configuration** node,
-    expand **Administrative Templates**, expand **Windows Components**, and then
-    expand **BitLocker Drive Encryption**.
+2.  On the taskbar, select **Microsoft Edge**.
 
-3.  Select **Operating System Drives**, and then double-click **Require
-    additional authentication at startup**.
+3.  In Microsoft Edge, type **https://endpoint.microsoft.com** in the address bar, and
+    then press **Enter**.
 
-4.  In the **Require additional authentication at startup** dialog box, select
-    **Enabled**, and then select **OK**.
+4.  In the Microsoft Endpoint Manager admin center, select **Devices** from the 
+    navigation bar. 
+    On the **Devices | Overview** page, select **Configuration Profiles**.
+
+5.  On the **Devices | Configuration profiles** blade, in the details
+    pane, select **Create profile**.
+
+6.  In the **Create a profile** blade, select the following options, and then select **Create**:
+
+-   Platform: **Windows 10 and later**
+
+-   Profile: **Endpoint protection**
+
+7.  In the **Basics** blade, enter the following information, and then select **Next**:
+
+    -   Name: **A. Datum enable BitLocker**
+
+    -   Description: **Enable Bitlocker for all devices.**
+
+8.  On the **Configurations settings** blade, expand **Windows Encryption**.
+    Select **Require** for **Encrpyt devices**.
+
+9.  Select **Require** for **Additonal authentication at startup**. Then select **Next**.
+
+10. On the **Assignments** tab, choose **Select groups to include**.  Select 
+    **A. Datum Developer Devices**, choose **Select**, and then select **Next** twice.
+
+11. On the **Review + create** tab select **Create**.
 
 5.  **Close** all open windows.
 
 #### Task 2: Enable BitLocker
 
-1.  On **LON-CL1**, in the taskbar, select **File Explorer and then select This
-    PC**.
+1.  On **LON-CL3**, on the taskbar, select **Start** and then select the
+    **Settings** app.
 
-2.  In the navigation pane, right-click **Local Disk (C:)**, and then select
-    **Turn on BitLocker**. Provide administrative credentials, when prompted.
+2.  In the **Settings** app, select the **Accounts** tile and then select **Access
+    work or school**.
 
-3.  In the **BitLocker Drive Encryption (C:)** dialog box, select **Next** three
-    times and then select **Enter a password**.
+3.  In the **Access work or school** section, select the **Connected to ADATUM's Azure AD** link 
+    and then select **Info**. Select **Sync**.
 
-4.  In the **Enter your password** and **Reenter your password** boxes, type
-    **Pa55w.rd**, and then select **Next**.
+4.  Select the **Encryption needed** notfication.
+    _Note: It may take some time until the notification shows up._
 
-5.  On the **How do you want to back up your recovery key?** page, select
-    **Print the recovery key**. Select the **Microsoft Print to PDF** printer,
-    and save the file as PDF. Select **Next**.
+5.  On the **Are you ready to start encryption?** dialog select both checkboxes and select **Yes**.
 
-6.  On the **Choose how much of your drive to encrypt** page, select **Encrypt
+6.  On the **BitLocker Drive Encryption setup** wizard select **Next**.
+
+7.  Select **Next** twice.
+
+8.  On the **Choose how to unlock your drive at startup?** screen select **Enter a password**. 
+    Enter **Pa55w.rd** in the **Enter your password** and **Reenter your password** boxes.
+
+9.  On the **How do you want to back up your recovery key?** screen select 
+    **Save to your cloud domain account**. Then select **Next**.
+
+10. On the **Choose how much of your drive to encrypt** page, select **Encrypt
     used disk space only** and select **Next**.
 
-7.  On the **Choose which encryption mode to use** page, ensure that **New
+11. On the **Choose which encryption mode to use** page, ensure that **New
     encryption mode (best for fixed drives on this device)** is selected, and
     then select **Next**.
 
-8.  On the **Are you ready to encrypt this drive** page, select **Run BitLocker
-    system check** and select **Continue**.
+12. On the **Are you ready to encrypt this drive** page, select **Continue**.
 
-9.  Select **Restart now** and restart **LON-CL1**.
+13. Select **Close**. Then restart **LON-CL1**.
 
-10. When LON-CL1 restarts, type **Pa55w.rd** and press **Enter** to unlock the
+14. When LON-CL1 restarts, type **Pa55w.rd** and press **Enter** to unlock the
     drive.
 
 #### Task 3: Verify BitLocker protection
