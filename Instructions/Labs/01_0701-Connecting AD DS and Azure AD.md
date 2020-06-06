@@ -18,7 +18,7 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
     environment. If the **Stay signed in?** prompt appears, select **No**. If the **Welcome to Microsoft** Azure window appears, select     **Maybe later**.
 
 3.  On the **Microsoft Azure** page, select **Azure Active Directory** in the
-    left navigation pane. This will open the adatum Azure Active Directory page.
+    left navigation pane. This will open the Adatum Azure Active Directory page.
 
 4.  On the Azure portal, select **Users** in the navigation pane, select **All
     users**, and then select **New user**.
@@ -63,9 +63,9 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
 4.  On the **Configure company branding** blade, configure the following
     settings:
 
--   Sign-in page text: **Adatum.com sign-in page**
+    -  Sign-in page text: **Adatum.com sign-in page**
 
--   Show option to remain signed in: Select **Yes**.
+    -  Show option to remain signed in: Select **Yes**.
 
 5.  Select **Save**, and then close the **Company branding** blade.
 
@@ -86,9 +86,9 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
 3.  On the **Microsoft Azure Active Directory Connect** page, select
     **Download**, and then select **Run**. 
     
-    **Important**: If you experience any problems
+    _**Important**: If you experience any problems
     with launching the download, add the https://download.microsoft.com website
-    to your Trusted sites.
+    to your Trusted sites._
 
 4.  In the **Microsoft Azure Active Directory Connect Wizard**, on the **Welcome
     to Azure AD Connect** page, select the **I agree to the license terms and
@@ -102,16 +102,16 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
     is selected, and then select **Next**.
 
 8.  On the **Connect to Azure AD** page, in the **USERNAME** and **PASSWORD**
-    boxes, enter the SYNC account user name (it will be in the following format:
+    boxes, enter the Sync account user name (it will be in the following format:
     **sync\@yourtenant.onmicrosoft.com**) and **Pa55w.rd12345** for a password, and
     then select **Next**.
 
 9.  On the **Connect your directories** page, ensure that **Adatum.com** is listed
-    under FOREST, and then select **Add Directory**.
+    under **FOREST**, and then select **Add Directory**.
 
 10. In the **AD forest account** window, select the **Create New AD Account**
     option, and in the **ENTERPRISE ADMIN USERNAME** field, type
-    **ADATUM\\Administrator**, and then type **Pa55w.rd** in the **PASSWORD**
+    **Adatum\\Administrator**, and then type **Pa55w.rd** in the **PASSWORD**
     field. Select **OK**, and then select **Next**.
 
 11. On the **Azure AD sign-in configuration** page, ensure that in the **USER
@@ -140,15 +140,15 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
     **Install**.
 
 18. When configuration is complete, select **Exit**.  
-    At this time, synchronization of objects from your local Active Directory
+    _Note: At this time, synchronization of objects from your local Active Directory
     Domain Services (AD DS) and Azure AD begins. You should wait approximately
-    3-4 minutes for this process to complete.
+    3-4 minutes for this process to complete._
 
 19. In the Internet Explorer window on LON-SVR1, browse to
     **http://www.microsoft.com/en-us/download/details.aspx?id=41950**.
 
 20. On the **Microsoft Online Services Sign-In Assistant for IT Professionals
-    RTW** page, select **Download**. On the Choose the download you want page,
+    RTW** page, select **Download**. On the **Choose the download you want** page,
     select **en\\msoidcli_64.msi** and select **Next**. Select **Run**. Allow pop-ups
     or Disable pop-up blocker if needed.
 
