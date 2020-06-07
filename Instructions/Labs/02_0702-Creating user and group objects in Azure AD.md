@@ -29,7 +29,7 @@ _Note: For location use either your local region or United States._
 1.  On **LON-CL1**, sign in as **Adatum\\Administrator**, and login to the
     Azure portal as **admin\@yourtenant.onmicrosoft.com** if you are not already there.
     
-2.  Navigate to Azure Active Directory.  On the **Azure AD - Overview** page, select 
+2.  Navigate to Azure Active Directory.  On the **ADATUM | Overview** page, select 
     **Users** and then select **New user**.
 
 3.  In the **New User** dialog box, enter the following:
@@ -52,18 +52,19 @@ _Note: For location use either your local region or United States._
 
 9.  Select **Assigned roles** and select **Add assignment**. Select **Global administrator** and select **Add**.
 
-10. Scroll left to the **Azure AD - Custom domain names** blade and select **Users**. 
+10. Scroll left to the **ADATUM | Custom domain names** blade and select **Users**. 
     Select **Edmund Reeve**.
+
     _Note: By default only the first couple of users are shown. To load more entries select **Load more**.
 
-11. In the **Edmund Reeve - Profile** blade, in the right pane under the**Settings** 
+11. In the **Edmund Reeve | Profile** blade, in the right pane under the**Settings** 
     section, select **Edit**, select your country/region in the **Usage location** drop-down box. 
     
     _Note: If your country/region is not listed, select **United States**. Before you can assign a license to a user, the user must have a usage location set_
     
-12. Select **Save**. Close the **Edmund Reeve – Profile** page.
+12. Select **Save**. Close the **Edmund Reeve | Profile** page.
 
-13. Close the **Users – All users** window, and then select **Licenses**.
+13. Close the **Users | All users** window, and then select **Licenses**.
 
 14. Select **All products**, and then select **Enterprise Mobility + Security
     E5** and **Office 365 Enterprise E5**. Select **Assign**.
@@ -94,7 +95,7 @@ _Note: For location use either your local region or United States._
 22. In the **Microsoft Azure** portal, select the **Azure Active Directory**
     directory item, and then select **Groups.**
 
-23. On the **Groups – All groups** page, select **All groups**, and then select
+23. On the **Groups | All groups** page, select **All groups**, and then select
     **New Group**.
 
 24. In the **Group** window, select **Security** for **Group type**, type
