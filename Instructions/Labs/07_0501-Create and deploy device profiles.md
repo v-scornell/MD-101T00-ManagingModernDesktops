@@ -10,10 +10,10 @@ In this lab, you will practice creating and applying a device profile.
 
 A. Datum Corporation’s has decided to manage all members of the development department in the company using Azure Active Directory (Azure AD) and Intune. You have been asked to evaluate the solutions that would enable the users to work effectively and securely on Windows 10 devices managed by Intune and Azure AD. Diego Siciliani has volunteered to help you test and evaluate the solution and provide feedback. He has also given you some initial requirements that must be included in the configuration of Intune:
 
-•	It should not be possible to access Gaming or Privacy in the Settings app.
-•	The C:\DevProjects folder should be excluded from Windows Defender.
-•	The process devbuild.exe must be excluded from Windows Defender.
-•	Most used apps and Recently added apps should not be displayed on the Start menu.
+-   It should not be possible to access Gaming or Privacy in the Settings app.
+-   The C:\DevProjects folder should be excluded from Windows Defender.
+-   The process devbuild.exe must be excluded from Windows Defender.
+-   Most used apps and Recently added apps should not be displayed on the Start menu.
 
 
 #### Task 1: Verify settings on device before enrollment
@@ -40,7 +40,7 @@ A. Datum Corporation’s has decided to manage all members of the development de
 9.  On the **Update & Security** page, select **Windows Security** and then
     **Open Windows Security**.
 
-10. On the **Windows Security** page, select the menu and then select the **Virus
+10. On the **Windows Security** page, select the menu and then select **Virus
     & threat protection**.
 
 11. On the **Virus & threat protection** page, select **Manage settings** under
@@ -52,9 +52,9 @@ A. Datum Corporation’s has decided to manage all members of the development de
 13. Close the **Exclusions page** and the **Windows Security** page by selecting
     the **X** in the right upper corner.
 
-### Task 2: Enroll Windows 10 device to Azure AD and Intune using the Settings app
+#### Task 2: Enroll Windows 10 device to Azure AD and Intune using the Settings app
 
-1.  On **LON-CL3**, with the Settings app still open, navigate to the **Accounts** page. 
+1.  On **LON-CL3**, with the **Settings** app still open, navigate to the **Accounts** page. 
 
 2.  Select **Access work or school**. In the **Access work or school** section, select **Connect**.
 
@@ -76,7 +76,7 @@ A. Datum Corporation’s has decided to manage all members of the development de
     that the device is connected to Azure AD and then close the **Settings**
     app.
 
-### Task 3: Logon to a different Windows 10 device using Azure AD user
+#### Task 3: Logon to a Windows 10 device using Azure AD user
 
 1.  Sign out of **LON-CL3**. 
 
@@ -89,7 +89,7 @@ A. Datum Corporation’s has decided to manage all members of the development de
     _Note: When you are logged on using your Azure AD credentials you will
     benefit from Single-Sign-On (SSO) to Azure AD, Intune and Office 365._
 
-### Task 4: Create device profile based on scenario
+#### Task 4: Create device profile based on scenario
 
 1.  On **LON-CL3**, on the taskbar, select **Microsoft Edge**.
 
@@ -101,7 +101,7 @@ A. Datum Corporation’s has decided to manage all members of the development de
 
 4.  On the **Microsoft Azure** page, select **Use another account** if needed,
     type **admin\@yourtenant.onmicrosoft.com** for the user name, type the
-    tenant Admin, and then select **Sign in**.
+    tenant Admin password, and then select **Sign in**.
 
 5.  In the Microsoft Endpoint Manager admin center, select **Devices** from the 
     navigation bar. 
@@ -112,9 +112,9 @@ A. Datum Corporation’s has decided to manage all members of the development de
 
 7.  In the **Create a profile** blade, select the following options, and then select **Create**:
 
--   Platform: **Windows 10 and later**
+    -   Platform: **Windows 10 and later**
 
--   Profile: **Device restrictions**
+    -   Profile: **Device restrictions**
 
 8.  In the **Basics** blade, enter the following information, and then select **Next**:
 
@@ -139,7 +139,7 @@ A. Datum Corporation’s has decided to manage all members of the development de
     
 14.  Then select **Next** three times until you reach the **Review + create** blade. Select **Create**.
 
-### Task 5: Create the Adatum Developer device group
+#### Task 5: Create the Adatum Developer device group
 
 1.  In the Microsoft Endpoint Manager admin center, select **Groups** in the navigation pane.
 
@@ -147,13 +147,13 @@ A. Datum Corporation’s has decided to manage all members of the development de
 
 3.  On the **New Group** blade, enter the following information:
 
--   Group type: **Security**
+    -   Group type: **Security**
 
--   Group name: **A. Datum Developer devices**
+    -   Group name: **A. Datum Developer devices**
 
--   Group description: **All Windows 10 devices in A. Datum Developer department**
+    -   Group description: **All Windows 10 devices in A. Datum Developer department**
 
--   Membership type: **Assigned**
+    -   Membership type: **Assigned**
 
 4.  Under **Members**, select **No members selected**. On the **Add members** blade, in the **Search** box type **lon**. Select **LON-CL3** and then choose
     **Select**. Repeat the steps to add **LON-CL4** also as group member.
@@ -162,17 +162,17 @@ A. Datum Corporation’s has decided to manage all members of the development de
 
 6.  On the **Groups | All groups** blade, verify that the **A. Datum developer devices group** is displayed.
 
-### Task 6: Create a dynamic Azure AD device group
+#### Task 6: Create a dynamic Azure AD device group
 
 1.  On the **Groups | All Groups** blade, on the details pane, select **New group**.
 
 3.  On the **Group** blade, provide the following values:
 
-    1.  Group type: **Security**
+    -   Group type: **Security**
 
-    2.  Group name: **Windows Devices**
+    -   Group name: **Windows Devices**
 
-    3.  Membership type: **Dynamic Device**
+    -   Membership type: **Dynamic Device**
 
 4.  Under **Dynamic Device Members** blade, select **Add dynamic query**. 
 
@@ -186,7 +186,7 @@ A. Datum Corporation’s has decided to manage all members of the development de
 ```
 7.  On the **Dynamic membership rules** blade, select **Save** and then **Create**.
 
-### Task 7: Deploy device profile to Windows 10 device
+#### Task 7: Deploy device profile to Windows 10 device
 
 1.  In the Microsoft Endpoint Manager admin center, select **Home** in the 
     breadcrumb navigation menu and then select **Devices**. On the **Devices | Overview** blade, select **Configuration profiles**.
@@ -202,7 +202,7 @@ A. Datum Corporation’s has decided to manage all members of the development de
 
 5.  Back on the **Device restrictions** blade, select **Review + Save**, then select **Save**.
 
-### Task 8: Verify on the device that device profile is applied
+#### Task 8: Verify on the device that device profile is applied
 
 1.  On **LON-CL3**, on the taskbar, select **Start** and then select the
     **Settings** app.
@@ -224,7 +224,7 @@ A. Datum Corporation’s has decided to manage all members of the development de
 
 6.  Select the **Personalization** tile and then select **Start**. Verify that
     **Show recently used apps** and **Show most used apps** are set to **Off**.
-    Select the **left arrow **in the upper left corner.
+    Select the left arrow in the upper left corner.
 
 7.  In the **Settings** app, select **Update and Security**.
 
@@ -252,7 +252,7 @@ A. Datum Corporation’s has decided to manage all members of the development de
 
 There was an exception to A. Datum's policies initiated where Developer users should not have the Privacy option blocked in Settings on thier devices. This change should be implemented and tested.
 
-### Task 1: Change setting in assigned profile
+#### Task 1: Change setting in assigned profile
 
 1.  On **LON-CL3**, in the Microsoft Endpoint Manager admin center, select 
     **Devices | Configuration profiles** in the breadcrumb navigation pane 
@@ -268,7 +268,7 @@ There was an exception to A. Datum's policies initiated where Developer users sh
 
 5.  Select **Review + save**, then select **Save**.
 
-### Task 2: Force synchronization of policy from Intune console
+#### Task 2: Force synchronization of policy from Intune console
 
 1.  On **LON-CL3**, in the Microsoft Endpoint Manager admin center, select **Devices** 
     in the navigation pane and then select **All devices**.
@@ -276,10 +276,10 @@ There was an exception to A. Datum's policies initiated where Developer users sh
 2.  In the details pane, select **LON-CL3**. On the **LON-CL3** blade, select
     **Sync** and when prompted select **Yes**.  
 
-    Intune will contact the device and tell it to synchronize all policies. This
-    may take up to 5 minutes.
+    _Note: Intune will contact the device and tell it to synchronize all policies. This
+    may take up to 5 minutes._
 
-### Task 3: Verify profile change on device
+#### Task 3: Verify profile change on device
 
 1.  On **LON-CL3** and on the taskbar, select **Start** and then select
     the **Settings** app.
