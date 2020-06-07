@@ -41,18 +41,9 @@ In this lab, you will practice creating and configuring Windows Information Prot
 
 17.  In the **Name** text box, type **Cloud Domain name**.
 
-18.  In the **Value** text box, type **yourtenant.onmicrosoft.com**, and then
-    select **OK**.
+18.  In the **Value** text box, type **yourtenant.sharepoint.com|yourtenant-my.sharepoint.com|yourtenant-files.sharepoint.com**, and then select **OK**.
 
 19. Repeat steps 16−18 for the following boundary:
-
-    -   Boundary type: **Cloud resources**
-
-    -   Name: **Cloud Domain name**
-
-    -   Value: **yourtenant.sharepoint.com**
-
-20. Repeat steps 16−18 for the following boundary:
 
     -   Boundary type: **IPv4 ranges**
 
@@ -60,15 +51,15 @@ In this lab, you will practice creating and configuring Windows Information Prot
 
     -   Value: **172.16.0.1-172.16.0.190**
 
-21. Select **Next**.
+20. Select **Next**.
 
-22.  On the **Assignments** tab, in the **Included Groups** section, select **Select groups to include**.
+21.  On the **Assignments** tab, in the **Included Groups** section, select **Select groups to include**.
 
-23.  In the **Select** search box enter **Windows devices**.
+22.  In the **Select** search box enter **Windows devices**.
 
-24.  Select **Windows devices** and select **Select**.
+23.  Select **Windows devices** and select **Select**.
 
-25.  Select **Next** and then select **Create**.
+24.  Select **Next** and then select **Create**.
 
 #### Task 2: Create and upload a Data Recovery Agent (DRA) certificate
 
