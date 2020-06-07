@@ -44,13 +44,13 @@ MFA is not required and the maximum number of devices per user is 50.
     _Note: Before you can assign a license to a user, the user must have a usage
 location set._
 
-12.  Scroll the page to the left, on the **Azure Active Directory** blade select
+12. Scroll the page to the left, on the **Azure Active Directory** blade select
     **Licenses** and then in the navigation pane select **All products**.
 
-13.  On the **Licenses | All products** blade, select **Enterprise Mobility + Security E5** and
+13. On the **Licenses | All products** blade, select **Enterprise Mobility + Security E5** and
     then in details pane select **Assign**.
 
-14.  On the **Assign license** blade, select **Users and groups**. In the
+14. On the **Assign license** blade, select **Users and groups**. In the
     **Users and groups** pane select **Joni Sherman**, **Megan Bowen**, and **MOD
     administrator.** Select **Select**, and then select **Assign**.
 
