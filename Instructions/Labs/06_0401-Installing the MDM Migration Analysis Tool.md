@@ -78,8 +78,7 @@ directly to Intune.
 5.  In the PowerShell console, type the following and then press **Enter**:
     When prompted, type **R** and press **Enter**. 
 ```
-    .\Invoke-MdmMigrationAnalysisTool.ps1 -collectGPOReports
-    -runAnalysisTool
+    .\Invoke-MdmMigrationAnalysisTool.ps1 -collectGPOReports -runAnalysisTool
 
 ```     
 6.  When **Invoke-MdmMigrationAnalysisTool.ps1** is completed, it will generate
