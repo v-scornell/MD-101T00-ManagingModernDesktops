@@ -9,9 +9,9 @@ In this lab, you will configure Intune to allow users to enroll their devices in
 You have been asked to setup device enrollment in Intune. It should be configured so that users who join the device to the domain will also enroll in Intune.  You'll need to ensure that Joni Sherman, Megan Bowen and MOD Administrator are licensed with EMS E5 to enroll and that Megan Bowen is a local administrator on Azure AD joined devices.
 MFA is not required and the maximum number of devices per user is 50.
 
-### Task 1: Assign Microsoft Intune and Azure AD Premium licenses to users
+#### Task 1: Assign Microsoft Intune and Azure AD Premium licenses to users
 
-1.  Switch to **LON-CL3**. On **LON-CL3**, sign-in as **Admin** using
+1.  Switch to **LON-CL3**. On **LON-CL3**, sign in as **Admin** using
     **Pa55w.rd** as the password.
 
 2.  On **LON-CL3**, on the taskbar, select **Microsoft Edge**.
@@ -20,16 +20,16 @@ MFA is not required and the maximum number of devices per user is 50.
     then press **Enter**.
 
 4.  Sign in as user **Admin\@yourtenant.onmicrosoft.com**, and use the tenant
-    Admin password.
+    admin password.
 
-5.  If prompted by the **Stay Signed in?** windows, select **No**.
+5.  If prompted by the **Stay Signed in?** window, select **No**.
 
 6.  Close any welcome dialogs.
 
 7.  In the Edge browser, in the Azure portal, and in the navigation pane, select
     **Azure Active Directory**.
 
-8.  On the **Azure Active Directory** blade, select **Users**, select **Joni
+8.  On the **Azure Active Directory** blade, select **Users**, and then select **Joni
     Sherman**.
 
 9. Under Settings, in the **Usage location** field, verify that **United States** is selected.
@@ -56,7 +56,7 @@ location set._
 
     _Note: Note the dialog that indicate the 3 licenses have been assigned._
 
-### Task 2: Integrate Azure AD with Microsoft Intune
+#### Task 2: Integrate Azure AD with Microsoft Intune
 
 1.  In **LON-CL3**, in the Azure AD portal, close the **Licenses | All products** blade.
 
@@ -66,7 +66,7 @@ location set._
 
     _**Note**: By performing this step, you allowed all users who join their device to Azure AD to automatically enroll it to Microsoft Intune as well._
 
-### Task 3: Configure Azure AD join
+#### Task 3: Configure Azure AD join
 
 1.  In **LON-CL3**, in the Azure portal, scroll the page to the left on the page
     and then in the **Azure Active Directory** blade select **Devices**.
