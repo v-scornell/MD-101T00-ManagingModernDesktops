@@ -8,18 +8,17 @@ In this lab, you will practice creating and configuring Windows Information Prot
 
 1.  On **LON-CL3**, sign in as **admin\@yourtenant.onmicrosoft.com** with the default tenant password.
 
-2.  Open an InPrivate window in Microsoft Edge, and then navigate to **https://portal.azure.com**.
-    Sign in using your MOD administrator credentials if prompted. Ensure that the Azure portal opens.
+2.  Open **Microsoft Edge**, and then navigate to **https://endpoint.microsoft.com**.
 
-3.  In the navigation pane, select **Intune** and then select **Client apps**.
+3.  In the navigation pane, select **Apps**.
 
-4.  Select **App protection policies**, and then select **+Create policy** and select **Windows 10**.
+4.  Select **App protection policies**, and then select **Create policy** and select **Windows 10**.
 
 5.  In the **Name** text box, type **Windows 10 WIP test policy**.
 
-6.  In the **Enrollment state **list, select **With enrollment** and select **Next**.
+6.  In the **Enrollment state** list, select **With enrollment** and select **Next**.
 
-7.  On the **Targeted apps** tab, under **Protected apps**, then select **+ Add**.
+7.  On the **Targeted apps** tab, under **Protected apps**, then select **Add**.
 
 8.  Select **Microsoft Edge** and **Notepad**. Select **OK** and select **Next**.
 
@@ -61,15 +60,15 @@ In this lab, you will practice creating and configuring Windows Information Prot
 
     -   Value: **172.16.0.1-172.16.0.190**
 
-21.  On the **Assignments** tab, in the **Included Groups** section, select **+ Select groups to include**.
+21. Select **Next**.
 
-22.  In the **Select** search box enter **Windows devices**.
+22.  On the **Assignments** tab, in the **Included Groups** section, select **Select groups to include**.
 
-23.  Select **Windows devices** and select **Select**, and then select **Save**.
+23.  In the **Select** search box enter **Windows devices**.
 
-24.  Select **Next** and then select **Create**.
+24.  Select **Windows devices** and select **Select**.
 
-25.  Leave the Azure portal with the Intune console open.
+25.  Select **Next** and then select **Create**.
 
 #### Task 2: Create and upload a Data Recovery Agent (DRA) certificate
 
@@ -88,7 +87,7 @@ In this lab, you will practice creating and configuring Windows Information Prot
 
 5.  Switch to **Microsoft Edge** and select the **Windows 10 WIP test policy** you created.
 
-6.  Select **Properties**. In the Advance settings section, select **Edit**.
+6.  Select **Properties**. In the **Advanced settings** section, select **Edit**.
 
 7.  Under **Data protection**, select the **Browse** icon.
 
@@ -97,32 +96,32 @@ In this lab, you will practice creating and configuring Windows Information Prot
 
 9.  Under **Show the enterprise data protection icon**, select **On**.
 
-10.  Select **OK**, and then select **Create.**
+10.  Select **Review + save**, and then select **Save.**
 
 #### Task 3: Sync and test the WIP policy
 
-1.  On the **Start** menu on LON-CL3, select **Settings**.
+1.  On the **Start** menu on **LON-CL3**, select **Settings**.
 
 2.  Select **Accounts** and then select **Access work or school**.
 
-3.  Under **work or school account**, select **Connected to Adatum Azure AD** and
+3.  Under **Access work or school**, select **Connected to Adatum Azure AD** and
     select **Info**.
 
 4.  Select **Sync**.
 
     **Important**: Wait for the settings to sync.
 
-5.  **Sign out** and **sign back in** as **diegos\@yourtenant.onmicrosoft.com** 
+5.  Sign out and sign back in as **diegos\@yourtenant.onmicrosoft.com** 
     with the default tenant password.
 
 6.  In **Microsoft Edge**, navigate to **https://yourtenant.sharepoint.com**.
 
-7.  Start Internet Explorer and navigate to **https://yourtenant.sharepoint.com**.
+7.  Start **Internet Explorer** and navigate to **https://yourtenant.sharepoint.com**.
 
-    You should not be able to successfully navigate to the Microsoft
+    _Note: You should not be able to successfully navigate to the Microsoft
     SharePoint Online site in Internet Explorer because it’s not an allowed app.
 
-    If you are still able to access the site in Internet Explorer, sign out and sign back in, and repeat step 7.
+    If you are still able to access the site in Internet Explorer, sign out and sign back in, and repeat step 7._
 
 8.  Right-click the **Windows task bar** and select **Task Manager**.  Select **More details** if needed.
 
