@@ -82,9 +82,9 @@ deferred 45 days after release. You would like to test the settings using LON-CL
 
 7.  In the **Create a profile** blade, select the following options, and then select **Create**:
 
--   Platform: **Windows 10 and later**
+    -   Platform: **Windows 10 and later**
 
--   Profile: **Delivery Optimization**
+    -   Profile: **Delivery Optimization**
 
 8.  In the **Basics** blade, enter the following information, and then select **Next**:
 
