@@ -31,31 +31,31 @@ All the developers at A. Datum require Microsoft Office 365 ProPlus. You've been
 
 4.  In the **Select app type** blade, select **Windows 10** under **Microsoft 365 Apps**, and then select **Select**.
 
-5.  On the **App Microsoft 365 Apps** blade, configure
+5.  On the **Microsoft 365 Apps** blade, configure
     the following options and select **Next**:
 
--   Suite Name: **Office 365 ProPlus (A. Datum developers)**
+    -   Suite Name: **Office 365 ProPlus (A. Datum developers)**
 
--   Suite Description: **Office 365 ProPlus App for developers in A. Datum**
+    -   Suite Description: **Office 365 ProPlus App for developers in A. Datum**
 
 6.  On the **Configure app suite** blade, expand the **Select Office apps** dropdown, select the following Office 365 apps and select **Next**:
 
--   Excel
+    -   Excel
 
--   Outlook
+    -   Outlook
 
--   PowerPoint
+    -   PowerPoint
 
--   Word
+    -   Word
 
 7.  On the **Configure app suite** tab, configure the
     following options and select **Next**:
 
--   Architecture: **64-bit**
+    -   Architecture: **64-bit**
 
--   Update channel: **Semi-Annual**
+    -   Update channel: **Semi-Annual**
 
--   Accept the Microsoft Software License Terms on behalf of users: **Yes**
+    -   Accept the Microsoft Software License Terms on behalf of users: **Yes**
 
 8.  On the **Assignments** tab, in the **Required** section, select **Add group.** 
 
@@ -82,9 +82,7 @@ All the developers at A. Datum require Microsoft Office 365 ProPlus. You've been
 2.  On **LON-CL4**, on the taskbar, select **Start** and then select the
     **Settings** app.
 
-3.  In the **Settings** app, select the **Apps** tile and on the **Apps &
-    features** page, scroll down and verify that **Microsoft Office 365 ProPlus
-    - en-us** is listed.
+3.  In the **Settings** app, select the **Apps** tile and on the **Apps & features** page, scroll down and verify that **Microsoft Office 365 ProPlus - en-us** is listed.
 
 4.  Close the **Settings** app and select the **Start** button.
 
@@ -99,18 +97,18 @@ All the developers at A. Datum require Microsoft Office 365 ProPlus. You've been
 
 2.  In the **Microsoft Endpoint Manager admin center**, select **Apps**.
 
-3.  On the **Apps | Overview** blade, select **Monitor** and then select **App install status**. In the details pane, select **Office 365 ProPlus (A. Datum
-    developers)**.
+3.  On the **Apps | Overview** blade, select **Monitor** and then select **App install status**. In the details pane, select **Office 365 ProPlus \(A. Datum developers\)**.
 
 4.  In the details pane, under **Device status** and under **User status**, verify that
     **1** is displayed under Installed. 
+
     _Note: This indicates that the app is installed on one device and for one user._
 
 5.  Select **Device install status** to the left of the blue circle. In the
     details pane, you can see the devices that the app is installed on, and also
     the name of the user. The **Device Name** column should list **LON-CL4** and
     the **User Name** column should list **No user** and the **Status** column
-    should say **Installed**. This mean that the app is installed on LON-CL4.
+    should say **Installed**. This means that the app is installed on LON-CL4.
 
 6.  In the **Microsoft Endpoint Manager admin center**, select **Devices**.
 
