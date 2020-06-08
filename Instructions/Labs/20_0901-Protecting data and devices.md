@@ -166,15 +166,14 @@ It's been determined that all the information on LON-CL3 should be encrypted. Yo
 
 12. On the **Are you ready to encrypt this drive** page, select **Continue**.
 
-13. Select **Close**. Then restart **LON-CL1**.
+13. Select **Close**. Then restart **LON-CL3**.
 
-14. When LON-CL1 restarts, type **Pa55w.rd** and press **Enter** to unlock the
+14. When LON-CL3 restarts, type **Pa55w.rd** and press **Enter** to unlock the
     drive.
 
 #### Task 3: Verify BitLocker protection
 
-1.  Sign in to **LON-CL1** as **Adatum\\Administrator** with the password
-    **Pa55w.rd**.
+1.  Sign in to **LON-CL3** as **admin\@yourtenant.onmicrosoft.com** with the default tenant password.
 
 2.  On the taskbar, select **File Explorer** and then select **This PC**.
 
@@ -182,7 +181,7 @@ It's been determined that all the information on LON-CL3 should be encrypted. Yo
     BitLocker**.
 
 4.  In the **BitLocker Drive Encryption** window, ensure that you see **C: BitLocker
-    Encrypting** status. This means that drive is being encrypted. This takes
+    On** status. This means that drive is being encrypted. This takes
     some time, so you can proceed to the next task.
 
 5.  **Close** all open windows.
