@@ -6,7 +6,7 @@ In this lab you will learn how to use the USMT tool with customized settings to 
 
 ### Scenario
 
-IT is replacing Vera's current PC, LON-CL2, with a new device, LON-CL1.  LON-CL1 has already been provisioned, and Vera's data now must be transferred.  This will require custom settings to ensure the correct data is migrated, and other data is not migrated.
+IT is replacing Vera's current PC, LON-CL2, with a new device, LON-CL1. LON-CL1 has already been provisioned, and Vera's data now must be transferred.  This will require custom settings to ensure the correct data is migrated, and other data is not migrated.
 
 ### Exercise 1: Migrating user settings using USMT
 
