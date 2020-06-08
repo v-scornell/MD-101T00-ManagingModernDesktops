@@ -10,7 +10,7 @@ In this lab, you will practice configuring user profiles in AD DS and setting up
 
 Ada Russel frequently uses both LON-CL1 and LON-CL2 and is struggling with accessing documents between machines.  She's requested that the files in the documents folder are the same regardless of which device she is using. You've been asked to use Folder Redirection.
 
-### Task 1: Prepare the environment for roaming profiles and Folder Redirection
+#### Task 1: Prepare the environment for roaming profiles and Folder Redirection
 
 1.  On **LON-DC1**, sign-in as **adatum\\administrator** using **Pa55w.rd** as
     the password.
@@ -41,7 +41,7 @@ Ada Russel frequently uses both LON-CL1 and LON-CL2 and is struggling with acces
     **Read/Write**, select **Share**, select **Done**, and then close File
     Explorer.
 
-### Task 2: Configure roaming user profiles
+#### Task 2: Configure roaming user profiles
 
 1.  On **LON-DC1**, on the taskbar, select **Server Manager**.
 
@@ -60,7 +60,7 @@ Ada Russel frequently uses both LON-CL1 and LON-CL2 and is struggling with acces
 
 6.  Minimize the **Active Directory Users and Computers** window.
 
-### Task 3: Configure Folder Redirection
+#### Task 3: Configure Folder Redirection
 
 1.  On **LON-DC1**, in **Server Manager**, select **Tools**, and then select
     **Group Policy Management**.
@@ -96,7 +96,7 @@ Ada Russel frequently uses both LON-CL1 and LON-CL2 and is struggling with acces
 11. Close the **Group Policy Management Editor** window, and then minimize the
     GPMC.
 
-### Task 4: Test roaming user profiles and Folder Redirection
+#### Task 4: Test roaming user profiles and Folder Redirection
 
 1.  On **LON-DC1**, on the taskbar, select **File Explorer**.
 
@@ -157,7 +157,7 @@ Ada Russel frequently uses both LON-CL1 and LON-CL2 and is struggling with acces
 Users are requesting that their Windows settings and application data be the same when using different computers. They also require to have their documents available.You have decided to implement Enterprise State Roaming and OneDrive Known Folder Move. You will need to enable ESR and Known Folder Move, and verify that it is working.  Diego Siciliani has offered to test, as he frequently switches between LON-CL3 and LON-CL4.
 
 
-### Task 1: Enable Enterprise State Roaming
+#### Task 1: Enable Enterprise State Roaming
 
 1.  Sign in to **LON-CL1** as **Adatum\\Administrator** with the password **Pa55w.rd**.
 
@@ -165,7 +165,7 @@ Users are requesting that their Windows settings and application data be the sam
     then press **Enter**.
 
 3.  Sign in as user **Admin\@yourtenant.onmicrosoft.com**, and use the tenant
-    Admin password.
+    admin password.
 
 4.  In the Azure Portal, in the navigation pane, select **Azure Active
     Directory**.
@@ -186,8 +186,9 @@ Users are requesting that their Windows settings and application data be the sam
 9.  Select **Diego Siciliani** and then select **Select**.
 
 10. Select **OK**, and then select **Save**. Close the **Devices | Enterprise State Roaming** blade.
-    _Note: By performing this task, you enabled Enterprise State Roaming for **Diego
-    Siciliani**._
+
+    _Note: By performing this task, you enabled Enterprise State Roaming for Diego
+    Siciliani._
 
 11. In the **ADATUM | Overview** portal, select **Groups.**
 
@@ -207,7 +208,7 @@ Users are requesting that their Windows settings and application data be the sam
     navigation **ADATUM**, scroll down and then select **Properties**. Note down the value for **Directory ID**.
     _Note: The value is needed for the configuration of the Knwon Folder Move._
 
-### Task 2: Enable OneDrive Known Folder Move
+#### Task 2: Enable OneDrive Known Folder Move
 
 1.  On **LON-CL1** in Microsoft Edge, type **https://endpoint.microsoft.com** in the 
     address bar and then press **Enter**.
@@ -220,9 +221,9 @@ Users are requesting that their Windows settings and application data be the sam
 
 7.  In the **Create a profile** blade, select the following options, and then select **Create**:
 
--   Platform: **Windows 10 and later**
+    -   Platform: **Windows 10 and later**
 
--   Profile: **Administrative Templates**
+    -   Profile: **Administrative Templates**
 
 8.  In the **Basics** blade, enter the following information, and then select **Next**:
 
@@ -231,7 +232,7 @@ Users are requesting that their Windows settings and application data be the sam
     -   Description: **Configuration of OneDrive Known Folder Move**
 
 9.  On the **Configurations settings** blade, select **All Settings**. In the
-    **Search to filter items..** text box type **OneDrive**.
+    **Search to filter items.** text box type **OneDrive**.
 
 10. Under **Setting Name** select **Silenty move Windows known folders to OneDrive**.
     In the **Silenty move Windows known folders to OneDrive** dialog box select **Enabled**, then enter the value you noted down earlier for **Tenannt ID**. Select **OK**.
@@ -249,7 +250,7 @@ Users are requesting that their Windows settings and application data be the sam
 14. Select **Next** and then select **Create**.
 
 
-### Task 3: Verify sync is enabled on LON-CL3
+#### Task 3: Verify sync is enabled on LON-CL3
 
 1.  Switch to **LON-CL3** and sign in as **DiegoS\@yourtenant.onmicrosoft.com** with the 
     default tenant password if you are not already signed in. 
@@ -261,7 +262,7 @@ Users are requesting that their Windows settings and application data be the sam
     _**Important**: If Sync settings is set to off and it is greyed out, the device must be rejoined.  This is due to an issue with ESR being enabled after devices have been enrolled._ 
     _If this occurs, continue with task 4, otherwise continue with Task 5._
 
-### Task 4: Re-enroll Devices (if needed)
+#### Task 4: Re-enroll Devices (if needed)
 
 1.  In Accounts, select the **Access work or school**.  Select the Azure AD connection and
     select **Disconnect**. Select **Yes** and then select **Disconnect** to confirm. In the **Windows Security** dialog enter **Admin** as **Email Address** and **Pa55w.rd** as **Password**.
@@ -281,25 +282,27 @@ Users are requesting that their Windows settings and application data be the sam
 7.  On the **Let's get you signed in** page, type **diegos\@yourtenant.onmicrosoft.com** 
     and then select **Next**.
 
-8. On the **Enter password** page, enter the tenant password and select **Sign in**.
+8.  On the **Enter password** page, enter the tenant password and select **Sign in**.
 
-9. Wait a few seconds and then on the **Make sure this is your organization** dialog, select **Join**.
+9.  Wait a few seconds and then on the **Make sure this is your organization** dialog, select **Join**.
 
 10. On the **You're all set!** page, select **Done**.
 
 11. **Sign out** of LON-CL3.
 
-### Task 5: Test Enterprise State Roaming and Known Folder Move
+#### Task 5: Test Enterprise State Roaming and Known Folder Move
 
 1.  Sign in to **LON-CL3** as **DiegoS\@yourtenant.onmicrosoft.com** with the 
     default tenant password.
+
     _Note: It could take 5-10 minutes until the Intune configuration is finished._
+
     _**Important**: If the OneDrive auto configuration is not working sign out and sign in again. This is due to Windows issues._
 
 2.  On **LON-CL3**, on the taskbar, select **Microsoft Edge** and in the address bar,
     type **www.microsoft.com/learn**, and then press **Enter**. When the page
     loads, select the star and the end of the address bar (or press CTRL+D). In
-    the Favorites pop-up, select **Add**.
+    the **Favorites** pop-up, select **Add**.
 
 3.  On the taskbar, select **Start**, type **notepad**, and then press Enter.
 
@@ -308,6 +311,7 @@ Users are requesting that their Windows settings and application data be the sam
     the **File Name** text box, select **Save**, and then close **Notepad**.    
 
 5.  Switch to **LON-CL4** and sign in as **Admin**, with the password **Pa55w.rd**.
+
     _**Important:** The device must be enrolled new with the credentials of **DiegoS\@yourtenant.onmicrosoft.com**. Follow the procedures outlined in Task 4._
 
 6.  On **LON-CL4** sign in as **DiegoS\@yourtenant.onmicrosoft.com**. 
