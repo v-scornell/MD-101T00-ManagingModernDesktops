@@ -21,9 +21,9 @@ All the developers in A. Datum have iPhones running the latest version of iOS. T
 
 4.  On the **Basics** tab, configure the following options and select **Next**:
 
--   Name: **Outlook – Developers**
+    -   Name: **Outlook – Developers**
 
--   Description: **MAM policy that prevent cut and paste from Outlook**
+    -   Description: **MAM policy that prevent cut and paste from Outlook**
 
 5.  On the Apps tab, select **Select public apps**
 
@@ -33,20 +33,20 @@ All the developers in A. Datum have iPhones running the latest version of iOS. T
 7.  On the **Data protection** tab, configure the following options and select
     **Next**:
 
--   Backup Org data to ITunes and iCloud backups: **Allow**
+    -   Backup Org data to ITunes and iCloud backups: **Allow**
 
--   Send Org data to other apps: **None**
+    -   Send Org data to other apps: **None**
 
--   Receive data from other apps: **Policy managed apps**
+    -   Receive data from other apps: **Policy managed apps**
 
--   Restrict cut, copy, and paste with other apps: **Any app**
+    -   Restrict cut, copy, and paste with other apps: **Any app**
 
--   Leave all other settings at default
+    -   Leave all other settings at default
 
 8.  On the **Access requirements** tab, configure the following options and
     select **Next**:
 
--   PIN for access: **Not required**
+    -   PIN for access: **Not required**
 
 9.  On the **Conditional launch** tab, review the settings. Select **Next**.
 
