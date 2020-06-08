@@ -10,7 +10,7 @@ The Help Desk has indicated that a large number of support tickets are related t
 
 #### Task 1: Configure password writeback
 
-1.  Sign in to **LON-SVR1** as **ADATUM\\Administrator** with the password **Pa55w.rd**. 
+1.  Sign in to **LON-SVR1** as **Adatum\\Administrator** with the password **Pa55w.rd**. 
 
 2.  On the desktop, double-click **Azure AD Connect**.
 
@@ -36,7 +36,7 @@ The Help Desk has indicated that a large number of support tickets are related t
 
 #### Task 2: self-service password reset
 
-1.  Switch to **LON-CL1** and sign in as **ADATUM\\Administrator** with the password **Pa55w.rd**.
+1.  Switch to **LON-CL1** and sign in as **Adatum\\Administrator** with the password **Pa55w.rd**.
 
 2.  On the task bar select **Microsoft Edge**, navigate to **Azure Active Directory**
     in the Azure portal, logged in as the MOD administrator account.
@@ -131,7 +131,7 @@ The Help Desk has indicated that a large number of support tickets are related t
 
 2.  Restore the **Windows PowerShell** window from the desktop.
 
-3.  At the **Windows PowerShell **command prompt, type the following commands, and
+3.  At the **Windows PowerShell** command prompt, type the following commands, and
     then press **Enter** after each command:
 
 ```
@@ -142,14 +142,14 @@ Start-ADSyncSyncCycle –PolicyType Delta
 ```
 4.  Wait for approximately 3-4 minutes.
 
-5.  Minimize **Windows PowerShell**, and then switch to **LON-CL1** and **Sign out**.
+5.  Minimize **Windows PowerShell**, and then switch to **LON-CL1** and sign out.
 
-6.  Switch to **LON-CL1** and try to sign in as **Adatum\\Abbi** with the password
+6.  On **LON-CL1** try to sign in as **Adatum\\Abbi** with the password
     **Pa55w.rd**.
 
 7.  Ensure that you get the message that the user name or password is incorrect.
 
-8.  Try to sign in to LON-CL1 as **Adatum\\Abbi** with the password
+8.  Try to sign in to **LON-CL1** as **Adatum\\Abbi** with the password
     **MDA101!!**. You should be able to sign in. This confirms that the password
     you changed in the Azure portal is written back to your local Active
     Directory Domain Services (AD DS).
