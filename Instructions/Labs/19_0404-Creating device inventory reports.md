@@ -104,21 +104,21 @@ Your organization uses Power BI for reporting.  You've been asked to setup Power
 9.  In the **Welcome to Power BI Desktop**, fill out the form as follows and
     then select **Done**:
 
--   First Name: **Brenda**
+    -   First Name: **Brenda**
 
--   Last Name: **Mueller**
+    -   Last Name: **Mueller**
 
--   Email Address: **bredam\@adatum.com**
+    -   Email Address: **bredam\@adatum.com**
 
--   Enter your phone number: **12121212**
+    -   Enter your phone number: **12121212**
 
--   Country/region: **United States**
+    -   Country/region: **United States**
 
--   Company name: **A. Datum Inc.**
+    -   Company name: **A. Datum Inc.**
 
--   Company size: **50-249**
+    -   Company size: **50-249**
 
--   Job Title: **IT Professional**
+    -   Job Title: **IT Professional**
 
 10. After PowerBI loads, close the **Sign in to collaborate and share content** page by selecting the
     **X** in the upper right corner.
@@ -162,9 +162,9 @@ Your organization uses Power BI for reporting.  You've been asked to setup Power
 
 6.  Drag the **displayName** data field from the users table to the **Visualizations** pane and drop it on under the **Details** section.
 
-_Note: You should now see device names in each report object, with a user name listed under each device. This should match the users and devices you have used in previous lab steps up until this point._
+    _Note: You should now see device names in each report object, with a user name listed under each device. This should match the users and devices you have used in previous lab steps up until this point._
 
-_Note: Depending on how recent the Autopilot lab was performed, LON-CL5 may show in the report as the temporary name first assigned to the VM when the lab was provisioned. This will eventually resolve with the correct device name as the Intune Data Warehouse refreshes._ 
+    _Note: Depending on how recent the Autopilot lab was performed, LON-CL5 may show in the report as the temporary name first assigned to the VM when the lab was provisioned. This will eventually resolve with the correct device name as the Intune Data Warehouse refreshes._ 
 
 7.  Select the **Treemap** you added to the report canvas. In the **Visualizations** pane, select the **table** report option (the icon appears as a spreadsheet) to switch the report canvas to a table view.
 
