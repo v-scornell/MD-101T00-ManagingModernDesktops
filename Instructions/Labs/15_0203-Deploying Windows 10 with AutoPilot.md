@@ -76,7 +76,7 @@ by the time the student is ready to perform this exercise._
 20. In the Edit rule syntax text box, add the following simple membership rule and select **Ok**.
 
 ```
-    (device.devicePhysicalIDs -any _ -contains "[ZTDId]")
+(device.devicePhysicalIDs -any _ -contains "[ZTDId]")
 
 ```
 21.  select **Save** to close Dynamic membership rules, and then select **Create** to create the group.
