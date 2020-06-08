@@ -60,13 +60,13 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 
 6.  Back on the **Add app** blade configure the following options:
 
--   Name: **Remote Desktop Connection Manager**
+    -   Name: **Remote Desktop Connection Manager**
 
--   Description: **App for developers in A. Datum**
+    -   Description: **App for developers in A. Datum**
 
--   Publisher: **Microsoft**
+    -   Publisher: **Microsoft**
 
--   Category: **Computer Management**
+    -   Category: **Computer Management**
 
 7.  Scroll down to the bottom and select **Select image** and in the **Logo** blade,
     select the folder icon next to **Select a file**.
@@ -74,7 +74,7 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 8.  In the **Open** dialog box, browse to **C:\\Software** and select
     **rdcman-icon.jpg**. Then select **Open** and **OK**.
 
-9.  Select **Next** twice and then select **Create** to create the app in Intune. Notice the
+9.  Select **Next** twice and then select **Create** to create the app in Intune. Notice that the
     app is not yet available. 
 
 10. On navigation pane select **Tenant administration**, then select **Audit logs**.  As the
@@ -98,43 +98,44 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 1.  On **LON-CL3**, On the taskbar, select **Microsoft Edge**, and navigate to
     **https://businessstore.microsoft.com**.
 
-2.  Sign in to the store as **Admin\@yourtenant.onmicroft.com** with your tenant password.
+2.  Sign in to the store as **Admin\@yourtenant.onmicrosoft.com** with your tenant password.
 
 3.  In the **Search field** on the right, type **Company Portal** and press
     **Enter**. Accept the consent dialog if prompted.
 
 4.  Select **Company Portal** in the results list and select **Get the App**.
 
-5.  Accept any agreements you are prompted with. On the Thanks for your order
+5.  Accept any agreements you are prompted with. On the **Thanks for your order**
     dialog, select **Close**.
 
 6.  On the right side, under Unlimited licenses available, select **Assign to
     Users**.
 
 7.  On the **Assign to people** dialog, type
-    **DiegoS\@yourtenant.onmicroft.com**. Select **Assign** and then **Close**.
+    **DiegoS\@yourtenant.onmicrosoft.com**. Select **Assign** and then **Close**.
 
-8.  Switch to **LON-CL4** and sign in as **DiegoS\@yourtenant.onmicroft.com.**
+8.  Switch to **LON-CL4** and sign in as **DiegoS\@yourtenant.onmicrosoft.com.**
 
 9.  On the taskbar, select **Microsoft Edge** and navigate to
     **https://businessstore.microsoft.com**.
 
-10. Select **Sign In**. Login as **DiegoS\@yourtenant.onmicroft.com** if it does
+10. Select **Sign In**. Login as **DiegoS\@yourtenant.onmicrosoft.com** if it does
     not by default.
 
 11. In the search box, type **Company Portal** and press **Enter**.
 
 12. Select **Company Portal** in the results list and select **Install**.
 
-13. In the Windows Store app, select **Install**. This process should take about
-    a minute.
+13. In the Windows Store app, select **Install**. 
+
+    _Note: This process should take about a minute._
 
 14. **Close** the Microsoft Store Window.
 
 #### Task 5: Install an app through the Company Portal
 
 1.  On **LON-CL4**, on the taskbar, select **Start** and in the apps list under
-    **C**, select **Company Portal**. You will be signed in to the Company Portal
+    **C:\\**, select **Company Portal**. You will be signed in to the Company Portal
     automatically using Single-Sign-On, because the device is Azure AD joined.
 
 2.  In the **Company Portal** under **Apps**, select **Remote Desktop Connection Manager**.
@@ -183,6 +184,7 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
     the name of the user. The **Device name** column should list **LON-CL4** and
     the **User Name** column should list DiegoS in the **Status** column should
     say **Installed**. 
+    
     _Note: This means that the app is installed on LON-CL4 VM by the user DiegoS._
 
 6.  Select **Devices** from the navigation bar.
