@@ -26,63 +26,63 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
 
 5.  In File Explorer, select **Allfiles (E:)**.
 
-7.  In the details pane, right-click an area of free space, point to **New** and
+6.  In the details pane, right-click an area of free space, point to **New** and
     then select **Folder**.
 
-8.  Name the Folder "**Provision"** and press Enter.
+7.  Name the Folder "**Provision"** and press Enter.
 
-9.  Right-click **Provision**, point to **Share with** and then select **Specific
+8.  Right-click **Provision**, point to **Share with** and then select **Specific
     people**.
 
-10. In the text box, type **Everyone** and then select **Add**.
+9.  In the text box, type **Everyone** and then select **Add**.
 
-11. Next to **Everyone**, select **Read** and then select **Read/Write**.
+10. Next to **Everyone**, select **Read** and then select **Read/Write**.
 
-12. Select **Share** and when prompted, select **Done**.
+11. Select **Share** and when prompted, select **Done**.
 
-13. Switch to **LON-CL4**.
+12. Switch to **LON-CL4**.
 
-14. On **LON-CL4**, sign in as **Admin** with the password of **Pa55w.rd**.
+13. On **LON-CL4**, sign in as **Admin** with the password of **Pa55w.rd**.
 
-15. On the taskbar, select **Start** and then select the **Settings** icon. Select
+14. On the taskbar, select **Start** and then select the **Settings** icon. Select
     **Accounts** then select **Access work or school**.  
 
-16. Select the Azure AD connection and select **Disconnect**. Select **Yes** and then select **Disconnect** to confirm. In the **Windows Security** dialog enter **Admin** as **Email Address** and **Pa55w.rd** as **Password**.
+15. Select the Azure AD connection and select **Disconnect**. Select **Yes** and then select **Disconnect** to confirm. In the **Windows Security** dialog enter **Admin** as **Email Address** and **Pa55w.rd** as **Password**.
 
-17. Restart the VM and sign in as **Admin**, with the password **Pa55w.rd**. On the taskbar, select the **File Explorer** icon.
+16. Restart the VM and sign in as **Admin**, with the password **Pa55w.rd**. On the taskbar, select the **File Explorer** icon.
 
-18. In **File Explorer**, in the navigation pane, right-click **This PC**, and then
+17. In **File Explorer**, in the navigation pane, right-click **This PC**, and then
     select **Properties**.
 
-19. In the **System** section, in the **Computer name, domain, and workgroup
+18. In the **System** section, in the **Computer name, domain, and workgroup
     settings** section, verify that the computer name is **LON-CL4** and that
     it's in a workgroup named **WORKGROUP**.
 
-20. Close the **System** window.
+19. Close the **System** window.
 
-21. In File Explorer, in the navigation pane, right-click **This PC**, and then
+20. In File Explorer, in the navigation pane, right-click **This PC**, and then
     select **Manage**.
 
-22. In **Computer Management**, in the navigation pane, expand **Local Users and
+21. In **Computer Management**, in the navigation pane, expand **Local Users and
     Groups**, select **Users**, and then in the details pane, verify that
     **LocalAdmin** isn't present.
 
-23. Close **Computer Management**.
+22. Close **Computer Management**.
 
-24. In File Explorer, in the navigation pane, expand **This PC**, expand **Local
+23. In File Explorer, in the navigation pane, expand **This PC**, expand **Local
     Disk (C:)**, expand **Users**, expand **Public**, select **Public
     Documents**, and then in the details pane, verify that the newly created
     "Provision" Folder isn't present as a subfolder. (You can ignore the
     subfolders, if any).
 
-25. In the navigation pane, right-click **This PC** and then select **Map network
+24. In the navigation pane, right-click **This PC** and then select **Map network
     drive**.
 
-26. In the **Folder** box, type **\\\\LON-DC1\\Provision** and then select the
+25. In the **Folder** box, type **\\\\LON-DC1\\Provision** and then select the
     **Connect using different credentials** check box.
 
-27. Select **Finish**, and in the **Windows Security** dialog box, enter the User
-    name of **adatum\\administrator**. In the **Password** box, type
+26. Select **Finish**, and in the **Windows Security** dialog box, enter the User
+    name of **Adatum\\administrator**. In the **Password** box, type
     **Pa55w.rd**. Select **OK**.
 
 ### Task 2: Create a provisioning package
