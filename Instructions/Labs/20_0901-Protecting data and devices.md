@@ -72,7 +72,7 @@ Abbi and Bill share LON-CL1. Abbi is working with files containing sensitive inf
 
 #### Task 3: Test access to the folder
 
-1.  Sign in to **LON-CL1** as **ADATUM\\Bill** with the password **Pa55w.rd**.
+1.  Sign in to **LON-CL1** as **Adatum\\Bill** with the password **Pa55w.rd**.
 
 2.  On the taskbar, select the **File Explorer** icon.
 
@@ -109,9 +109,9 @@ It's been determined that all the information on LON-CL3 should be encrypted. Yo
 
 6.  In the **Create a profile** blade, select the following options, and then select **Create**:
 
--   Platform: **Windows 10 and later**
+    -   Platform: **Windows 10 and later**
 
--   Profile: **Endpoint protection**
+    -   Profile: **Endpoint protection**
 
 7.  In the **Basics** blade, enter the following information, and then select **Next**:
 
@@ -143,6 +143,7 @@ It's been determined that all the information on LON-CL3 should be encrypted. Yo
     and then select **Info**. Select **Sync**.
 
 4.  Select the **Encryption needed** notfication.
+
     _Note: It may take some time until the notification shows up._
 
 5.  On the **Are you ready to start encryption?** dialog select both checkboxes and select **Yes**.
@@ -168,7 +169,7 @@ It's been determined that all the information on LON-CL3 should be encrypted. Yo
 
 13. Select **Close**. Then restart **LON-CL3**.
 
-14. When LON-CL3 restarts, type **Pa55w.rd** and press **Enter** to unlock the
+14. When **LON-CL3** restarts, type **Pa55w.rd** and press **Enter** to unlock the
     drive.
 
 #### Task 3: Verify BitLocker protection
@@ -184,6 +185,6 @@ It's been determined that all the information on LON-CL3 should be encrypted. Yo
     On** status. This means that drive is being encrypted. This takes
     some time, so you can proceed to the next task.
 
-5.  **Close** all open windows.
+5.  Close all open windows.
 
 **END OF LAB**
