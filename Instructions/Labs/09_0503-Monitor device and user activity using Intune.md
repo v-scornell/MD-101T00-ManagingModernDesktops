@@ -39,13 +39,13 @@ You have been asked to review Diego Siciliani's sign-in activity.  You have also
 4.  Select **Hardware** and examine the hardware inventory.
 
 5.  Select **Device configuration** and in the details pane, you can see
-    information about profiles deployed to the device. The **STATE** column
+    information about profiles deployed to the device. The **State** column
     should display **Succeeded**, which means that they profiles were applied
     successfully to the device.
 
 6.  Select **A. Datum developer – standard** in the details pane. On the **A.
     Datum developers – standard** blade, you will see the state of each setting
-    you configured in the profile. The **STATE** should say **Succeeded** next
+    you configured in the profile. The **State** should say **Succeeded** next
     to all of them.
 
 **END OF LAB**

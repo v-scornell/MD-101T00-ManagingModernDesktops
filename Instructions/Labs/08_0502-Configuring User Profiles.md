@@ -113,7 +113,7 @@ Ada Russel frequently uses both LON-CL1 and LON-CL2 and is struggling with acces
 
 6.  Select **Browse**, expand **This PC**, select **Local Disk (C:)**, select
     **OK**, select **Next**, and then select **Finish**. A shortcut to local disk
-    C is added to the desktop.
+    C: is added to the desktop.
 
 7.  On the taskbar, select **Start**, type **notepad**, and then press Enter.
 
@@ -206,6 +206,7 @@ Users are requesting that their Windows settings and application data be the sam
 
 16. In the **Azure Active Directory admin center** page, select from the breadcrumb
     navigation **ADATUM**, scroll down and then select **Properties**. Note down the value for **Directory ID**.
+    
     _Note: The value is needed for the configuration of the Knwon Folder Move._
 
 #### Task 2: Enable OneDrive Known Folder Move
