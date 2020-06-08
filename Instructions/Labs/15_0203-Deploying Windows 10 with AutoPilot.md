@@ -16,7 +16,7 @@ by the time the student is ready to perform this exercise._
 
 #### Task 1: Create a user and group in Azure AD
 
-1.  Switch to **LON-CL3** and sign in as **admin\@yourtenant.onmicrosoft.com** with the default tenant password.
+1.  Sign in to **LON-CL3** as **admin\@yourtenant.onmicrosoft.com** with the default tenant password.
 
 2.  On **LON-CL3**, on the taskbar, select **Microsoft Edge**.
 
@@ -50,7 +50,7 @@ by the time the student is ready to perform this exercise._
 
 10.  Select the user you have just created
 
-11. Under the**Settings** section, select **Edit**, select your country/region in the 
+11. Under the **Settings** section, select **Edit**, select your country/region in the 
     **Usage location** drop-down box. Select **Save**.
 
 11. Select **Licenses** and select **Assignments**. On the **Update license assignments** blade 
@@ -77,6 +77,7 @@ by the time the student is ready to perform this exercise._
 
 ```
     (device.devicePhysicalIDs -any _ -contains "[ZTDId]")
+
 ```
 21.  select **Save** to close Dynamic membership rules, and then select **Create** to create the group.
 
@@ -100,6 +101,7 @@ by the time the student is ready to perform this exercise._
 
 ```
 Install-Script -Name Get-WindowsAutoPilotInfo
+
 ```
 6.  You will receive two prompts. Each time, type **Y**, and then press **Enter**.
 
@@ -108,6 +110,7 @@ Install-Script -Name Get-WindowsAutoPilotInfo
 
 ```
 Set-ExecutionPolicy RemoteSigned
+
 ```
 8.  When prompted, type **Y**, and then press Enter.
 
@@ -116,12 +119,14 @@ Set-ExecutionPolicy RemoteSigned
 
 ```
 Get-WindowsAutoPilotInfo.ps1 -OutputFile C:\Computer.csv
+
 ```
 10.  At the Windows PowerShell command-line prompt, type the following command,
     press **Enter**, and then review the file content:
 
 ```
 type C:\Computer.csv
+
 ```
 #### Task 3: Work with a Windows AutoPilot deployment profile
 
@@ -137,11 +142,12 @@ type C:\Computer.csv
 
 5.  In the **Windows Autopilot devices** blade on the menu bar, select **Import**, 
     select the **folder icon** and then browse to **c:\\**, select **Computer.csv**, select **Open**, and then select **Import**. 
+
     _Note: The import process can take up to 15 minutes, but normally takes around 5 minutes._  
       
-    **Important**: After the process is complete, the device may not show. If this is the
+    _**Important**: After the process is complete, the device may not show. If this is the
     case, select the **Sync** button, wait a few minutes, and then select
-    **Refresh**.
+    **Refresh**._
 
 6.  Select **X** to close the Windows Autopilot devices blade. On the
     Windows enrollment blade, in the details pane, select **Deployment Profiles**.
@@ -191,14 +197,14 @@ type C:\Computer.csv
 
 4.  Select **Reset**.
 
-_Note: Normally this task is not required for new deployment of physical devices. The device’s
-autopilot info is either provided by the manufacturer or can be obtained from
-the device prior to the OOBE. For the purposes of this lab, we must initiate a
-reset to simulate a new device OOBE._
+    _Note: Normally this task is not required for new deployment of physical devices. The device’s
+    autopilot info is either provided by the manufacturer or can be obtained from
+    the device prior to the OOBE. For the purposes of this lab, we must initiate a
+    reset to simulate a new device OOBE._
 
-_Note: This process can take 30-45 minutes and will reboot several times during
-the process. When LON-CL5 reboots, do not press a key to boot from media, allow
-the reset to continue._
+    _Note: This process can take 30-45 minutes and will reboot several times during
+    the process. When LON-CL5 reboots, do not press a key to boot from media, allow
+    the reset to continue._
 
 #### Task 5: Verify Autopilot deployment
 
@@ -222,7 +228,7 @@ the reset to continue._
 
 9.  At the Something went wrong screen, select **Skip for now**  
       
-    _The provisioning process will complete and arrive at the desktop. Note that
+    _Note: The provisioning process will complete and arrive at the desktop. Note that
     the privacy settings and options to change the account did not display._
 
 10. select **Start** and select **Settings**. In the settings app select **Accounts**, then select **Access work or school**
