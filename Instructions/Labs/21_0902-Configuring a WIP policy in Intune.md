@@ -71,7 +71,7 @@ In this lab, you will practice creating and configuring Windows Information Prot
     press **Enter**:
 
 ```
-    Cipher /r:ADATUMDRA
+Cipher /r:ADATUMDRA
 
 ```
 4.  When prompted, type **Pa55w.rd**, and then confirm the password.
@@ -110,9 +110,9 @@ In this lab, you will practice creating and configuring Windows Information Prot
 7.  Start **Internet Explorer** and navigate to **https://yourtenant.sharepoint.com**.
 
     _Note: You should not be able to successfully navigate to the Microsoft
-    SharePoint Online site in Internet Explorer because it’s not an allowed app.
+    SharePoint Online site in Internet Explorer because it’s not an allowed app._
 
-    If you are still able to access the site in Internet Explorer, sign out and sign back in, and repeat step 7._
+    _If you are still able to access the site in Internet Explorer, sign out and sign back in, and repeat step 7._
 
 8.  Right-click the **Windows task bar** and select **Task Manager**.  Select **More details** if needed.
 
