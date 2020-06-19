@@ -105,12 +105,10 @@ directly to Intune.
 8.  In the **C:\\MMAT-master** folder, double-click the
     **MDMMigrationAnalysis.html** file.
 
-9.  Examine the content of the file and verify that **Security Account
-    Policies**, **Windows Firewall Policies with Advanced Security** and **ADMX
-    backed policies (System/Power Management)** are all listed as supported.
-    This means that the policies can be directly migrated to Intune. Also notice
+9.  Examine the content of the file and verify which settings are listed as **SUPPORTED**.
+    This means that the policy settings can be directly migrated to Intune. Also notice
     that the mobile device management (MDM) cloud solution provider (CSP)
-    setting that you should use is displayed next to Group Policy Setting.
+    setting that you should use is displayed next to Group Policy Setting. Nevertheless there might be settings that are listed as **UNSUPPORTED** and can therefore not be migrated to Intune.
 
 10. Finally notice the settings displayed under **NOT SUPPORTED: Security
     Account Policies**. For now, they cannot be migrated to Microsoft Intune.
