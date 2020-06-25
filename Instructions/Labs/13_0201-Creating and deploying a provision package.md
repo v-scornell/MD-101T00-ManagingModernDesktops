@@ -26,58 +26,63 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
 
 5.  In File Explorer, select **Allfiles (E:)**.
 
-7.  In the details pane, right-click an area of free space, point to **New** and
+6.  In the details pane, right-click an area of free space, point to **New** and
     then select **Folder**.
 
-8.  Name the Folder "**Provision"** and press Enter.
+7.  Name the Folder "**Provision"** and press Enter.
 
-9.  Right-click **Provision**, point to **Share with** and then select **Specific
+8.  Right-click **Provision**, point to **Share with** and then select **Specific
     people**.
 
-10. In the text box, type **Everyone** and then select **Add**.
+9.  In the text box, type **Everyone** and then select **Add**.
 
-11. Next to **Everyone**, select **Read** and then select **Read/Write**.
+10. Next to **Everyone**, select **Read** and then select **Read/Write**.
 
-12. Select **Share** and when prompted, select **Done**.
+11. Select **Share** and when prompted, select **Done**.
 
-13. Switch to **LON-CL4**.
+12. Switch to **LON-CL4**.
 
-14. On **LON-CL4**, sign in as **Admin** with the password of **Pa55w.rd**.
+13. On **LON-CL4**, sign in as **Admin** with the password of **Pa55w.rd**.
 
-15. On the taskbar, select the **File Explorer** icon.
+14. On the taskbar, select **Start** and then select the **Settings** icon. Select
+    **Accounts** then select **Access work or school**.  
 
-16. In File Explorer, in the navigation pane, right-click **This PC**, and then
+15. Select the Azure AD connection and select **Disconnect**. Select **Yes** and then select **Disconnect** to confirm. In the **Windows Security** dialog enter **Admin** as **Email Address** and **Pa55w.rd** as **Password**.
+
+16. Restart the VM and sign in as **Admin**, with the password **Pa55w.rd**. On the taskbar, select the **File Explorer** icon.
+
+17. In **File Explorer**, in the navigation pane, right-click **This PC**, and then
     select **Properties**.
 
-17. In the **System** section, in the **Computer name, domain, and workgroup
+18. In the **System** section, in the **Computer name, domain, and workgroup
     settings** section, verify that the computer name is **LON-CL4** and that
     it's in a workgroup named **WORKGROUP**.
 
-18. Close the **System** window.
+19. Close the **System** window.
 
-19. In File Explorer, in the navigation pane, right-click **This PC**, and then
+20. In File Explorer, in the navigation pane, right-click **This PC**, and then
     select **Manage**.
 
-20. In **Computer Management**, in the navigation pane, expand **Local Users and
+21. In **Computer Management**, in the navigation pane, expand **Local Users and
     Groups**, select **Users**, and then in the details pane, verify that
     **LocalAdmin** isn't present.
 
-21. Close **Computer Management**.
+22. Close **Computer Management**.
 
-22. In File Explorer, in the navigation pane, expand **This PC**, expand **Local
+23. In File Explorer, in the navigation pane, expand **This PC**, expand **Local
     Disk (C:)**, expand **Users**, expand **Public**, select **Public
     Documents**, and then in the details pane, verify that the newly created
     "Provision" Folder isn't present as a subfolder. (You can ignore the
     subfolders, if any).
 
-23. In the navigation pane, right-click **This PC** and then select **Map network
+24. In the navigation pane, right-click **This PC** and then select **Map network
     drive**.
 
-24. In the **Folder** box, type **\\\\LON-DC1\\Provision** and then select the
+25. In the **Folder** box, type **\\\\LON-DC1\\Provision** and then select the
     **Connect using different credentials** check box.
 
-25. Select **Finish**, and in the **Windows Security** dialog box, enter the User
-    name of **adatum\\administrator**. In the **Password** box, type
+26. Select **Finish**, and in the **Windows Security** dialog box, enter the User
+    name of **Adatum\\administrator**. In the **Password** box, type
     **Pa55w.rd**. Select **OK**.
 
 ### Task 2: Create a provisioning package
@@ -106,7 +111,7 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
 9.  On the taskbar, select **Start**, type **designer**, and then select
     **Windows Imaging and Configuration Designer**.
 
-10. After Windows Configuration Designer opens, select the **Provision desktop
+10. After **Windows Configuration Designer** opens, select the **Provision desktop
     devices** tile.
 
 11. On the **Enter project details** page, in the **Name** text box,
@@ -138,7 +143,7 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
 16. In the navigation pane, expand **Runtime settings**, expand **Accounts**,
     expand **ComputerAccount**, and then select **AccountOU**.
 
-17. In the details pane, in the **Anytext** text box, type
+17. In the details pane, in the **Any text** text box, type
     **OU=Computers,OU=Marketing,DC=Adatum,DC=com**.
 
 18. In the navigation pane, select **Users**.
@@ -201,9 +206,9 @@ Adatum has purchased a new computer, LON-CL4. It has Windows 10 already installe
 3.  In Active Directory Users and Computers, in the navigation pane, expand
     **Adatum.com**, expand **Marketing**, and then select **Computers**. In the
     details pane, verify that a computer account is present. The name of the
-    computer starts with **MARKETING-** followed by three digits.
+    computer starts with **Marketing-** followed by three digits.
 
-    **Important:** If the **Computers** organizational unit (OU) is empty, right-click the OU, and then select **Refresh**.
+    _**Important:** If the **Computers** organizational unit (OU) is empty, right-click the OU, and then select **Refresh**._
 
 4.  Switch to **LON-CL4** where you should already be signed in as **Admin**.
 
