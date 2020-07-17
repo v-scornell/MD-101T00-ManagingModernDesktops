@@ -6,7 +6,7 @@ In this lab you will learn how to use the USMT tool with customized settings to 
 
 ### Scenario
 
-IT is replacing Vera's current PC, LON-CL2, with a new device, LON-CL1.  LON-CL1 has already been provisioned, and Vera's data now must be transferred.  This will require custom settings to ensure the correct data is migrated, and other data is not migrated.
+IT is replacing Vera's current PC, LON-CL2, with a new device, LON-CL1. LON-CL1 has already been provisioned, and Vera's data now must be transferred.  This will require custom settings to ensure the correct data is migrated, and other data is not migrated.
 
 ### Exercise 1: Migrating user settings using USMT
 
@@ -111,24 +111,26 @@ IT is replacing Vera's current PC, LON-CL2, with a new device, LON-CL1.  LON-CL1
 20.  In File Explorer, right-click in the details pane, select **New**, select
     **Text Document**, type: *\<your name\>*, and then press Enter.
 
-Task 2: Capture the user state
+#### Task 2: Capture the user state
 
-1. Switch to LON-DC1 and in the taskbar, select **File Explorer** and navigate to **E:\Labfiles**.
+1. Switch to LON-DC1 and sign in as **Adatum\\Administrator** with the password **Pa55w.rd**.
 
-2.  In the details pane, right-click an area of free space, and create a new folder called **MigStore**.
+2.  in the taskbar, select **File Explorer** and navigate to **E:\Labfiles**.
 
-3.  Switch back to **LON-CL2**.
+3.  In the details pane, right-click an area of free space, and create a new folder called **MigStore**.
 
-4.  On **LON-CL2**, in File Explorer, right-click **This PC**, and then select
+4.  Switch back to **LON-CL2**.
+
+5.  On **LON-CL2**, in File Explorer, right-click **This PC**, and then select
     **Manage**.
 
-5.  In Computer Management, in the navigation pane, expand **Local Users and
+6.  In Computer Management, in the navigation pane, expand **Local Users and
     Groups**, and then select **Users**.
 
-6.  In the details pane, verify that user named **LocalAdmin** is listed, and
+7.  In the details pane, verify that user named **LocalAdmin** is listed, and
     then close **Computer Management**.
 
-7.  In the Command Prompt, verify that no content is on the
+8.  In the Command Prompt, verify that no content is on the
     **\\\\LON-DC1\\Labfiles\\MigStore** shared folder, by typing the following command and
     then pressing Enter:
 
@@ -136,7 +138,7 @@ Task 2: Capture the user state
 Dir \\lon-dc1\Labfiles\MigStore
 
 ```
-8.  Capture the **LON-CL2** user state by typing the following command and then
+9.  Capture the **LON-CL2** user state by typing the following command and then
     pressing Enter:
 
 ```
@@ -144,7 +146,7 @@ Dir \\lon-dc1\Labfiles\MigStore
 /i:folders.xml /config:Config.xml /ue:\* /ui:adatum\vera /o
 
 ```
-9.  Wait until ScanState finishes, and then verify that the user state is
+10. Wait until ScanState finishes, and then verify that the user state is
     captured in the shared folder by typing the following command and then
     pressing Enter:
 
@@ -153,9 +155,9 @@ Dir \\lon-dc1\Labfiles\MigStore -Recurse
 
 ```
 
-Task 3: Restore the user state
+#### Task 3: Restore the user state
 
-1.  If necessary, sign in to **LON-CL1** as **Adatum\\Administrator** with the
+1.  Switch to **LON-CL1** and if necessary, sign in as **Adatum\\Administrator** with the
     password **Pa55w.rd**.
 
 2.  On **LON-CL1**, on the taskbar, select **File Explorer**.
@@ -210,7 +212,7 @@ Net Use F: \\LON-DC1\Labfiles\Install\USMT
 17.  On the taskbar, right-click **Start**, select **Shutdown or sign out**, and
     then select **Sign out**.
 
-Task 4: Verify migration of user settings
+#### Task 4: Verify migration of user settings
 
 1.  Sign in to **LON-CL1** as **Adatum\\Vera** with the password **Pa55w.rd**.
 

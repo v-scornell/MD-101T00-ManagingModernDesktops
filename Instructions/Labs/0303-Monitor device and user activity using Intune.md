@@ -10,8 +10,9 @@ You have been asked to review Diego Siciliani's sign-in activity.  You have also
 
 #### Task 1: Monitor user activity
 
-1.  On **LON-DC1**, open the browser and navigate to https://portal.azure.com if it is not already there and navigate to the **Intune** console.
-    On the **Microsoft Intune** blade, select **Users**.
+1.  On **LON-CL1**, sign in as **Adatum\\Administrator** with the password **Pa55w.rd**.
+    Then open the browser and navigate to **https://endpoint.microsoft.com**. 
+	On the **Microsoft Endpoint Manager admin center** page, select **Users**.
 
 2.  Select **Sign-ins**, in the details pane, you can see sign-ins for your
     users. Select on the first entry where the **User** column says **Diego Siciliani**.
@@ -26,26 +27,25 @@ You have been asked to review Diego Siciliani's sign-in activity.  You have also
 
 #### Task 2: Monitor device activity
 
-1.  Select **Microsoft Intune** in the breadcrumb navigation, and then on the 
-    **Microsoft Intune** blade, select **Devices**.
+1.  Select **Devices** from the navigation pane.
 
 2.  On the **Devices** blade, in the details pane, you will see information
     about enrolled devices.
 
 3.  Select **All devices**, and on the **All device** blade in the details pane,
-    select **MARKETING-###**. You will see information about the device such as name,
+    select **LON-CL3**. You will see information about the device such as name,
     associated user and operating system.
 
 4.  Select **Hardware** and examine the hardware inventory.
 
 5.  Select **Device configuration** and in the details pane, you can see
-    information about profiles deployed to the device. The **STATE** column
+    information about profiles deployed to the device. The **State** column
     should display **Succeeded**, which means that they profiles were applied
     successfully to the device.
 
 6.  Select **A. Datum developer – standard** in the details pane. On the **A.
     Datum developers – standard** blade, you will see the state of each setting
-    you configured in the profile. The **STATE** should say **Succeeded** next
+    you configured in the profile. The **State** should say **Succeeded** next
     to all of them.
 
 **END OF LAB**
