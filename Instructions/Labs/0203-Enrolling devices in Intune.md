@@ -115,7 +115,7 @@ dsregcmd /status
 #### Task 4: Logon to a Windows 10 Device using Azure AD user
 
 When you're logged on using your Azure AD credentials you will benefit from
-Single-Sign-On (SSO) to Azure AD, Intune and Office 365.
+Single-Sign-On (SSO) to Azure AD, Intune and Microsoft 365.
 
 1.  On **LON-CL4**, sign out.
 

@@ -1,7 +1,16 @@
 # MD-101: Managing Modern Desktops 
+
 ## Lab Change Log
 
 This log will be updated whenever updates are made to the lab steps in MD-101.  Note that this log only contains changes to the labs.  The change log for course content is still located in the Learning Download Center.
+
+### 07-17-20
+
+-   **Labs order has changed.** Labs have been updated to reflect the new module order and changes in the courseware updates published on 07-17-2020. 
+-   New Lab: Configure Hybrid Azure AD join (Module 2)
+-   All labs have been updated to use Endpoint Manager admin center where applicable.
+-   BitLocker and Windows Update lab has been changed to use Endpoint Manager.
+-   All labs have been updated to reflect UI changes. 
 
 ### 05-15-20
 

@@ -124,7 +124,7 @@ When devices are non-compliant, they should not be able to access their e-mail. 
 6.  Switch to **LON-CL3**, and sign in as **admin\@yourtenant.onmicrosoft.com**. 
 
 7.  Open **Microsoft Edge**, then and open **https://portal.office.com**.
-    On the Office 365 portal, select the **Outlook** icon. 
+    On the Microsoft 365 portal, select the **Outlook** icon. 
 
 8. Ensure that you can access your mailbox. 
 

@@ -1,13 +1,13 @@
-# Practice Lab - Configure and deploy Office 365 ProPlus from Intune
+# Practice Lab - Configure and deploy Microsoft 365 Apps from Intune
 
 ## Summary
 
-In this lab, you will practice configuring Office 365 ProPlus for deployment in Intune and deploying it to devices.
+In this lab, you will practice configuring Microsoft 365 Apps for deployment in Intune and deploying it to devices.
 
 
 ### Scenario
 
-All the developers at A. Datum require Microsoft Office 365 ProPlus. You've been asked to deploy  64-bit versions of Microsoft Excel, Outlook, PowerPoint and Word to their Windows 10 devices. You also need to ensure they are configured for the Semi-Annual channel for updates. This should be tested on LON-CL4.
+All the developers at A. Datum require Microsoft Microsoft 365 Apps. You've been asked to deploy  64-bit versions of Microsoft Excel, Outlook, PowerPoint and Word to their Windows 10 devices. You also need to ensure they are configured for the Semi-Annual channel for updates. This should be tested on LON-CL4.
 
 #### Task 1: Verify installed apps on device before deployment
 
@@ -34,9 +34,9 @@ All the developers at A. Datum require Microsoft Office 365 ProPlus. You've been
 5.  On the **Microsoft 365 Apps** blade, configure
     the following options and select **Next**:
 
-    -   Suite Name: **Office 365 ProPlus (A. Datum developers)**
+    -   Suite Name: **Microsoft 365 Apps (A. Datum developers)**
 
-    -   Suite Description: **Office 365 ProPlus App for developers in A. Datum**
+    -   Suite Description: **Microsoft 365 Apps App for developers in A. Datum**
 
 6.  On the **Configure app suite** blade, expand the **Select Office apps** dropdown, select the following Office 365 apps and select **Next**:
 
@@ -63,7 +63,7 @@ All the developers at A. Datum require Microsoft Office 365 ProPlus. You've been
 
 10. Select **Next**.  On the **Review + Create** tab, select **Create**.
 
-11.  On the **Office 365 ProPlus (A. Datum Developers)** page, select **Properties**. In the details pane verify that **A. Datum developer devices** is listed next to **Required** in the Assignments section.
+11.  On the **Microsoft 365 Apps (A. Datum Developers)** page, select **Properties**. In the details pane verify that **A. Datum developer devices** is listed next to **Required** in the Assignments section.
 
 #### Task 3: Force synchronization of policy from Intune console
 
@@ -82,7 +82,7 @@ All the developers at A. Datum require Microsoft Office 365 ProPlus. You've been
 2.  On **LON-CL4**, on the taskbar, select **Start** and then select the
     **Settings** app.
 
-3.  In the **Settings** app, select the **Apps** tile and on the **Apps & features** page, scroll down and verify that **Microsoft Office 365 ProPlus - en-us** is listed.
+3.  In the **Settings** app, select the **Apps** tile and on the **Apps & features** page, scroll down and verify that **Microsoft Microsoft 365 Apps - en-us** is listed.
 
 4.  Close the **Settings** app and select the **Start** button.
 
@@ -97,7 +97,7 @@ All the developers at A. Datum require Microsoft Office 365 ProPlus. You've been
 
 2.  In the **Microsoft Endpoint Manager admin center**, select **Apps**.
 
-3.  On the **Apps | Overview** blade, select **Monitor** and then select **App install status**. In the details pane, select **Office 365 ProPlus \(A. Datum developers\)**.
+3.  On the **Apps | Overview** blade, select **Monitor** and then select **App install status**. In the details pane, select **Microsoft 365 Apps \(A. Datum developers\)**.
 
 4.  In the details pane, under **Device status** and under **User status**, verify that
     **1** is displayed under Installed. 
@@ -119,9 +119,9 @@ All the developers at A. Datum require Microsoft Office 365 ProPlus. You've been
     **Monitor**.
 
 9.  On the **LON-CL4 | Managed Apps** blade, in the details pane,
-    select **Office 365 ProPlus (A. Datum developers)**.
+    select **Microsoft 365 Apps (A. Datum developers)**.
 
-10. On the **Office 365 ProPlus (A. Datum developers) - Installation details**
+10. On the **Microsoft 365 Apps (A. Datum developers) - Installation details**
     blade, you can see the entire lifecycle of the application, that is - when
     it was created, assigned, installation time and status and the last time the
     device checked in (synced with Intune).

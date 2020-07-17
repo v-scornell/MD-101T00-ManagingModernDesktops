@@ -87,7 +87,7 @@ A. Datum Corporation’s has decided to manage all members of the development de
 3.  Wait for the profile to be created. It will take around 30-60 seconds.  
     
     _Note: When you are logged on using your Azure AD credentials you will
-    benefit from Single-Sign-On (SSO) to Azure AD, Intune and Office 365._
+    benefit from Single-Sign-On (SSO) to Azure AD, Intune and Microsoft 365._
 
 #### Task 4: Create device profile based on scenario
 
