@@ -37,7 +37,7 @@ In this lab, you will practice creating and configuring Windows Information Prot
 
 15.  In the **Network perimeter** section, again select **Add**.
 
-16.  On the **Add network boundary** dialog, in the **Boundary type** list, select **Network domains**.
+16.  On the **Add network boundary** dialog, in the **Boundary type** list, select **Cloud resources**.
 
 17.  In the **Name** text box, type **Cloud Domain name**.
 
