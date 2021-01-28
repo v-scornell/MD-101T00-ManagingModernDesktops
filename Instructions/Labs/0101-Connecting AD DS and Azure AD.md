@@ -145,7 +145,7 @@ A. Datum Corporation is currently managing provisioning users in both AD DS and 
     3-4 minutes for this process to complete._
 
 19. In the Internet Explorer window on LON-SVR1, browse to
-    **http://www.microsoft.com/en-us/download/details.aspx?id=41950**.
+    **https://www.microsoft.com/en-us/Download/details.aspx?id=28177**.
 
 20. On the **Microsoft Online Services Sign-In Assistant for IT Professionals
     RTW** page, select **Download**. On the **Choose the download you want** page,
