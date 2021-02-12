@@ -4,6 +4,16 @@
 
 This log will be updated whenever updates are made to the lab steps in MD-101.  Note that this log only contains changes to the labs.  The change log for course content is still located in the Learning Download Center.
 
+### 02-21-21
+
+
+- All labs have been refreshed
+  - New Lab VM Set
+  - New VM names (now SEA, instead of LON)
+  - See Trainer Prep Guide for details and lab list.
+- Clients now using Windows 10 20H2, Servers now on 2019
+
+
 ### 07-17-20
 
 -   **Labs order has changed.** Labs have been updated to reflect the new module order and changes in the course updates published on 07-17-2020. 
