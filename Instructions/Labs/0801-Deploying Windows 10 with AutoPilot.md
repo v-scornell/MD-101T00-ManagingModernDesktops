@@ -135,7 +135,7 @@ copy c:\computer.csv \\sea-svr2\labfiles
 
 15. Select **Next**.
 
-16. On the **Assignments** tab, select **Select groups to include**.
+16. On the **Assignments** tab, select **Add groups**.
 
 17. Select the **IT Devices** group and select **Select**. Select **Next**.
 
@@ -149,7 +149,7 @@ copy c:\computer.csv \\sea-svr2\labfiles
 
 3. Under **Reset this PC**, select **Get started**.
 
-4. Select **Remove everything**, and then select **Local reinstall**. Cloud download
+4. Select **Remove everything**, and then select **Local reinstall**.
 
 5. Select **Next** and then select **Reset**.
 
