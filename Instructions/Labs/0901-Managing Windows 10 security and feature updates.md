@@ -61,7 +61,7 @@ You have been asked to configure Update Rings in Intune to manage Windows update
 
      -   Platform: **Windows 10 and later**
 
-     -   Profile: ** templates** then **Delivery Optimization**
+     -   Profile: **Templates** then select **Delivery Optimization**
 14.  In the **Basics** blade, enter the following information, and then select **Next**:
 
      -   Name: **Contoso Developer - Delivery optimization**
