@@ -102,33 +102,27 @@ Enterprise State Roaming in Azure AD provides the ability for user settings and 
 
 8. Close Microsoft Edge.
 
-9. On the taskbar, select **Start**, type **notepad**, and then press Enter.
+9. Sign out of **SEA-WS2**.
 
-10. In **Notepad**, type your name. On the **File** menu, select **Save As**, select the **Documents** folder in the navigation pane, enter your name in the **File Name** text box, select **Save**, and then close **Notepad**.
+10. Switch to **SEA-WS3**. 
 
-11. Sign out of **SEA-WS2**.
+11. Sign in to **SEA-WS3** as **DiegoS\@yourtenant.onmicrosoft.com** with the default tenant password.
 
-12. Switch to **SEA-WS3**. 
+12. At the **Use Windows Hello with your account** page, select **OK**.
 
-13. Sign in to **SEA-WS3** as **DiegoS\@yourtenant.onmicrosoft.com** with the default tenant password.
+13. At the **Enter code** page, enter the code that has been texted to your mobile device and then select **Verify**.
 
-14. At the **Use Windows Hello with your account** page, select **OK**.
+14. At the **Set up a PIN** dialog box, in the **New PIN** and **Confirm PIN** boxes, type **102938** and then select **OK**.
 
-15. At the **Enter code** page, enter the code that has been texted to your mobile device and then select **Verify**.
+15. On the **All set!** page, select **OK**.
 
-16. At the **Set up a PIN** dialog box, in the **New PIN** and **Confirm PIN** boxes, type **102938** and then select **OK**.
-
-17. On the **All set!** page, select **OK**.
-
-18. On the taskbar, select **Microsoft Edge**. 
+16. On the taskbar, select **Microsoft Edge**. 
     
-19. In **Microsoft Edge**, press CTRL+I to view favorites. Verify if the Microsoft Learn favorites page is already synced from **SEA-WS2**.  
+17. In **Microsoft Edge**, press CTRL+I to view favorites. Verify if the Microsoft Learn favorites page is already synced from **SEA-WS2**.  
 
     _Note: It can take several minutes for settings to sync. If the favorites option doesn't show, try rebooting and signing back in as DiegoS\@yourtenant.onmicrosoft.com._
 
-20. On the taskbar, select **File Explorer**, and then in the navigation pane, select **Documents**. Verify that the document you created on **SEA-WS2** is available.
-
-21. Sign out of **SEA-WS3**.
+18. Sign out of **SEA-WS3**.
 
 **Results**: After completing this exercise, you will have successfully enable Enterprise State Roaming in Azure AD.
 

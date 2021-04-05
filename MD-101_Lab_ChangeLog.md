@@ -4,6 +4,14 @@
 
 This log will be updated whenever updates are made to the lab steps in MD-101.  Note that this log only contains changes to the labs.  The change log for course content is still located in the Learning Download Center.
 
+### 04-05-21
+
+- Minor corrections
+    - 0404 - Removed region in App store URL
+    - 0303 - Removed legacy steps related to Notepad in ESR
+    - 0702 - Removed steps to Mount the ISO on CFG1 in Task 1 - this is actually not necessary as the files are already in the sources folder. Updated Task 3 Step 4 to reflect this.
+- Minor formatting errors
+
 ### 02-21-21
 
 

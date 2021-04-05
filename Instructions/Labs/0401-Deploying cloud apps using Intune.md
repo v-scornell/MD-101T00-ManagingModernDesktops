@@ -25,7 +25,7 @@ You use Microsoft Intune to manage desktops and apps for Contoso Corporation. Th
     - Name: Microsoft Remote Desktop
     - Description: Microsoft Remote Desktop for Research Department
     - Publisher: Microsoft
-    - Appstore URL: https://www.microsoft.com/en-ca/p/microsoft-remote-desktop/9wzdncrfj3ps
+    - Appstore URL: https://www.microsoft.com/p/microsoft-remote-desktop/9wzdncrfj3ps
     - Category: Business
     - Show this as a featured app in the Company Portal: Yes
 11. Select **Next** and then select **Create**.
