@@ -64,7 +64,7 @@ Enterprise State Roaming in Azure AD provides the ability for user settings and 
 3.  On the **Restart your PC** dialog box, select **Restart now**. 
 4.  After SEA-WS2 has restarted, sign in as **Admin**, with the password **Pa55w.rd**.
 5.  Select **Start**, type **View advanced system settings** and press **Enter**.
-6.  In the **System Properties** window under **User Profiles** select **Settings**.
+6.  In the **Advanced** tab under **User Profiles** select **Settings**.
 7.  In the **User Profiles** window select **Account Unknown** and then select **Delete**. Confirm with **Yes** and then select **OK** twice.
 8.  Select **Start**, select **Settings**, and then select **Accounts**.  
 9.  Select **Access work or school** and select **Connect**.
