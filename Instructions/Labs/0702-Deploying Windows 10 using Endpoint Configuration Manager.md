@@ -11,18 +11,15 @@ Contoso uses Microsoft Endpoint Configuration Manager to manage on-premises work
 ### Task 1: Create a device collection
 
 1. On **SEA-CFG1**, sign in as **Contoso\\Administrator** with the password **Pa55w.rd**.
-2. On the taskbar, select **File Explorer** and then browse to **D:\\Software\\ISO**.
-3. Right-click **Win10_20H2_Eval.iso** and then select **Mount**. The ISO mounts as DVD Drive F.
-4. Close **File Explorer**.
-5. On the taskbar, select **Configuration Manager Console**. The Microsoft Endpoint Configuration Manager console opens.
-6. In the **Assets and Compliance** workspace, select **Device Collections**. 
-7. Right-click **Device Collections** and then select **Create Device Collection**. The Create Device Collection Wizard opens.
-8. On the **General** page, configure the following and then select **Next**:
+2. On the taskbar, select **Configuration Manager Console**. The Microsoft Endpoint Configuration Manager console opens.
+3. In the **Assets and Compliance** workspace, select **Device Collections**. 
+4. Right-click **Device Collections** and then select **Create Device Collection**. The Create Device Collection Wizard opens.
+5. On the **General** page, configure the following and then select **Next**:
    - Name: **Windows 10 Deployment**
    - Comment: **Devices targeted to install Windows 10**
    - Limiting collection: **All Systems**
-9. On the **Membership Rules** page, select **Next**. At the Configuration Manager warning, select **OK**. You will add a direct member at a later step.
-10. On the **Summary** page, select **Next** and then at the **Completion** page, select **Close**. The **Windows 10 Deployment** collection is displayed in the Device Collections list.
+6. On the **Membership Rules** page, select **Next**. At the Configuration Manager warning, select **OK**. You will add a direct member at a later step.
+7. On the **Summary** page, select **Next** and then at the **Completion** page, select **Close**. The **Windows 10 Deployment** collection is displayed in the Device Collections list.
 
 ### Task 2: Assign a Device to an existing Collection
 
@@ -37,7 +34,7 @@ Contoso uses Microsoft Endpoint Configuration Manager to manage on-premises work
 1.  In the Microsoft Endpoint Configuration Manager console select the **Software Library** workspace.
 2.  In the **Software Library** workspace, expand **Operating Systems** and then select **Operating System Images**. 
 3.  Right-click **Operating System Images** and then select **Add Operating System Image**. The **Add Operating System Image Wizard** displays.
-4.  On the **Data Source** page, select **Browse** and then enter **\\\\sea-cfg1\\Software\\ISO\\sources\\install.wim** and then choose **Select Folder**.
+4.  On the **Data Source** page, select **Browse** and then enter **\\\\sea-cfg1\\Software\\ISO\\sources\\install.wim** and then choose **Open**.
 5.  On the **Data Source** page, next to **Architecture**, select **x64** and next to **Language** select **English (United States)** and then select **Next**.
 6.  In the **General** page, configure the following and then select **Next**:
     - Name: **Windows 10 Enterprise**

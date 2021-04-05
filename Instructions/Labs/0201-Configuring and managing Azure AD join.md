@@ -130,17 +130,16 @@ Start-ADSyncSyncCycle -PolicyType Initial
 ### Task 3: Configure hybrid Azure AD join in Azure Active Directory Connect
 
 1.  On **SEA-SVR1**, on the **Desktop**, double-click **Azure AD Connect**.
-2.  On the **Desktop**, double-click **Azure AD Connect**.
-3.  In the **Microsoft Azure Active Directory Connect** window select **Configure**.
-4.  On the **Additional tasks** page, select **Configure device options** and select **Next**.
-5.  On the **Overview** page, select **Next**.
-6.  On the **Connect to Azure AD** page, enter the Admin Tenant password into the **PASSWORD** box, then select **Next**.
-7.  On the **Device options** page, select **Configure Hybrid Azure AD join**, and then select **Next**.
-8.  On the **Device operating systems** page, select **Windows 10 or later domain-joined devices**, and then select **Next**.
-9.  On the **SCP configuration** page, select the check box next to **Contoso.com**. Select **Azure Active Directory** from the **Authentication Service** dropdown and select **Add**. 
-10.  In the **Enterprise Admin Credentials** window enter **Contoso\\Administrator** as **User name** and **Pa55w.rd** as **Password**. Select **OK** and select **Next**.
-11.  In the **Ready to configure** page, select **Configure** to run the configuration.
-12.  When the configuration is complete, select **Exit**.
+2.  In the **Microsoft Azure Active Directory Connect** window select **Configure**.
+3.  On the **Additional tasks** page, select **Configure device options** and select **Next**.
+4.  On the **Overview** page, select **Next**.
+5.  On the **Connect to Azure AD** page, enter the Admin Tenant password into the **PASSWORD** box, then select **Next**.
+6.  On the **Device options** page, select **Configure Hybrid Azure AD join**, and then select **Next**.
+7.  On the **Device operating systems** page, select **Windows 10 or later domain-joined devices**, and then select **Next**.
+8.  On the **SCP configuration** page, select the check box next to **Contoso.com**. Select **Azure Active Directory** from the **Authentication Service** dropdown and select **Add**. 
+9.  In the **Enterprise Admin Credentials** window enter **Contoso\\Administrator** as **User name** and **Pa55w.rd** as **Password**. Select **OK** and select **Next**.
+10.  In the **Ready to configure** page, select **Configure** to run the configuration.
+11.  When the configuration is complete, select **Exit**.
 
 ### Task 4: Verify the Azure AD registration
 

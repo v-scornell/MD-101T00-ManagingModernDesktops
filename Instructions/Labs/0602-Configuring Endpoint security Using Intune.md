@@ -44,16 +44,16 @@ Settings will be verified by testing on an enrolled device, SEA-WS2 and a non-en
 1.  On the **Endpoint security |Antivirus** pane, select **Create Policy**.
 2.  In the **Create a profile** pane, select **Windows 10 and later** for Platform. In the Profile  list, select **Microsoft Defender Antivirus**. Then select **Create**.
 3.  On the Basics tab, in the **Name** field, enter **Microsoft Defender Antivirus Settings**. Select **Next**.
-4.  On the **Configuration settings** tab, expand the **Real-time protection **section. 
+4.  On the **Configuration settings** tab, expand the **Real-time protection** section. 
 5.  Under **Real-time protection**, configure the following settings:
     - Turn on real-time protection: Yes
     - Monitor for incoming and outgoing files: Only monitor incoming files
     - Scan all downloaded files and attachments: Yes
-6.  On the **Configuration settings** tab, expand the **Remediation **section. 
+6.  On the **Configuration settings** tab, expand the **Remediation** section. 
 7.  Under **Remediation**, configure the following settings:
     - Number of days to keep quarantined malware: 60
     - Submit samples consent: Always prompt
-8.  On the **Configuration settings** tab, expand the **Scan **section. 
+8.  On the **Configuration settings** tab, expand the **Scan** section. 
 9.  Under **Scan**, configure the following settings:
     - Run daily quick scan at: 12 PM
     - Check for signature updates before running scan: Yes
