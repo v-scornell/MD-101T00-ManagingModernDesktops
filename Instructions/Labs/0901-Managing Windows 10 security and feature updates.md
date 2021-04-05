@@ -13,16 +13,15 @@ You have been asked to configure Update Rings in Intune to manage Windows update
 1.  On **SEA-WS3**, sign in as as **Aaron Nicholls** with the PIN **102938**. 
 2.  Select **Start**, and then select the **Settings** icon.
 3.  In **Settings**, select **Update & Security**.
-4.  On the **Windows Update** page, select **Advanced options**.
-5.  Select **Delivery Optimization**.
-6.  On the **Delivery Optimization** page, verify that the **Allow downloads from other PCs** option is enabled.
-7.  Select **PCs on my local network, and PCs on the Internet**.
-8.  In the navigation pane, select **Windows Insider Program**. Notice that you must change the level of diagnostic data before you can get Insider Preview builds. 
-9.  Select the **Go to Diagnostics & Feedback settings to turn on optional diagnostic data** link. 
-10.  On the Diagnostics and feedback page, set **Diagnostic data** setting to **Optional diagnostic data**. 
-11.  In the Settings navigation on the left, select **Home**. Select **Update & Security** and then select **Windows Insider Program**. 
-12.  Note that the **Get Started** option is now available.
-13.  In the navigation pane, select **Home** and then select **Update & Security**.
+4.  Select **Delivery Optimization**.
+5.  On the **Delivery Optimization** page, verify that the **Allow downloads from other PCs** option is enabled.
+6.  Select **PCs on my local network, and PCs on the Internet**.
+7.  In the navigation pane, select **Windows Insider Program**. Notice that you must change the level of diagnostic data before you can get Insider Preview builds. 
+8.  Select the **Go to Diagnostics & Feedback settings to turn on optional diagnostic data** link. 
+9.  On the Diagnostics and feedback page, set **Diagnostic data** setting to **Optional diagnostic data**. 
+10.  In the Settings navigation on the left, select **Home**. Select **Update & Security** and then select **Windows Insider Program**. 
+11.  Note that the **Get Started** option is now available.
+12.  In the navigation pane, select **Home** and then select **Update & Security**.
 
 #### Task 2: Review applied settings
 
@@ -53,7 +52,7 @@ You have been asked to configure Update Rings in Intune to manage Windows update
     -   Feature update deferral period \(days\): **45**
 
     -   Option to pause Windows updates: **Disable**
-8.  On the **Assignments** blade, select **Select groups to include**. 
+8.  On the **Assignments** blade, select **Add groups**. 
 9.  On the **Select groups to include** blade, in the **Search** box, select **Contoso Developer devices** and then select **Select**.
 10.  Select **Next** and on the **Review + create** blade select **Create**.
 11.  From the navigation bar select **Configuration profiles**.
@@ -62,7 +61,7 @@ You have been asked to configure Update Rings in Intune to manage Windows update
 
      -   Platform: **Windows 10 and later**
 
-     -   Profile: **Delivery Optimization**
+     -   Profile: **Templates** then select **Delivery Optimization**
 14.  In the **Basics** blade, enter the following information, and then select **Next**:
 
      -   Name: **Contoso Developer - Delivery optimization**
@@ -71,7 +70,7 @@ You have been asked to configure Update Rings in Intune to manage Windows update
 15.  In the **Configuration settings** blade, enter the following information, and then select **Next**:
 
      -   Download Mode: **HTTP only, no peering \(0\)**
-16.  On the **Assignments** blade, select **Select groups to include**. 
+16.  On the **Assignments** blade, select **Add groups**. 
 17.  On the **Select groups to include** blade, select **Contoso Developer devices** and then select **Select**.
 18.  Select **Next** twice, and on the **Review + create** blade select **Create**.
 
