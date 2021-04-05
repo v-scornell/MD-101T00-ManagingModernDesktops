@@ -32,17 +32,18 @@ You have decided to integrate Microsoft Store for Business with Intune. You need
 
 ### Task 2: Purchasing and Adding apps to the Private Store 
 
-1.  In Microsoft Edge, switch to the **Microsoft Store for Business** tab.
+1.  In Microsoft Edge, switch to the **Microsoft Store for Business** tab (if there's no tab click on the url link **Open business store**).
 2.  In the menu bar, select **Shop for my group**.
 3.  Scroll down to the **Made by Microsoft** section.
 4.  In the **Made by Microsoft** section, select **Translator**.
 5.  On the **Translator** page, select **Get the app**.
-6.  On the **Thanks for your order** page, select **Close**.
-7.  On the Translator page, select the ellipse button and then select **Manage**.
-8.  On the Translator manage page, select the **Private store availability** tab.
-9.  On the **Private store availability** tab, under **Choose groups of people who can see this app**, select **Everyone**.
-10.  Repeat steps 2-9 and select the app named **Fresh Paint**.
-11.  In the menu bar, select **Contoso**. This is a view of the private store which displays the apps that you have purchased and made available to users.
+6.  Click on the box next to the **I accept this agreement** and select **Accept**
+7.  On the **Thanks for your order** page, select **Close**.
+8.  On the Translator page, select the ellipse button and then select **Manage**.
+9.  On the Translator manage page, select the **Private store availability** tab.
+10.  On the **Private store availability** tab, under **Choose groups of people who can see this app**, select **Everyone**.
+11.  Repeat steps 2-9 and select the app named **Fresh Paint**.
+12.  In the menu bar, select **Contoso**. This is a view of the private store which displays the apps that you have purchased and made available to users.
 
 ### Task 3: Review the apps in the Company store
 
@@ -71,10 +72,10 @@ Now that you have integrated Microsoft Store for Business with Intune, you need 
 
 ### Task 2: Deploy Microsoft Store for Business apps
 
-1.  On the **Microsoft Endpoint Manager admin center** page, select **Apps**.
+1.  On the **Microsoft Endpoint Manager admin center** pane, select **Apps**.
 2.  In the **Apps | Overview** blade, select **All Apps**. Notice the Apps that have synced from Microsoft Store for Business.
 3.  In the app list, select **Translator (Online)**.
-4.  On the **Translator (Online)** page, select **Properties**.
+4.  On the **Translator (Online)** pane, select **Properties**.
 5.  Scroll down to the **Assignments** section and then select **Edit**.
 6.  On the **Edit application** page, under **Required**, select **Add all devices**.
 7.  Select **Review + save** and then select **Save**.
@@ -103,7 +104,7 @@ Now that you have integrated Microsoft Store for Business with Intune, you need 
 
 1. Switch to **SEA-CL1**.
 
-2. In the **Microsoft Endpoint Manager admin center**, select **Apps**.
+2. In the **Microsoft Endpoint Manager admin center**, select **Apps** in the navigation menu.
 
 3. On the **Apps | Overview** blade, select **Monitor** and then select **App install status**. In the details pane, select **Translator (Online)**.
 
