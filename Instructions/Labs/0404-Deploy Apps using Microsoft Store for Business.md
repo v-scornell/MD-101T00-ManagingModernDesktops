@@ -42,7 +42,7 @@ You have decided to integrate Microsoft Store for Business with Intune. You need
 8.  On the Translator page, select the ellipse button and then select **Manage**.
 9.  On the Translator manage page, select the **Private store availability** tab.
 10.  On the **Private store availability** tab, under **Choose groups of people who can see this app**, select **Everyone**.
-11.  Repeat steps 2-9 and select the app named **Fresh Paint**.
+11.  Repeat steps 2-10 and select the app named **Fresh Paint**.
 12.  In the menu bar, select **Contoso**. This is a view of the private store which displays the apps that you have purchased and made available to users.
 
 ### Task 3: Review the apps in the Company store
