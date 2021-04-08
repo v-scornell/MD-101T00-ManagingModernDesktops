@@ -24,10 +24,10 @@ In this lab, you will configure and apply a Windows Information Protection polic
 6.  Select **Notepad** and **MsEdge - WIPMode-Allow-Enterprise AppLocker Policy File.xml**. Select **OK** and select **Next**.
 7.  On the **Required settings** tab, next to the **Windows Information Protection mode** option, select **Block** and then select **Next**. Note: Do not change the Corporate identity setting.
 8.  On the **Advanced settings** tab, in the **Network perimeter** section, select **Add**.
-9.  On the **Add network boundary** pane, configure the following and then select **OK**:
+9.  On the **Add network boundary** pane, configure the following, replacing **_\<yourtenant\>_** with the tenant name provided to you, and then select **OK**:
     - Boundary type: **Cloud resources**
     - Name: **SharePoint online**
-    - Value: **yourtenant.sharepoint.com**
+    - Value: **_\<yourtenant\>_.sharepoint.com**
 10.  On the **Advanced settings** tab, next to **Show the enterprise data protection icon**, select **On** and then select **Next**.
 11.  On the **Assignments** tab, select **Next** and then select **Create**.
 
