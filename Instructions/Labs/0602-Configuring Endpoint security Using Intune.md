@@ -36,7 +36,7 @@ Settings will be verified by testing on an enrolled device, SEA-WS2 and a non-en
 12.  In the **Contact name** field, enter **Contoso IT**.
 13.  For **Phone number**, enter **555-1234** and then select **Next**.
 14.  On the **Scope tags** page, select **Next**.
-15.  On the **Assignments** tab, select **Add groups**. Choose the **Contoso Developers Devices** group and then choose **Select**.
+15.  On the **Assignments** tab, under **Included groups** select **Add groups**. Choose the **Contoso Developers Devices** group and then choose **Select**.
 16.  Select **Next** and then on the **Review + Create** tab, review the information and select **Create**.
 
 ### Task 2: Configure Microsoft Defender Antivirus policy in Intune
