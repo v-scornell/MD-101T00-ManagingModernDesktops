@@ -60,7 +60,7 @@ All of the developers at Contoso have iPhones running the latest version of iOS.
 
      _Note: Here you can set the sign-in security requirements for your access protection policy. You can select a setting and enter the value that users must meet to sign in to your company app. Make note of the various settings but do not change anything._
 
-14. On the Assignments tab, select **Select groups to include**. 
+14. On the Assignments tab, under **Included groups**, select **Add groups**. 
 
 15. Select the **Contoso Developer devices** group, then choose **Select**. 
 
