@@ -65,8 +65,8 @@ Settings will be verified by testing on an enrolled device, SEA-WS2 and a non-en
 ### Task 3: Sync the managed devices
 
 1.  In the Microsoft Endpoint Manager admin center, select **Devices** and then select **All devices**.   
-2.  On the **Devices | All devices** pane, select **SEA-WS2** and then on the **SEA-WS2** blade, select **Sync** on the toolbar, and then select **Yes**. 
-3.  Wait for 3-4 minutes for the sync to complete.
+2.  On the **Devices | All devices** pane, select **SEA-WS2** and then on the **SEA-WS2** blade, select **Sync** on the toolbar, and then select **Yes**. Wait for 3-4 minutes for the sync to complete.
+3.  Close Microsoft Edge.
 
 ### Task 4: Verify the configuration
 
