@@ -59,7 +59,7 @@ Settings will be verified by testing on an enrolled device, SEA-WS2 and a non-en
     - Check for signature updates before running scan: Yes
 10.  On the **Configuration settings** tab, select **Next**.
 11.  On the **Scope tags** page, select **Next**.
-12.  On the **Assignments** tab, under **Included groups** select **Add groups**. Choose the **Contoso Developers Devices** group and then choose **Select**.
+12.  On the **Assignments** tab, select **Add groups**. Choose the **Contoso Developers Devices** group and then choose **Select**.
 13.  Select **Next** and then on the **Review + Create** tab, review the information and select **Create**.
 
 ### Task 3: Sync the managed devices
