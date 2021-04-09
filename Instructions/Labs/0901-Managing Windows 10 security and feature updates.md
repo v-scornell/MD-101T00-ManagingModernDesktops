@@ -6,11 +6,11 @@ In this lab you will configure Windows 10 security and feature update settings u
 
 ### Scenario
 
-You have been asked to configure Update Rings in Intune to manage Windows update settings. Devices should be configured to be in the Semi-Annual channel and Feature updates deferred 45 days after release. You would like to test the settings using SEA-WS3. 
+You have been asked to configure Update Rings in Intune to manage Windows update settings. Devices should be configured to be in the Semi-Annual channel and Feature updates deferred 45 days after release. You would like to test the settings using SEA-WS2. 
 
 #### Task 1: Verify current update settings for a single device
 
-1.  On **SEA-WS3**, sign in as as **Aaron Nicholls** with the PIN **102938**. 
+1.  On **SEA-WS2**, sign in as as **Diego Siciliani** with the PIN **102938**. 
 2.  Select **Start**, and then select the **Settings** icon.
 3.  In **Settings**, select **Update & Security**.
 4.  Select **Delivery Optimization**.
@@ -78,7 +78,7 @@ You have been asked to configure Update Rings in Intune to manage Windows update
 
 #### Task 4: Verify that the device’s update settings are managed centrally
 
-1.  Switch to **SEA-WS3**.
+1.  Switch to **SEA-WS2**.
 2.  Select **Start**, and then select the **Settings** icon.
 3.  In the **Settings** app, select the **Accounts** tile and then select **Access work or school**.
 4.  In the **Access work or school** section, select the **Connected to Contoso's Azure AD** link and then select **Info**.
