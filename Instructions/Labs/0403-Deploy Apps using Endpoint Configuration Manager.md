@@ -49,13 +49,14 @@ Contoso uses Microsoft Endpoint Configuration Manager to manage desktop workstat
 
 1.  In the **Software Library** workspace, select **Microsoft Power BI Desktop (x64)**.
 2.  Right-click **Microsoft Power BI Desktop (x64)** and then select **Distribute Content**.
-3.  On the **Content** page, select **Next**.
-4.  On the **Content Destination** page, select **Add** and then select **Distribution Point**.
-5.  On the **Add Distribution Points** dialog box, select the check box next to **SEA-CFG1.CONTOSO.COM**, and then select **OK**.
-6.  On the **Content Destination** page, select **Next**.
-7.  On the **Summary** page, select **Next** and then select **Close**.
-8.  In the results pane, select **Content Status**. The Content Status page opens for Microsoft Power BI Desktop. In the results pane, verify that a green circle is displayed and that Success:1 displays next to the circle. This indicates that the content is now distributed to the distribution points and can now be deployed to devices.
-9.  In the top left corner select the **Back to Applications** arrow to return to the Software Library Applications node.
+3.  On the **General** page, select **Next**.
+4.  On the **Content** page, select **Next**.
+5.  On the **Content Destination** page, select **Add** and then select **Distribution Point**.
+6.  On the **Add Distribution Points** dialog box, select the check box next to **SEA-CFG1.CONTOSO.COM**, and then select **OK**.
+7.  On the **Content Destination** page, select **Next**.
+8.  On the **Summary** page, select **Next** and then select **Close**.
+9.  In the results pane, select **Content Status**. The Content Status page opens for Microsoft Power BI Desktop. In the results pane, verify that a green circle is displayed and that Success:1 displays next to the circle. This indicates that the content is now distributed to the distribution points and can now be deployed to devices.
+10.  In the top left corner select the **Back to Applications** arrow to return to the Software Library Applications node.
 
 ### Task 5: Create a deployment
 
