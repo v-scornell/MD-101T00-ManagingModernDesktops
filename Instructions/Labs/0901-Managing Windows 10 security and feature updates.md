@@ -52,7 +52,7 @@ You have been asked to configure Update Rings in Intune to manage Windows update
     -   Feature update deferral period \(days\): **45**
 
     -   Option to pause Windows updates: **Disable**
-8.  On the **Assignments** blade, select **Add groups**. 
+8.  On the **Assignments** blade, under **Included groups** select **Add groups**. 
 9.  On the **Select groups to include** blade, in the **Search** box, select **Contoso Developer devices** and then select **Select**.
 10.  Select **Next** and on the **Review + create** blade select **Create**.
 11.  From the navigation bar select **Configuration profiles**.
@@ -61,7 +61,9 @@ You have been asked to configure Update Rings in Intune to manage Windows update
 
      -   Platform: **Windows 10 and later**
 
-     -   Profile: **Templates** then select **Delivery Optimization**
+     -   Profile type: **Templates**
+     
+     -   Template name: **Delivery Optimization**
 14.  In the **Basics** blade, enter the following information, and then select **Next**:
 
      -   Name: **Contoso Developer - Delivery optimization**
@@ -70,7 +72,7 @@ You have been asked to configure Update Rings in Intune to manage Windows update
 15.  In the **Configuration settings** blade, enter the following information, and then select **Next**:
 
      -   Download Mode: **HTTP only, no peering \(0\)**
-16.  On the **Assignments** blade, select **Add groups**. 
+16.  On the **Assignments** blade, under **Included groups** select **Add groups**. 
 17.  On the **Select groups to include** blade, select **Contoso Developer devices** and then select **Select**.
 18.  Select **Next** twice, and on the **Review + create** blade select **Create**.
 
