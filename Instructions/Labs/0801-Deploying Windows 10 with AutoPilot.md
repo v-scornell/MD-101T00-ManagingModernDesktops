@@ -135,7 +135,7 @@ copy c:\computer.csv \\sea-svr2\labfiles
 
 15. Select **Next**.
 
-16. On the **Assignments** tab, select **Add groups**.
+16. On the **Assignments** tab, under **Included groups** select **Add groups**.
 
 17. Select the **IT Devices** group and select **Select**. Select **Next**.
 
