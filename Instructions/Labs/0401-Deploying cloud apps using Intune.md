@@ -50,7 +50,7 @@ You use Microsoft Intune to manage desktops and apps for Contoso Corporation. Th
 2.  Select **Other user**, and sign in as **Aaron\@yourtenant.onmicrosoft.com** with the password **Pa55w.rd**. 
 3.  On the taskbar, select **Microsoft Edge**.
 4.  In the address bar browse to https://portal.manage.microsoft.com.
-5.  Sign in as **Aaron\@yourtenant.onmicrosoft.com** with the password **Pa55w.rd**.
+5.  Sign in as **Aaron\@yourtenant.onmicrosoft.com** with the PIN **102938**.
 6.  On the Contoso web portal, select **Devices**.
 7.  On the Devices page, select **Tap here to tell us which device you're using or add a new device**.
 8.  On the **Which device are you using** dialog box select the option next to **SEA-WS3**, and then select **Select**. Notice that the message now changes to Apps will be installed onto: SEA-WS3.
