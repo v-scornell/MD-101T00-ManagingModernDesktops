@@ -95,7 +95,7 @@ When a user uses a device that is marked as non-compliant, they should not be ab
 
 13.  Close Microsoft Edge and sign out of SEA-WS3.
 
-### Task 3: Remove the conditional access policy
+### Task 3: Disable the conditional access policy
 
 1.  Switch to **SEA-CL1**.
 2.  On the taskbar, select **Microsoft Edge**.
