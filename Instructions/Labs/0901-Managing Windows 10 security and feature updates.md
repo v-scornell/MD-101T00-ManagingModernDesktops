@@ -6,11 +6,11 @@ In this lab you will configure Windows 10 security and feature update settings u
 
 ### Scenario
 
-You have been asked to configure Update Rings in Intune to manage Windows update settings. Devices should be configured to be in the Semi-Annual channel and Feature updates deferred 45 days after release. You would like to test the settings using SEA-WS3. 
+You have been asked to configure Update Rings in Intune to manage Windows update settings. Devices should be configured to be in the Semi-Annual channel and Feature updates deferred 45 days after release. You would like to test the settings using SEA-WS2. 
 
 #### Task 1: Verify current update settings for a single device
 
-1.  On **SEA-WS3**, sign in as as **Aaron Nicholls** with the PIN **102938**. 
+1.  On **SEA-WS2**, sign in as as **Diego Siciliani** with the PIN **102938**. 
 2.  Select **Start**, and then select the **Settings** icon.
 3.  In **Settings**, select **Update & Security**.
 4.  Select **Delivery Optimization**.
@@ -52,7 +52,7 @@ You have been asked to configure Update Rings in Intune to manage Windows update
     -   Feature update deferral period \(days\): **45**
 
     -   Option to pause Windows updates: **Disable**
-8.  On the **Assignments** blade, select **Add groups**. 
+8.  On the **Assignments** blade, under **Included groups** select **Add groups**. 
 9.  On the **Select groups to include** blade, in the **Search** box, select **Contoso Developer devices** and then select **Select**.
 10.  Select **Next** and on the **Review + create** blade select **Create**.
 11.  From the navigation bar select **Configuration profiles**.
@@ -61,7 +61,9 @@ You have been asked to configure Update Rings in Intune to manage Windows update
 
      -   Platform: **Windows 10 and later**
 
-     -   Profile: **Templates** then select **Delivery Optimization**
+     -   Profile type: **Templates**
+     
+     -   Template name: **Delivery Optimization**
 14.  In the **Basics** blade, enter the following information, and then select **Next**:
 
      -   Name: **Contoso Developer - Delivery optimization**
@@ -70,13 +72,13 @@ You have been asked to configure Update Rings in Intune to manage Windows update
 15.  In the **Configuration settings** blade, enter the following information, and then select **Next**:
 
      -   Download Mode: **HTTP only, no peering \(0\)**
-16.  On the **Assignments** blade, select **Add groups**. 
+16.  On the **Assignments** blade, under **Included groups** select **Add groups**. 
 17.  On the **Select groups to include** blade, select **Contoso Developer devices** and then select **Select**.
 18.  Select **Next** twice, and on the **Review + create** blade select **Create**.
 
 #### Task 4: Verify that the device’s update settings are managed centrally
 
-1.  Switch to **SEA-WS3**.
+1.  Switch to **SEA-WS2**.
 2.  Select **Start**, and then select the **Settings** icon.
 3.  In the **Settings** app, select the **Accounts** tile and then select **Access work or school**.
 4.  In the **Access work or school** section, select the **Connected to Contoso's Azure AD** link and then select **Info**.

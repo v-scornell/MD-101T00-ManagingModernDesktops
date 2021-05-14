@@ -21,6 +21,8 @@ It's been determined that all the information on SEA-WS2 should be encrypted. Yo
 
     -   Platform: **Windows 10 and later**
 
+    -   Profile type: **Templates**
+
     -   Profile: **Endpoint protection**
 9.  On the **Basics** page, enter the following information, and then select **Next**:
 
@@ -32,7 +34,7 @@ It's been determined that all the information on SEA-WS2 should be encrypted. Yo
      - Encrypt devices: **Require**
      - Additional authentication at startup: **Require**
 11.  On the **Configurations settings** page, select **Next**.
-12.  On the **Assignments** tab, choose **Select groups to include**.  Select **Contoso Developer Devices**, choose **Select**, and then select **Next** twice.
+12.  On the **Assignments** tab, under **Included groups** select **Add groups**.  Select **Contoso Developer devices**, choose **Select**, and then select **Next** twice.
 13.  On the **Review + create** page, select **Create**.
 14.  Close all open windows on **SEA-CL1**.
 

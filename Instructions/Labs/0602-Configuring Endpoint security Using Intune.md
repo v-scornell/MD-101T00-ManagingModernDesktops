@@ -24,7 +24,7 @@ Settings will be verified by testing on an enrolled device, SEA-WS2 and a non-en
 6.  On the **Endpoint security |Antivirus** pane, select **Create Policy**.
 7.  In the **Create a profile** pane, select **Windows 10 and later** for Platform. In the Profile  list, select **Windows Security experience**. Then select **Create**.
 8.  On the Basics tab, in the **Name** field, enter **Windows Security Settings**. Select **Next**.
-9.  On the **Configuration settings** tab, expand the **Windows Security **section. 
+9.  On the **Configuration settings** tab, expand the **Windows Security** section. 
 10.  Under Windows security, configure the following settings:
      - Enable tamper protection to prevent Microsoft Defender from being disabled: Enable
      - Hide the Account protection area in the Windows Security app: Yes
@@ -36,7 +36,7 @@ Settings will be verified by testing on an enrolled device, SEA-WS2 and a non-en
 12.  In the **Contact name** field, enter **Contoso IT**.
 13.  For **Phone number**, enter **555-1234** and then select **Next**.
 14.  On the **Scope tags** page, select **Next**.
-15.  On the **Assignments** tab, select **Add groups**. Choose the **Contoso Developers Devices** group and then choose **Select**.
+15.  On the **Assignments** tab, under **Included groups** select **Add groups**. Choose the **Contoso Developers Devices** group and then choose **Select**.
 16.  Select **Next** and then on the **Review + Create** tab, review the information and select **Create**.
 
 ### Task 2: Configure Microsoft Defender Antivirus policy in Intune
@@ -59,7 +59,7 @@ Settings will be verified by testing on an enrolled device, SEA-WS2 and a non-en
     - Check for signature updates before running scan: Yes
 10.  On the **Configuration settings** tab, select **Next**.
 11.  On the **Scope tags** page, select **Next**.
-12.  On the **Assignments** tab, select **Add groups**. Choose the **Contoso Developers Devices** group and then choose **Select**.
+12.  On the **Assignments** tab, under **Included groups** select **Add groups**. Choose the **Contoso Developers Devices** group and then choose **Select**.
 13.  Select **Next** and then on the **Review + Create** tab, review the information and select **Create**.
 
 ### Task 3: Sync the managed devices

@@ -46,7 +46,7 @@ The Help Desk has indicated that a large number of support tickets are related t
 12.  Select **Save**.
 13.  Select **Registration** Select **No** for **Require users to register when signing in**, and the select **Save**.
 14.  In the navigation pane, select **On-premises integration**.
-15.  Verify that your on-premises writeback client is running and select **Yes** for the **Write back passwords to your on-premises directory** option. Select **Save**.
+15.  Verify that your on-premises writeback client is running and select **Yes** for the **Write back passwords to your on-premises directory** option. If needed, select **Save**.
 16.  Close Microsoft Edge.
 
 ### Task 3: Validate self-service password reset
@@ -68,24 +68,12 @@ The Help Desk has indicated that a large number of support tickets are related t
 
 ### Task 4: Verify password writeback
 
-1.  Switch to **SEA-SVR1**.
-2.  Right-click **Start** and then select **Windows PowerShell (Admin)**.
-3.  At the **Windows PowerShell** command prompt, type the following command, and
-    then press **Enter**:
-
-```
-
-Start-ADSyncSyncCycle –PolicyType Delta
-
-```
-4.  Close Windows PowerShell, and then wait for approximately 3-4 minutes.
-5.  Switch to **SEA-CL2** and sign out if necessary.
-6.  On **SEA-CL2**, select **Other user**, and then attempt to sign in as **Contoso\\Aaron** with the password of **Pa55w.rd**.
-7.  Attempt to sign in as **Contoso\\Aaron** with the password **Pa55w.rd**.
-8.  Ensure that you get the message that the user name or password is incorrect.
-9.  Sign in to **SEA-CL2** as **Contoso\\Aaron** with the password **Pa55w.rd1234**. You should be able to sign in. This confirms that the password you changed in the Azure portal is written back to the local Active
-    Directory Domain Services (AD DS) account.
-10.  Sign out of **SEA-CL2**.
+1.  Switch to **SEA-CL2** and sign out if necessary.
+2.  On **SEA-CL2**, select **Other user**, and then attempt to sign in as **Contoso\\Aaron** with the password of **Pa55w.rd**.
+3.  Attempt to sign in as **Contoso\\Aaron** with the password **Pa55w.rd**.
+4.  Ensure that you get the message that the user name or password is incorrect.
+5.  Sign in to **SEA-CL2** as **Contoso\\Aaron** with the password **Pa55w.rd1234**. You should be able to sign in. This confirms that the password you changed in the Azure portal is written back to the local Active Directory Domain Services (AD DS) account.
+6.  Sign out of **SEA-CL2**.
 
 **Results**: After completing this exercise, you will have successfully configured and validated self-service password reset.
 

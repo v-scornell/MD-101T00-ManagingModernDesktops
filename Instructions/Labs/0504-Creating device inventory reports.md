@@ -47,12 +47,12 @@ Management is requesting a report of all devices. They do not have access to the
 ### Task 2: Import Intune data into Microsoft Excel
 
 1.  On **SEA-CL1**, select **Start** and then select **Excel**.
-2.  In Excel, select **Browse**, select the **Downloads** folder and in the **All Excel Files** drop-down box, select **All Files**.
+2.  In Excel, select **Open Other Workbooks**, then **Browse**, select the **Downloads** folder and in the **All Excel Files** drop-down box, select **All Files**.
 3.  In the **Open** dialog box, select the file you just extracted. Then select **Open**.
 4.  In the **Text Import Wizard – Step 1 of 3** dialog box, select **Delimited** and then select **Next**.
 5.  In the **Text Import Wizard – Step 2 of 3** dialog box, remove the check mark next to **Tab** and select the check box next to **Comma**. Then select **Next**.
 6.  In the **Text Import Wizard – Step 3 of 3** dialog box, select **Finish**.
-7.  Review the report content. When finished, close Excel and select **No** when asked about saving the report.
+7.  Review the report content. When finished, close Excel and select **Don't Save** when asked about saving the report.
 8.  Close all open Windows.
 
 **Results**: After completing this exercise, you will have successfully exported Intune data to Excel for review.
