@@ -4,6 +4,16 @@
 
 This log will be updated whenever updates are made to the lab steps in MD-101.  Note that this log only contains changes to the labs.  The change log for course content is still located in the Learning Download Center.
 
+### 05-14-21
+
+- Minor updates to reflect UI changes
+- Minor formatting corrections
+- 0301 - Corrected rule syntax
+- 0401 - Corrected step to reflect PIN change in earlier lab
+- 0404 - Replace Translator app with Network Speed Test app
+- 0502 - Made AD Sync separate optional task with explanation for it's purpose
+- 0901 - Changed to use client WS2
+
 ### 04-05-21
 
 - Minor corrections

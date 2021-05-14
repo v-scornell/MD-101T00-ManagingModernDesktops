@@ -35,12 +35,12 @@ You have decided to integrate Microsoft Store for Business with Intune. You need
 1.  In Microsoft Edge, switch to the **Microsoft Store for Business** tab (if there's no tab click on the url link **Open business store**).
 2.  In the menu bar, select **Shop for my group**.
 3.  Scroll down to the **Made by Microsoft** section.
-4.  In the **Made by Microsoft** section, select **Translator**.
-5.  On the **Translator** page, select **Get the app**.
+4.  In the **Made by Microsoft** section, select **Network Speed Test**.
+5.  On the **Network Speed Test** page, select **Get the app**.
 6.  Click on the box next to the **I accept this agreement** and select **Accept**
 7.  On the **Thanks for your order** page, select **Close**.
-8.  On the Translator page, select the ellipse button and then select **Manage**.
-9.  On the Translator manage page, select the **Private store availability** tab.
+8.  On the Network Speed Test page, select the ellipse button and then select **Manage**.
+9.  On the Network Speed Test manage page, select the **Private store availability** tab.
 10.  On the **Private store availability** tab, under **Choose groups of people who can see this app**, select **Everyone**.
 11.  Repeat steps 2-10 and select the app named **Fresh Paint**.
 12.  In the menu bar, select **Contoso**. This is a view of the private store which displays the apps that you have purchased and made available to users.
@@ -51,7 +51,7 @@ You have decided to integrate Microsoft Store for Business with Intune. You need
 2.  Sign in as as Aaron Nicholls with the PIN **102938**. 
 3.  On the taskbar, select **Microsoft Store**.
 4.  In the **Microsoft Store**, in the menu bar select **Contoso**. (You may have to select More to display the Contoso menu item.)
-5.  In the **Contoso** store, review the apps that are available. You should see Fresh Paint and Translator as available options.
+5.  In the **Contoso** store, review the apps that are available. You should see Fresh Paint and Network Speed Test as available options.
 6.  Close the Microsoft Store.
 
 **Results**: After completing this exercise, you will have successfully integrated Microsoft Store for Business with Intune.
@@ -60,7 +60,7 @@ You have decided to integrate Microsoft Store for Business with Intune. You need
 
 ### Scenario
 
-Now that you have integrated Microsoft Store for Business with Intune, you need to verify that you can successfully deploy the apps to devices. You decide to deploy the Translator app to all devices. Aaron Nicholls has agreed to test out the app to make sure it is deployed successfully.
+Now that you have integrated Microsoft Store for Business with Intune, you need to verify that you can successfully deploy the apps to devices. You decide to deploy the Network Speed Test app to all devices. Aaron Nicholls has agreed to test out the app to make sure it is deployed successfully.
 
 ### Task 1: Synchronize Intune with Microsoft Store for Business
 
@@ -75,8 +75,8 @@ Now that you have integrated Microsoft Store for Business with Intune, you need 
 
 1.  On the **Microsoft Endpoint Manager admin center** pane, select **Apps**.
 2.  In the **Apps | Overview** blade, select **All Apps**. Notice the Apps that have synced from Microsoft Store for Business.
-3.  In the app list, select **Translator (Online)**.
-4.  On the **Translator (Online)** pane, select **Properties**.
+3.  In the app list, select **Network Speed Test (Online)**.
+4.  On the **Network Speed Test (Online)** pane, select **Properties**.
 5.  Scroll down to the **Assignments** section and then select **Edit**.
 6.  On the **Edit application** page, under **Required**, select **Add all devices**.
 7.  Select **Review + save** and then select **Save**.
@@ -93,11 +93,11 @@ Now that you have integrated Microsoft Store for Business with Intune, you need 
 
 2.  On **SEA-WS3**, on the taskbar, select **Start** and then select the **Settings** app.
 
-3.  In the **Settings** app, select the **Apps** tile and on the **Apps & features** page, scroll down and verify that **Translator** is listed.
+3.  In the **Settings** app, select the **Apps** tile and on the **Apps & features** page, scroll down and verify that **Network Speed Test** is listed.
 
 4.  Close the **Settings** app and select the **Start** button.
 
-5.  In the app list, scroll down to **T** and select **Translator** and verify that the app opens.
+5.  In the app list, scroll down to **T** and select **Network Speed Test** and verify that the app opens.
 
 6.  Close all open windows.
 
@@ -107,7 +107,7 @@ Now that you have integrated Microsoft Store for Business with Intune, you need 
 
 2. In the **Microsoft Endpoint Manager admin center**, select **Apps** in the navigation menu.
 
-3. On the **Apps | Overview** blade, select **Monitor** and then select **App install status**. In the details pane, select **Translator (Online)**.
+3. On the **Apps | Overview** blade, select **Monitor** and then select **App install status**. In the details pane, select **Network Speed Test (Online)**.
 
 4. In the details pane, under **Device status** and under **User status**, verify that **1** is displayed under Installed. 
 
@@ -121,9 +121,9 @@ Now that you have integrated Microsoft Store for Business with Intune, you need 
 
 8. On the **SEA-WS3** blade, select **Managed Apps**.
 
-9. On the **SEA-WS3 | Managed Apps** blade, in the details pane, select **Translator**.
+9. On the **SEA-WS3 | Managed Apps** blade, in the details pane, select **Network Speed Test**.
 
-10. On the **Translator - Installation details** blade, you can see the entire lifecycle of the application, that is - when it was created, assigned, installation time and status and the last time the device checked in (synced with Intune).
+10. On the **Network Speed Test - Installation details** blade, you can see the entire lifecycle of the application, that is - when it was created, assigned, installation time and status and the last time the device checked in (synced with Intune).
 
 11. Close all open windows.
 

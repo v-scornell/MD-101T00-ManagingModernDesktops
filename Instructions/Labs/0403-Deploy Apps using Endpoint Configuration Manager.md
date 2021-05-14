@@ -74,7 +74,7 @@ Contoso uses Microsoft Endpoint Configuration Manager to manage desktop workstat
 12.  On the **Summary** page, select **Next** and then select **Close**. 
 13.  In the results pane, on the **Deployments** tab, verify that the deployment displays.
 
-### Task 5: Use Software center to install a deployed app
+### Task 6: Use Software center to install a deployed app
 
 1.  Switch to SEA-CL1, and if necessary sign in as **Contoso\\Administrator** with the password of **Pa55w.rd**.
 2.  Click **Start** and then enter **Control Panel**.

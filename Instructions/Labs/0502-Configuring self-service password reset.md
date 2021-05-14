@@ -66,6 +66,20 @@ The Help Desk has indicated that a large number of support tickets are related t
 10.   On the Microsoft Save password prompt, select **Save**.
 11.   Close Microsoft Edge and sign out of SEA-WS1.
 
+### Task 4: Optional - Run AD Sync
+
+Note that this step is normally not necessary for password writeback, but is recommended to address issues inherent in lab environments and ensure AD is synchronized.
+
+1.  Switch to **SEA-SVR1**.
+2.  Right-click **Start** and then select **Windows PowerShell (Admin)**.
+3.  At the **Windows PowerShell** command prompt, type the following command, and
+    then press **Enter**:
+
+```
+Start-ADSyncSyncCycle –PolicyType Delta
+```
+4.  Close Windows PowerShell, and then wait for approximately 3-4 minutes.
+
 ### Task 4: Verify password writeback
 
 1.  Switch to **SEA-CL2** and sign out if necessary.
