@@ -64,11 +64,12 @@ Now that you have integrated Microsoft Store for Business with Intune, you need 
 
 ### Task 1: Synchronize Intune with Microsoft Store for Business
 
-1.  In Microsoft Edge, switch to the tab that contains Microsoft Endpoint Manager admin center.
-2.  In the Microsoft Endpoint admin center, in the navigation pane, select **Tenant administration**.
-3.  In the **Tenant admin** navigation pane, select **Connectors and tokens**.
-4.  On the **Connectors and tokens** page, select **Microsoft Store for Business**. 
-5.  At the bottom of the Microsoft Store for Business page, select **Sync**.
+1.  Switch to **SEA-CL1**.
+2.  In Microsoft Edge, switch to the tab that contains Microsoft Endpoint Manager admin center.
+3.  In the Microsoft Endpoint admin center, in the navigation pane, select **Tenant administration**.
+4.  In the **Tenant admin** navigation pane, select **Connectors and tokens**.
+5.  On the **Connectors and tokens** page, select **Microsoft Store for Business**. 
+6.  At the bottom of the Microsoft Store for Business page, select **Sync**.
 
 ### Task 2: Deploy Microsoft Store for Business apps
 
