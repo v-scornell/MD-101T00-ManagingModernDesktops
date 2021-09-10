@@ -1,12 +1,12 @@
-# Practice Lab: Configuring Enterprise State Roaming
+# Practice Lab: Configuring Enterprise State Roaming and Edge Sync Settings
 
 ## Summary
 
-In this lab, you will enable Enterprise State Roaming in Azure AD. 
+In this lab, you will enable Enterprise State Roaming in Azure AD and synchronize bookmarks in Microsoft Edge. 
 
 ### Scenario
 
-Enterprise State Roaming in Azure AD provides the ability for user settings and application settings to be synchronized to the cloud. Diego Siciliani works with multiple Windows devices and would like to have all user settings to be the same on each device. You need to enable and test Enterprise State Roaming to address Diego's requirements.
+Enterprise State Roaming in Azure AD provides the ability for user settings and application settings to be synchronized to the cloud. Diego Siciliani works with multiple Windows devices and would like to have all user settings and Microsoft Edge bookmarks to be the same on each device. You need to test Enterprise State Roaming and Microsoft Edge sync to address Diego's requirements.
 
 
 ### Task 1: Enable Enterprise State Roaming
@@ -60,29 +60,49 @@ Enterprise State Roaming in Azure AD provides the ability for user settings and 
 
 1.  In Accounts, select **Access work or school**.  Select **Connected to Contoso's Azure AD** and
     select **Disconnect**. Select **Yes** and then select **Disconnect** to confirm.
+
 2.  In the **Windows Security** dialog enter **Admin** as **Email Address** and **Pa55w.rd** as **Password**. Select **OK**.
+
 3.  On the **Restart your PC** dialog box, select **Restart now**. 
+
 4.  After SEA-WS2 has restarted, sign in as **Admin**, with the password **Pa55w.rd**.
+
 5.  Select **Start**, type **View advanced system settings** and press **Enter**.
+
 6.  In the **Advanced** tab under **User Profiles** select **Settings**.
+
 7.  In the **User Profiles** window select **Account Unknown** and then select **Delete**. Confirm with **Yes** and then select **OK** twice.
+
+
 8.  Select **Start**, select **Settings**, and then select **Accounts**.  
+
 9.  Select **Access work or school** and select **Connect**.
+
 10.  In the **Microsoft account** window, select **Join this device to Azure Active Directory**.
+
 11.  On the **Sign in** page, type **diegos\@yourtenant.onmicrosoft.com** and then select **Next**.
+
 12.  On the **Enter password** page, enter the tenant password and select **Sign in**.
+
 13.  On the **Make sure this is your organization** dialog, select **Join**.
+
 14.  On the **You're all set!** page, select **Done**.
+
 15.  Sign out of SEA-WS2.
+
 16.  Sign in to **SEA-WS2** as **DiegoS\@yourtenant.onmicrosoft.com** with the default tenant password.
+
 17.  At the **Use Windows Hello with your account** page, select **OK**.
+
 18.  At the **Enter code** page, enter the code that has been texted to your mobile device and then select **Verify**.
+
 19.  At the **Set up a PIN** dialog box, in the **New PIN** and **Confirm PIN** boxes, type **102938** and then select **OK**.
+
 20.  On the **All set!** page, select **OK**.
 
-### Task 4: Test Enterprise State Roaming
+### Task 4: Test Enterprise State Roaming and Microsoft Edge Sync
 
-1. On SEA-WS2, on the taskbar, select **Start** and then select the **Settings** icon. 
+1. On **SEA-WS2**, on the taskbar, select **Start** and then select the **Settings** icon. 
 
 2. Select **Accounts** then select **Sync your settings**.
 
@@ -94,35 +114,40 @@ Enterprise State Roaming in Azure AD provides the ability for user settings and 
 
    - Pin Feedback Hub, Calculator, and Calendar to the Start screen.
    - Pin Maps to the taskbar
-   - Unlock the taskbar and move it to the right side of the screen.
 
 6. On **SEA-WS2**, on the taskbar, select **Microsoft Edge** and in the address bar, type **www.microsoft.com/learn**, and then press **Enter**. 
 
-7. When the page loads, select the star and the end of the address bar (or press CTRL+D). In the **Favorite added** pop-up, select **Done**.
+7. When the page loads, select the star and the end of the address bar (or press **CTRL+D**). In the **Favorite added** pop-up, select **Done**.
 
-8. Close Microsoft Edge.
+8. To the right of the Favorites option, select the profile button labeled **Not syncing** and then select **Turn on sync**.
 
-9. Sign out of **SEA-WS2**.
+9. Close Microsoft Edge.
 
-10. Switch to **SEA-WS3**. 
+10. Sign out of **SEA-WS2**.
 
-11. Sign in to **SEA-WS3** as **DiegoS\@yourtenant.onmicrosoft.com** with the default tenant password.
+11. Switch to **SEA-WS3**. 
 
-12. At the **Use Windows Hello with your account** page, select **OK**.
+12. Sign in to **SEA-WS3** as **DiegoS\@yourtenant.onmicrosoft.com** with the default tenant password.
 
-13. At the **Enter code** page, enter the code that has been texted to your mobile device and then select **Verify**.
+13. At the **Use Windows Hello with your account** page, select **OK**.
 
-14. At the **Set up a PIN** dialog box, in the **New PIN** and **Confirm PIN** boxes, type **102938** and then select **OK**.
+14. At the **Enter code** page, enter the code that has been texted to your mobile device and then select **Verify**.
 
-15. On the **All set!** page, select **OK**.
+15. At the **Set up a PIN** dialog box, in the **New PIN** and **Confirm PIN** boxes, type **102938** and then select **OK**.
 
-16. On the taskbar, select **Microsoft Edge**. 
+16. On the **All set!** page, select **OK**.
+
+17. Verify the Feedback Hub, Calculator, and Calendar are pinned to the Start screen. Verify Maps is pinned to the taskbar.
+
+18. On the taskbar, select **Microsoft Edge**. 
     
-17. In **Microsoft Edge**, press CTRL+I to view favorites. Verify if the Microsoft Learn favorites page is already synced from **SEA-WS2**.  
+19. To the right of the Favorites option, select the profile button labeled **Not syncing** and then select **Turn on sync**.
+
+20. In **Microsoft Edge**, press **CTRL+SHIFT+O** to view favorites. Verify if the Microsoft Learn favorites page is already synced from **SEA-WS2**.  
 
     _Note: It can take several minutes for settings to sync. If the favorites option doesn't show, try rebooting and signing back in as DiegoS\@yourtenant.onmicrosoft.com._
 
-18. Sign out of **SEA-WS3**.
+21. Sign out of **SEA-WS3**.
 
 **Results**: After completing this exercise, you will have successfully enable Enterprise State Roaming in Azure AD.
 

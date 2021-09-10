@@ -63,19 +63,28 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 ### Task 3: Configure Enrollment Restrictions
 
 1.  In the Microsoft Endpoint Manager admin center, select **Devices**.
+
 2.  On the **Devices** pane, select **Enrollment restrictions**. Notice that you can specify Device type restrictions and Device limit restrictions.
+
 3.  In the details pane, select **Create restriction** and then select **Device type restriction**.
+
 4.  On the Create restriction page, in the Name box enter **Android and iOS Personal Device Restriction**. Select **Next**.
+
 5.  On the Platform settings page, under **Personally owned**, select **Block** for the following device types:
     - Android Enterprise (work profile)
     - Android device administrator
     - iOS/iPadOS
 
 6.  On the Platform settings page, select **Next**.
+
 7.  On the Scope tags page, select **Next**.
-8.  On the Assignments page, select **Select groups to include**.
+
+8.  On the Assignments page, under Included groups, select **Select Add groups**.
+
 9.  Select **Sales** and then click **Select** and then click **Next**.
+
 10.  On the Review + create page, select **Create**.
+
 11.  In the Microsoft Endpoint Manager admin center, in the navigation pane, select **Home**.
 
 **Results**: After completing this exercise, you will have successfully reviewed and assigned licenses, configured Windows automatic enrollment, and enabled and assigned enrollment restrictions.

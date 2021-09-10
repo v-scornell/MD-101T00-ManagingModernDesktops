@@ -1,8 +1,12 @@
-# MD-101: Managing Modern Desktops 
-
-## Lab Change Log
+# Change Log - MD-101 Managing Modern Desktops 
 
 This log will be updated whenever updates are made to the lab steps in MD-101.  Note that this log only contains changes to the labs.  The change log for course content is still located in the Learning Download Center.
+
+### 09-10-21
+
+- Minor updates to reflect UI changes. 
+- Corrected formatting inconsistencies.
+- 0303 - Removed the step to unlock and move the taskbar, updated content to better distinguish ESR and Edge Sync functions.  
 
 ### 05-14-21
 

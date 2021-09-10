@@ -13,36 +13,63 @@ You have decided to integrate Microsoft Store for Business with Intune. You need
 ### Task 1: Configure Microsoft Store for Business settings and integration with Intune
 
 1. On **SEA-CL1**, sign in as **Contoso\\Administrator** with the password **Pa55w.rd**.
+
 2. On the taskbar, select **Microsoft Edge**.
+
 3. In Microsoft Edge, type **https://www.microsoft.com/en-us/business-store** in the address bar, and then press **Enter**. 
+
 4. In the top right-hand corner, select **Sign in** to sign in as **admin\@yourtenant.onmicrosoft.com** with the tenant Admin password. 
+
 5. In the menu bar, select **Manage**. The **Overview** page displays.
+
 6. On the **Overview** page, select **Settings**.
+
 7. On the **Shop** page, under **Shopping behavior**, configure the **Make everyone a Basic Purchaser** setting to **Off**. 
+
 8. At the **Stop people from buying** message, select **Don't let people buy**. This restricts Microsoft Store for business purchases to only users that you have specifically assigned a purchasing role to.
+
 9. Select the **Distribute** page.
+
 10. On the Distribute page, take note of the current name for the private store. The current name is the name associated with the tenant.
+
 11. Under Management tools, verify that **Microsoft Intune** Status is set to **Active**. If it is not, under Action select **Activate**.
+
 12. In Microsoft Edge, open a new tab and browse to https://endpoint.microsoft.com. The Microsoft Endpoint Manager admin center opens.
+
 13. In the Microsoft Endpoint admin center, in the navigation pane, select **Tenant administration**.
+
 14. In the **Tenant admin** navigation pane, select **Connectors and tokens**.
+
 15. On the **Connectors and tokens** page, select **Microsoft Store for Business**. 
+
 16. If necessary, on the **Microsoft Store for Business** page, select **Enable** and then select **Save**. The status should display as **Active**.
+
 17. At the bottom of the Microsoft Store for Business page, select **Sync**.
 
 ### Task 2: Purchasing and Adding apps to the Private Store 
 
 1.  In Microsoft Edge, switch to the **Microsoft Store for Business** tab (if there's no tab click on the url link **Open business store**).
+
 2.  In the menu bar, select **Shop for my group**.
+
 3.  Scroll down to the **Made by Microsoft** section.
+
 4.  In the **Made by Microsoft** section, select **Network Speed Test**.
+
 5.  On the **Network Speed Test** page, select **Get the app**.
+
 6.  Click on the box next to the **I accept this agreement** and select **Accept**
+
 7.  On the **Thanks for your order** page, select **Close**.
+
 8.  On the Network Speed Test page, select the ellipse button and then select **Manage**.
+
 9.  On the Network Speed Test manage page, select the **Private store availability** tab.
+
 10.  On the **Private store availability** tab, under **Choose groups of people who can see this app**, select **Everyone**.
+
 11.  Repeat steps 2-10 and select the app named **Fresh Paint**.
+
 12.  In the menu bar, select **Contoso**. This is a view of the private store which displays the apps that you have purchased and made available to users.
 
 ### Task 3: Review the apps in the Company store
@@ -65,26 +92,39 @@ Now that you have integrated Microsoft Store for Business with Intune, you need 
 ### Task 1: Synchronize Intune with Microsoft Store for Business
 
 1.  Switch to **SEA-CL1**.
+
 2.  In Microsoft Edge, switch to the tab that contains Microsoft Endpoint Manager admin center.
+
 3.  In the Microsoft Endpoint admin center, in the navigation pane, select **Tenant administration**.
+
 4.  In the **Tenant admin** navigation pane, select **Connectors and tokens**.
+
 5.  On the **Connectors and tokens** page, select **Microsoft Store for Business**. 
+
 6.  At the bottom of the Microsoft Store for Business page, select **Sync**.
 
 ### Task 2: Deploy Microsoft Store for Business apps
 
 1.  On the **Microsoft Endpoint Manager admin center** pane, select **Apps**.
+
 2.  In the **Apps | Overview** blade, select **All Apps**. Notice the Apps that have synced from Microsoft Store for Business.
+
 3.  In the app list, select **Network Speed Test (Online)**.
+
 4.  On the **Network Speed Test (Online)** pane, select **Properties**.
+
 5.  Scroll down to the **Assignments** section and then select **Edit**.
+
 6.  On the **Edit application** page, under **Required**, select **Add all devices**.
+
 7.  Select **Review + save** and then select **Save**.
 
 ### Task 3: Force policy synchronization from the Intune console
 
 1.  In the **Microsoft Endpoint Manager admin center**, select **Devices** and then select **All devices**.
+
 2.  In the details pane, select **SEA-WS3**. 
+
 3.  On the **SEA-WS3** blade, select **Sync** and when prompted select **Yes**. Intune will contact the device and tell it to synchronize all policies. This may take up to 5 minutes.
 
 ### Task 4: Verify the app has installed

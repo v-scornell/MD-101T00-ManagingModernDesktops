@@ -11,12 +11,19 @@ It's been determined that all the information on SEA-WS2 should be encrypted. Yo
 ### Task 1: Configure device configuration policy in Intune
 
 1.  Sign in to **SEA-CL1** as **Contoso\\Administrator** with the password **Pa55w.rd**. 
+
 2.  On the taskbar, select **Microsoft Edge**.
+
 3.  In Microsoft Edge, type **https://endpoint.microsoft.com** in the  address bar, and then press **Enter**. 
+
 4.  Sign in as as **admin\@yourtenant.onmicrosoft.com** with the default tenant password.
+
 5.  In the Microsoft Endpoint Manager admin center, select **Devices** from the navigation bar.
+
 6.  On the **Devices | Overview** page, select **Configuration Profiles**.
+
 7.  On the **Devices | Configuration profiles** blade, in the details pane, select **Create profile**.
+
 8.  In the **Create a profile** page, select the following options, and then select **Create**:
 
     -   Platform: **Windows 10 and later**
@@ -24,18 +31,24 @@ It's been determined that all the information on SEA-WS2 should be encrypted. Yo
     -   Profile type: **Templates**
 
     -   Profile: **Endpoint protection**
+
 9.  On the **Basics** page, enter the following information, and then select **Next**:
 
     -   Name: **Contoso BitLocker**
 
     -   Description: **Enable BitLocker for all devices**
+
 10.  On the **Configurations settings** page, expand **Windows Encryption** and then configure the following options:
 
      - Encrypt devices: **Require**
      - Additional authentication at startup: **Require**
+
 11.  On the **Configurations settings** page, select **Next**.
+
 12.  On the **Assignments** tab, under **Included groups** select **Add groups**.  Select **Contoso Developer devices**, choose **Select**, and then select **Next** twice.
+
 13.  On the **Review + create** page, select **Create**.
+
 14.  Close all open windows on **SEA-CL1**.
 
 ### Task 2: Verify and enable BitLocker settings
@@ -73,9 +86,13 @@ It's been determined that all the information on SEA-WS2 should be encrypted. Yo
 ### Task 3: Verify BitLocker protection
 
 1.  Sign in to **SEA-WS2** as **Diego Siciliani** with the PIN **102938**.
+
 2.  On the taskbar, select **File Explorer** and then select **This PC**.
+
 3.  In the navigation pane, right-click **Local Disk (C:)** and then select **Manage BitLocker**.
+
 4.  In the **BitLocker Drive Encryption** window, ensure that you see **C: BitLocker on** status. This means that drive is encrypted. 
+
 5.  Close all open windows and sign out of **SEA-WS2**.
 
 **Results**: After completing this exercise, you will have successfully configured BitLocker using Intune.

@@ -58,20 +58,35 @@ Contoso Corporation is currently managing users in both AD DS and Azure AD as se
 #### Task 2: Verify synchronization in Azure AD
 
 1.  Switch to **SEA-CL1**.
+
 2.  On the taskbar, select **Microsoft Edge**.
+
 3.  In the address bar, enter **http://portal.office.com**.
+
 4.  At the Sign-in prompt, enter **admin\@yourtenant.onmicrosoft.com** and then select **Next**.
+
 5.  At the Enter password page, enter the password for the Admin account and then select **Sign in**. Note: Check with your instructor on the password to use for signing in with the Admin account.
+
 6.  At the Save password prompt, select **Save**.
+
 7.  At the Stay signed in prompt, select **No**. The Office 365 portal opens.
+
 8.  At the top corner, select the **App launcher** and then select **Admin**. The Microsoft 365 admin center opens.
+
 9.  Select the **Navigation menu** and then select **Show all**.
+
 10.  In the Navigation pane, under **Admin centers** select **Azure Active Directory**. The Azure Active Directory admin center opens.
+
 11.  In the Azure Active Directory admin center, in the navigation pane, select **Users**.
+
 12.  Verify that you see users from your local AD DS. Ensure that these users have the value **Yes** in the **Directory synced** column. 
+
 13.  In the Navigation pane, select **Azure Active Directory** and then select **Groups**. Verify that you see groups from your local AD DS.
+
 14.  Select the **Managers** group.
+
 15.  On the **Managers** group page, select **Members** and then ensure that you see users. Also, verify that you cannot add members or remove this group, as it is sourced from the local Active Directory. 
+
 16.  Close Microsoft Edge.
 
 **Results**: After completing this exercise, you should have successfully configured Azure AD Connect to synchronize between Active Directory Domain Services and Azure Active Directory.

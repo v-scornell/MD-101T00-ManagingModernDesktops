@@ -13,14 +13,23 @@ You've been asked to review the inventory for SEA-WS3.  Use Intune to review the
 ### Task 1: Examining device inventory
 
 1.  On **SEA-CL1**, sign in as **Contoso\\Administrator** with the password of **Pa55w.rd**.
+
 2.  On the taskbar, select **Microsoft Edge**.
+
 3.  In Microsoft Edge, type **https://endpoint.microsoft.com** in the address bar, and then press **Enter**. 
+
 4.  Sign in as **admin\@yourtenant.onmicrosoft.com** with the tenant Admin password.
+
 5.  In the Microsoft Endpoint Manager admin center, select **Devices** from the navigation bar.
+
 6.  In the Devices navigation pane, select **All devices** and in the details pane, select the **SEA-WS3** entry. Examine the various information displayed about the device.
+
 7.  Select **Properties** and note that you can change the **Management name**, **Device category** and **Device ownership**.
+
 8.  In the **Management name** field, replace the existing text with **SEA-WS3** and select **Save**.
+
 9.  Under **Monitor**, select **Hardware** and examine the hardware from **SEA-WS3**. You need to scroll down to see it all.
+
 10.  Under **Monitor**, select **Discovered apps** and examine the app inventory from **SEA-WS3**. You may need to scroll down to see it all.
 
 **Results**: After completing this exercise, you will have successfully reviewed device hardware and app inventory.
@@ -47,12 +56,19 @@ Management is requesting a report of all devices. They do not have access to the
 ### Task 2: Import Intune data into Microsoft Excel
 
 1.  On **SEA-CL1**, select **Start** and then select **Excel**.
+
 2.  In Excel, select **Open Other Workbooks**, then **Browse**, select the **Downloads** folder and in the **All Excel Files** drop-down box, select **All Files**.
+
 3.  In the **Open** dialog box, select the file you just extracted. Then select **Open**.
+
 4.  In the **Text Import Wizard – Step 1 of 3** dialog box, select **Delimited** and then select **Next**.
+
 5.  In the **Text Import Wizard – Step 2 of 3** dialog box, remove the check mark next to **Tab** and select the check box next to **Comma**. Then select **Next**.
+
 6.  In the **Text Import Wizard – Step 3 of 3** dialog box, select **Finish**.
+
 7.  Review the report content. When finished, close Excel and select **Don't Save** when asked about saving the report.
+
 8.  Close all open Windows.
 
 **Results**: After completing this exercise, you will have successfully exported Intune data to Excel for review.
@@ -68,18 +84,31 @@ Your organization uses Power BI for reporting.  You need to set up Power BI on S
 ### Task 1: Connect Power BI to the Intune Data Warehouse
 
 1.  On SEA-CL1, on the desktop, double-click **Power BI Desktop**.
+
 2.  After Power BI loads, with the **Home** tab selected in the ribbon, select **Get Data**. 
+
 3.  In the **Get Data** dialog box, select **Other** on the left side, and then select **OData Feed** and then select **Connect**.
+
 4.  On the taskbar, select **Microsoft Edge**.
+
 5.  In Microsoft Edge, type **https://endpoint.microsoft.com** in the address bar, and then press **Enter**. 
+
 6.  Sign in as **admin\@yourtenant.onmicrosoft.com** with the tenant Admin password.
+
 7.  In the Microsoft Endpoint Manager admin center, select **Reports** and then select **Data warehouse**.
+
 8.  In the **OData feed for reporting service** field, copy the Odata URL into the clipboard.
+
 9.  Switch back to **Power BI Desktop** and in the OData feed dialog box, paste the **OData URL** into the **URL** box and select **OK**.
+
 10.  In the **OData feed** dialog box, select the **Organizational account** tab and then select **Sign in**.
+
 11.  On the **Sign in** page, select **admin\@yourtenant.onmicrosoft.com**. 
+
 12.  On the **Enter password** page, enter the tenant Admin password, and select **Sign in**.
+
 13.  Back on the **OData feed** dialog box, select **Connect**. Wait for the connection and load of data. The **Navigator** window opens.
+
 14.  In the **Navigator** window, select all tables. You can select the first table, and then shift-select the last table to select all tables. With all tables selected, select **Load**. It will take a few minutes for the process to complete.
 
 ### Task 2: Create a custom report using Power BI and Intune Data Warehouse
