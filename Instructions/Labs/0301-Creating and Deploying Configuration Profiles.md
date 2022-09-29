@@ -215,9 +215,9 @@ There was an exception to Contoso's policy that specifies that members of the De
 
 ### Task 1: Change settings in an assigned Configuration profile
 
-1. Switch to SEA-SVR1.
+1. Switch to **SEA-SVR1**.
 
-2. On **SEA-SVR1**, in the Microsoft Endpoint Manager admin center, select **Devices **and then select **Configuration Profiles**. 
+2. On **SEA-SVR1**, in the Microsoft Endpoint Manager admin center, select **Devices** and then select **Configuration Profiles**. 
 
 3. On the **Devices | Configuration profiles** blade, in the details pane select **Contoso Developer -  standard**.
 
