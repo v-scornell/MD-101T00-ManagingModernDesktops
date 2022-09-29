@@ -22,7 +22,7 @@ You have assigned Aaron Nicholls appropriate licenses and will now test the proc
 
 ### Task 1: Automatically enroll a Windows device to Microsoft Intune
 
-1. Sign in to SEA-WS1 as **Admin** with the password of **Pa55w.rd**.
+1. Sign in to **SEA-WS1** as **Admin** with the password of **Pa55w.rd**.
 
 2. Select **Start** and then select **Settings**.
 
@@ -119,7 +119,7 @@ _Note: These entries indicate that the device is enrolled in Intune._
 
 3. In the navigation pane, select **Devices**.
 
-4. On the **Devices | Overview** blade under **Intune enrolled devices**, verify that 1 is displayed next to **Windows**. It may take a while to display.
+4. On the **Devices | Overview** blade under **Intune enrolled devices**, verify that **1** is displayed next to **Windows**. It may take a while to display.
 
 5. On the **Devices | Overview** blade, select **All devices** and verify that **SEA-WS1** is listed.
 
