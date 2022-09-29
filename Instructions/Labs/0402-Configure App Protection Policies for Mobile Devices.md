@@ -43,8 +43,8 @@ All of the developers at Contoso have iPhones and iPads running the latest iOS/i
 - Backup Org data to ITunes and iCloud backups: **Block**
 - Send Org data to other apps: **Policy managed apps**
 - Receive data from other apps: **Policy managed apps**
-- strict cut, copy, and paste between other apps: **Policy managed apps**
-- ave all other settings at default
+- Restrict cut, copy, and paste between other apps: **Policy managed apps**
+- Save all other settings at default
 
 12. On the **Access requirements** tab, configure the following options and select **Next**:
 
