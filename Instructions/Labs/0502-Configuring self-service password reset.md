@@ -74,7 +74,7 @@ The Help Desk has indicated that a large number of support tickets are related t
 
 ### Task 3: Validate self-service password reset
 
-1. Switch to SEA-WS3.
+1. Switch to **SEA-WS3**.
 
 2. If necessary, sign in as **Admin** with the password of **Pa55w.rd**.
 
@@ -116,7 +116,7 @@ Start-ADSyncSyncCycle –PolicyType Delta
 
 4. Close Windows PowerShell, and then wait for approximately 3-4 minutes.
 
-### Task 4: Verify password writeback
+### Task 5: Verify password writeback
 
 1. Switch to **SEA-CL1** and sign out if necessary.
 
