@@ -151,7 +151,7 @@ dsregcmd /status
 
 ### Task 6: Validate that SEA-CL1 is co-managed 
 
-1. Switch to SEA-SVR1.
+1. Switch to **SEA-SVR1**.
 
 2. On the taskbar select **Microsoft Edge**, in the address bar type **https://aad.portal.azure.com**, and then press **Enter**.
 
