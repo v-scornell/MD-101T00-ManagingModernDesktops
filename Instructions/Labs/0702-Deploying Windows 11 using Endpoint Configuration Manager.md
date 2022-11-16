@@ -212,7 +212,7 @@ Contoso uses Microsoft Endpoint Configuration Manager to manage on-premises work
 
 ### Task 9: Run the Windows 11 Task Sequence
 
-1. Switch to SEA-W81, and sign in as **Contoso\\Administrator** with the password of **Pa55w.rd**.
+1. Switch to **SEA-W81**, and sign in as **Contoso\\Administrator** with the password of **Pa55w.rd**.
 
 2. Select **Start** and then enter **Control Panel**.
 
