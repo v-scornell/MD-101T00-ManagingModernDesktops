@@ -113,7 +113,7 @@ dsregcmd /status
 
 8. Close all open windows and sign out of SEA-WS1.
 
-9. Switch to SEA-SVR1.
+9. Switch to **SEA-SVR1**.
 
 10. In Microsoft Edge, in the Azure Active Directory admin center, select **Azure Active Directory**.
 
@@ -129,7 +129,7 @@ dsregcmd /status
 
 ### Task 4: Sign in to Windows as an Azure AD User
 
-1. Switch to SEA-WS1 and then sign in as **`JoniS@yourtenant.onmicrosoft.com`** with the Tenant password as provided by your instructor. 
+1. Switch to **SEA-WS1** and then sign in as **`JoniS@yourtenant.onmicrosoft.com`** with the Tenant password as provided by your instructor. 
 
    > Wait for the profile to be created.
 
