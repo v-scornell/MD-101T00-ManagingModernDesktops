@@ -42,7 +42,7 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 
 10. Select **Aaron Nicholls**.
 
-11. In the Aaron Nicholls pane, select **Edit**.
+11. In the Aaron Nicholls pane, select **Edit properties**.
 
 12. Under Settings, in the **Usage location** field, select **United States** and then select **Save**.
 
