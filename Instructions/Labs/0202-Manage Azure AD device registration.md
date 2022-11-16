@@ -69,7 +69,7 @@ dsregcmd /status
 
 4. Close PowerShell and then sign out of SEA-WS1.
 
-5. Switch to SEA-SVR1.
+5. Switch to **SEA-SVR1**.
 
 6. In Microsoft Edge, in the Azure Active Directory admin center, select **Azure Active Directory**.
 
@@ -83,7 +83,7 @@ dsregcmd /status
 
 ### Task 4: Sign in to Windows and disconnect from the organization
 
-1. Switch to SEA-WS1 and attempt to sign in as **`JoniS@yourtenant.onmicrosoft.com`**.
+1. Switch to **SEA-WS1** and attempt to sign in as **`JoniS@yourtenant.onmicrosoft.com`**.
 
    Notice that unlike Azure AD Joined devices, an Azure AD registered device does not allow a user to sign in to the device with an Azure AD credential. 
 
