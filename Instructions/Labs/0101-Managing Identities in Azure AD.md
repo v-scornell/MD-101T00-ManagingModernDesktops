@@ -50,7 +50,7 @@ You've also been told that several more employees will be hired over the next co
 
     > Take note of the users that already exist as members of the Azure AD domain. Each user is enabled as indicated on the **Account enabled** column. The **Directory synced** column states **No** for all current users. This indicates that each user was created directly in Azure AD and not synchronized from an on-premises directory service.
 
-13. On the **Users | All users** page, select **New user**.
+13. On the **Users | All users** page, select **New user** then select **Create new user**.
 
 14. On the **New User** page, ensure that **Create user** is selected, enter the following:
 
@@ -71,7 +71,7 @@ You've also been told that several more employees will be hired over the next co
 
 20. Under **Job info**, next to **Department**, enter **HR** and then select **Create**.
 
-21. On the **Users | All users** page, select **New user**.
+21. On the **Users | All users** page, select **New user** then select **Create New User**.
 
 22. On the **New User** page, ensure that **Create user** is selected, enter the following:
 
@@ -94,7 +94,7 @@ You've also been told that several more employees will be hired over the next co
 
 ### Task 2: Create users by using PowerShell
 
-1. On SEA-SVR1, on the taskbar, right-click **Start**, and then select **Windows PowerShell (Admin)**.
+1. On **SEA-SVR1**, on the taskbar, right-click **Start**, and then select **Windows PowerShell (Admin)**.
 
 2. In the **Windows PowerShell** window, type the following command, and then press **Enter**. If prompted, enter **Y** at the NuGet and repository messages:
 
