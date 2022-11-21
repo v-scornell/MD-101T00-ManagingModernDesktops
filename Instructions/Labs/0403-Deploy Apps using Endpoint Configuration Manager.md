@@ -64,10 +64,10 @@ Contoso uses Microsoft Endpoint Configuration Manager to manage desktop workstat
 7. In the **Properties** dialog box, select the **Requirements** tab and then select **Add**. 
 
 8. In the **Create Requirement** dialog box, configure the following and then select **OK**:
-    - Category: Device
-    - Condition: Operating System
-    - Rule type: Value
-    - Operator: One of Windows 11 (Select the check box next to Windows 11)
+    - Category: **Device**
+    - Condition: **Operating System**
+    - Rule type: **Value**
+    - Operator: **One of Windows 11** (Select the check box next to Windows 11)
 9. In the **Properties** dialog box, select **OK**. This requirement will prevent the app from installing on any operating system except Windows 11.
 
 ### Task 4: Distribute content to distribution points 
