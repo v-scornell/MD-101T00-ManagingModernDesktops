@@ -82,7 +82,7 @@ Contoso Corporation is currently managing users in both AD DS and Azure AD as se
 
 10. In the Azure Active Directory admin center, in the navigation pane, select **Users**.
 
-11. Verify that you see users from your local AD DS. Ensure that these users have the value **Yes** in the **Directory synced** column. 
+11. Verify that you see users from your local AD DS. Ensure that these users have the value **Yes** in the **On-premises sync enabled** column. 
 
 12. In the Navigation pane, select **Azure Active Directory** and then select **Groups**. Verify that you see groups from your local AD DS.
 
