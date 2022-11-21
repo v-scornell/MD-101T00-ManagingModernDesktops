@@ -59,7 +59,7 @@ You have assigned Aaron Nicholls appropriate licenses and will now test the proc
 
 -   Microsoft Intune MDM Device CA
 -   MS-Organization-Access
--   MS-Organization-P2P-Access \[2021\]
+-   MS-Organization-P2P-Access \[2022\]
 
     This indicates that the device is enrolled in Azure AD and Intune.
 
