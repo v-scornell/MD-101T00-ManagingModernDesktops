@@ -53,7 +53,7 @@ You have been asked to create a Configuration profile to be used to automaticall
 4. In the **Create a profile** blade, select the following options, and then select **Create**:
 
 - Platform: **iOS/iPadOS**
-- Profile type: **Wi-Fi**
+- Profile type: **Wi-Fi** (Select **Templates** under Profile type then select **Wi-Fi**)
 
 5. In the **Basics** blade, enter the following information, and then select **Next**:
 
