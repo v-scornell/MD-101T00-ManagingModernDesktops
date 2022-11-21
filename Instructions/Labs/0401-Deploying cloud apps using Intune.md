@@ -108,7 +108,7 @@ You use Microsoft Intune to manage desktops and apps for Contoso Corporation. Th
 
 11. Select **Microsoft Remote Desktop**.
 
-12. On the Microsoft Remote Desktop page, select **View in Store**.
+12. On the Microsoft Remote Desktop page, select **Get in Store App**.
 
 13. On the **This site is trying to open Microsoft Store**, select **Open**.
 
@@ -150,7 +150,7 @@ All the users of the Research department at Contoso require Microsoft 365 Apps. 
 
     - Suite Name: **Microsoft 365 Apps (Research)**
 
-    - Suite Description: **Microsoft 365 Apps for the Research dept at Contoso**
+    - Suite Description: **Microsoft 365 Apps for the Research dept at Contoso** (Select **Edit Description** to enter this information.)
 
 5. On the **Configure app suite** tab, expand the **Select Office apps** dropdown, select the following Office apps:
 
@@ -170,6 +170,8 @@ All the users of the Research department at Contoso require Microsoft 365 Apps. 
 
      - Accept the Microsoft Software License Terms on behalf of users: **Yes**
 
+     - Default file format: **Office Open Document Format**
+     
 7. On the **Assignments** tab, in the **Required** section, select **Add group.**
 
 8. On the **Select groups** blade, select **Research**, and then choose **Select**.
