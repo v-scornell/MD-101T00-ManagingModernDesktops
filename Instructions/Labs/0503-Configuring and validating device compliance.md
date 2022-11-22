@@ -91,13 +91,13 @@ When a user uses a device that is marked as non-compliant, they should not be ab
 
 1. On **SEA-SVR1**, in the **Microsoft Endpoint Manager admin center** select **Devices**, then select **Conditional access**.
 
-2. In the **Details** pane, select **New policy**, and then select **Create new policy**.
+2. In the **Details** pane, select **New policy**.
 
 3. On the **New** blade, in the **Name** text box, type **Conditional1** and then select **0 users or workload identities selected**.
 
 4. On the **Users and groups** blade, select the **All users** radio button.
 
-5. On the **New** blade, select **No cloud apps, actions, or authentication contexts selected**, select the **Select apps** radio button, select **Office 365 Exchange Online**, and then click **Select**.
+5. On the **New** blade, select **No cloud apps, actions, or authentication contexts selected**, select the **Select apps** radio button, under the Select option select **None**, select **Office 365 Exchange Online**, and then click **Select**.
 
 6. On the **New** blade, in the **Conditions** section, select **0 conditions selected**. 
 
