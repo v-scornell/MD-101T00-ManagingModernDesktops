@@ -68,13 +68,13 @@ The Help Desk has indicated that a large number of support tickets are related t
 
 13. In the navigation pane, select **On-premises integration**.
 
-14. Verify that your on-premises writeback client is running and select **Yes** for the **Write back passwords to your on-premises directory** option. If needed, select **Save**.
+14. Verify that your on-premises writeback client is running and Select the checkbox for **Write back passwords with Azure AD Connect cloud sync** and then click **Save**.
 
 15. Close Microsoft Edge.
 
 ### Task 3: Validate self-service password reset
 
-1. Switch to SEA-WS3.
+1. Switch to **SEA-WS3**.
 
 2. If necessary, sign in as **Admin** with the password of **Pa55w.rd**.
 
