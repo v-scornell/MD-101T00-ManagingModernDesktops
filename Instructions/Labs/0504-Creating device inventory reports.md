@@ -96,7 +96,7 @@ Your organization uses Power BI for reporting. You need to set up Power BI on SE
 
 ### Task 1: Connect Power BI to the Intune Data Warehouse
 
-1. Sign in to SEA-CL1 as **Contoso\Administrator** with the password of **Pa55w.rd**.
+1. Sign in to **SEA-CL1** as **Contoso\Administrator** with the password of **Pa55w.rd**.
 
 2. Open Microsoft Edge, type **https://endpoint.microsoft.com** in the address bar, and then press **Enter**. 
 
