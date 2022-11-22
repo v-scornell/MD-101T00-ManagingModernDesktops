@@ -57,7 +57,7 @@ Contoso uses Microsoft Endpoint Configuration Manager to manage on-premises work
 
    > The **Add Operating System Image Wizard** displays.
 
-4. On the **Data Source** page, select **Browse** and then browse to**\\\\sea-cfg1\\Software\\ISO\\sources\\**, select **install.wim** and then choose **Open**.
+4. On the **Data Source** page, select **Browse** and then browse to **\\\\sea-cfg1\\Software\\ISO\\sources\**, select **install.wim** and then choose **Open**.
 
 5. On the **Data Source** page, select the check box next to the volume license agreement message and then select **Next**.
 
