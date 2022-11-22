@@ -40,7 +40,7 @@ To following lab(s) must be completed before this lab:
 
 1. In the Microsoft Endpoint Manager admin center, in the navigation pane, select **Apps**.
 
-2. Select **App protection policies**, select **Create policy** and select **Windows 10 and later**.
+2. Select **App protection policies**, select **Create policy** and select **Windows Information Protection**.
 
 3. In the **Name** text box, type **Windows WIP policy**.
 
