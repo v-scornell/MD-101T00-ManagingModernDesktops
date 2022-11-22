@@ -78,7 +78,7 @@ SEA-WS4 has been deployed by using Windows Autopilot. You need to test out anoth
 
 5. At the message prompt, select **Yes**.
 
-6. Switch to SEA-SVR2 and maximize the SEA-WS4 window.
+6. Switch to **SEA-SVR2** and maximize the SEA-WS4 window.
 
    _Note: SEA-WS4 should still be running from the previous lab._
 
