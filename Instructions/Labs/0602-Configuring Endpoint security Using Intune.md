@@ -61,11 +61,11 @@ Settings will be verified by testing on an enrolled device, SEA-WS1 and a non-en
 
 12. In the **Company name** field, select **Configured**, and then enter **Contoso IT**.
 
-13. For **Phone **, select **Configured** and then enter **555-1234** and then select **Next**.
+13. For **Phone**, select **Configured** and then enter **555-1234** and then select **Next**.
 
-14. On the **Assignments** tab, under **Included groups** select **Add groups**. Choose the **Contoso Developer Devices** group, click **Select** and then select **Next**.
+14. On the **Scope tags** page, select **Next**.
 
-15. On the **Scope tags** page, select **Next**.
+15. On the **Assignments** tab, under **Included groups** select **Add groups**. Choose the **Contoso Developer Devices** group, click **Select** and then select **Next**.
 
 16. On the **Review + create** tab, review the information and select **Create**.
 
