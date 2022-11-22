@@ -31,7 +31,7 @@ All of the developers at Contoso have iPhones and iPads running the latest iOS/i
 - Schedule type: **Update during schedule time**
 - Time zone: **UTC:00**
 - Time window:
-  - Start day: **Wednesday **
+  - Start day: **Wednesday**
   - Start time: **12 AM**
   - End day: **Thursday**
   - End time: **12 AM**
